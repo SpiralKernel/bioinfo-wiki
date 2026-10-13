@@ -151,7 +151,9 @@ def main():
 
     def save(fig, name):
         fig.savefig(figures/(name+'.png'), dpi=180, bbox_inches='tight')
-        fig.savefig(figures/(name+'.svg'), bbox_inches='tight')
+        svg_path = figures/(name+'.svg')
+        fig.savefig(svg_path, bbox_inches='tight')
+        svg_path.write_text('\n'.join(line.rstrip() for line in svg_path.read_text().splitlines())+'\n')
         plt.close(fig)
 
     fig, axes = plt.subplots(2, 2, figsize=(11.5, 7.5), constrained_layout=True)
