@@ -1,0 +1,1247 @@
+{
+  "schema": 1,
+  "generated_files": [
+    "ASV与微生物多样性.md",
+    "ATAC-seq入门与实践.md",
+    "BLAST原理与种子延伸.md",
+    "BLAST本地检索实践.md",
+    "ChIP-seq入门与实践.md",
+    "DNA甲基化分析入门.md",
+    "Ensembl参考与注释查询.md",
+    "FASTA与FASTQ.md",
+    "GEO数据检索与样本核对.md",
+    "GO术语注释与证据.md",
+    "GWAS从数据准备到结果解释.md",
+    "Hardy-Weinberg平衡与检验.md",
+    "Home.md",
+    "Linux与项目目录实践.md",
+    "PCA原理与实现.md",
+    "PLINK2使用与版本管理.md",
+    "P值效应量与多重检验.md",
+    "RNA-seq从计数矩阵到差异表达.md",
+    "SAM与BAM及CRAM.md",
+    "SNP与基因型是什么.md",
+    "SRA与ENA读段检索.md",
+    "Smith-Waterman局部比对.md",
+    "UMI与细胞条形码.md",
+    "UniProt蛋白条目与证据.md",
+    "VCF与基因型编码.md",
+    "_Sidebar.md",
+    "中文生信学习地图.md",
+    "亲缘关系与遗传关系矩阵.md",
+    "从DNA到RNA和蛋白质.md",
+    "代谢组入门与实践.md",
+    "公共数据库与数据获取.md",
+    "关键词索引.md",
+    "单细胞转录组入门与实践.md",
+    "参考基因组与注释版本.md",
+    "变异注释与候选证据整理.md",
+    "可复现分析与工作流管理.md",
+    "合成数据贯通PCA与GWAS.md",
+    "基因型质控与过滤.md",
+    "基因标识符与同源基因.md",
+    "基因组坐标与区间.md",
+    "基因组重测序与变异检测.md",
+    "多组学整合入门与实践.md",
+    "定相与基因型填充.md",
+    "实验设计与统计功效.md",
+    "富集分析与GSEA.md",
+    "小RNA分析入门与实践.md",
+    "峰与FRiP及TSS富集.md",
+    "常见生信图表的阅读与制作.md",
+    "微生物组分析入门与实践.md",
+    "批次效应与混杂.md",
+    "数据泄漏与交叉验证.md",
+    "日志排错与最小复现.md",
+    "服务器资源与批量任务.md",
+    "样本表与数据审计实践.md",
+    "比对相似性同源性与覆盖率.md",
+    "测序深度覆盖度与质量分数.md",
+    "生物学重复与技术重复.md",
+    "用PCA探索样本的群体结构.md",
+    "空间转录组入门与实践.md",
+    "系统发育树入门与实践.md",
+    "线性模型与混合模型.md",
+    "组学分析总览与选型.md",
+    "结果报告与数据共享.md",
+    "缺失值与零值.md",
+    "置信区间与重采样.md",
+    "群体分析与GWAS学习路线.md",
+    "群体结构与GWAS有什么关系.md",
+    "群体结构是什么.md",
+    "蛋白质组入门与实践.md",
+    "计数丰度与标准化.md",
+    "软件环境与依赖管理.md",
+    "连锁不平衡与LD剪枝.md",
+    "长读长测序分析入门.md"
+  ],
+  "pages": [
+    {
+      "title": "ATAC-seq入门与实践",
+      "source": "分析工作流/ATAC-seq入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "ATAC-seq",
+        "染色质可及性"
+      ],
+      "summary": "从可及性测序读段得到区域信号与差异分析，重点检查信号质量、重复一致性和共同计数区域。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "6b90b691d8ab9262ee22278c3c0b0a975bf24df2b3579d38eb04a9b542aeb3bd"
+    },
+    {
+      "title": "ChIP-seq入门与实践",
+      "source": "分析工作流/ChIP-seq入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "ChIP-seq",
+        "IP",
+        "input control"
+      ],
+      "summary": "ChIP-seq 分析目标富集相对背景的信号分布，必须区分对照、抗体目标与信号宽度。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "1aa49a9d5538cea455dbb4e9e16c5ac4090a5fc1e574a5c61c6e9990535baf60"
+    },
+    {
+      "title": "DNA甲基化分析入门",
+      "source": "分析工作流/DNA甲基化分析入门.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "DNA methylation",
+        "WGBS",
+        "RRBS",
+        "DMR"
+      ],
+      "summary": "甲基化分析需要匹配测量技术，以覆盖和重复信息估计位点或区域差异。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "7d9e16be6cb9b40451a4d03cbc89427ad9e98266371684241e016ee9d1a0c530"
+    },
+    {
+      "title": "GWAS从数据准备到结果解释",
+      "source": "分析工作流/GWAS从数据准备到结果解释.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [],
+      "summary": "将基因型、表型和设计信息连接到合适的关联模型，并审查效应方向与证据边界。",
+      "validation": "合成数据实测",
+      "updated": "2026-10-13",
+      "sha256": "68a1ed6423e5a28ab68f5c5a311a230cb13a867e16f12713e191914244f13d3b"
+    },
+    {
+      "title": "RNA-seq从计数矩阵到差异表达",
+      "source": "分析工作流/RNA-seq从计数矩阵到差异表达.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "RNA-seq",
+        "bulk RNA-seq",
+        "差异表达"
+      ],
+      "summary": "从基因计数和实验设计出发，估计表达差异，并区分统计证据、效应大小与功能解释。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "d8b155d9d6b10d0fda38e5cfb80c6fee10949b23b2723ff4620acd8a703f7940"
+    },
+    {
+      "title": "代谢组入门与实践",
+      "source": "分析工作流/代谢组入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "metabolomics",
+        "m/z",
+        "peak area"
+      ],
+      "summary": "代谢组分析先审查峰特征与测量质量，再讨论统计差异和代谢物身份。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "93598ecfc751e6c490c90bdc5c612baa7b05ea9d7aac28110f4e366260097d1a"
+    },
+    {
+      "title": "单细胞转录组入门与实践",
+      "source": "分析工作流/单细胞转录组入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "scRNA-seq",
+        "single-cell RNA-seq",
+        "Scanpy",
+        "pseudobulk"
+      ],
+      "summary": "从细胞或液滴计数出发，检查质量、探索细胞状态，并将供体层面的比较与细胞聚类区分。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "6f3a1996fb2a70133b7a481401aa8dc49f4968f3bec891ea5b4d820f8a41d1d7"
+    },
+    {
+      "title": "变异注释与候选证据整理",
+      "source": "分析工作流/变异注释与候选证据整理.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "VEP",
+        "SnpEff",
+        "variant annotation",
+        "missense",
+        "synonymous",
+        "候选基因"
+      ],
+      "summary": "注释把变异映射到转录本与已知资源；候选优先级需要多种证据，注释后果并非功能定论。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "4a81bc4d84d0f3cee572fa5119c709e661077eb0042e1182ae43ef92c38f4477"
+    },
+    {
+      "title": "基因型质控与过滤",
+      "source": "分析工作流/基因型质控与过滤.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [],
+      "summary": "先评估样本和位点质量，再按分析目标制定可追溯的过滤规则。",
+      "validation": "合成数据实测",
+      "updated": "2026-10-13",
+      "sha256": "10ede523723c6e3556a7955c99efa7a2e59eb3ccd4d3293653c6438e9f95c369"
+    },
+    {
+      "title": "基因组重测序与变异检测",
+      "source": "分析工作流/基因组重测序与变异检测.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [],
+      "summary": "从 DNA 读段得到可用于群体分析的变异数据，关键是参考一致性、样本级检查和统一的分型流程。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "32be5468aaed44221c1f8d401ff5f950c175e5bb091670273d021e2b79861d48"
+    },
+    {
+      "title": "多组学整合入门与实践",
+      "source": "分析工作流/多组学整合入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "multi-omics",
+        "MOFA",
+        "MOFA2",
+        "潜在因子"
+      ],
+      "summary": "整合多个测量层级前，先确认样本对应、特征尺度和具体目标，再选择联合分析方法。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "0f743ba6f118187cf77fd4edb70695478d310eb8d2b1738bf9f5fbbecc03799f"
+    },
+    {
+      "title": "小RNA分析入门与实践",
+      "source": "分析工作流/小RNA分析入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "small RNA",
+        "miRNA",
+        "small RNA-seq",
+        "smrnaseq"
+      ],
+      "summary": "小RNA测序关注短RNA群体，接头处理、长度选择和注释分配直接影响计数。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "d8112310a4bb3a9bf2949cb89fc8ec25368f98254998e929cf9894c9ab6978cb"
+    },
+    {
+      "title": "微生物组分析入门与实践",
+      "source": "分析工作流/微生物组分析入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "microbiome",
+        "metagenomics",
+        "16S",
+        "宏基因组"
+      ],
+      "summary": "先区分标记基因扩增子和全样本宏基因组，再选择特征构建、分类与群落比较路线。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "8a3cd1fcc82689e71dc61e24ed65f869c543bbd67cd6981517b738566f137693"
+    },
+    {
+      "title": "用PCA探索样本的群体结构",
+      "source": "分析工作流/用PCA探索样本的群体结构.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [],
+      "summary": "从经过质控的基因型出发，减少位点冗余、计算主成分，并结合样本信息检查结果。",
+      "validation": "合成数据实测",
+      "updated": "2026-10-13",
+      "sha256": "9ff43f44fbf183de557609c5cbea9f517cadcde590b86ed8c3a7fc588c5a3cc9"
+    },
+    {
+      "title": "空间转录组入门与实践",
+      "source": "分析工作流/空间转录组入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "spatial transcriptomics",
+        "空间组学",
+        "spot",
+        "Visium"
+      ],
+      "summary": "将表达矩阵与空间坐标和组织图像对应，分析空间模式，并区分 spot、细胞和切片层级。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "8d25860832fb70d91f644efdb35b7541e3cf585b19ea08a221fa7bf5a91d0f91"
+    },
+    {
+      "title": "系统发育树入门与实践",
+      "source": "分析工作流/系统发育树入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "phylogenetics",
+        "MSA",
+        "maximum likelihood",
+        "bootstrap support",
+        "系统发育"
+      ],
+      "summary": "系统发育推断从可比较的同源序列出发，树的拓扑、枝长和支持度回答不同问题。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "c5fa6f3fd6200d2aab4cf75366b8748ec2b5df8f93114a964d6bc6b2d1a267fc"
+    },
+    {
+      "title": "蛋白质组入门与实践",
+      "source": "分析工作流/蛋白质组入门与实践.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "proteomics",
+        "DDA",
+        "DIA",
+        "protein group"
+      ],
+      "summary": "将质谱证据或蛋白定量表连接到可解释的蛋白层面比较，先区分鉴定、定量和差异检验。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "4ab015d7d0cee5ec0f770957cdb099922dee9f751bb9fc30e87507c1f58eee2d"
+    },
+    {
+      "title": "长读长测序分析入门",
+      "source": "分析工作流/长读长测序分析入门.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "aliases": [
+        "long-read",
+        "Nanopore",
+        "PacBio",
+        "结构变异",
+        "isoform"
+      ],
+      "summary": "长读长有助于跨越复杂区域与连接转录结构，流程选择仍取决于平台、数据类型和研究目标。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "e129865080ef9e9901dd7a82fe325dcd6378b632cf3ef6d8db9089e29f3fc5d4"
+    },
+    {
+      "title": "中文生信学习地图",
+      "source": "学习路线/中文生信学习地图.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "aliases": [],
+      "summary": "从问题、数据和检查点进入生信，按需要跳转到概念、算法、组学流程及实践。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "ba1d2c62cc590b20ae7256e6221e61554734d2244f271ffbec22e0febee125e1"
+    },
+    {
+      "title": "组学分析总览与选型",
+      "source": "学习路线/组学分析总览与选型.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "aliases": [],
+      "summary": "先明确测量对象和研究问题，再选择输入、模型及可以支持的结论。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "fb81106c12b0951aef7fdc24f22a1974d34d7b2302624c90ba7ffb47d0212aa1"
+    },
+    {
+      "title": "群体分析与GWAS学习路线",
+      "source": "学习路线/群体分析与GWAS学习路线.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "aliases": [],
+      "summary": "从基因型编码和样本审计出发，依次完成群体探索、关联分析和证据解释。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "6a0e4072193ba8a9691a5abb48702c312d352cb8f422d33701e2d1c9218e5984"
+    },
+    {
+      "title": "BLAST本地检索实践",
+      "source": "工具/BLAST本地检索实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "BLAST+",
+        "blastn",
+        "makeblastdb"
+      ],
+      "summary": "用本地数据库理解查询、数据库构建与结果字段，并将正式结论建立在覆盖率和统计解释上。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "3853eddea2c1ea859d20d50a9121556a757e77a94281c81e0d8af00fd7fc1345"
+    },
+    {
+      "title": "Linux与项目目录实践",
+      "source": "工具/Linux与项目目录实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [],
+      "summary": "先学会识别路径、检查文本和保存日志，就能建立可追溯的最小分析项目。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "5660a9ab637efcb67b26224773b847bcb3cd649dc2f06d95e48c3eb39b9a17b8"
+    },
+    {
+      "title": "PLINK2使用与版本管理",
+      "source": "工具/PLINK2使用与版本管理.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "PLINK",
+        "PLINK2"
+      ],
+      "summary": "PLINK 2 用于基因型处理、PCA 和关联等任务；参数与默认行为需要绑定具体版本。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "1670d9df75696d9c147e85bea85b9622e3bdbca91fb3e5c009d788dbbca04070"
+    },
+    {
+      "title": "可复现分析与工作流管理",
+      "source": "工具/可复现分析与工作流管理.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "reproducibility",
+        "Snakemake",
+        "Nextflow",
+        "DAG"
+      ],
+      "summary": "把输入、依赖、参数和产物放进可追踪的运行记录，才能区分计算复现与结果解释。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "44582c611ea7e4c7257bb1f1aef361960d73fa6d5f9e1c15981e5354cb2ede00"
+    },
+    {
+      "title": "合成数据贯通PCA与GWAS",
+      "source": "工具/合成数据贯通PCA与GWAS.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "PCA与GWAS练习",
+        "synthetic GWAS"
+      ],
+      "summary": "用固定随机种子的人工数据练习文件交接、质控、PCA 与数量性状关联，不需要下载真实个体数据。",
+      "validation": "合成数据实测",
+      "updated": "2026-10-13",
+      "sha256": "907ea1bf9f4278806f2df648c27b449f29b6d27812ee1ad3c9ad8e75ab9dae02"
+    },
+    {
+      "title": "常见生信图表的阅读与制作",
+      "source": "工具/常见生信图表的阅读与制作.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "volcano plot",
+        "heatmap",
+        "QQ plot",
+        "Manhattan plot",
+        "火山图",
+        "热图",
+        "曼哈顿图"
+      ],
+      "summary": "先读坐标、数据变换和独立单位，再判断图形支持什么结论。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "416196accd28b276b783b34d57272282a91d34bba2c015d0d7bb881ed9e02694"
+    },
+    {
+      "title": "日志排错与最小复现",
+      "source": "工具/日志排错与最小复现.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "debugging",
+        "stderr",
+        "exit code",
+        "MRE",
+        "报错"
+      ],
+      "summary": "从第一条实际错误定位输入、环境和资源问题，用最小复现验证修复。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "a2fc90f3e5642833ef3382f0145ca13b0ba0e6c9000dd0a0c1a8639907222320"
+    },
+    {
+      "title": "服务器资源与批量任务",
+      "source": "工具/服务器资源与批量任务.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "HPC",
+        "Slurm",
+        "sbatch",
+        "CPU",
+        "RAM",
+        "I/O",
+        "作业调度"
+      ],
+      "summary": "任务需要同时估计计算、内存、磁盘和时间，申请线程并不等于程序会自动使用它们。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "e38b204424764e6d1d2603a8104491e5371beae885874b0206e748d714312425"
+    },
+    {
+      "title": "样本表与数据审计实践",
+      "source": "工具/样本表与数据审计实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [],
+      "summary": "先把样本身份、实验设计和文件位置核对清楚，再进入任何统计分析。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "1a575dbf5aaed626dacfe3bc6c48d263db5e5b311f233f02154816e180c01a57"
+    },
+    {
+      "title": "结果报告与数据共享",
+      "source": "工具/结果报告与数据共享.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "FAIR",
+        "accession",
+        "README",
+        "provenance",
+        "数据溯源"
+      ],
+      "summary": "报告应让读者追溯从研究设计、输入和参数到结果的路径，并区分数据开放与受限访问。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "3f8222b1a06df82c6a2c9463815102bfd19d472dc8a6a2eee6bb3980c43b772b"
+    },
+    {
+      "title": "软件环境与依赖管理",
+      "source": "工具/软件环境与依赖管理.md",
+      "folder": "工具",
+      "kind": "工具",
+      "aliases": [
+        "conda",
+        "mamba",
+        "container",
+        "Docker",
+        "Apptainer",
+        "依赖锁定"
+      ],
+      "summary": "一个可复现环境需要记录软件版本、依赖、平台及参考数据，只有环境名称并不足够。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "609bc69b76dc7a46e1a3229c0b82efeeac74e0cf7bc165b3a653243922f8609d"
+    },
+    {
+      "title": "Ensembl参考与注释查询",
+      "source": "数据库/Ensembl参考与注释查询.md",
+      "folder": "数据库",
+      "kind": "数据库",
+      "aliases": [
+        "Ensembl",
+        "BioMart",
+        "genome browser"
+      ],
+      "summary": "Ensembl把参考组装、基因模型、变异与同源信息联系起来，查询结果必须携带物种和发布版本。",
+      "validation": "官方文档核对；检索与批量下载练习未在本机执行",
+      "updated": "2026-10-13",
+      "sha256": "d4e0e7509f94ee12ade9e75ab3ad6bca79ece862a6af9cee1c1996732e1cdd7a"
+    },
+    {
+      "title": "GEO数据检索与样本核对",
+      "source": "数据库/GEO数据检索与样本核对.md",
+      "folder": "数据库",
+      "kind": "数据库",
+      "aliases": [
+        "GEO",
+        "GSE",
+        "GSM",
+        "GPL"
+      ],
+      "summary": "GEO连接研究、样本与处理数据，选择数据前先确认实验设计和矩阵数值含义。",
+      "validation": "官方文档核对；检索与批量下载练习未在本机执行",
+      "updated": "2026-10-13",
+      "sha256": "65dabaec9505f09526becdf0093f9f37e7d61e5d465173c1efce2b12b8100cf4"
+    },
+    {
+      "title": "GO术语注释与证据",
+      "source": "数据库/GO术语注释与证据.md",
+      "folder": "数据库",
+      "kind": "数据库",
+      "aliases": [
+        "GO",
+        "Gene Ontology",
+        "BP",
+        "MF",
+        "CC",
+        "evidence code"
+      ],
+      "summary": "GO用结构化术语描述基因产物相关功能，术语、注释关系和证据类型需要分开阅读。",
+      "validation": "官方文档核对；检索与批量下载练习未在本机执行",
+      "updated": "2026-10-13",
+      "sha256": "e50166c85a98eebd7b6b50266bf96f747e995dee7c146db840b99ce2de11c331"
+    },
+    {
+      "title": "SRA与ENA读段检索",
+      "source": "数据库/SRA与ENA读段检索.md",
+      "folder": "数据库",
+      "kind": "数据库",
+      "aliases": [
+        "SRA",
+        "ENA",
+        "SRR",
+        "ERR",
+        "run accession"
+      ],
+      "summary": "读段归档中的study、sample、experiment与run有不同层级，下载与合并必须保留这些关系。",
+      "validation": "官方文档核对；检索与批量下载练习未在本机执行",
+      "updated": "2026-10-13",
+      "sha256": "20e48b13b1569db2a30d1be29f787061b8389d56bf58c1eb00e7fdad6e1ed414"
+    },
+    {
+      "title": "UniProt蛋白条目与证据",
+      "source": "数据库/UniProt蛋白条目与证据.md",
+      "folder": "数据库",
+      "kind": "数据库",
+      "aliases": [
+        "UniProt",
+        "UniProtKB",
+        "Swiss-Prot",
+        "TrEMBL",
+        "proteome"
+      ],
+      "summary": "蛋白数据库条目同时包含序列和注释证据，人工审阅状态不等于每项功能都已实验验证。",
+      "validation": "官方文档核对；检索与批量下载练习未在本机执行",
+      "updated": "2026-10-13",
+      "sha256": "45ee42fcfd0cc9046885cd550bacfe6c6619e20ff93885c48cdaac104af878b9"
+    },
+    {
+      "title": "公共数据库与数据获取",
+      "source": "数据库/公共数据库与数据获取.md",
+      "folder": "数据库",
+      "kind": "数据库",
+      "aliases": [
+        "公共数据库",
+        "ENCODE",
+        "PRIDE",
+        "MetaboLights"
+      ],
+      "summary": "根据需要的数据层级选择资源，并把 accession、原始文件、处理矩阵和版本信息分别记录。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "e6614a437413ea9866b1ec363d8238341416bae6910df9edda9fe78cccd4b4c4"
+    },
+    {
+      "title": "BLAST原理与种子延伸",
+      "source": "方法与算法/BLAST原理与种子延伸.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "aliases": [
+        "BLAST",
+        "seed and extend",
+        "X-drop"
+      ],
+      "summary": "BLAST 是序列局部相似性检索的启发式方法族；理解种子、延伸和统计评估比只记命令更重要。",
+      "validation": "合成数据实测",
+      "updated": "2026-10-13",
+      "sha256": "0ea9c774e4c617e922b1e13338439d7dccb46098681c173905d6a084c5dd512a"
+    },
+    {
+      "title": "PCA原理与实现",
+      "source": "方法与算法/PCA原理与实现.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "aliases": [
+        "PCA",
+        "principal component analysis",
+        "SVD"
+      ],
+      "summary": "主成分分析寻找解释数据变化的正交方向；输入矩阵的定义和尺度直接影响结果。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "3a99507ee3fcfa0ae9964335da3a3e6f93fc47bbafc305c28e9ec138bfac53da"
+    },
+    {
+      "title": "Smith-Waterman局部比对",
+      "source": "方法与算法/Smith-Waterman局部比对.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "aliases": [
+        "Smith-Waterman",
+        "动态规划",
+        "局部比对算法"
+      ],
+      "summary": "Smith–Waterman 用动态规划找到给定打分规则下的最优局部比对，适合理解序列比对的精确基线。",
+      "validation": "合成数据实测",
+      "updated": "2026-10-13",
+      "sha256": "a5d5d4e81332ad2cdcad9a550b17bc1adc11a5bc3e058d0b509f09c6e5f93816"
+    },
+    {
+      "title": "富集分析与GSEA",
+      "source": "方法与算法/富集分析与GSEA.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "aliases": [
+        "GSEA",
+        "ORA",
+        "gene set enrichment"
+      ],
+      "summary": "功能富集把特征列表或排序与知识集合连接，结论取决于背景、映射、排序和多重检验。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "5f99652ca6e774897568c2bd3c3c732529565fb4346ebe8a0e13ce6caf5a2505"
+    },
+    {
+      "title": "数据泄漏与交叉验证",
+      "source": "方法与算法/数据泄漏与交叉验证.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "aliases": [
+        "data leakage",
+        "cross-validation",
+        "CV",
+        "训练集",
+        "测试集",
+        "过拟合"
+      ],
+      "summary": "预测评估需要让测试数据保持独立，并在训练折内学习预处理和特征选择。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "9b408a7a975743dbc96d9e447ac6e81f66cd872a7018d666f0888b258d44be51"
+    },
+    {
+      "title": "线性模型与混合模型",
+      "source": "方法与算法/线性模型与混合模型.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "aliases": [
+        "LMM",
+        "GLM",
+        "linear mixed model",
+        "协变量",
+        "设计矩阵"
+      ],
+      "summary": "回归把研究变量与协变量联系到表型，混合模型进一步表示样本相关性或层级结构。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "ec55a692da1662b4e95e157f992879d8f10f1fa0ba62b4fc57071ed065cdc093"
+    },
+    {
+      "title": "群体结构与GWAS有什么关系",
+      "source": "方法与算法/群体结构与GWAS有什么关系.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "aliases": [],
+      "summary": "当遗传背景同时关联表型和位点频率时，简单关联可能混入群体差异，需要结合设计和模型处理。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "8c47954d5af926f9b4e73ad2a5fc6edae6c0b974770eff5d2ba5ca216bd846f6"
+    },
+    {
+      "title": "ASV与微生物多样性",
+      "source": "术语与概念/ASV与微生物多样性.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "ASV",
+        "alpha diversity",
+        "beta diversity",
+        "PCoA"
+      ],
+      "summary": "ASV 是扩增子分析中的序列特征，群落多样性指标则从不同角度概括样本内和样本间差异。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "5f2c72dc06bfd2571d079db7cfbda1a127b9ee1c6e46035c6a00135abcb86be5"
+    },
+    {
+      "title": "FASTA与FASTQ",
+      "source": "术语与概念/FASTA与FASTQ.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "FASTA",
+        "FASTQ",
+        "read",
+        "reads"
+      ],
+      "summary": "FASTA 保存序列及标题，FASTQ 还保存逐碱基质量信息，二者服务于不同分析阶段。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "29b6ea9fdee8a907601ddd65123652282711c4765b99d21fb09227acb271d13f"
+    },
+    {
+      "title": "Hardy-Weinberg平衡与检验",
+      "source": "术语与概念/Hardy-Weinberg平衡与检验.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "HWE",
+        "Hardy-Weinberg equilibrium",
+        "哈代温伯格平衡"
+      ],
+      "summary": "HWE描述理想化随机结合条件下的基因型比例，偏离检验是诊断线索而不是自动删除规则。",
+      "validation": "文档核对；纸面例子核算；外部分析未在本机执行",
+      "updated": "2026-10-13",
+      "sha256": "8a90fe5f838ff2007a3ee56a325b098953498870b2c6e16c6ddefe6d40293da3"
+    },
+    {
+      "title": "P值效应量与多重检验",
+      "source": "术语与概念/P值效应量与多重检验.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "p-value",
+        "FDR",
+        "BH",
+        "Bonferroni",
+        "效应量",
+        "padj"
+      ],
+      "summary": "P 值衡量特定零假设下的数据相容性，效应量描述差异大小；大量检验需要额外控制错误。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "6e879342cc467849b9dd6bbe97267141661a13d0777a6e9a5bc5f35fe20a4350"
+    },
+    {
+      "title": "SAM与BAM及CRAM",
+      "source": "术语与概念/SAM与BAM及CRAM.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "SAM",
+        "BAM",
+        "CRAM",
+        "CIGAR",
+        "MAPQ"
+      ],
+      "summary": "SAM、BAM 和 CRAM 表达序列比对记录，坐标排序、索引和参考资源决定很多下游操作能否正确进行。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "a94d24e65b1ea327275addcb4ede079a74827b88a502f3d1ae93ef375a6ec8e1"
+    },
+    {
+      "title": "SNP与基因型是什么",
+      "source": "术语与概念/SNP与基因型是什么.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "SNP",
+        "SNV",
+        "单核苷酸多态性",
+        "genotype",
+        "基因型"
+      ],
+      "summary": "SNP 描述单碱基位点的变异，基因型描述某个体在该位点携带的等位基因组合。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "9a51ba663431253f335126684dd635bedc3b39c4ab16174f982b04e046b06ad6"
+    },
+    {
+      "title": "UMI与细胞条形码",
+      "source": "术语与概念/UMI与细胞条形码.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "UMI",
+        "unique molecular identifier",
+        "cell barcode"
+      ],
+      "summary": "细胞条形码帮助区分测量单元，UMI 用于识别分子标签；二者不是同一类标识符。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "43809da15a4846190f6b0a3a7d3721b21b3c60a8c50816549508fd5d12549936"
+    },
+    {
+      "title": "VCF与基因型编码",
+      "source": "术语与概念/VCF与基因型编码.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "VCF",
+        "BCF",
+        "GT",
+        "REF",
+        "ALT",
+        "dosage"
+      ],
+      "summary": "VCF 以位点为记录，保存参考与替代等位基因，以及每个样本的基因型和其他字段。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "1de20ec3b49714379b0856124e01cd78d8b6b16d5b2c230a62240b501a6c5bc6"
+    },
+    {
+      "title": "亲缘关系与遗传关系矩阵",
+      "source": "术语与概念/亲缘关系与遗传关系矩阵.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "GRM",
+        "kinship",
+        "IBS",
+        "IBD",
+        "genomic relationship matrix"
+      ],
+      "summary": "样本之间的遗传相关性可以用矩阵表达，但不同估计量的尺度和假设需要分别说明。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "509ebb5f5dee7aa4d0d413d3afd4ea51c1fe6229d7e7868e0d520b101d7a9f6f"
+    },
+    {
+      "title": "从DNA到RNA和蛋白质",
+      "source": "术语与概念/从DNA到RNA和蛋白质.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "DNA",
+        "RNA",
+        "protein",
+        "gene",
+        "transcript",
+        "CDS",
+        "外显子",
+        "内含子"
+      ],
+      "summary": "区分基因、转录本和蛋白质层级，是理解不同组学测量对象和标识符的起点。",
+      "validation": "文档核对；纸面例子核算；外部分析未在本机执行",
+      "updated": "2026-10-13",
+      "sha256": "4c518b10e33c1a8a25b98209edd77ee2702c45a73fc3f9930f2335008e46b109"
+    },
+    {
+      "title": "参考基因组与注释版本",
+      "source": "术语与概念/参考基因组与注释版本.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "reference genome",
+        "genome assembly",
+        "GTF",
+        "GFF"
+      ],
+      "summary": "参考基因组给出坐标与序列，注释说明基因等要素的位置；分析必须记录二者的具体版本。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "2f68fd4ed0048b409bf1dd0ede87651d242a24828a2bd81a00d5ccc1d86b4b27"
+    },
+    {
+      "title": "基因标识符与同源基因",
+      "source": "术语与概念/基因标识符与同源基因.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "gene ID",
+        "ortholog",
+        "paralog",
+        "基因符号",
+        "同源基因"
+      ],
+      "summary": "基因符号、稳定标识符和跨物种同源关系表达不同信息，映射时必须记录来源与版本。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "2425125ca8cbc3702482df87a0dec9aec44e55713e9b4fc1255aecf3c17d2ce1"
+    },
+    {
+      "title": "基因组坐标与区间",
+      "source": "术语与概念/基因组坐标与区间.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "BED",
+        "GFF",
+        "GTF",
+        "0-based",
+        "1-based",
+        "半开区间"
+      ],
+      "summary": "坐标必须同时带有参考版本、序列名和端点规则，格式转换不能只改文件扩展名。",
+      "validation": "坐标例子核算；外部工具未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "50b78051db6644a2a1901682625dec29c7230cbd3ffdbbdf9aa064d9e3fd072f"
+    },
+    {
+      "title": "定相与基因型填充",
+      "source": "术语与概念/定相与基因型填充.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "phasing",
+        "imputation",
+        "haplotype",
+        "dosage",
+        "单倍型",
+        "填充质量"
+      ],
+      "summary": "定相推断等位基因位于哪条单倍型，填充推断未观测基因型，两者都需保留不确定性。",
+      "validation": "文档核对；纸面例子核算；外部分析未在本机执行",
+      "updated": "2026-10-13",
+      "sha256": "920629d62c81d38f22d4d67d3837657c42996e05ee19dcb868858cbd85f09672"
+    },
+    {
+      "title": "实验设计与统计功效",
+      "source": "术语与概念/实验设计与统计功效.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "experimental design",
+        "power",
+        "效应大小",
+        "样本量"
+      ],
+      "summary": "实验设计决定哪些问题能被回答；功效是指定效应与检验条件下发现信号的概率。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "cb33c34b12594c169429e984f5fe4b10690d6050e8ecad7e77260a946e24a817"
+    },
+    {
+      "title": "峰与FRiP及TSS富集",
+      "source": "术语与概念/峰与FRiP及TSS富集.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "peak",
+        "FRiP",
+        "TSS enrichment",
+        "窄峰",
+        "宽峰"
+      ],
+      "summary": "峰是相对背景具有信号富集的区域，FRiP 和 TSS 富集用于从不同角度评价部分染色质测量。",
+      "validation": "文档核对；完整流程未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "6b49a090cc686dcd3ab1f466dedf081a179e0cc8640587fc15a73a6569d54322"
+    },
+    {
+      "title": "批次效应与混杂",
+      "source": "术语与概念/批次效应与混杂.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "batch effect",
+        "confounding",
+        "混杂因素"
+      ],
+      "summary": "批次效应来自技术过程；当批次与研究分组重合时，数据可能无法区分两者的影响。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "8c44506dd5db2f24d51b7ffceece0a7b211b975043f1e4c08f936828892e948d"
+    },
+    {
+      "title": "比对相似性同源性与覆盖率",
+      "source": "术语与概念/比对相似性同源性与覆盖率.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "identity",
+        "coverage",
+        "homology",
+        "alignment",
+        "局部比对"
+      ],
+      "summary": "比对是建立位置对应，相似性是可度量的观察，同源性是关于共同演化来源的推断。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "2463157ee9f8e248f5b5fe04bf5f174d9fb8830ed82ee92489714b7a45a3bd6b"
+    },
+    {
+      "title": "测序深度覆盖度与质量分数",
+      "source": "术语与概念/测序深度覆盖度与质量分数.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "coverage",
+        "depth",
+        "Phred",
+        "Q30",
+        "测序深度"
+      ],
+      "summary": "深度、覆盖范围、碱基质量和比对质量衡量不同问题，不能用单个平均数替代整体质控。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "08aeabd178fcd220de2f1e231057cf8498e4114c34c065a490a6ff34f936295c"
+    },
+    {
+      "title": "生物学重复与技术重复",
+      "source": "术语与概念/生物学重复与技术重复.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "biological replicate",
+        "technical replicate",
+        "伪重复"
+      ],
+      "summary": "生物学重复体现独立生物单位的变化，技术重复衡量同一材料的测量变化。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "bd8e035ba8dca4d217110604cd106ff35f5cf656d080baf82ecb10141b28260b"
+    },
+    {
+      "title": "缺失值与零值",
+      "source": "术语与概念/缺失值与零值.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "missing value",
+        "NA",
+        "zero",
+        "缺失值"
+      ],
+      "summary": "零值是已记录的数值，缺失表示没有可用观测；把二者混用会改变统计问题。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "5d832f0e9d53bca3fb706960643a6e23c302ae257b2e04f79beec52ec3038f4a"
+    },
+    {
+      "title": "置信区间与重采样",
+      "source": "术语与概念/置信区间与重采样.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "confidence interval",
+        "CI",
+        "bootstrap",
+        "permutation test",
+        "置换检验"
+      ],
+      "summary": "置信区间描述估计精度；重采样必须尊重独立单位和研究设计。",
+      "validation": "文档核对；操作示例未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "a9b662e3e8e6f9f8e8c09bb3c33bb4f865a3f5f2221f8b6f07a3863078b09bf6"
+    },
+    {
+      "title": "群体结构是什么",
+      "source": "术语与概念/群体结构是什么.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "population structure",
+        "群体结构",
+        "population stratification"
+      ],
+      "summary": "群体结构描述样本之间并非完全均匀的遗传差异模式，分析前需要同时排查技术来源。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "6cfbb09a87b2a61517a265c6949779b9720ff823544f9168f2f3dee405d5ad5e"
+    },
+    {
+      "title": "计数丰度与标准化",
+      "source": "术语与概念/计数丰度与标准化.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "normalization",
+        "TPM",
+        "CPM",
+        "counts",
+        "标准化"
+      ],
+      "summary": "原始计数、相对丰度和变换后的数值对应不同问题，模型输入必须与其假设一致。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "1c67d239e1fc6cb22198a344837ba82878b9a8e5a8c417598d92f713bf76d5e6"
+    },
+    {
+      "title": "连锁不平衡与LD剪枝",
+      "source": "术语与概念/连锁不平衡与LD剪枝.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "aliases": [
+        "LD",
+        "linkage disequilibrium",
+        "LD pruning",
+        "clumping"
+      ],
+      "summary": "连锁不平衡描述位点等位基因之间的非随机关联，LD 剪枝用于减少所选位点集合中的冗余。",
+      "validation": "文档核对；操作需按所用环境验证",
+      "updated": "2026-10-13",
+      "sha256": "9d6a30059bf21b9ed4abdc73c7961f22609baf5085984ec438719ac81499395d"
+    }
+  ],
+  "file_hashes": {
+    "ATAC-seq入门与实践.md": "6b90b691d8ab9262ee22278c3c0b0a975bf24df2b3579d38eb04a9b542aeb3bd",
+    "ChIP-seq入门与实践.md": "1aa49a9d5538cea455dbb4e9e16c5ac4090a5fc1e574a5c61c6e9990535baf60",
+    "DNA甲基化分析入门.md": "7d9e16be6cb9b40451a4d03cbc89427ad9e98266371684241e016ee9d1a0c530",
+    "GWAS从数据准备到结果解释.md": "68a1ed6423e5a28ab68f5c5a311a230cb13a867e16f12713e191914244f13d3b",
+    "RNA-seq从计数矩阵到差异表达.md": "d8b155d9d6b10d0fda38e5cfb80c6fee10949b23b2723ff4620acd8a703f7940",
+    "代谢组入门与实践.md": "93598ecfc751e6c490c90bdc5c612baa7b05ea9d7aac28110f4e366260097d1a",
+    "单细胞转录组入门与实践.md": "6f3a1996fb2a70133b7a481401aa8dc49f4968f3bec891ea5b4d820f8a41d1d7",
+    "变异注释与候选证据整理.md": "4a81bc4d84d0f3cee572fa5119c709e661077eb0042e1182ae43ef92c38f4477",
+    "基因型质控与过滤.md": "10ede523723c6e3556a7955c99efa7a2e59eb3ccd4d3293653c6438e9f95c369",
+    "基因组重测序与变异检测.md": "32be5468aaed44221c1f8d401ff5f950c175e5bb091670273d021e2b79861d48",
+    "多组学整合入门与实践.md": "0f743ba6f118187cf77fd4edb70695478d310eb8d2b1738bf9f5fbbecc03799f",
+    "小RNA分析入门与实践.md": "d8112310a4bb3a9bf2949cb89fc8ec25368f98254998e929cf9894c9ab6978cb",
+    "微生物组分析入门与实践.md": "8a3cd1fcc82689e71dc61e24ed65f869c543bbd67cd6981517b738566f137693",
+    "用PCA探索样本的群体结构.md": "9ff43f44fbf183de557609c5cbea9f517cadcde590b86ed8c3a7fc588c5a3cc9",
+    "空间转录组入门与实践.md": "8d25860832fb70d91f644efdb35b7541e3cf585b19ea08a221fa7bf5a91d0f91",
+    "系统发育树入门与实践.md": "c5fa6f3fd6200d2aab4cf75366b8748ec2b5df8f93114a964d6bc6b2d1a267fc",
+    "蛋白质组入门与实践.md": "4ab015d7d0cee5ec0f770957cdb099922dee9f751bb9fc30e87507c1f58eee2d",
+    "长读长测序分析入门.md": "e129865080ef9e9901dd7a82fe325dcd6378b632cf3ef6d8db9089e29f3fc5d4",
+    "中文生信学习地图.md": "ba1d2c62cc590b20ae7256e6221e61554734d2244f271ffbec22e0febee125e1",
+    "组学分析总览与选型.md": "fb81106c12b0951aef7fdc24f22a1974d34d7b2302624c90ba7ffb47d0212aa1",
+    "群体分析与GWAS学习路线.md": "6a0e4072193ba8a9691a5abb48702c312d352cb8f422d33701e2d1c9218e5984",
+    "BLAST本地检索实践.md": "3853eddea2c1ea859d20d50a9121556a757e77a94281c81e0d8af00fd7fc1345",
+    "Linux与项目目录实践.md": "5660a9ab637efcb67b26224773b847bcb3cd649dc2f06d95e48c3eb39b9a17b8",
+    "PLINK2使用与版本管理.md": "1670d9df75696d9c147e85bea85b9622e3bdbca91fb3e5c009d788dbbca04070",
+    "可复现分析与工作流管理.md": "44582c611ea7e4c7257bb1f1aef361960d73fa6d5f9e1c15981e5354cb2ede00",
+    "合成数据贯通PCA与GWAS.md": "907ea1bf9f4278806f2df648c27b449f29b6d27812ee1ad3c9ad8e75ab9dae02",
+    "常见生信图表的阅读与制作.md": "416196accd28b276b783b34d57272282a91d34bba2c015d0d7bb881ed9e02694",
+    "日志排错与最小复现.md": "a2fc90f3e5642833ef3382f0145ca13b0ba0e6c9000dd0a0c1a8639907222320",
+    "服务器资源与批量任务.md": "e38b204424764e6d1d2603a8104491e5371beae885874b0206e748d714312425",
+    "样本表与数据审计实践.md": "1a575dbf5aaed626dacfe3bc6c48d263db5e5b311f233f02154816e180c01a57",
+    "结果报告与数据共享.md": "3f8222b1a06df82c6a2c9463815102bfd19d472dc8a6a2eee6bb3980c43b772b",
+    "软件环境与依赖管理.md": "609bc69b76dc7a46e1a3229c0b82efeeac74e0cf7bc165b3a653243922f8609d",
+    "Ensembl参考与注释查询.md": "d4e0e7509f94ee12ade9e75ab3ad6bca79ece862a6af9cee1c1996732e1cdd7a",
+    "GEO数据检索与样本核对.md": "65dabaec9505f09526becdf0093f9f37e7d61e5d465173c1efce2b12b8100cf4",
+    "GO术语注释与证据.md": "e50166c85a98eebd7b6b50266bf96f747e995dee7c146db840b99ce2de11c331",
+    "SRA与ENA读段检索.md": "20e48b13b1569db2a30d1be29f787061b8389d56bf58c1eb00e7fdad6e1ed414",
+    "UniProt蛋白条目与证据.md": "45ee42fcfd0cc9046885cd550bacfe6c6619e20ff93885c48cdaac104af878b9",
+    "公共数据库与数据获取.md": "e6614a437413ea9866b1ec363d8238341416bae6910df9edda9fe78cccd4b4c4",
+    "BLAST原理与种子延伸.md": "0ea9c774e4c617e922b1e13338439d7dccb46098681c173905d6a084c5dd512a",
+    "PCA原理与实现.md": "3a99507ee3fcfa0ae9964335da3a3e6f93fc47bbafc305c28e9ec138bfac53da",
+    "Smith-Waterman局部比对.md": "a5d5d4e81332ad2cdcad9a550b17bc1adc11a5bc3e058d0b509f09c6e5f93816",
+    "富集分析与GSEA.md": "5f99652ca6e774897568c2bd3c3c732529565fb4346ebe8a0e13ce6caf5a2505",
+    "数据泄漏与交叉验证.md": "9b408a7a975743dbc96d9e447ac6e81f66cd872a7018d666f0888b258d44be51",
+    "线性模型与混合模型.md": "ec55a692da1662b4e95e157f992879d8f10f1fa0ba62b4fc57071ed065cdc093",
+    "群体结构与GWAS有什么关系.md": "8c47954d5af926f9b4e73ad2a5fc6edae6c0b974770eff5d2ba5ca216bd846f6",
+    "ASV与微生物多样性.md": "5f2c72dc06bfd2571d079db7cfbda1a127b9ee1c6e46035c6a00135abcb86be5",
+    "FASTA与FASTQ.md": "29b6ea9fdee8a907601ddd65123652282711c4765b99d21fb09227acb271d13f",
+    "Hardy-Weinberg平衡与检验.md": "8a90fe5f838ff2007a3ee56a325b098953498870b2c6e16c6ddefe6d40293da3",
+    "P值效应量与多重检验.md": "6e879342cc467849b9dd6bbe97267141661a13d0777a6e9a5bc5f35fe20a4350",
+    "SAM与BAM及CRAM.md": "a94d24e65b1ea327275addcb4ede079a74827b88a502f3d1ae93ef375a6ec8e1",
+    "SNP与基因型是什么.md": "9a51ba663431253f335126684dd635bedc3b39c4ab16174f982b04e046b06ad6",
+    "UMI与细胞条形码.md": "43809da15a4846190f6b0a3a7d3721b21b3c60a8c50816549508fd5d12549936",
+    "VCF与基因型编码.md": "1de20ec3b49714379b0856124e01cd78d8b6b16d5b2c230a62240b501a6c5bc6",
+    "亲缘关系与遗传关系矩阵.md": "509ebb5f5dee7aa4d0d413d3afd4ea51c1fe6229d7e7868e0d520b101d7a9f6f",
+    "从DNA到RNA和蛋白质.md": "4c518b10e33c1a8a25b98209edd77ee2702c45a73fc3f9930f2335008e46b109",
+    "参考基因组与注释版本.md": "2f68fd4ed0048b409bf1dd0ede87651d242a24828a2bd81a00d5ccc1d86b4b27",
+    "基因标识符与同源基因.md": "2425125ca8cbc3702482df87a0dec9aec44e55713e9b4fc1255aecf3c17d2ce1",
+    "基因组坐标与区间.md": "50b78051db6644a2a1901682625dec29c7230cbd3ffdbbdf9aa064d9e3fd072f",
+    "定相与基因型填充.md": "920629d62c81d38f22d4d67d3837657c42996e05ee19dcb868858cbd85f09672",
+    "实验设计与统计功效.md": "cb33c34b12594c169429e984f5fe4b10690d6050e8ecad7e77260a946e24a817",
+    "峰与FRiP及TSS富集.md": "6b49a090cc686dcd3ab1f466dedf081a179e0cc8640587fc15a73a6569d54322",
+    "批次效应与混杂.md": "8c44506dd5db2f24d51b7ffceece0a7b211b975043f1e4c08f936828892e948d",
+    "比对相似性同源性与覆盖率.md": "2463157ee9f8e248f5b5fe04bf5f174d9fb8830ed82ee92489714b7a45a3bd6b",
+    "测序深度覆盖度与质量分数.md": "08aeabd178fcd220de2f1e231057cf8498e4114c34c065a490a6ff34f936295c",
+    "生物学重复与技术重复.md": "bd8e035ba8dca4d217110604cd106ff35f5cf656d080baf82ecb10141b28260b",
+    "缺失值与零值.md": "5d832f0e9d53bca3fb706960643a6e23c302ae257b2e04f79beec52ec3038f4a",
+    "置信区间与重采样.md": "a9b662e3e8e6f9f8e8c09bb3c33bb4f865a3f5f2221f8b6f07a3863078b09bf6",
+    "群体结构是什么.md": "6cfbb09a87b2a61517a265c6949779b9720ff823544f9168f2f3dee405d5ad5e",
+    "计数丰度与标准化.md": "1c67d239e1fc6cb22198a344837ba82878b9a8e5a8c417598d92f713bf76d5e6",
+    "连锁不平衡与LD剪枝.md": "9d6a30059bf21b9ed4abdc73c7961f22609baf5085984ec438719ac81499395d",
+    "关键词索引.md": "eba637fd3d99e3dddccb834345ded5b50ecca01a192ed4c66c95e5a3f98e2158",
+    "Home.md": "3413e6dc0dd8bfc4707f91b0c9671a4dc19084e585c7acadebce2c4f4051028f",
+    "_Sidebar.md": "b51fea39c27461cc19e26707afb4918729c21402423e67284677398465a87877"
+  }
+}

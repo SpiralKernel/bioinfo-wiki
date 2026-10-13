@@ -35,7 +35,8 @@ if [[ -n "$("${git_command[@]}" -C "$wiki_checkout" status --porcelain)" ]]; the
 fi
 
 "${git_command[@]}" -C "$wiki_checkout" pull --ff-only
-cp -R -- "$project_dir/wiki/." "$wiki_checkout/"
+python3 "$project_dir/scripts/sync_wiki_files.py" \
+    --source "$project_dir/wiki" --destination "$wiki_checkout"
 "${git_command[@]}" -C "$wiki_checkout" add -- .
 if "${git_command[@]}" -C "$wiki_checkout" diff --cached --quiet; then
     "${git_command[@]}" -C "$wiki_checkout" push

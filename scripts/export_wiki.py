@@ -1,124 +1,255 @@
 #!/usr/bin/env python3
-"""Export this wiki's Obsidian notes without modifying the source vault."""
-
+"""Export authored notes, validate links and generate navigation with stdlib only."""
 import argparse
+import ast
+from datetime import date
+import hashlib
+import json
 from pathlib import Path
 import re
 import shutil
 import tempfile
 from urllib.parse import quote
 
-
-WIKI_URL = "https://github.com/SpiralKernel/bioinfo-wiki/wiki"
-FOLDERS = ("学习路线", "术语与概念", "方法与算法", "工具", "数据库", "分析工作流")
-FIRST_PAGES = (
-    "SNP与基因型是什么", "群体结构是什么", "用PCA探索样本的群体结构",
-    "群体结构与GWAS有什么关系",
-)
-LINK = re.compile(r"(!?)\[\[([^\]]+)\]\]")
+WIKI_URL = 'https://github.com/SpiralKernel/bioinfo-wiki/wiki'
+FOLDERS = ('学习路线', '术语与概念', '方法与算法', '工具', '数据库', '分析工作流')
+INDEX = '关键词索引'
+MANIFEST = '.wiki-export.json'
+LINK = re.compile(r'(!?)\[\[([^\]]+)\]\]')
+RESERVED = {'Home', '_Sidebar', '_Footer'}
 
 
 def page_url(name):
-    return f"{WIKI_URL}/{quote(name, safe='')}"
+    return f'{WIKI_URL}/{quote(name, safe="")}'
+
+
+def scalar(value):
+    value = value.strip()
+    if not value:
+        return ''
+    for parser in (json.loads, ast.literal_eval):
+        try:
+            return parser(value)
+        except (ValueError, SyntaxError):
+            pass
+    return value
+
+
+def read_note(text):
+    """Read scalar properties and JSON/quoted inline or block alias lists."""
+    lines = text.splitlines(keepends=True)
+    if not lines or lines[0].strip() != '---':
+        return {}, text
+    end = next((i for i in range(1, len(lines)) if lines[i].strip() == '---'), None)
+    if end is None:
+        raise ValueError('YAML 属性缺少结束分隔符')
+    properties = {}
+    active = None
+    for line in lines[1:end]:
+        item = re.match(r'^\s+-\s+(.*)$', line)
+        if item and active:
+            if not isinstance(properties.get(active), list):
+                raise ValueError(f'{active}: 不支持的列表属性格式')
+            properties[active].append(scalar(item[1]))
+            continue
+        match = re.match(r'^([\w-]+):\s*(.*?)\s*$', line)
+        if not match:
+            continue
+        key, value = match.groups()
+        active = key if not value else None
+        properties[key] = [] if active and key in {'aliases', 'tags'} else scalar(value)
+    aliases = properties.get('aliases', [])
+    if isinstance(aliases, str):
+        aliases = [aliases] if aliases else []
+    if not isinstance(aliases, list) or any(not isinstance(a, str) for a in aliases):
+        raise ValueError('aliases 需要字符串或字符串列表，请使用模板中的属性格式')
+    properties['aliases'] = aliases
+    return properties, ''.join(lines[end + 1:]).lstrip('\n')
 
 
 def strip_properties(text):
-    lines = text.splitlines(keepends=True)
-    if lines and lines[0].strip() == "---":
-        for index in range(1, len(lines)):
-            if lines[index].strip() == "---":
-                return "".join(lines[index + 1:]).lstrip("\n")
-        raise ValueError("YAML 属性缺少结束分隔符")
-    return text
+    return read_note(text)[1]
 
 
-def render_note(text, path, targets):
-    def replace(match):
-        if match[1]:
-            raise ValueError(f"{path.name}: 请先将 ![[...]] 嵌入改为标准 Markdown 链接")
-        target, separator, label = match[2].replace("\\|", "|").partition("|")
-        page, anchor, heading = target.partition("#")
-        page = page.removesuffix(".md")
-        if not page and anchor:
-            raise ValueError(f"{path.name}: 请将页内标题链接改为标准 Markdown 锚点")
-        if page not in targets:
-            raise ValueError(f"{path.name}: 内部链接未纳入发布范围：{target}")
-        url = page_url(targets[page])
-        if anchor:
-            raise ValueError(f"{path.name}: 请将标题锚点链接改为页面链接：{target}")
-        return f"[{label if separator else page.rsplit('/', 1)[-1]}]({url})"
-
-    # Leave fenced code and inline code examples unchanged.
+def transform_prose(text, transform):
     output = []
     fence = None
-    for line in strip_properties(text).splitlines(keepends=True):
-        marker = re.match(r"^\s{0,3}(`{3,}|~{3,})", line)
+    for line in text.splitlines(keepends=True):
+        marker = re.match(r'^\s{0,3}(`{3,}|~{3,})', line)
         if fence is not None:
             output.append(line)
-            if re.match(rf"^\s{{0,3}}{re.escape(fence[0])}{{{len(fence)},}}\s*$", line):
+            if re.match(rf'^\s{{0,3}}{re.escape(fence[0])}{{{len(fence)},}}\s*$', line):
                 fence = None
             continue
         if marker:
             fence = marker[1]
             output.append(line)
             continue
-        pieces = re.split(r"(`+[^`\n]*`+)", line)
-        output.append("".join(piece if i % 2 else LINK.sub(replace, piece)
-                              for i, piece in enumerate(pieces)))
-    return "".join(output)
+        # Paired backtick spans can contain shorter runs of backticks.
+        parts = re.split(r'(`+)(.*?)\1', line)
+        rendered = []
+        for i in range(0, len(parts), 3):
+            rendered.append(transform(parts[i]))
+            if i + 2 < len(parts):
+                rendered.append(parts[i+1] + parts[i+2] + parts[i+1])
+        output.append(''.join(rendered))
+    if fence:
+        raise ValueError('代码块未关闭')
+    return ''.join(output)
 
 
-def export(source, output):
+def render_note(text, path, targets):
+    def replace(match):
+        if match[1]:
+            raise ValueError(f'{path.name}: ![[...]] 嵌入请先转换为标准 Markdown')
+        target, separator, label = match[2].replace('\\|', '|').partition('|')
+        page, anchor, _ = target.partition('#')
+        page = page.removesuffix('.md')
+        if anchor:
+            raise ValueError(f'{path.name}: 请使用稳定的页面链接替代标题锚点：{target}')
+        if page not in targets:
+            raise ValueError(f'{path.name}: 内部链接不在发布范围或别名有歧义：{target}')
+        display = label if separator else page.rsplit('/', 1)[-1]
+        return f'[{display}]({page_url(targets[page])})'
+    return transform_prose(strip_properties(text), lambda line: LINK.sub(replace, line))
+
+
+def table_cell(value):
+    return str(value).replace('|', '\\|').replace('\n', ' ')
+
+
+def build_index(records, obsidian=False):
+    lines = ['# 关键词索引', '',
+             '按标题、英文名或缩写查找。可以使用浏览器或 Obsidian 的查找功能；别名只是检索入口，不改变概念定义。', '',
+             '| 条目 | 常见名称与缩写 | 类型 | 一句话说明 |', '|---|---|---|---|']
+    for item in sorted(records, key=lambda r: r['title'].casefold()):
+        title = item['title']
+        link = f'[[{title}\\|{title}]]' if obsidian else f'[{title}]({page_url(title)})'
+        aliases = '、'.join(item['aliases']) or '—'
+        lines.append(f'| {link} | {table_cell(aliases)} | {item["kind"]} | {table_cell(item["summary"])} |')
+    lines += ['', '本页由导出脚本生成；新增词条后重新生成即可，正文仍在各自的主要页面维护。', '']
+    return '\n'.join(lines)
+
+
+def export(source, output, refresh_index=False):
     if not source.is_dir():
-        raise ValueError(f"原稿目录不存在：{source}")
+        raise ValueError(f'原稿目录不存在：{source}')
     if source == output or source in output.parents or output in source.parents:
-        raise ValueError("原稿与导出目录必须分开，且不能互相包含")
-    notes = sorted(p for folder in FOLDERS for p in (source / folder).rglob("*.md"))
-    targets = {"知识库/中文生信Wiki/00-开始写作": "Home", "00-开始写作": "Home"}
+        raise ValueError('原稿与发布目录必须分开，且不能互相包含')
+    notes = sorted(p for folder in FOLDERS for p in (source/folder).rglob('*.md')
+                   if p.stem != INDEX)
+    records = []
+    targets = {'知识库/中文生信Wiki/00-开始写作': 'Home', '00-开始写作': 'Home', INDEX: INDEX,
+               f'学习路线/{INDEX}': INDEX, f'知识库/中文生信Wiki/学习路线/{INDEX}': INDEX}
     names = set()
+    alias_owners = {}
     for note in notes:
-        if note.stem in names or note.stem in {"Home", "_Sidebar", "_Footer"}:
-            raise ValueError(f"重复或保留的页面名称：{note.stem}")
+        if not note.resolve().is_relative_to(source):
+            raise ValueError(f'发布范围外的文件链接：{note}')
+        if note.stem in names or note.stem in RESERVED:
+            raise ValueError(f'重复或保留名称：{note.stem}')
+        if re.search(r'[\\/:*?"<>|]', note.stem):
+            raise ValueError(f'Wiki 页面名含不支持字符：{note.stem}')
         names.add(note.stem)
-        relative = note.relative_to(source).with_suffix("").as_posix()
-        for key in (note.stem, relative, f"知识库/中文生信Wiki/{relative}"):
+        metadata, body = read_note(note.read_text())
+        if not body.startswith('# ') or not isinstance(metadata.get('summary'), str) or not metadata['summary'].strip():
+            raise ValueError(f'{note.name}: 缺少正文标题或 summary 属性')
+        if not metadata.get('updated') or not metadata.get('validation'):
+            raise ValueError(f'{note.name}: 请填写 updated 与 validation 属性')
+        relative = note.relative_to(source).with_suffix('').as_posix()
+        for key in (note.stem, relative, f'知识库/中文生信Wiki/{relative}'):
             targets[key] = note.stem
-    rendered = {f"{note.stem}.md": render_note(note.read_text(), note, targets)
-                for note in notes}
-    ordered = [name for name in FIRST_PAGES if name in names]
-    ordered += sorted(names - set(ordered))
-    links = "\n".join(f"- [{name}]({page_url(name)})" for name in ordered)
-    rendered["Home.md"] = (
-        "# 中文生信 Wiki\n\n面向入门学生，从群体分析和 GWAS 开始。\n\n"
-        "> 当前为试写阶段，标有“待编写”的页面仅提供提纲。\n\n"
-        "## 建议阅读顺序\n\n" + links + "\n\n"
-        "## 编写方式\n\n原稿在 Obsidian 中维护，导出后同步至本 Wiki。\n\n"
-        "[项目与发布工具](https://github.com/SpiralKernel/bioinfo-wiki)\n"
-    )
-    rendered["_Sidebar.md"] = f"[首页]({page_url('Home')})\n\n" + links + "\n"
-    # Finish link validation before updating any published file.
+        item = {'title': note.stem, 'source': relative+'.md', 'folder': note.relative_to(source).parts[0],
+                'kind': metadata.get('article_kind', ''), 'aliases': metadata.get('aliases', []),
+                'summary': metadata['summary'], 'validation': metadata.get('validation', ''),
+                'updated': metadata.get('updated', ''), 'body': note.read_text(), 'path': note}
+        records.append(item)
+        for alias in item['aliases']:
+            alias_owners.setdefault(alias, set()).add(note.stem)
+    for alias, owners in alias_owners.items():
+        if alias not in targets and len(owners) == 1:
+            targets[alias] = next(iter(owners))
+    rendered = {}
+    for item in records:
+        text = render_note(item['body'], item['path'], targets)
+        # Keep execution status visible after removing private/editorial properties.
+        first, rest = text.split('\n', 1)
+        stamp = f'> 更新：{item["updated"]}；验证范围：{item["validation"]}。'
+        rendered[item['title']+'.md'] = first+'\n\n'+stamp+'\n'+rest
+    rendered[INDEX+'.md'] = build_index(records)
+    home = ['# 中文生信 Wiki', '',
+            '面向入门学生，按研究问题查概念、理解算法、选择流程并完成实践。', '',
+            '## 建议从这里开始', '',
+            f'- [中文生信学习地图]({page_url("中文生信学习地图")})：了解前置知识和阅读顺序。',
+            f'- [群体分析与GWAS学习路线]({page_url("群体分析与GWAS学习路线")})：沿熟悉的主线进入分析。',
+            f'- [组学分析总览与选型]({page_url("组学分析总览与选型")})：按测量对象选择组学流程。',
+            f'- [关键词索引]({page_url(INDEX)})：搜索中文名、英文名和缩写。', '',
+            '## 可以立即运行的练习', '',
+            f'- [合成数据贯通PCA与GWAS]({page_url("合成数据贯通PCA与GWAS")})：120 样本、600 位点的实测示例。',
+            f'- [BLAST原理与种子延伸]({page_url("BLAST原理与种子延伸")})：用人工字符串理解启发式与精确比对。', '',
+            '其他流程分别提供官方公开数据和实践入口，并注明文档核对与实际运行的区别。', '']
+    # Curated routes are optional when exporting a smaller authored collection.
+    home = [line for line in home if not line.startswith('- [') or
+            any(page_url(name) in line for name in names | {INDEX})]
+    sidebar = [f'[首页]({page_url("Home")}) · [关键词索引]({page_url(INDEX)})', '']
+    for folder in FOLDERS:
+        subset = [r for r in records if r['folder'] == folder]
+        home += [f'## {folder}（{len(subset)}）', '']
+        sidebar += [f'### {folder}', '']
+        for item in subset:
+            link = f'[{item["title"]}]({page_url(item["title"])})'
+            home.append(f'- {link}：{item["summary"]}')
+            sidebar.append(f'- {link}')
+        home.append(''); sidebar.append('')
+    home += ['## 编写与维护', '',
+             '[项目、代码与发布说明](https://github.com/SpiralKernel/bioinfo-wiki)。原稿在 Obsidian 维护，发布版自动生成导航与关键词索引。', '']
+    rendered['Home.md'] = '\n'.join(home)
+    rendered['_Sidebar.md'] = '\n'.join(sidebar)
+    payload = {'schema': 1, 'generated_files': sorted(rendered), 'pages': [
+        {k:v for k,v in item.items() if k not in {'body', 'path'}} for item in records]}
+    payload['file_hashes'] = {name: hashlib.sha256(text.encode()).hexdigest()
+                              for name, text in rendered.items()}
+    for item in payload['pages']:
+        item['sha256'] = payload['file_hashes'][item['title']+'.md']
+    # Complete validation before updating either output or the generated source index.
+    if (output/MANIFEST).is_symlink():
+        raise ValueError('导出清单不能是符号链接')
+    for name in rendered:
+        if (output/name).is_symlink():
+            raise ValueError(f'导出目标不能是符号链接：{name}')
+    previous = json.loads((output/MANIFEST).read_text()) if (output/MANIFEST).exists() else {}
+    for name in previous.get('generated_files', []):
+        if Path(name).name != name or not name.endswith('.md'):
+            raise ValueError('旧导出清单包含不安全的文件名')
     with tempfile.TemporaryDirectory() as tmp:
         staging = Path(tmp)
-        for filename, text in rendered.items():
-            (staging / filename).write_text(text)
-        attachments = source / "附件"
-        if attachments.is_dir():
-            shutil.copytree(attachments, staging / "附件")
+        for name, text in rendered.items():
+            (staging/name).write_text(text)
+        (staging/MANIFEST).write_text(json.dumps(payload, ensure_ascii=False, indent=2)+'\n')
         output.mkdir(parents=True, exist_ok=True)
-        for item in staging.iterdir():
-            if item.is_dir():
-                shutil.copytree(item, output / item.name, dirs_exist_ok=True)
-            else:
-                shutil.copy2(item, output / item.name)
-    print(f"已导出 {len(notes)} 篇文章，以及首页和侧边栏：{output}")
+        for name in previous.get('generated_files', []):
+            if name not in rendered:
+                (output/name).unlink(missing_ok=True)
+        for file in staging.iterdir():
+            shutil.copy2(file, output/file.name)
+    if refresh_index:
+        target = source/'学习路线'/f'{INDEX}.md'
+        target.parent.mkdir(exist_ok=True)
+        properties = ('---\ntags: ["知识库", "领域/生物信息学"]\ntype: 索引\narticle_kind: 学习路线\n'
+                      'status: 可用\naliases: ["术语索引", "关键词检索"]\n'
+                      f'updated: {date.today().isoformat()}\n---\n\n')
+        target.write_text(properties+build_index(records, obsidian=True))
+    print(f'已导出 {len(records)} 篇正文、关键词索引、首页和侧边栏。')
+    return payload
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", required=True, type=Path)
-    parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parents[1] / "wiki")
+    parser.add_argument('--source', required=True, type=Path)
+    parser.add_argument('--output', type=Path, default=Path(__file__).resolve().parents[1]/'wiki')
+    parser.add_argument('--refresh-index', action='store_true', help='同时刷新 Obsidian 中自动生成的关键词索引')
     args = parser.parse_args()
     try:
-        export(args.source.resolve(), args.output.resolve())
-    except ValueError as error:
-        parser.exit(1, f"导出失败：{error}\n")
+        export(args.source.resolve(), args.output.resolve(), args.refresh_index)
+    except (ValueError, OSError) as error:
+        parser.exit(1, f'导出失败：{error}\n')
