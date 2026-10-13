@@ -25,3 +25,8 @@
 丰度变化首先说明测量到的小RNA水平差异；计算预测的靶基因不是已证实调控关系。靶基因富集需要明确候选来源、背景及多重检验，见[富集分析与GSEA](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA)。
 
 深入：[nf-core/smrnaseq项目与输出文档入口](https://nf-co.re/smrnaseq/)、[FASTA与FASTQ](https://github.com/SpiralKernel/bioinfo-wiki/wiki/FASTA%E4%B8%8EFASTQ)、[计数丰度与标准化](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%AE%A1%E6%95%B0%E4%B8%B0%E5%BA%A6%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96)。
+
+
+## 测序技术与上游输入
+
+[RNA测序建库选择与偏倚](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E6%B5%8B%E5%BA%8F%E5%BB%BA%E5%BA%93%E9%80%89%E6%8B%A9%E4%B8%8E%E5%81%8F%E5%80%9A)说明长度、连接和富集的影响；用[从样本到FASTQ的交接与质控](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%BB%8E%E6%A0%B7%E6%9C%AC%E5%88%B0FASTQ%E7%9A%84%E4%BA%A4%E6%8E%A5%E4%B8%8E%E8%B4%A8%E6%8E%A7)核对接头和布局，避免套用普通WGS剪切。

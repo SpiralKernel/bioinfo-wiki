@@ -15,3 +15,8 @@ FASTQ 中序列长度应与质量字符串长度对应。双端数据的两个�
 测序读段通常从 FASTQ 开始；参考序列、蛋白序列和数据库检索输入常用 FASTA。FASTA 不保留原始逐碱基质量，不能转换回原始 FASTQ 的测量信息。
 
 质量解释见[测序深度覆盖度与质量分数](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%B5%8B%E5%BA%8F%E6%B7%B1%E5%BA%A6%E8%A6%86%E7%9B%96%E5%BA%A6%E4%B8%8E%E8%B4%A8%E9%87%8F%E5%88%86%E6%95%B0)；检索实践见[BLAST本地检索实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BLAST%E6%9C%AC%E5%9C%B0%E6%A3%80%E7%B4%A2%E5%AE%9E%E8%B7%B5)。格式细节参考 [NCBI FASTA 说明](https://www.ncbi.nlm.nih.gov/genbank/fastaformat/)和 [SAMtools FASTQ 文档](https://www.htslib.org/doc/samtools-fasta.html)。
+
+
+## 测序技术与上游输入
+
+[测序数据格式与原始信号](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E4%B8%8E%E5%8E%9F%E5%A7%8B%E4%BF%A1%E5%8F%B7)区分信号、已识别碱基与比对结果；FASTQ常见Phred+33编码也需按数据来源确认，格式转换不能恢复未保留的原始信号。

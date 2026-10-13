@@ -6,6 +6,9 @@
 
 ## 从哪里开始
 
+- [测序技术与PCR学习路线](wiki/测序技术与PCR学习路线.md)：PCR、Sanger、二代、长读长、建库与质控。
+- [人工区间贯通测序指标](wiki/人工区间贯通测序指标.md)：可运行的深度、双端重叠、重复、Phred和N50算例。
+
 - [统计学与组学验证学习路线](wiki/统计学与组学验证学习路线.md)：概率、估计、基础检验及各组学验证。
 - [生信基础算法学习路线](wiki/生信基础算法学习路线.md)：数据结构、查找、图、动态规划、聚类与优化。
 - [组学验证的层级与证据](wiki/组学验证的层级与证据.md)：计算、统计、技术、独立样本和功能证据。
@@ -61,6 +64,15 @@ python3 examples/basic_algorithms_demo.py
 ```
 
 [统计案例](wiki/合成数据贯通统计推断.md)实际运行了均值、配对、分类表、区间、置换、多重校正与供体层级反例；[算法练习](wiki/基础算法可复现练习.md)包含六类小型实现。两者均为人工数据，原始输出分别在 `examples/output/statistics/` 和 `examples/output/basic-algorithms/`，重复运行覆盖同名文件。版本与边界见[本轮维护记录](maintenance/statistics-round1-2026-10-13.md)。分组学验证页提供设计指南，未执行湿实验。
+
+测序指标算例只需Python 3.9+；配图另需Matplotlib：
+
+```bash
+python3 examples/sequencing_metrics_demo.py
+python3 examples/plot_sequencing_metrics.py
+```
+
+输出在`examples/output/sequencing/`，重复运行覆盖同名文件。区间和分子身份是人工真值，没有运行比对或去重工具。PCR、建库、测序仪及外部质控软件页为原理和判读指南，尚未执行实验。范围与结果见[本轮测序记录](maintenance/sequencing-round1-2026-10-13.md)。
 
 ## 在Obsidian编写并发布
 

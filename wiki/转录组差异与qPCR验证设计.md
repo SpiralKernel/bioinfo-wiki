@@ -27,3 +27,8 @@
 保留候选选择理由、RNA-seq效应/区间/FDR、qPCR检测对象、独立样本数、ΔCt方向、效应/区间及失败原因。候选中的部分未复现应报告，不用不断替换基因直到全部成功。
 
 进一步功能解释还需相应干预、蛋白或表型证据，见[组学验证的层级与证据](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E9%AA%8C%E8%AF%81%E7%9A%84%E5%B1%82%E7%BA%A7%E4%B8%8E%E8%AF%81%E6%8D%AE)。公式来源：[Livak与Schmittgen相对定量原始方法](https://doi.org/10.1006/meth.2001.1262)。
+
+
+## 测序技术与上游输入
+
+名称区别见[RT-PCR实时PCR与数字PCR的区别](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RT-PCR%E5%AE%9E%E6%97%B6PCR%E4%B8%8E%E6%95%B0%E5%AD%97PCR%E7%9A%84%E5%8C%BA%E5%88%AB)；曲线、分区和质量判读见[qPCR与数字PCR结果判读](https://github.com/SpiralKernel/bioinfo-wiki/wiki/qPCR%E4%B8%8E%E6%95%B0%E5%AD%97PCR%E7%BB%93%E6%9E%9C%E5%88%A4%E8%AF%BB)；引物和检测对象见[引物扩增子与特异性](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%BC%95%E7%89%A9%E6%89%A9%E5%A2%9E%E5%AD%90%E4%B8%8E%E7%89%B9%E5%BC%82%E6%80%A7)。

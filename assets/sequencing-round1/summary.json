@@ -1,0 +1,71 @@
+{
+  "seed": 20261013,
+  "scope": "Artificial intervals and known molecule IDs; no reads, aligner, deduplicator, platform or wet-lab run",
+  "library": {
+    "reference_bp": 1000,
+    "original_molecules": 40,
+    "read_pairs": 50,
+    "reads": 100,
+    "read_bp": 75,
+    "fragment_bp": 120,
+    "overlap_bp": 30,
+    "introduced_extra_copies": 10,
+    "extra_copies_fraction_of_observed_pairs": 0.2
+  },
+  "coverage": {
+    "raw_read_bases": {
+      "mean_depth": 7.5,
+      "breadth_at_least_1": 0.962,
+      "breadth_at_least_5": 0.684,
+      "uncovered_positions": 38
+    },
+    "per_pair_union": {
+      "mean_depth": 6.0,
+      "breadth_at_least_1": 0.962,
+      "breadth_at_least_5": 0.623,
+      "uncovered_positions": 38
+    },
+    "known_unique_molecule_read_bases": {
+      "mean_depth": 6.0,
+      "breadth_at_least_1": 0.962,
+      "breadth_at_least_5": 0.65,
+      "uncovered_positions": 38
+    },
+    "known_unique_molecule_union": {
+      "mean_depth": 4.8,
+      "breadth_at_least_1": 0.962,
+      "breadth_at_least_5": 0.549,
+      "uncovered_positions": 38
+    }
+  },
+  "quality": {
+    "example_scores": [
+      20,
+      40
+    ],
+    "arithmetic_mean_Q": 30,
+    "effective_Q_of_mean_error": 22.967086218813385,
+    "Q30_error_probability": 0.001,
+    "expected_errors_per_1000_Q30_bases": 1
+  },
+  "continuity": {
+    "lengths": [
+      500,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "total_bp": 1000,
+    "N50": 500,
+    "median_length": 100,
+    "reference_for_NG50_bp": 1200,
+    "NG50": 100,
+    "NG50_if_reference_3000bp": null
+  },
+  "file_sha256": {
+    "simulation-truth.tsv": "300afc7b41494ba738aacff83331bf659dd07f7d42ab92ae453541b4ca11404c",
+    "coverage.tsv": "2deaed636c6214f143a3a93793fa07072fb45cf87049d7525bd95b6f0b820263"
+  }
+}

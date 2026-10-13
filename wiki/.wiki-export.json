@@ -10,7 +10,9 @@
     "BLUPF90单步遗传评估流程.md",
     "BOLT-LMM关联分析.md",
     "ChIP-seq入门与实践.md",
+    "DNA与RNA样本质量及建库偏差.md",
     "DNA甲基化分析入门.md",
+    "DNBSEQ测序与滚环扩增.md",
     "EMMAX关联分析与旧流程兼容.md",
     "Ensembl参考与注释查询.md",
     "FASTA与FASTQ.md",
@@ -36,20 +38,28 @@
     "HIBLUP基因组预测实践.md",
     "Hardy-Weinberg平衡与检验.md",
     "Home.md",
+    "Illumina合成测序与簇信号.md",
     "LOCO与近端污染.md",
     "Linux与项目目录实践.md",
     "MAF与MAC及稀有变异.md",
+    "N50组装连续性与完整性.md",
+    "Nanopore测序与直接RNA.md",
     "PCA原理与实现.md",
+    "PCR与扩增基础.md",
     "PLINK2使用与版本管理.md",
     "PLINK2关联分析详解.md",
+    "PacBioSMRT与HiFi测序.md",
     "Python统计分析与结果核验.md",
     "P值效应量与多重检验.md",
     "REGENIE两步关联分析.md",
     "RNA-seq从计数矩阵到差异表达.md",
+    "RNA测序建库选择与偏倚.md",
+    "RT-PCR实时PCR与数字PCR的区别.md",
     "SAIGE单变异关联分析.md",
     "SAM与BAM及CRAM.md",
     "SNP与基因型是什么.md",
     "SRA与ENA读段检索.md",
+    "Sanger测序原理与峰图判读.md",
     "Smith-Waterman局部比对.md",
     "TASSEL关联分析实践.md",
     "UMI与细胞条形码.md",
@@ -58,6 +68,7 @@
     "Wald似然比与得分检验.md",
     "_Sidebar.md",
     "fastGWA与fastGWA-GLMM.md",
+    "qPCR与数字PCR结果判读.md",
     "rMVP关联分析实践.md",
     "rrBLUP预测实践.md",
     "sommer基因组预测与复杂设计.md",
@@ -65,7 +76,9 @@
     "中文生信学习地图.md",
     "二分类性状OR与病例对照不平衡.md",
     "亲缘关系与遗传关系矩阵.md",
+    "人工区间贯通测序指标.md",
     "从DNA到RNA和蛋白质.md",
+    "从样本到FASTQ的交接与质控.md",
     "代谢组入门与实践.md",
     "似然最大似然与MAP估计.md",
     "假设检验与双侧单侧选择.md",
@@ -76,6 +89,8 @@
     "分类指标ROC与PR曲线.md",
     "列联表卡方与Fisher精确检验.md",
     "动态规划与序列比对基础.md",
+    "半导体测序与同聚物信号.md",
+    "单端双端读长与插入片段.md",
     "单细胞与空间组学验证设计.md",
     "单细胞转录组入门与实践.md",
     "参考基因组与注释版本.md",
@@ -101,14 +116,17 @@
     "常见概率分布与生信场景.md",
     "常见生信图表的阅读与制作.md",
     "广义线性模型与逻辑回归.md",
+    "引物扩增子与特异性.md",
     "微生物组分析入门与实践.md",
     "微生物组差异与验证设计.md",
+    "扩增子测序与靶向测序设计.md",
     "批次效应与混杂.md",
     "抽样分布中心极限定理与标准误.md",
     "排序查找与哈希在生信中的应用.md",
     "描述统计与分布图.md",
     "数据泄漏与交叉验证.md",
     "数据类型总体样本与抽样.md",
+    "文库接头索引与条形码.md",
     "方差分析交互作用与对比.md",
     "日志排错与最小复现.md",
     "服务器资源与批量任务.md",
@@ -118,14 +136,23 @@
     "正则化过拟合与模型选择.md",
     "正态性方差齐性与模型诊断.md",
     "比对相似性同源性与覆盖率.md",
+    "测序产量有效数据与成本口径.md",
+    "测序技术与PCR学习路线.md",
+    "测序数据格式与原始信号.md",
+    "测序方案选型与实验设计.md",
     "测序深度覆盖度与质量分数.md",
+    "测序质控工具选择与报告阅读.md",
+    "测序错误重复偏差与嵌合体.md",
+    "混合测序组装与结果评估.md",
     "点估计偏差方差与一致性.md",
     "生信基础算法学习路线.md",
     "生物学重复与技术重复.md",
     "用PCA探索样本的群体结构.md",
     "相关回归与混杂.md",
+    "碱基识别质量值与一致性序列.md",
     "秩检验符号检验与非参数方法.md",
     "空间转录组入门与实践.md",
+    "第二代测序原理与平台比较.md",
     "算法输入输出复杂度与数据结构.md",
     "系统发育树入门与实践.md",
     "系谱BLUP与单步ssGBLUP.md",
@@ -153,6 +180,7 @@
     "软件环境与依赖管理.md",
     "近邻朴素贝叶斯与决策树入门.md",
     "连锁不平衡与LD剪枝.md",
+    "链特异性与RNA测序方向.md",
     "长读长测序分析入门.md",
     "随机变量期望方差与协方差.md",
     "零模型与方差组分.md",
@@ -363,7 +391,74 @@
       "summary": "从基因计数和实验设计出发，估计表达差异，并区分统计证据、效应大小与功能解释。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "dbdee86ba2909854d24b31d19480c1a1b7db5f94d0b047313a35477d7382ca78"
+      "sha256": "e1b3bb9a553e728f74763d023f2bebb740c45415e23746d17e15b09d04a69113"
+    },
+    {
+      "title": "RNA测序建库选择与偏倚",
+      "source": "分析工作流/RNA测序建库选择与偏倚.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "RNA library preparation",
+        "poly(A)",
+        "rRNA depletion",
+        "3′ RNA-seq",
+        "cDNA"
+      ],
+      "summary": "富集、去除、逆转录、链特异和read布局决定可观察RNA及计数方式。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "c54128edfba956702816aaf2964b4c7ed423b7db61f34a861005004d62b08e8e"
+    },
+    {
+      "title": "qPCR与数字PCR结果判读",
+      "source": "分析工作流/qPCR与数字PCR结果判读.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "Cq",
+        "Ct",
+        "digital PCR interpretation",
+        "Poisson correction"
+      ],
+      "summary": "qPCR看扩增曲线和阈值，数字PCR看有效分区与统计校正，均需保留质量和独立单位。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "51adc56078e76725e6fcf88d511f19758cc0a36c32d6d6fc2402324a7497e3af"
+    },
+    {
+      "title": "人工区间贯通测序指标",
+      "source": "分析工作流/人工区间贯通测序指标.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "测序指标算例",
+        "coverage arithmetic",
+        "人工测序指标"
+      ],
+      "summary": "用已知读段区间和分子身份计算覆盖，解释双端重叠、重复和质量汇总。",
+      "validation": "2026-10-13实际运行纯Python区间/质量/N50计算；无FASTQ、比对、去重或湿实验运行",
+      "updated": "2026-10-13",
+      "sha256": "22369bebd5e338c32fccc288ead9e6200b0164533d5882a0fa25ec080aa8f047"
+    },
+    {
+      "title": "从样本到FASTQ的交接与质控",
+      "source": "分析工作流/从样本到FASTQ的交接与质控.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "sequencing handoff",
+        "demultiplexing",
+        "测序交接"
+      ],
+      "summary": "按样本、文库、运行与数据阶段交接，文件和质量报告需要相互追溯。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "8a82767485f9ad187875dd07aa8e892204540363bc6995c07fb78e1f5f4c1383"
     },
     {
       "title": "代谢组入门与实践",
@@ -521,7 +616,7 @@
       "summary": "从 DNA 读段得到可用于群体分析的变异数据，关键是参考一致性、样本级检查和统一的分型流程。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "0e43a38e6e649aa86682ad984728a1799ba80dfd237f84ed8538b68b30a3f07d"
+      "sha256": "486662a5ee8dcb83c801daf6a0872d6845640e0bf2c5d3ba39dcfd64453c3b8f"
     },
     {
       "title": "基础算法可复现练习",
@@ -570,7 +665,7 @@
       "summary": "小RNA测序关注短RNA群体，接头处理、长度选择和注释分配直接影响计数。",
       "validation": "文档核对；操作示例未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "05fc572ac1dc6995cf6b1b3ce3cfff8a1d331840477f5bb360d8377aa9d9f1ef"
+      "sha256": "213247405635cabca8439b31c37046b60807757a0cf8bad79697733c9d3d2068"
     },
     {
       "title": "微生物组分析入门与实践",
@@ -605,6 +700,56 @@
       "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
       "updated": "2026-10-13",
       "sha256": "aa377595c88666a3c57c9b691b5965e8fa392614ab70bdb5284208526725e231"
+    },
+    {
+      "title": "扩增子测序与靶向测序设计",
+      "source": "分析工作流/扩增子测序与靶向测序设计.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "amplicon sequencing",
+        "targeted sequencing",
+        "capture sequencing",
+        "靶向捕获"
+      ],
+      "summary": "扩增子和捕获针对有限区域，但目标选择、扩增与未检出解释各有偏差。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "5dc4b6df443b1f3d504d18ecd83d08f3400ce528fd976dc22d420d6da457a356"
+    },
+    {
+      "title": "测序方案选型与实验设计",
+      "source": "分析工作流/测序方案选型与实验设计.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "sequencing design",
+        "测序选型",
+        "技术比较"
+      ],
+      "summary": "按问题、样本、信息结构和验证需求选技术，不用代数或单个宣传指标代替设计。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "0c5140ce44cdae47d47a3064147948ab488a197968f93603e47e4c1ddee3ae4f"
+    },
+    {
+      "title": "混合测序组装与结果评估",
+      "source": "分析工作流/混合测序组装与结果评估.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "hybrid assembly",
+        "polishing",
+        "de novo assembly",
+        "组装评估"
+      ],
+      "summary": "混合数据可以互补，纠错、倍性、单倍型和污染共同影响组装。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "cb1ba3e29bc228739772fbd3893c11b4fd7e4a5220236a9ebe68e5f64b92f351"
     },
     {
       "title": "用PCA探索样本的群体结构",
@@ -755,7 +900,7 @@
       "summary": "分别验证差异表达统计、表达测量与生物学重复，避免把qPCR当作自动证明功能。",
       "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
       "updated": "2026-10-13",
-      "sha256": "3c5184e4e114982a63b4754db45200bc4cbd7991f1eaf548c6200a633bc5f060"
+      "sha256": "acf136004ee60f8cde18fdaefa006ea1bc0fafa21992ba2e2dfd19fdd525b58b"
     },
     {
       "title": "长读长测序分析入门",
@@ -765,15 +910,13 @@
       "status": "可用",
       "aliases": [
         "long-read",
-        "Nanopore",
-        "PacBio",
         "结构变异",
         "isoform"
       ],
       "summary": "长读长有助于跨越复杂区域与连接转录结构，流程选择仍取决于平台、数据类型和研究目标。",
       "validation": "文档核对；操作示例未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "1a80727bdd06369d45d2c3889b31ccdbc20e53ad3d30a2746441adabae066866"
+      "sha256": "710c778855066e5a0bd0203596e892b42b643c3759e76647ea4776e0a0d5b145"
     },
     {
       "title": "GS算法软件与实践路线",
@@ -818,7 +961,25 @@
       "summary": "从问题、数据和检查点进入生信，按需要跳转到概念、算法、组学流程及实践。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "d3cda59485708c22c66eb845f061d69c61064670f72d94d0088540a603996bf5"
+      "sha256": "ffb9f37f0de439795261a1246dce3787304ad126245616af5f85df8ab523e81e"
+    },
+    {
+      "title": "测序技术与PCR学习路线",
+      "source": "学习路线/测序技术与PCR学习路线.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "status": "可用",
+      "aliases": [
+        "测序技术",
+        "sequencing technologies",
+        "一代测序",
+        "二代测序",
+        "三代测序"
+      ],
+      "summary": "从PCR、文库和信号读出理解测序，再按目标选择技术、数据和质量检查。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "dd1b3dd35c93f6c7740c9cc2805afd9db33f00797dcbd1ffb7235f2ac3291f86"
     },
     {
       "title": "生信基础算法学习路线",
@@ -846,7 +1007,7 @@
       "summary": "先明确测量对象和研究问题，再选择输入、模型及可以支持的结论。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "3e706b45e6bdec46bf011f556ee7d2f83f7a56409d6be5c71e8a1230f2ad74aa"
+      "sha256": "05dd86fcd4117b62bc871eac3e61353ea2bad7f6368a8e530af81cd69f993177"
     },
     {
       "title": "统计学与组学验证学习路线",
@@ -1319,6 +1480,43 @@
       "sha256": "ccd1247826e5f8583659b16987ce15c07d96ef91ddfed1e0bb33399cbaf5cc23"
     },
     {
+      "title": "测序数据格式与原始信号",
+      "source": "工具/测序数据格式与原始信号.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "BCL",
+        "POD5",
+        "AB1",
+        "subreads BAM",
+        "原始测序信号"
+      ],
+      "summary": "扩展名不能完全说明数据阶段，原始信号、识别碱基和比对结果保存不同信息。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "900d318d674d5902ce47432dfcb2ea3b1f8de81194403adbe4a2736c214c51b5"
+    },
+    {
+      "title": "测序质控工具选择与报告阅读",
+      "source": "工具/测序质控工具选择与报告阅读.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "FastQC",
+        "MultiQC",
+        "fastp",
+        "NanoPlot",
+        "QUAST",
+        "BUSCO"
+      ],
+      "summary": "按读段、长读长与组装层级选工具，报告汇总不等于自动修复问题。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "c2fa33be04005969510d9ff18f0610c15650f6ba168ad97bc37264e2f11a2271"
+    },
+    {
       "title": "结果报告与数据共享",
       "source": "工具/结果报告与数据共享.md",
       "folder": "工具",
@@ -1477,6 +1675,25 @@
       "sha256": "47686b73ac5378ac8db20ba03f3a7bea5f907de9b369687886027e9b94cc781a"
     },
     {
+      "title": "DNBSEQ测序与滚环扩增",
+      "source": "方法与算法/DNBSEQ测序与滚环扩增.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "DNBSEQ",
+        "DNA nanoball",
+        "RCA",
+        "RCR",
+        "cPAS",
+        "DNA纳米球"
+      ],
+      "summary": "DNBSEQ用环状模板产生DNA纳米球，纳米球制备与前序文库PCR应分别理解。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "bb7e0e31c2feafea3fa5689dacc1fe02e1157270a637b34f75b0b04222c7fc48"
+    },
+    {
       "title": "FarmCPU与BLINK原理",
       "source": "方法与算法/FarmCPU与BLINK原理.md",
       "folder": "方法与算法",
@@ -1529,6 +1746,44 @@
       "sha256": "f57168637643f4f09de9254070db19bb1e8e6da4f00e599b91db59f66016832c"
     },
     {
+      "title": "Illumina合成测序与簇信号",
+      "source": "方法与算法/Illumina合成测序与簇信号.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "Illumina",
+        "SBS",
+        "sequencing by synthesis",
+        "bridge amplification",
+        "ExAmp"
+      ],
+      "summary": "Illumina通过簇上合成与循环信号读出序列，化学和簇生成方式因产品而异。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "ebea670937b2de5d920ddcc0e7c4d3fa8419a9856c5dc14aff9aeaa0b821261d"
+    },
+    {
+      "title": "Nanopore测序与直接RNA",
+      "source": "方法与算法/Nanopore测序与直接RNA.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "Oxford Nanopore",
+        "Nanopore",
+        "ONT",
+        "direct RNA",
+        "simplex",
+        "duplex",
+        "纳米孔测序"
+      ],
+      "summary": "Nanopore根据分子过孔电信号识别序列，原生DNA、cDNA和直接RNA是不同路线。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "b4e66446dcdf1837552c4d183874659257ade923ff6f7970d9040216c2ffd5a1"
+    },
+    {
       "title": "PCA原理与实现",
       "source": "方法与算法/PCA原理与实现.md",
       "folder": "方法与算法",
@@ -1543,6 +1798,59 @@
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
       "sha256": "cdb8b15b10102bf98149fb0f19ad26ec5b1cd919f30e76ea5a485fec4cbf26d8"
+    },
+    {
+      "title": "PCR与扩增基础",
+      "source": "方法与算法/PCR与扩增基础.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "PCR",
+        "polymerase chain reaction",
+        "聚合酶链式反应"
+      ],
+      "summary": "PCR利用引物和聚合酶扩增目标区域，扩增拷贝不等于新增独立信息。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "28e709783e793404a827944f6ada69b7f1709e5792f87647efcd446b9b37c243"
+    },
+    {
+      "title": "PacBioSMRT与HiFi测序",
+      "source": "方法与算法/PacBioSMRT与HiFi测序.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "PacBio",
+        "SMRT",
+        "HiFi",
+        "CCS",
+        "SMRTbell",
+        "subread",
+        "CLR"
+      ],
+      "summary": "PacBio记录单分子实时合成，HiFi利用同一环状模板多次通过形成高准确共识。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "6fe2a78b2cdab95f525c5bf1db7900a2cf13a699ec98a81c4e39c3d8efbeb30d"
+    },
+    {
+      "title": "Sanger测序原理与峰图判读",
+      "source": "方法与算法/Sanger测序原理与峰图判读.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "Sanger sequencing",
+        "chain termination",
+        "ddNTP",
+        "桑格测序"
+      ],
+      "summary": "链终止产生不同长度产物，常见自动化读出转成峰图，混合信号需结合上下文。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "ce554c2dfa60ca24486fb99a262e8dcfc3909ebdaf1b42c6274b078d97a52bf6"
     },
     {
       "title": "Smith-Waterman局部比对",
@@ -1666,6 +1974,23 @@
       "validation": "线性缺口全局比对教学实现已运行；空串与回溯分数另有自动检查",
       "updated": "2026-10-13",
       "sha256": "9f85cf068e4a6882cebdbbe4301630791c3b877b9c245216900af1fe493004a5"
+    },
+    {
+      "title": "半导体测序与同聚物信号",
+      "source": "方法与算法/半导体测序与同聚物信号.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "Ion Torrent",
+        "semiconductor sequencing",
+        "homopolymer",
+        "半导体测序"
+      ],
+      "summary": "半导体测序检测掺入相关离子信号，连续相同碱基的数量由信号推断。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "7e34de65a5713f593c49c25e9ef5e5638f56145b2c78fcd2b095d31c0f6515ac"
     },
     {
       "title": "图与最短路径的生信入门",
@@ -1865,6 +2190,23 @@
       "sha256": "4ab69ee7e3caf936fcf767c29b93478d1b879a2ecd954533514026cc9684798d"
     },
     {
+      "title": "第二代测序原理与平台比较",
+      "source": "方法与算法/第二代测序原理与平台比较.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "NGS",
+        "next-generation sequencing",
+        "短读长测序",
+        "massively parallel sequencing"
+      ],
+      "summary": "二代常以大规模并行读出代表，平台差别在模板呈现、信号和读出方式。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "05fac162a4f8283ddb1ee90e408d2ece47c880ab44d303ef18d5abb5012d6f37"
+    },
+    {
       "title": "算法输入输出复杂度与数据结构",
       "source": "方法与算法/算法输入输出复杂度与数据结构.md",
       "folder": "方法与算法",
@@ -2035,6 +2377,23 @@
       "sha256": "7266ca70e5155fc5137994a44293a71d02a8ca48bed8953f014ba0ecb0bd3714"
     },
     {
+      "title": "DNA与RNA样本质量及建库偏差",
+      "source": "术语与概念/DNA与RNA样本质量及建库偏差.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "sample integrity",
+        "DNA integrity",
+        "RNA integrity",
+        "建库偏倚"
+      ],
+      "summary": "浓度、完整性、纯度和可用分子数不同，建库进一步改变可观测对象。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "5c3d6e39c47b7b1239cc140f6ee2bfeb6576be5f726a6c65d6ed60a3feccae4a"
+    },
+    {
       "title": "FASTA与FASTQ",
       "source": "术语与概念/FASTA与FASTQ.md",
       "folder": "术语与概念",
@@ -2049,7 +2408,7 @@
       "summary": "FASTA 保存序列及标题，FASTQ 还保存逐碱基质量信息，二者服务于不同分析阶段。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "3442a45f7426b83c6807492d4acc6211c6b33b2a266bb3d67ea6acb66abe8f11"
+      "sha256": "b0da200612457df489ef87321074599ba39350e556154f28f5e2e6fbeb02e5ec"
     },
     {
       "title": "Hardy-Weinberg平衡与检验",
@@ -2102,6 +2461,24 @@
       "sha256": "80957e7a4b23b0ad9df04cde87b9effcd3d18ef719304c738fe4a0372793079a"
     },
     {
+      "title": "N50组装连续性与完整性",
+      "source": "术语与概念/N50组装连续性与完整性.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "N50",
+        "NG50",
+        "contig",
+        "scaffold",
+        "组装完整性"
+      ],
+      "summary": "N50描述长度加权连续性，不能单独证明组装正确、完整或无污染。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "61bf4ed2cd2280f123a588125a203b42048246c0dd2a511f4a62f94d95213e1d"
+    },
+    {
       "title": "P值效应量与多重检验",
       "source": "术语与概念/P值效应量与多重检验.md",
       "folder": "术语与概念",
@@ -2121,6 +2498,25 @@
       "sha256": "681738ee76f0217d6b2423a9455e161bf87040c41afa101093da198d1416c741"
     },
     {
+      "title": "RT-PCR实时PCR与数字PCR的区别",
+      "source": "术语与概念/RT-PCR实时PCR与数字PCR的区别.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "RT-PCR",
+        "qPCR",
+        "real-time PCR",
+        "dPCR",
+        "ddPCR",
+        "逆转录"
+      ],
+      "summary": "逆转录、实时检测和数字分区描述不同环节，RT不能默认解释为实时。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "c84456b0f67a4bcd60b6ccd821837476d64936fd1277f61a6b55827fc4abd921"
+    },
+    {
       "title": "SAM与BAM及CRAM",
       "source": "术语与概念/SAM与BAM及CRAM.md",
       "folder": "术语与概念",
@@ -2136,7 +2532,7 @@
       "summary": "SAM、BAM 和 CRAM 表达序列比对记录，坐标排序、索引和参考资源决定很多下游操作能否正确进行。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "305d4302c63b87a38afd7d1d1eb2c6e9c2ee1e2196c05dbc701a86b14c5dc791"
+      "sha256": "3f7cce1b3651305111e981192fbc3a15c0b98fe5c79c1949bf29033962155eb2"
     },
     {
       "title": "SNP与基因型是什么",
@@ -2170,7 +2566,7 @@
       "summary": "细胞条形码帮助区分测量单元，UMI 用于识别分子标签；二者不是同一类标识符。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "1b6f3cf4eedd38bd13e4172324a60cc1b6ce822476775112f2d23284c99e03d5"
+      "sha256": "cefef8e57e17d9790866364a9b54b6eddf24964928cfaaceecd5ddd952551849"
     },
     {
       "title": "VCF与基因型编码",
@@ -2282,6 +2678,24 @@
       "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
       "updated": "2026-10-13",
       "sha256": "cc1dbaf3e503448c1b37eeb1aa09f4cf5d1e51dece11be023ebdb17a00b51ddf"
+    },
+    {
+      "title": "单端双端读长与插入片段",
+      "source": "术语与概念/单端双端读长与插入片段.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "single-end",
+        "paired-end",
+        "PE150",
+        "insert size",
+        "fragment length"
+      ],
+      "summary": "双端是读同一片段两端，片段长度决定重叠和间隔，PE150不等于连续300碱基。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "cd1c908371e2b379ea4b32ceed89ddb20cbdde8b1d288d2a332fe0114beb3ba2"
     },
     {
       "title": "参考基因组与注释版本",
@@ -2429,6 +2843,23 @@
       "sha256": "0790f1880d88b7d0a300356002d8d297df113a97915d78b00bf41cd59aa525b2"
     },
     {
+      "title": "引物扩增子与特异性",
+      "source": "术语与概念/引物扩增子与特异性.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "primer",
+        "amplicon",
+        "primer dimer",
+        "引物二聚体"
+      ],
+      "summary": "引物决定扩增起点与目标范围；扩增子是产物，不自动等于唯一目标分子。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "9588d0020b3d7b97342c87d05d4cebad3ab1c5eab0e3ae061dfe02ebff17e1d9"
+    },
+    {
       "title": "批次效应与混杂",
       "source": "术语与概念/批次效应与混杂.md",
       "folder": "术语与概念",
@@ -2499,6 +2930,24 @@
       "sha256": "a7fd7e71f9739e15be2ada2a584ef4066110f23ebdc5060f902ab2d4164e4570"
     },
     {
+      "title": "文库接头索引与条形码",
+      "source": "术语与概念/文库接头索引与条形码.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "sequencing library",
+        "adapter",
+        "sample index",
+        "barcode",
+        "index hopping"
+      ],
+      "summary": "文库是可进入测序的分子集合，接头、样本索引和UMI各有不同作用。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "4901a79da21901e64c9e94428b4f4d24c5dacdd41b8ed2b3243897fb418f2f4a"
+    },
+    {
       "title": "概率条件概率与贝叶斯定理",
       "source": "术语与概念/概率条件概率与贝叶斯定理.md",
       "folder": "术语与概念",
@@ -2535,6 +2984,23 @@
       "sha256": "28a4618a6f001841a0de85b360a9fa50c06140911926769ddb2dece5f26d2664"
     },
     {
+      "title": "测序产量有效数据与成本口径",
+      "source": "术语与概念/测序产量有效数据与成本口径.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "sequencing yield",
+        "Gb",
+        "read pairs",
+        "有效产量"
+      ],
+      "summary": "分开计量读段数、碱基量、可用分子覆盖和交付成本，避免数量级混淆。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "3c178a4817de19ae9a104430e116ace5216b8a359fd93ac0104ce99ef6cae5ec"
+    },
+    {
       "title": "测序深度覆盖度与质量分数",
       "source": "术语与概念/测序深度覆盖度与质量分数.md",
       "folder": "术语与概念",
@@ -2548,9 +3014,27 @@
         "测序深度"
       ],
       "summary": "深度、覆盖范围、碱基质量和比对质量衡量不同问题，不能用单个平均数替代整体质控。",
-      "validation": "文档核对；操作需按所用环境验证",
+      "validation": "质量与覆盖定义核对；人工区间、重叠、重复和质量平均算例已运行",
       "updated": "2026-10-13",
-      "sha256": "6ea106c11bb5ef765a2200001612a03c63a7c64d9b178b0d06e861c0a268d55e"
+      "sha256": "b8fae94290861faf424855f9858caa2dddcf20d4a4ae6b6d5dce9e452fe80b82"
+    },
+    {
+      "title": "测序错误重复偏差与嵌合体",
+      "source": "术语与概念/测序错误重复偏差与嵌合体.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "sequencing error",
+        "PCR duplicate",
+        "GC bias",
+        "chimera",
+        "allele dropout"
+      ],
+      "summary": "错误、重复和偏差影响不同层面，更多读段无法自动修正系统性问题。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "ac060e74d6a0dbcdd3924d323a72991f47ea64c9b7d39ecf309fe9c7cb151b03"
     },
     {
       "title": "点估计偏差方差与一致性",
@@ -2585,6 +3069,22 @@
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
       "sha256": "5f2d9f3b3f72fba698cbd83a07a392fcc7a4cd45483d2a3db43be2957b7bb138"
+    },
+    {
+      "title": "碱基识别质量值与一致性序列",
+      "source": "术语与概念/碱基识别质量值与一致性序列.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "basecalling",
+        "consensus sequence",
+        "碱基识别"
+      ],
+      "summary": "碱基识别把平台信号转为序列；一致性序列利用多次证据，质量仍是模型估计。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "8795e0d1a62ccda4580fbf97e6c10e2124e3f894003f7e080e5d3a3a0859bc6e"
     },
     {
       "title": "缺失值与零值",
@@ -2692,6 +3192,23 @@
       "sha256": "18aa0642c8fc437c2f4daaab3e0cf2d69385e3428105dd0ce67838301c407220"
     },
     {
+      "title": "链特异性与RNA测序方向",
+      "source": "术语与概念/链特异性与RNA测序方向.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "stranded RNA-seq",
+        "strand specificity",
+        "forward stranded",
+        "reverse stranded"
+      ],
+      "summary": "链特异性保存RNA来源方向，R1/R2与原始RNA的关系由建库布局决定。",
+      "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
+      "updated": "2026-10-13",
+      "sha256": "4435d0351c2db5abec34767eebadf48e27d311116b112f314af9e1059acdddcb"
+    },
+    {
       "title": "随机变量期望方差与协方差",
       "source": "术语与概念/随机变量期望方差与协方差.md",
       "folder": "术语与概念",
@@ -2760,7 +3277,11 @@
     "GWAS结果字段与等位基因统一.md": "82a9f7eea45c87584c3b7579981776ee1ad154004df40a3ab2591be84dee3013",
     "GWAS软件结果比较与一致性检查.md": "2e8618d2d0c5029634a59bcdf7939da25398e3362db030b98fee20fd475d2927",
     "GWAS软件输入转换与样本对齐.md": "0c053bf027f6f6de99c291515849d6160526a1ac5d410ae3877037a9c021c9f8",
-    "RNA-seq从计数矩阵到差异表达.md": "dbdee86ba2909854d24b31d19480c1a1b7db5f94d0b047313a35477d7382ca78",
+    "RNA-seq从计数矩阵到差异表达.md": "e1b3bb9a553e728f74763d023f2bebb740c45415e23746d17e15b09d04a69113",
+    "RNA测序建库选择与偏倚.md": "c54128edfba956702816aaf2964b4c7ed423b7db61f34a861005004d62b08e8e",
+    "qPCR与数字PCR结果判读.md": "51adc56078e76725e6fcf88d511f19758cc0a36c32d6d6fc2402324a7497e3af",
+    "人工区间贯通测序指标.md": "22369bebd5e338c32fccc288ead9e6200b0164533d5882a0fa25ec080aa8f047",
+    "从样本到FASTQ的交接与质控.md": "8a82767485f9ad187875dd07aa8e892204540363bc6995c07fb78e1f5f4c1383",
     "代谢组入门与实践.md": "94b985d49f798869c6720ab2fc4e1d24e41914382f62953749b81f37f41e95c1",
     "公开小鼠数据贯通多软件GWAS.md": "34995f6ed682a95bef05884897e066961a5261b188bc025b1eb069e14cf2c074",
     "单细胞与空间组学验证设计.md": "c74c5f73829c2fdfe085584d51e97b20a1eda5babd86d8de52dbd2de7f82d50f",
@@ -2770,12 +3291,15 @@
     "合成家系数据贯通GS.md": "280c9f3e03ee8c24bd60ada3ba7109c84b9d1f411d2b4c5ee21f39885f3e4a82",
     "合成数据贯通统计推断.md": "965e2395c2c8a91dcd1ac9a7aa5253eab3f717b2c659bd8465ce9c3de12e4e85",
     "基因型质控与过滤.md": "61f0a8d40245175437970b2494f53b6d031f929c30985b3c45a62c44113376e3",
-    "基因组重测序与变异检测.md": "0e43a38e6e649aa86682ad984728a1799ba80dfd237f84ed8538b68b30a3f07d",
+    "基因组重测序与变异检测.md": "486662a5ee8dcb83c801daf6a0872d6845640e0bf2c5d3ba39dcfd64453c3b8f",
     "基础算法可复现练习.md": "55cb59a6cf76a4bbe053c120b72f38307f20d8701a7b204bfc741182c34a2d59",
     "多组学整合入门与实践.md": "116f228243c16df1273603608404bbb729f099357596ee13ffbab88e63215f46",
-    "小RNA分析入门与实践.md": "05fc572ac1dc6995cf6b1b3ce3cfff8a1d331840477f5bb360d8377aa9d9f1ef",
+    "小RNA分析入门与实践.md": "213247405635cabca8439b31c37046b60807757a0cf8bad79697733c9d3d2068",
     "微生物组分析入门与实践.md": "b78ee9a16048fe222f3c0cfd05c3bb852970f818d132e0e39dcca58a3e7d4645",
     "微生物组差异与验证设计.md": "aa377595c88666a3c57c9b691b5965e8fa392614ab70bdb5284208526725e231",
+    "扩增子测序与靶向测序设计.md": "5dc4b6df443b1f3d504d18ecd83d08f3400ce528fd976dc22d420d6da457a356",
+    "测序方案选型与实验设计.md": "0c5140ce44cdae47d47a3064147948ab488a197968f93603e47e4c1ddee3ae4f",
+    "混合测序组装与结果评估.md": "cb1ba3e29bc228739772fbd3893c11b4fd7e4a5220236a9ebe68e5f64b92f351",
     "用PCA探索样本的群体结构.md": "b8a7deb89be3b4db4d70e30d51035f4dade554e6c40b8ac979fb02796dbe0c6e",
     "空间转录组入门与实践.md": "500930aee8a0d6ac118e163d9db3b19eadf43e49bc0a911a7ef115c5fbd9cf75",
     "系统发育树入门与实践.md": "6e8641cccdd9855d7debe037be4e719ed9ab14e1f41b41e43a1f8353a101d06d",
@@ -2784,13 +3308,14 @@
     "蛋白质组与代谢组验证设计.md": "3f29a21e879561632fae7c223587b8bdce693488165381014ea2413ae5e72afe",
     "蛋白质组入门与实践.md": "a4cafb74af152ee398216f87ee9a3bdb74e0ebdc98fce705af1a715151438491",
     "表观组峰与调控证据验证.md": "8cbccd3a9333c6a53b121b53dfb8048c964d0b61a2d0b9845a6210f36bfd6910",
-    "转录组差异与qPCR验证设计.md": "3c5184e4e114982a63b4754db45200bc4cbd7991f1eaf548c6200a633bc5f060",
-    "长读长测序分析入门.md": "1a80727bdd06369d45d2c3889b31ccdbc20e53ad3d30a2746441adabae066866",
+    "转录组差异与qPCR验证设计.md": "acf136004ee60f8cde18fdaefa006ea1bc0fafa21992ba2e2dfd19fdd525b58b",
+    "长读长测序分析入门.md": "710c778855066e5a0bd0203596e892b42b643c3759e76647ea4776e0a0d5b145",
     "GS算法软件与实践路线.md": "88da1122f4a6c07f20f69866bb9125a462fd99709af50c57d3881de6ce6f258c",
     "GWAS软件选择与比较.md": "bc6eb6d05459586b45ea44976171088fc3cc8208deb48daf962aafcd30e78ccf",
-    "中文生信学习地图.md": "d3cda59485708c22c66eb845f061d69c61064670f72d94d0088540a603996bf5",
+    "中文生信学习地图.md": "ffb9f37f0de439795261a1246dce3787304ad126245616af5f85df8ab523e81e",
+    "测序技术与PCR学习路线.md": "dd1b3dd35c93f6c7740c9cc2805afd9db33f00797dcbd1ffb7235f2ac3291f86",
     "生信基础算法学习路线.md": "282620f0384a78223cfac26e63227af5f88753c96b7564ff8e16d73fe703cabe",
-    "组学分析总览与选型.md": "3e706b45e6bdec46bf011f556ee7d2f83f7a56409d6be5c71e8a1230f2ad74aa",
+    "组学分析总览与选型.md": "05dd86fcd4117b62bc871eac3e61353ea2bad7f6368a8e530af81cd69f993177",
     "统计学与组学验证学习路线.md": "baa2930234e10e515d207b7e58241d6a15f7cc0b364a7bb99af99e648722bfb4",
     "群体分析与GWAS学习路线.md": "6fcccf621b8a9c05d13a17396d916b6fa828459a78c0a32876eb88b961ae8e4b",
     "ASReml基因组预测接口.md": "ddb4bb8701af6293f6f73254a8931577bdbd0808a9e226a8b66d7b4889b4e654",
@@ -2820,6 +3345,8 @@
     "日志排错与最小复现.md": "ce6fba029338fc3416d47e3008682114ead23abea90cced5e33e4f1b8a308ed2",
     "服务器资源与批量任务.md": "99ad352d1fa410b63c1ce1e0385a9ad79535a2605f7c52b0959392618abfac47",
     "样本表与数据审计实践.md": "ccd1247826e5f8583659b16987ce15c07d96ef91ddfed1e0bb33399cbaf5cc23",
+    "测序数据格式与原始信号.md": "900d318d674d5902ce47432dfcb2ea3b1f8de81194403adbe4a2736c214c51b5",
+    "测序质控工具选择与报告阅读.md": "c2fa33be04005969510d9ff18f0610c15650f6ba168ad97bc37264e2f11a2271",
     "结果报告与数据共享.md": "2f9b17b4fb0dc8a5bd7cb79ffcca36b276b2a2abe4cf069adfe092b70513adb7",
     "软件环境与依赖管理.md": "2ccafe979202e8769b3adbf62a7824f91ac9cacbae466ba5d32d161162827491",
     "Ensembl参考与注释查询.md": "476e3f4f5a1e01d40d7643ef3715e2a2cf2d3370c934481ed5a8d769e40155a4",
@@ -2829,10 +3356,16 @@
     "UniProt蛋白条目与证据.md": "19ab1a2592e6267e0315406ac17003d0449d4ec1e49641f519201030896c9c09",
     "公共数据库与数据获取.md": "bd73d408307570d90a610f1ea21cf48e8e404e1e90bf00bc43ead7c71e659c97",
     "BLAST原理与种子延伸.md": "47686b73ac5378ac8db20ba03f3a7bea5f907de9b369687886027e9b94cc781a",
+    "DNBSEQ测序与滚环扩增.md": "bb7e0e31c2feafea3fa5689dacc1fe02e1157270a637b34f75b0b04222c7fc48",
     "FarmCPU与BLINK原理.md": "494185cc526a0bd9e142237e3782aeaba449df54f9c13e223c9218a2f5502b7a",
     "GBLUP与rrBLUP原理及实现.md": "d793f722bf97aa99c66ebc0f3b3f8c6e69980fcc7efd2ecaa3e18299079f8c24",
     "GS中的REML混合模型方程与求解.md": "f57168637643f4f09de9254070db19bb1e8e6da4f00e599b91db59f66016832c",
+    "Illumina合成测序与簇信号.md": "ebea670937b2de5d920ddcc0e7c4d3fa8419a9856c5dc14aff9aeaa0b821261d",
+    "Nanopore测序与直接RNA.md": "b4e66446dcdf1837552c4d183874659257ade923ff6f7970d9040216c2ffd5a1",
     "PCA原理与实现.md": "cdb8b15b10102bf98149fb0f19ad26ec5b1cd919f30e76ea5a485fec4cbf26d8",
+    "PCR与扩增基础.md": "28e709783e793404a827944f6ada69b7f1709e5792f87647efcd446b9b37c243",
+    "PacBioSMRT与HiFi测序.md": "6fe2a78b2cdab95f525c5bf1db7900a2cf13a699ec98a81c4e39c3d8efbeb30d",
+    "Sanger测序原理与峰图判读.md": "ce554c2dfa60ca24486fb99a262e8dcfc3909ebdaf1b42c6274b078d97a52bf6",
     "Smith-Waterman局部比对.md": "05709db34215b2faf027b8ff232cb24e99d20bfa554068bd25eebefa09b49f1e",
     "t检验配对设计与Welch检验.md": "6be32a942b7197ef332e6319a44956d23eba6a8dd6e30f963548162146a4dcf8",
     "似然最大似然与MAP估计.md": "c06a0446baf1dd134c43264ba5bb4824d95449be202130cfc5bb9c39c30a5e1d",
@@ -2840,6 +3373,7 @@
     "分类指标ROC与PR曲线.md": "2a939eb5dd74d1395df42603398e624dbba9f930bb011434f38f471374375493",
     "列联表卡方与Fisher精确检验.md": "530e7529277d9c43739e699169f270b948609d1cbbc8f2ebd302bbdbdeeedc7e",
     "动态规划与序列比对基础.md": "9f85cf068e4a6882cebdbbe4301630791c3b877b9c245216900af1fe493004a5",
+    "半导体测序与同聚物信号.md": "7e34de65a5713f593c49c25e9ef5e5638f56145b2c78fcd2b095d31c0f6515ac",
     "图与最短路径的生信入门.md": "a728a2eaa09e612bff37bb188ad848936a7390801d6323b83712c94a21046e42",
     "富集分析与GSEA.md": "6e58c30d52939280faf3482cd9de9d58aa0ac83fc43213395b956aadd0a4297e",
     "广义线性模型与逻辑回归.md": "8aa72a5760b32bea15d9f22ab5fec1b0fe46581df91eadafec7819d0696f8539",
@@ -2851,6 +3385,7 @@
     "正态性方差齐性与模型诊断.md": "13fd6aea730a198f85beed179caa322c8bac3f6f820c2dcd1ff249fa38358820",
     "相关回归与混杂.md": "d4924a51a41d67223e2b6f5dd2d390aab7931250f8b5b8c020469e6a3717f818",
     "秩检验符号检验与非参数方法.md": "4ab69ee7e3caf936fcf767c29b93478d1b879a2ecd954533514026cc9684798d",
+    "第二代测序原理与平台比较.md": "05fac162a4f8283ddb1ee90e408d2ece47c880ab44d303ef18d5abb5012d6f37",
     "算法输入输出复杂度与数据结构.md": "e35d9fd3e88fe1d1812b9941b3e3e68a6a10eb0e43de41e4e21c8e6e8f4ad426",
     "系谱BLUP与单步ssGBLUP.md": "3e36ef49998d993a2aa5156464db93b6c69dffe969e251fafadb16237ef7005f",
     "线性模型与混合模型.md": "f30954e62922ef73427a284c30b735cbcb22cbbff7b2dbf8afd12ae061ebd8ad",
@@ -2861,20 +3396,24 @@
     "距离标准化与相似性.md": "07510a4bccc77e1b6a8ed4861320fb0890c1aaaa3eb07998271ff93e3e7bf956",
     "近邻朴素贝叶斯与决策树入门.md": "bce950b73bae7b86875c27f987c8974dbfcb72627d181ce120d8f1d7cbd04c35",
     "ASV与微生物多样性.md": "7266ca70e5155fc5137994a44293a71d02a8ca48bed8953f014ba0ecb0bd3714",
-    "FASTA与FASTQ.md": "3442a45f7426b83c6807492d4acc6211c6b33b2a266bb3d67ea6acb66abe8f11",
+    "DNA与RNA样本质量及建库偏差.md": "5c3d6e39c47b7b1239cc140f6ee2bfeb6576be5f726a6c65d6ed60a3feccae4a",
+    "FASTA与FASTQ.md": "b0da200612457df489ef87321074599ba39350e556154f28f5e2e6fbeb02e5ec",
     "Hardy-Weinberg平衡与检验.md": "bc445027170b8b9eacc46736bb82b0aeb84491e100c59fadcb566387220b0ab7",
     "LOCO与近端污染.md": "fc6b88ea350f77a2cdae8076733fa178fcbc35496ce1107fa2db7703de6e6c53",
     "MAF与MAC及稀有变异.md": "80957e7a4b23b0ad9df04cde87b9effcd3d18ef719304c738fe4a0372793079a",
+    "N50组装连续性与完整性.md": "61bf4ed2cd2280f123a588125a203b42048246c0dd2a511f4a62f94d95213e1d",
     "P值效应量与多重检验.md": "681738ee76f0217d6b2423a9455e161bf87040c41afa101093da198d1416c741",
-    "SAM与BAM及CRAM.md": "305d4302c63b87a38afd7d1d1eb2c6e9c2ee1e2196c05dbc701a86b14c5dc791",
+    "RT-PCR实时PCR与数字PCR的区别.md": "c84456b0f67a4bcd60b6ccd821837476d64936fd1277f61a6b55827fc4abd921",
+    "SAM与BAM及CRAM.md": "3f7cce1b3651305111e981192fbc3a15c0b98fe5c79c1949bf29033962155eb2",
     "SNP与基因型是什么.md": "65908b58fe0d0db359cb52e6522f4770974cee46a6e58d8d2951c3869f35cf6b",
-    "UMI与细胞条形码.md": "1b6f3cf4eedd38bd13e4172324a60cc1b6ce822476775112f2d23284c99e03d5",
+    "UMI与细胞条形码.md": "cefef8e57e17d9790866364a9b54b6eddf24964928cfaaceecd5ddd952551849",
     "VCF与基因型编码.md": "37307a3f59fb6f0da3f44e1e12d7583b59b8f7f95935aa93767be1346b4a2fee",
     "Wald似然比与得分检验.md": "1913a866571880c3a05f700f67c9984b6b277460d715613438b69889ffe47425",
     "二分类性状OR与病例对照不平衡.md": "dab97c2dd81d778a48661c9bf4908c182fd131029557492b282211da69a54a25",
     "亲缘关系与遗传关系矩阵.md": "7195c757dcfcf5e9e84862e3a33c89ceb29537c5b89b855a8067f3927e848691",
     "从DNA到RNA和蛋白质.md": "794700093e2c457e5d0f41d4e688a914ca7092bfbdd57b546b683ef066d75270",
     "关联模型中的协变量与残差.md": "cc1dbaf3e503448c1b37eeb1aa09f4cf5d1e51dece11be023ebdb17a00b51ddf",
+    "单端双端读长与插入片段.md": "cd1c908371e2b379ea4b32ceed89ddb20cbdde8b1d288d2a332fe0114beb3ba2",
     "参考基因组与注释版本.md": "1b21bea1597cad155d14105acba52b20fc47e04eef32b02483fb2f704f74df7a",
     "基因标识符与同源基因.md": "014c26142aadd4e42b00f1b834d0dd1a289c74bec43ed159e984432a25f847e8",
     "基因组坐标与区间.md": "33fc2569a25b4c09ba67baebf9987b0579481991e5ebc960f48b218fcaab15db",
@@ -2883,26 +3422,32 @@
     "实验设计与统计功效.md": "695af7f54770cbffa243cf784248ef1679e6d6d62da61c8795173b3a2d1da510",
     "峰与FRiP及TSS富集.md": "26cf77a067de3568a3287a2e552ccd49724cedeb84f3d17247bc96a6f7f6d1b0",
     "常见概率分布与生信场景.md": "0790f1880d88b7d0a300356002d8d297df113a97915d78b00bf41cd59aa525b2",
+    "引物扩增子与特异性.md": "9588d0020b3d7b97342c87d05d4cebad3ab1c5eab0e3ae061dfe02ebff17e1d9",
     "批次效应与混杂.md": "4641b1046ec5db923bb33cd8805449c734ca0852213d5ae9c2caaf2ba565e310",
     "抽样分布中心极限定理与标准误.md": "371590c8b7e7d552a1ba347dc111b1f4ddcfe49df4552375619086f3c4397ebd",
     "描述统计与分布图.md": "08068b2fac4a8ac706d21b477d055d89e092eba0f46f584b983ca23534b6ee1c",
     "数据类型总体样本与抽样.md": "a7fd7e71f9739e15be2ada2a584ef4066110f23ebdc5060f902ab2d4164e4570",
+    "文库接头索引与条形码.md": "4901a79da21901e64c9e94428b4f4d24c5dacdd41b8ed2b3243897fb418f2f4a",
     "概率条件概率与贝叶斯定理.md": "8f859162ed3451aa7c143fcab661b98f7f5b72fbe7fcd8a18822b72ab119b2f9",
     "比对相似性同源性与覆盖率.md": "28a4618a6f001841a0de85b360a9fa50c06140911926769ddb2dece5f26d2664",
-    "测序深度覆盖度与质量分数.md": "6ea106c11bb5ef765a2200001612a03c63a7c64d9b178b0d06e861c0a268d55e",
+    "测序产量有效数据与成本口径.md": "3c178a4817de19ae9a104430e116ace5216b8a359fd93ac0104ce99ef6cae5ec",
+    "测序深度覆盖度与质量分数.md": "b8fae94290861faf424855f9858caa2dddcf20d4a4ae6b6d5dce9e452fe80b82",
+    "测序错误重复偏差与嵌合体.md": "ac060e74d6a0dbcdd3924d323a72991f47ea64c9b7d39ecf309fe9c7cb151b03",
     "点估计偏差方差与一致性.md": "ed84a18c230d9e5b566e35963aa258b2ba53b024974262c1be5c5b129c17d7a4",
     "生物学重复与技术重复.md": "5f2d9f3b3f72fba698cbd83a07a392fcc7a4cd45483d2a3db43be2957b7bb138",
+    "碱基识别质量值与一致性序列.md": "8795e0d1a62ccda4580fbf97e6c10e2124e3f894003f7e080e5d3a3a0859bc6e",
     "缺失值与零值.md": "52741722226853c425cc94c95e53152847d0aaf79119882e58fe1aa8194863f5",
     "置信区间与重采样.md": "0ae377ac2eb1076b25af4a9a05e8c7ef5b6b7d5af9c54d216996f349b108bb94",
     "群体结构是什么.md": "2799bfedcfa795afd39546c65b20f1a4fa255e89c6e83232cdb8ef8f00d63b09",
     "育种值GEBV准确度与可靠度.md": "4d8942d188fe45927a72856207a6e8401133404647e4c763032a971a7386a644",
     "计数丰度与标准化.md": "0eb02d5ffe5191a9b551b82f95cf879423067fa7ec7bd0636919f3f9af3a3b42",
     "连锁不平衡与LD剪枝.md": "18aa0642c8fc437c2f4daaab3e0cf2d69385e3428105dd0ce67838301c407220",
+    "链特异性与RNA测序方向.md": "4435d0351c2db5abec34767eebadf48e27d311116b112f314af9e1059acdddcb",
     "随机变量期望方差与协方差.md": "21e80d476359e6d54bb6b679d1d278afcc22471f73bc4e7d6080f5ea9911a0d5",
     "零模型与方差组分.md": "75e8e4c3a3477a2efa2e58397ec2a3a91bac742db41981a629edd0ebef4cf7af",
     "频率学派与贝叶斯推断.md": "e7466dac0f854cd249d2df08d49e2a998631c741cca07838fec970833e1c04f7",
-    "关键词索引.md": "e28e6a617854cf3148590ae38db68969b07cdaec1f0c54ea46b66a85c32ff429",
-    "Home.md": "962af7fcd4c7ed83269fa51696f2d8f8d183ac066cdce1d97b58d5c258b7447d",
-    "_Sidebar.md": "1bd8b4ffaf133c4216179d56d944ae121835cec544b07bb6fc95df18799e2252"
+    "关键词索引.md": "81e5b0e3c3fa2ca7c40ef472ab9c4178b55e5c17b25e2ae8551955c60d3a3d18",
+    "Home.md": "d98947a7db1f729ea0ee48fa695affea5ca532ea3118d587b44df2475b40f6b0",
+    "_Sidebar.md": "ce65834873815f3b087e2b61a0ebedcd85a79fbb575a09504d7a56e10399ef20"
   }
 }
