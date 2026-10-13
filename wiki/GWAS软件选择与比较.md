@@ -53,3 +53,8 @@ GCTA在表中按模块分行，其余也不是“一套软件只做一种模型�
 本专题对PLINK、GEMMA、GCTA（MLMA及fastGWA数量性状）和REGENIE有公开数据实测。SAIGE、BOLT、EMMAX和R/Java工具按官方资料编写，未在本机执行；每页标明范围。
 
 深入入口：[PLINK关联文档](https://www.cog-genomics.org/plink/2.0/assoc)、[GCTA官方手册](https://yanglab.westlake.edu.cn/software/gcta)、[REGENIE概览](https://rgcgithub.github.io/regenie/overview/)、[SAIGE官方文档](https://saigegit.github.io/SAIGE-doc/)。
+
+
+## 统计基础与验证入口
+
+[统计学与组学验证学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B8%8E%E7%BB%84%E5%AD%A6%E9%AA%8C%E8%AF%81%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)补充本任务所需的统计或验证判断。分析前先确认[统计方法选择与分析计划](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95%E9%80%89%E6%8B%A9%E4%B8%8E%E5%88%86%E6%9E%90%E8%AE%A1%E5%88%92)，结果解释时区分[组学验证的层级与证据](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E9%AA%8C%E8%AF%81%E7%9A%84%E5%B1%82%E7%BA%A7%E4%B8%8E%E8%AF%81%E6%8D%AE)。

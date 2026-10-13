@@ -41,3 +41,8 @@ GS（genomic selection，基因组选择）利用基因组信息预测遗传价�
 术语解释在概念页维护，软件页只补充接口差异。每增加一种模型，至少补齐输入、训练方式、超参数、验证设计、输出定义和失败检查。软件更新后优先复查接口、缺失值处理及矩阵缩放；未运行的命令保持明确标记。
 
 原始方法入口：[Meuwissen等的基因组选择论文](https://research.wur.nl/en/publications/prediction-of-total-genetic-value-using-genome-wide-dense-marker-/)、[VanRaden的基因组关系矩阵方法](https://pubmed.ncbi.nlm.nih.gov/18946147/)。
+
+
+## 统计基础与验证入口
+
+[统计学与组学验证学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B8%8E%E7%BB%84%E5%AD%A6%E9%AA%8C%E8%AF%81%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)补充本任务所需的统计或验证判断。分析前先确认[统计方法选择与分析计划](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95%E9%80%89%E6%8B%A9%E4%B8%8E%E5%88%86%E6%9E%90%E8%AE%A1%E5%88%92)，结果解释时区分[组学验证的层级与证据](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E9%AA%8C%E8%AF%81%E7%9A%84%E5%B1%82%E7%BA%A7%E4%B8%8E%E8%AF%81%E6%8D%AE)。

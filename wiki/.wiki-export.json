@@ -42,6 +42,7 @@
     "PCA原理与实现.md",
     "PLINK2使用与版本管理.md",
     "PLINK2关联分析详解.md",
+    "Python统计分析与结果核验.md",
     "P值效应量与多重检验.md",
     "REGENIE两步关联分析.md",
     "RNA-seq从计数矩阵到差异表达.md",
@@ -60,62 +61,102 @@
     "rMVP关联分析实践.md",
     "rrBLUP预测实践.md",
     "sommer基因组预测与复杂设计.md",
+    "t检验配对设计与Welch检验.md",
     "中文生信学习地图.md",
     "二分类性状OR与病例对照不平衡.md",
     "亲缘关系与遗传关系矩阵.md",
     "从DNA到RNA和蛋白质.md",
     "代谢组入门与实践.md",
+    "似然最大似然与MAP估计.md",
+    "假设检验与双侧单侧选择.md",
     "公共数据库与数据获取.md",
     "公开小鼠数据贯通多软件GWAS.md",
     "关联模型中的协变量与残差.md",
     "关键词索引.md",
+    "分类指标ROC与PR曲线.md",
+    "列联表卡方与Fisher精确检验.md",
+    "动态规划与序列比对基础.md",
+    "单细胞与空间组学验证设计.md",
     "单细胞转录组入门与实践.md",
     "参考基因组与注释版本.md",
+    "变异与群体分析的验证设计.md",
     "变异注释与候选证据整理.md",
     "可复现分析与工作流管理.md",
     "合成家系数据贯通GS.md",
     "合成数据贯通PCA与GWAS.md",
+    "合成数据贯通统计推断.md",
+    "图与最短路径的生信入门.md",
     "基因型质控与过滤.md",
     "基因标识符与同源基因.md",
     "基因组坐标与区间.md",
     "基因组选择与GWAS的区别.md",
     "基因组重测序与变异检测.md",
+    "基础算法可复现练习.md",
     "多组学整合入门与实践.md",
     "定相与基因型填充.md",
     "实验设计与统计功效.md",
     "富集分析与GSEA.md",
     "小RNA分析入门与实践.md",
     "峰与FRiP及TSS富集.md",
+    "常见概率分布与生信场景.md",
     "常见生信图表的阅读与制作.md",
+    "广义线性模型与逻辑回归.md",
     "微生物组分析入门与实践.md",
+    "微生物组差异与验证设计.md",
     "批次效应与混杂.md",
+    "抽样分布中心极限定理与标准误.md",
+    "排序查找与哈希在生信中的应用.md",
+    "描述统计与分布图.md",
     "数据泄漏与交叉验证.md",
+    "数据类型总体样本与抽样.md",
+    "方差分析交互作用与对比.md",
     "日志排错与最小复现.md",
     "服务器资源与批量任务.md",
     "样本表与数据审计实践.md",
+    "梯度下降与数值优化.md",
+    "概率条件概率与贝叶斯定理.md",
+    "正则化过拟合与模型选择.md",
+    "正态性方差齐性与模型诊断.md",
     "比对相似性同源性与覆盖率.md",
     "测序深度覆盖度与质量分数.md",
+    "点估计偏差方差与一致性.md",
+    "生信基础算法学习路线.md",
     "生物学重复与技术重复.md",
     "用PCA探索样本的群体结构.md",
+    "相关回归与混杂.md",
+    "秩检验符号检验与非参数方法.md",
     "空间转录组入门与实践.md",
+    "算法输入输出复杂度与数据结构.md",
     "系统发育树入门与实践.md",
     "系谱BLUP与单步ssGBLUP.md",
     "线性模型与混合模型.md",
     "组学分析总览与选型.md",
+    "组学验证的层级与证据.md",
     "结果报告与数据共享.md",
+    "统计学与组学验证学习路线.md",
+    "统计方法选择与分析计划.md",
     "缺失值与零值.md",
     "置信区间与重采样.md",
+    "置换检验与Bootstrap实践.md",
     "群体分析与GWAS学习路线.md",
     "群体结构与GWAS有什么关系.md",
     "群体结构是什么.md",
+    "聚类Kmeans与层次聚类.md",
     "育种值GEBV准确度与可靠度.md",
+    "蛋白质组与代谢组验证设计.md",
     "蛋白质组入门与实践.md",
+    "表观组峰与调控证据验证.md",
     "计数丰度与标准化.md",
     "贝叶斯回归与核方法用于GS.md",
+    "距离标准化与相似性.md",
+    "转录组差异与qPCR验证设计.md",
     "软件环境与依赖管理.md",
+    "近邻朴素贝叶斯与决策树入门.md",
     "连锁不平衡与LD剪枝.md",
     "长读长测序分析入门.md",
-    "零模型与方差组分.md"
+    "随机变量期望方差与协方差.md",
+    "零模型与方差组分.md",
+    "频率学派与贝叶斯推断.md"
   ],
   "pages": [
     {
@@ -131,7 +172,7 @@
       "summary": "从可及性测序读段得到区域信号与差异分析，重点检查信号质量、重复一致性和共同计数区域。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "44ce84a1e8888d736c43864a360fe1b6f2035d0234ce68d09cb4b726a141c9ea"
+      "sha256": "c840fee744310287f6c9ab29e19c466dc9e56c676b744473d9c64c253b959c9c"
     },
     {
       "title": "ChIP-seq入门与实践",
@@ -147,7 +188,7 @@
       "summary": "ChIP-seq 分析目标富集相对背景的信号分布，必须区分对照、抗体目标与信号宽度。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "d1b9f3f85e5cd9bed87324545e1e5717bc07b0cb70052ac08656603a83285ce9"
+      "sha256": "c06bf006344f64d87cd5ded69fbda7bb1579cb6fa279897fd12e0d89e9b34a17"
     },
     {
       "title": "DNA甲基化分析入门",
@@ -164,7 +205,7 @@
       "summary": "甲基化分析需要匹配测量技术，以覆盖和重复信息估计位点或区域差异。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "135bed5ab6dfe71176d5064df0a7a68fdee8b05d3b2b48c4e290c443014ee415"
+      "sha256": "33e5a642e022b2e6431339be0475a28c484e1737bc2f35aeb0415b909ad0c4cf"
     },
     {
       "title": "GS数据准备与候选个体预测",
@@ -210,7 +251,7 @@
       "summary": "将基因型、表型和设计信息连接到合适的关联模型，并审查效应方向与证据边界。",
       "validation": "合成数据实测",
       "updated": "2026-10-13",
-      "sha256": "b1025677817e5f64b8a57d57d4ae4391c713b4899c1bdd3db8d61659c24a4c94"
+      "sha256": "c1247b87a25ef9fccfc156d1072013e4aa6f91fcca21237a95bafee23044c61b"
     },
     {
       "title": "GWAS参数选择与敏感性分析",
@@ -322,7 +363,7 @@
       "summary": "从基因计数和实验设计出发，估计表达差异，并区分统计证据、效应大小与功能解释。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "e86194e95bb0e4c2943975227e031274021d13d005e484a9759df5d042d6b791"
+      "sha256": "dbdee86ba2909854d24b31d19480c1a1b7db5f94d0b047313a35477d7382ca78"
     },
     {
       "title": "代谢组入门与实践",
@@ -338,7 +379,7 @@
       "summary": "代谢组分析先审查峰特征与测量质量，再讨论统计差异和代谢物身份。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "16f8900e85748cef3972bdd128b38e9412c0d4572c535f3f01546cbe154f67be"
+      "sha256": "94b985d49f798869c6720ab2fc4e1d24e41914382f62953749b81f37f41e95c1"
     },
     {
       "title": "公开小鼠数据贯通多软件GWAS",
@@ -357,6 +398,23 @@
       "sha256": "34995f6ed682a95bef05884897e066961a5261b188bc025b1eb069e14cf2c074"
     },
     {
+      "title": "单细胞与空间组学验证设计",
+      "source": "分析工作流/单细胞与空间组学验证设计.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "single-cell validation",
+        "spatial validation",
+        "pseudoreplication",
+        "空间验证"
+      ],
+      "summary": "供体、细胞、切片和空间位置具有层级关系，验证需同时考虑统计单位和身份注释。",
+      "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
+      "updated": "2026-10-13",
+      "sha256": "c74c5f73829c2fdfe085584d51e97b20a1eda5babd86d8de52dbd2de7f82d50f"
+    },
+    {
       "title": "单细胞转录组入门与实践",
       "source": "分析工作流/单细胞转录组入门与实践.md",
       "folder": "分析工作流",
@@ -371,7 +429,24 @@
       "summary": "从细胞或液滴计数出发，检查质量、探索细胞状态，并将供体层面的比较与细胞聚类区分。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "048074da4628055cd8730ad29cb2909cb126f931a33d4b30a4a4c6ef8c28016f"
+      "sha256": "dcfbdfeceaa66ca02db3af2e3393a41638de4407b305916216f0faf72c606c81"
+    },
+    {
+      "title": "变异与群体分析的验证设计",
+      "source": "分析工作流/变异与群体分析的验证设计.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "variant validation",
+        "genotype concordance",
+        "GWAS replication",
+        "群体验证"
+      ],
+      "summary": "分别核对变异真实性、基因型一致性、统计关联重复与功能解释。",
+      "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
+      "updated": "2026-10-13",
+      "sha256": "bfb93a3a9781b52d4d9cdf15e84cfbd5fb398e9099c445709d63a8fb13d6b9d8"
     },
     {
       "title": "变异注释与候选证据整理",
@@ -409,6 +484,22 @@
       "sha256": "280c9f3e03ee8c24bd60ada3ba7109c84b9d1f411d2b4c5ee21f39885f3e4a82"
     },
     {
+      "title": "合成数据贯通统计推断",
+      "source": "分析工作流/合成数据贯通统计推断.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "统计教学实测",
+        "statistics demo",
+        "伪重复案例"
+      ],
+      "summary": "通过固定种子人工数据连接基础检验、区间、多重校正、重采样与供体层级。",
+      "validation": "2026-10-13实际运行：Welch、配对、Fisher/卡方、BCa、置换、2000特征校正、供体反例和1000区间覆盖",
+      "updated": "2026-10-13",
+      "sha256": "965e2395c2c8a91dcd1ac9a7aa5253eab3f717b2c659bd8465ce9c3de12e4e85"
+    },
+    {
       "title": "基因型质控与过滤",
       "source": "分析工作流/基因型质控与过滤.md",
       "folder": "分析工作流",
@@ -430,7 +521,22 @@
       "summary": "从 DNA 读段得到可用于群体分析的变异数据，关键是参考一致性、样本级检查和统一的分型流程。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "32d9a161eee7dccc0511ae0eefaae0f1567ac4e81e218553a7f019a95ceec3d6"
+      "sha256": "0e43a38e6e649aa86682ad984728a1799ba80dfd237f84ed8538b68b30a3f07d"
+    },
+    {
+      "title": "基础算法可复现练习",
+      "source": "分析工作流/基础算法可复现练习.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "basic algorithms demo",
+        "基础算法实测"
+      ],
+      "summary": "用小型人工输入核对查找、计数、图、比对、聚类和优化的计算逻辑。",
+      "validation": "六类人工算法已运行；查找/图/比对边界、聚类目标和梯度求解另有自动检查",
+      "updated": "2026-10-13",
+      "sha256": "55cb59a6cf76a4bbe053c120b72f38307f20d8701a7b204bfc741182c34a2d59"
     },
     {
       "title": "多组学整合入门与实践",
@@ -481,7 +587,24 @@
       "summary": "先区分标记基因扩增子和全样本宏基因组，再选择特征构建、分类与群落比较路线。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "dfdcc4641b34c5f3ac513ed4515583d8bb860b922bde82af0ca77a40937f6740"
+      "sha256": "b78ee9a16048fe222f3c0cfd05c3bb852970f818d132e0e39dcca58a3e7d4645"
+    },
+    {
+      "title": "微生物组差异与验证设计",
+      "source": "分析工作流/微生物组差异与验证设计.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "microbiome validation",
+        "PERMANOVA",
+        "PERMDISP",
+        "组成数据"
+      ],
+      "summary": "把微生物特征差异、多样性、测量污染和独立重复分别验证。",
+      "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
+      "updated": "2026-10-13",
+      "sha256": "aa377595c88666a3c57c9b691b5965e8fa392614ab70bdb5284208526725e231"
     },
     {
       "title": "用PCA探索样本的群体结构",
@@ -510,7 +633,7 @@
       "summary": "将表达矩阵与空间坐标和组织图像对应，分析空间模式，并区分 spot、细胞和切片层级。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "a35afe0bdd74cabfd5951f5277f7ae2d488f945f2bf957bf2ccbb95462bb2629"
+      "sha256": "500930aee8a0d6ac118e163d9db3b19eadf43e49bc0a911a7ef115c5fbd9cf75"
     },
     {
       "title": "系统发育树入门与实践",
@@ -531,6 +654,58 @@
       "sha256": "6e8641cccdd9855d7debe037be4e719ed9ab14e1f41b41e43a1f8353a101d06d"
     },
     {
+      "title": "组学验证的层级与证据",
+      "source": "分析工作流/组学验证的层级与证据.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "omics validation",
+        "技术验证",
+        "独立验证",
+        "功能验证",
+        "正交验证"
+      ],
+      "summary": "把可复现、统计稳健、技术确认、独立重复与功能证据分别对应到具体结论。",
+      "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
+      "updated": "2026-10-13",
+      "sha256": "1b0fa0b78aec492dbbb745c2f9d5e695071587d9723124088c61e3094ff2b41f"
+    },
+    {
+      "title": "统计方法选择与分析计划",
+      "source": "分析工作流/统计方法选择与分析计划.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "统计检验选择",
+        "analysis plan",
+        "estimand",
+        "统计分析计划"
+      ],
+      "summary": "按照目标、观测类型和依赖结构选方法，预先规定比较、校正与验证方案。",
+      "validation": "方法选择与分析计划核对；完整人工统计案例另页实际运行",
+      "updated": "2026-10-13",
+      "sha256": "770d6e194b65182200daadb91575573add6dddcd71b8db2c788d20ed62891072"
+    },
+    {
+      "title": "蛋白质组与代谢组验证设计",
+      "source": "分析工作流/蛋白质组与代谢组验证设计.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "proteomics validation",
+        "metabolomics validation",
+        "靶向质谱",
+        "代谢物鉴定"
+      ],
+      "summary": "把分子鉴定、定量质量、差异统计和独立生物学验证分开记录。",
+      "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
+      "updated": "2026-10-13",
+      "sha256": "3f29a21e879561632fae7c223587b8bdce693488165381014ea2413ae5e72afe"
+    },
+    {
       "title": "蛋白质组入门与实践",
       "source": "分析工作流/蛋白质组入门与实践.md",
       "folder": "分析工作流",
@@ -545,7 +720,42 @@
       "summary": "将质谱证据或蛋白定量表连接到可解释的蛋白层面比较，先区分鉴定、定量和差异检验。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "72ff50da9a79e38029240390198d45d96e4d83af9d26fbed248727f131b9f1cc"
+      "sha256": "a4cafb74af152ee398216f87ee9a3bdb74e0ebdc98fce705af1a715151438491"
+    },
+    {
+      "title": "表观组峰与调控证据验证",
+      "source": "分析工作流/表观组峰与调控证据验证.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "epigenomics validation",
+        "peak reproducibility",
+        "IDR",
+        "调控验证"
+      ],
+      "summary": "区分峰调用、样本间差异、重复一致性与调控功能，避免由峰位置直接推导靶基因。",
+      "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
+      "updated": "2026-10-13",
+      "sha256": "8cbccd3a9333c6a53b121b53dfb8048c964d0b61a2d0b9845a6210f36bfd6910"
+    },
+    {
+      "title": "转录组差异与qPCR验证设计",
+      "source": "分析工作流/转录组差异与qPCR验证设计.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "RNA-seq validation",
+        "RT-qPCR",
+        "ΔCt",
+        "ΔΔCt",
+        "MIQE"
+      ],
+      "summary": "分别验证差异表达统计、表达测量与生物学重复，避免把qPCR当作自动证明功能。",
+      "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
+      "updated": "2026-10-13",
+      "sha256": "3c5184e4e114982a63b4754db45200bc4cbd7991f1eaf548c6200a633bc5f060"
     },
     {
       "title": "长读长测序分析入门",
@@ -581,7 +791,7 @@
       "summary": "从育种值和验证设计出发，连接GBLUP、贝叶斯模型、单步法与六种软件指南。",
       "validation": "路线与官方资料核对；NumPy教学案例已运行；六种专业软件尚未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "1c452cbf62c7ff1e200dc6b6371bf192b5b920a1ffd5561f74a5082b6cf7f97d"
+      "sha256": "88da1122f4a6c07f20f69866bb9125a462fd99709af50c57d3881de6ce6f258c"
     },
     {
       "title": "GWAS软件选择与比较",
@@ -596,7 +806,7 @@
       "summary": "先根据性状、样本相关性、物种和数据规模选择模型，再选择能够实现并验证它的软件。",
       "validation": "选型资料核对；贯穿案例实测PLINK、GEMMA、GCTA及REGENIE，其他软件未执行",
       "updated": "2026-10-13",
-      "sha256": "35078810ab837d8346264af547251e2892eaad047b865614d5099c73d7a779ad"
+      "sha256": "bc6eb6d05459586b45ea44976171088fc3cc8208deb48daf962aafcd30e78ccf"
     },
     {
       "title": "中文生信学习地图",
@@ -608,7 +818,23 @@
       "summary": "从问题、数据和检查点进入生信，按需要跳转到概念、算法、组学流程及实践。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "7511a9af9838aa3e77dd337bb2143a9a82b8aaa9806dcea1f57bfc61f5bfce2c"
+      "sha256": "d3cda59485708c22c66eb845f061d69c61064670f72d94d0088540a603996bf5"
+    },
+    {
+      "title": "生信基础算法学习路线",
+      "source": "学习路线/生信基础算法学习路线.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "status": "可用",
+      "aliases": [
+        "基础算法",
+        "bioinformatics algorithms",
+        "算法学习路线"
+      ],
+      "summary": "先理解数据结构与复杂度，再学习查找、距离、图、动态规划、聚类和优化。",
+      "validation": "路线核对；六类人工算法练习已运行；其他模型以各页范围为准",
+      "updated": "2026-10-13",
+      "sha256": "282620f0384a78223cfac26e63227af5f88753c96b7564ff8e16d73fe703cabe"
     },
     {
       "title": "组学分析总览与选型",
@@ -620,7 +846,24 @@
       "summary": "先明确测量对象和研究问题，再选择输入、模型及可以支持的结论。",
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "ea53b41b4794b8c66ab120be9636d199e371e4d8a841696e5ecc51954c25e0ea"
+      "sha256": "3e706b45e6bdec46bf011f556ee7d2f83f7a56409d6be5c71e8a1230f2ad74aa"
+    },
+    {
+      "title": "统计学与组学验证学习路线",
+      "source": "学习路线/统计学与组学验证学习路线.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "status": "可用",
+      "aliases": [
+        "统计学",
+        "statistics",
+        "组学统计",
+        "统计学习路线"
+      ],
+      "summary": "从数据与概率进入检验和模型，再按组学任务安排技术、独立样本与功能验证。",
+      "validation": "路线与官方资料核对；人工统计教学案例已运行，组学实验验证仅设计指南",
+      "updated": "2026-10-13",
+      "sha256": "baa2930234e10e515d207b7e58241d6a15f7cc0b364a7bb99af99e648722bfb4"
     },
     {
       "title": "群体分析与GWAS学习路线",
@@ -837,6 +1080,22 @@
       "validation": "公开小鼠数据的连续性状回归实测；二分类模板与扩展参数未执行",
       "updated": "2026-10-13",
       "sha256": "45956d0da61aa60776c854c8aa63f0504e6e375108986b3c4c895c1e14a12f4d"
+    },
+    {
+      "title": "Python统计分析与结果核验",
+      "source": "工具/Python统计分析与结果核验.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "SciPy统计",
+        "Python统计",
+        "统计软件核验"
+      ],
+      "summary": "用明确的数组、方向和参数调用SciPy，并通过手算关系与独立实现检查输出。",
+      "validation": "两个Python教学程序已运行；Welch与BH经独立实现核对，其他接口按各页说明",
+      "updated": "2026-10-13",
+      "sha256": "8e9c69dbbcfd810bb69a7cd9ffad0c4b3eef7109e1de55a7965af7bf997905f5"
     },
     {
       "title": "REGENIE两步关联分析",
@@ -1302,6 +1561,131 @@
       "sha256": "05709db34215b2faf027b8ff232cb24e99d20bfa554068bd25eebefa09b49f1e"
     },
     {
+      "title": "t检验配对设计与Welch检验",
+      "source": "方法与算法/t检验配对设计与Welch检验.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "t-test",
+        "Welch t-test",
+        "paired t-test",
+        "单样本t检验"
+      ],
+      "summary": "连续数值的均值比较先区分独立与配对，再确定方差和参考分布假设。",
+      "validation": "NIST与SciPy接口核对；Welch公式、区间及配对反例已在人工数据运行",
+      "updated": "2026-10-13",
+      "sha256": "6be32a942b7197ef332e6319a44956d23eba6a8dd6e30f963548162146a4dcf8"
+    },
+    {
+      "title": "似然最大似然与MAP估计",
+      "source": "方法与算法/似然最大似然与MAP估计.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "likelihood",
+        "MLE",
+        "MAP",
+        "log likelihood"
+      ],
+      "summary": "用固定数据比较参数对观测的解释，区分最大似然、最大后验与数值求解。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "c06a0446baf1dd134c43264ba5bb4824d95449be202130cfc5bb9c39c30a5e1d"
+    },
+    {
+      "title": "假设检验与双侧单侧选择",
+      "source": "方法与算法/假设检验与双侧单侧选择.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "hypothesis testing",
+        "null hypothesis",
+        "type I error",
+        "type II error",
+        "单侧检验",
+        "双侧检验"
+      ],
+      "summary": "先定义零假设、目标效应与错误率，再解释P值和未拒绝的含义。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "f046e266d14250baa7e3d52f29c19045cee4397de5e41c1a5d2867f7d8a7f149"
+    },
+    {
+      "title": "分类指标ROC与PR曲线",
+      "source": "方法与算法/分类指标ROC与PR曲线.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "ROC",
+        "AUC",
+        "precision recall",
+        "sensitivity",
+        "specificity",
+        "calibration"
+      ],
+      "summary": "分类评价同时考虑阈值、类别比例、错误代价和概率校准，不能只看AUC。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "2a939eb5dd74d1395df42603398e624dbba9f930bb011434f38f471374375493"
+    },
+    {
+      "title": "列联表卡方与Fisher精确检验",
+      "source": "方法与算法/列联表卡方与Fisher精确检验.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "contingency table",
+        "chi-square test",
+        "Fisher exact test",
+        "McNemar",
+        "二项检验"
+      ],
+      "summary": "分类数据用计数表组织；独立、配对和抽样设计决定参考分布与效应解释。",
+      "validation": "SciPy接口核对；两个列联表人工算例已运行；配对二分类仅方法说明",
+      "updated": "2026-10-13",
+      "sha256": "530e7529277d9c43739e699169f270b948609d1cbbc8f2ebd302bbdbdeeedc7e"
+    },
+    {
+      "title": "动态规划与序列比对基础",
+      "source": "方法与算法/动态规划与序列比对基础.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "dynamic programming",
+        "Needleman-Wunsch",
+        "全局比对",
+        "状态转移"
+      ],
+      "summary": "把大问题拆成可复用的小状态，理解全局比对与局部比对的边界条件。",
+      "validation": "线性缺口全局比对教学实现已运行；空串与回溯分数另有自动检查",
+      "updated": "2026-10-13",
+      "sha256": "9f85cf068e4a6882cebdbbe4301630791c3b877b9c245216900af1fe493004a5"
+    },
+    {
+      "title": "图与最短路径的生信入门",
+      "source": "方法与算法/图与最短路径的生信入门.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "graph",
+        "BFS",
+        "Dijkstra",
+        "DAG",
+        "图遍历"
+      ],
+      "summary": "用节点和边描述关系，区分图连通、无权最短路径和分析工作流依赖。",
+      "validation": "人工任务图BFS已运行并检查循环处理；Dijkstra与真实网络仅方法说明",
+      "updated": "2026-10-13",
+      "sha256": "a728a2eaa09e612bff37bb188ad848936a7390801d6323b83712c94a21046e42"
+    },
+    {
       "title": "富集分析与GSEA",
       "source": "方法与算法/富集分析与GSEA.md",
       "folder": "方法与算法",
@@ -1316,6 +1700,42 @@
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
       "sha256": "6e58c30d52939280faf3482cd9de9d58aa0ac83fc43213395b956aadd0a4297e"
+    },
+    {
+      "title": "广义线性模型与逻辑回归",
+      "source": "方法与算法/广义线性模型与逻辑回归.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "generalized linear model",
+        "logistic regression",
+        "logit",
+        "link function",
+        "负二项回归"
+      ],
+      "summary": "广义线性模型把响应分布、条件均值和链接函数连接起来，适配二分类与计数等结果。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "8aa72a5760b32bea15d9f22ab5fec1b0fe46581df91eadafec7819d0696f8539"
+    },
+    {
+      "title": "排序查找与哈希在生信中的应用",
+      "source": "方法与算法/排序查找与哈希在生信中的应用.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "binary search",
+        "hash table",
+        "k-mer",
+        "二分查找",
+        "哈希计数"
+      ],
+      "summary": "用查找坐标和统计短序列理解排序、二分与哈希的条件和成本。",
+      "validation": "Python官方资料核对；二分边界与重叠k-mer人工例子已运行",
+      "updated": "2026-10-13",
+      "sha256": "fb29d38651c3f183484acf887419e6ddafdcaa471a911fa09b97049de0f8efa2"
     },
     {
       "title": "数据泄漏与交叉验证",
@@ -1334,7 +1754,133 @@
       "summary": "预测评估需要让测试数据保持独立，并在训练折内学习预处理和特征选择。",
       "validation": "文档核对；操作示例未在本机运行",
       "updated": "2026-10-13",
-      "sha256": "e0b5992745a7d6caae51e87c8ded7435032dfc205abcecb8a2ee5aedaf146273"
+      "sha256": "12693299f1a66ebe352313de4cee2905b9b14d3900644061fb645b337d14b697"
+    },
+    {
+      "title": "方差分析交互作用与对比",
+      "source": "方法与算法/方差分析交互作用与对比.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "ANOVA",
+        "F-test",
+        "interaction",
+        "contrast",
+        "Tukey"
+      ],
+      "summary": "多个组和多个因素应写成明确模型；总体检验、特定对比和交互作用回答不同问题。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "f187652feaaf58a574e3a8d9087a80f10171a7a0e39d5f79ade85e5e47502cce"
+    },
+    {
+      "title": "梯度下降与数值优化",
+      "source": "方法与算法/梯度下降与数值优化.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "gradient descent",
+        "learning rate",
+        "convergence",
+        "loss function",
+        "梯度"
+      ],
+      "summary": "优化算法减少明确目标函数，收敛条件、尺度和初值决定数值行为。",
+      "validation": "人工最小二乘梯度下降已运行，并与独立lstsq求解器核对",
+      "updated": "2026-10-13",
+      "sha256": "a5a189a6f0f116ea93b027e83ff6d9c08f6e0616de71c673847c8a43604232c9"
+    },
+    {
+      "title": "正则化过拟合与模型选择",
+      "source": "方法与算法/正则化过拟合与模型选择.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "regularization",
+        "ridge",
+        "LASSO",
+        "elastic net",
+        "bias variance tradeoff"
+      ],
+      "summary": "惩罚和模型选择控制复杂度，但所有选择都必须与最终评价分开。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "9b82c477005fc4033d15dc5b26765558842b2f28029310e16d901975890edd34"
+    },
+    {
+      "title": "正态性方差齐性与模型诊断",
+      "source": "方法与算法/正态性方差齐性与模型诊断.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "Shapiro-Wilk",
+        "Levene",
+        "residual diagnostics",
+        "normality test"
+      ],
+      "summary": "诊断围绕模型误差和独立单位展开，避免用几个预检验自动决定全部分析。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "13fd6aea730a198f85beed179caa322c8bac3f6f820c2dcd1ff249fa38358820"
+    },
+    {
+      "title": "相关回归与混杂",
+      "source": "方法与算法/相关回归与混杂.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "Pearson",
+        "Spearman",
+        "correlation",
+        "linear regression",
+        "混杂因素",
+        "Simpson悖论"
+      ],
+      "summary": "相关描述共同变化，回归在指定调整集合下估计关系；两者都不能单独建立因果。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "d4924a51a41d67223e2b6f5dd2d390aab7931250f8b5b8c020469e6a3717f818"
+    },
+    {
+      "title": "秩检验符号检验与非参数方法",
+      "source": "方法与算法/秩检验符号检验与非参数方法.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "Mann-Whitney U",
+        "Wilcoxon signed-rank",
+        "Kruskal-Wallis",
+        "非参数检验",
+        "符号检验"
+      ],
+      "summary": "非参数方法仍有假设；先弄清检验针对排序、差值符号还是完整分布。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "4ab69ee7e3caf936fcf767c29b93478d1b879a2ecd954533514026cc9684798d"
+    },
+    {
+      "title": "算法输入输出复杂度与数据结构",
+      "source": "方法与算法/算法输入输出复杂度与数据结构.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "algorithm",
+        "time complexity",
+        "space complexity",
+        "Big O",
+        "数据结构"
+      ],
+      "summary": "从输入、输出、正确性和资源成本理解算法，为生信工具的性能与适用范围打基础。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "e35d9fd3e88fe1d1812b9941b3e3e68a6a10eb0e43de41e4e21c8e6e8f4ad426"
     },
     {
       "title": "系谱BLUP与单步ssGBLUP",
@@ -1368,9 +1914,26 @@
         "设计矩阵"
       ],
       "summary": "回归把研究变量与协变量联系到表型，混合模型进一步表示样本相关性或层级结构。",
-      "validation": "文档核对；操作需按所用环境验证",
+      "validation": "模型与官方资料核对；相关实测分别在人工算法、GWAS与GS案例，本页无新增真实组学拟合",
       "updated": "2026-10-13",
-      "sha256": "afe617c493a8d03d9bf772256add9ade12aad533a19a0badfc3a94dfbe178d34"
+      "sha256": "f30954e62922ef73427a284c30b735cbcb22cbbff7b2dbf8afd12ae061ebd8ad"
+    },
+    {
+      "title": "置换检验与Bootstrap实践",
+      "source": "方法与算法/置换检验与Bootstrap实践.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "resampling",
+        "bootstrap实践",
+        "permutation实践",
+        "交换性"
+      ],
+      "summary": "Bootstrap近似估计量的抽样分布，置换构造零假设参考；两者必须尊重独立单位。",
+      "validation": "人工独立样本BCa、9999次置换及20种精确分组已运行；复杂分层置换未运行",
+      "updated": "2026-10-13",
+      "sha256": "2f571125d4a6ded3df22afefc527cb1c36fbd8bfffeeb2829a20cb877f7bbe80"
     },
     {
       "title": "群体结构与GWAS有什么关系",
@@ -1383,6 +1946,23 @@
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
       "sha256": "47b13392cef95d358a72b7f34c5c7c113ec17b64102777ce809e0ddcdd229f01"
+    },
+    {
+      "title": "聚类Kmeans与层次聚类",
+      "source": "方法与算法/聚类Kmeans与层次聚类.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "k-means",
+        "Lloyd algorithm",
+        "hierarchical clustering",
+        "聚类稳定性"
+      ],
+      "summary": "聚类寻找指定表示和距离下的结构；簇数、初始化和批次都会影响结果。",
+      "validation": "人工100点K-means已运行，检查SSE不增加；层次聚类仅文档说明",
+      "updated": "2026-10-13",
+      "sha256": "acccf71cf654e68178f6362c21fe879bdd534334929f0382f6a4754e0cb13abe"
     },
     {
       "title": "贝叶斯回归与核方法用于GS",
@@ -1402,6 +1982,40 @@
       "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
       "updated": "2026-10-13",
       "sha256": "8fd7884c7fed4f17f0d4c4f11fe11a45036df9b8707306ca50a7e4aab09496bb"
+    },
+    {
+      "title": "距离标准化与相似性",
+      "source": "方法与算法/距离标准化与相似性.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "Euclidean distance",
+        "cosine similarity",
+        "correlation distance",
+        "feature scaling"
+      ],
+      "summary": "距离反映你选择的尺度与关系，标准化会改变几何结构和后续聚类结果。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "07510a4bccc77e1b6a8ed4861320fb0890c1aaaa3eb07998271ff93e3e7bf956"
+    },
+    {
+      "title": "近邻朴素贝叶斯与决策树入门",
+      "source": "方法与算法/近邻朴素贝叶斯与决策树入门.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "kNN",
+        "naive Bayes",
+        "decision tree",
+        "nearest neighbors"
+      ],
+      "summary": "用三种直观规则理解基础分类器，比较距离、条件概率与递归分割。",
+      "validation": "官方算法说明核对；未运行kNN、朴素贝叶斯、树或随机森林",
+      "updated": "2026-10-13",
+      "sha256": "bce950b73bae7b86875c27f987c8974dbfcb72627d181ce120d8f1d7cbd04c35"
     },
     {
       "title": "ASV与微生物多样性",
@@ -1502,9 +2116,9 @@
         "padj"
       ],
       "summary": "P 值衡量特定零假设下的数据相容性，效应量描述差异大小；大量检验需要额外控制错误。",
-      "validation": "文档核对；操作需按所用环境验证",
+      "validation": "定义与原始研究核对；2000人工特征校正已运行，BH与SciPy独立核验",
       "updated": "2026-10-13",
-      "sha256": "98d32961984e2df35370c98458066cc6fe5f210b5d02ffbcaf0848a84220e39f"
+      "sha256": "681738ee76f0217d6b2423a9455e161bf87040c41afa101093da198d1416c741"
     },
     {
       "title": "SAM与BAM及CRAM",
@@ -1771,9 +2385,9 @@
         "样本量"
       ],
       "summary": "实验设计决定哪些问题能被回答；功效是指定效应与检验条件下发现信号的概率。",
-      "validation": "文档核对；操作示例未在本机运行",
+      "validation": "实验设计资料核对；供体层级的人工反例已运行，未做真实组学样本量模拟",
       "updated": "2026-10-13",
-      "sha256": "82410278c2233f2ede1e0641c8ed74e415f29a3272a6484bff3f91975bf8130b"
+      "sha256": "695af7f54770cbffa243cf784248ef1679e6d6d62da61c8795173b3a2d1da510"
     },
     {
       "title": "峰与FRiP及TSS富集",
@@ -1794,6 +2408,27 @@
       "sha256": "26cf77a067de3568a3287a2e552ccd49724cedeb84f3d17247bc96a6f7f6d1b0"
     },
     {
+      "title": "常见概率分布与生信场景",
+      "source": "术语与概念/常见概率分布与生信场景.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "Bernoulli",
+        "binomial",
+        "Poisson",
+        "negative binomial",
+        "正态分布",
+        "t分布",
+        "卡方分布",
+        "F分布"
+      ],
+      "summary": "按观测类型和生成假设理解分布，避免给所有组学数据套同一个正态模型。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "0790f1880d88b7d0a300356002d8d297df113a97915d78b00bf41cd59aa525b2"
+    },
+    {
       "title": "批次效应与混杂",
       "source": "术语与概念/批次效应与混杂.md",
       "folder": "术语与概念",
@@ -1808,6 +2443,78 @@
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
       "sha256": "4641b1046ec5db923bb33cd8805449c734ca0852213d5ae9c2caaf2ba565e310"
+    },
+    {
+      "title": "抽样分布中心极限定理与标准误",
+      "source": "术语与概念/抽样分布中心极限定理与标准误.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "sampling distribution",
+        "CLT",
+        "standard error",
+        "SE",
+        "中心极限定理"
+      ],
+      "summary": "统计量会随样本改变；标准误描述这种变动，中心极限定理有适用条件。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "371590c8b7e7d552a1ba347dc111b1f4ddcfe49df4552375619086f3c4397ebd"
+    },
+    {
+      "title": "描述统计与分布图",
+      "source": "术语与概念/描述统计与分布图.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "descriptive statistics",
+        "median",
+        "IQR",
+        "标准差",
+        "箱线图"
+      ],
+      "summary": "用位置、离散程度和图形描述数据，同时区分个体差异与估计精度。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "08068b2fac4a8ac706d21b477d055d89e092eba0f46f584b983ca23534b6ee1c"
+    },
+    {
+      "title": "数据类型总体样本与抽样",
+      "source": "术语与概念/数据类型总体样本与抽样.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "population",
+        "sample",
+        "sampling",
+        "连续变量",
+        "分类变量"
+      ],
+      "summary": "先确定观测单位、变量类型和抽样来源，再决定统计问题与推广范围。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "a7fd7e71f9739e15be2ada2a584ef4066110f23ebdc5060f902ab2d4164e4570"
+    },
+    {
+      "title": "概率条件概率与贝叶斯定理",
+      "source": "术语与概念/概率条件概率与贝叶斯定理.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "probability",
+        "conditional probability",
+        "Bayes theorem",
+        "条件概率",
+        "独立事件"
+      ],
+      "summary": "区分事件概率和条件概率，理解贝叶斯公式怎样结合先验与观测证据。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "8f859162ed3451aa7c143fcab661b98f7f5b72fbe7fcd8a18822b72ab119b2f9"
     },
     {
       "title": "比对相似性同源性与覆盖率",
@@ -1846,6 +2553,24 @@
       "sha256": "6ea106c11bb5ef765a2200001612a03c63a7c64d9b178b0d06e861c0a268d55e"
     },
     {
+      "title": "点估计偏差方差与一致性",
+      "source": "术语与概念/点估计偏差方差与一致性.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "point estimation",
+        "bias",
+        "consistency",
+        "MSE",
+        "估计量"
+      ],
+      "summary": "区分估计量的系统偏离、抽样波动和样本增大时的行为。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "ed84a18c230d9e5b566e35963aa258b2ba53b024974262c1be5c5b129c17d7a4"
+    },
+    {
       "title": "生物学重复与技术重复",
       "source": "术语与概念/生物学重复与技术重复.md",
       "folder": "术语与概念",
@@ -1876,7 +2601,7 @@
       "summary": "零值是已记录的数值，缺失表示没有可用观测；把二者混用会改变统计问题。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "4a304e6d31fef8a13e52907df4698b6a951c9b5becbf15355e7ae3a3057ce9f9"
+      "sha256": "52741722226853c425cc94c95e53152847d0aaf79119882e58fe1aa8194863f5"
     },
     {
       "title": "置信区间与重采样",
@@ -1892,9 +2617,9 @@
         "置换检验"
       ],
       "summary": "置信区间描述估计精度；重采样必须尊重独立单位和研究设计。",
-      "validation": "文档核对；操作示例未在本机运行",
+      "validation": "区间定义与接口核对；1000次人工研究覆盖、Welch与BCa区间已运行",
       "updated": "2026-10-13",
-      "sha256": "0456e02064b3ecb1bfc5a6dcf5650a22a0e86c4f090d25f83043ed79f4584ef0"
+      "sha256": "0ae377ac2eb1076b25af4a9a05e8c7ef5b6b7d5af9c54d216996f349b108bb94"
     },
     {
       "title": "群体结构是什么",
@@ -1967,6 +2692,24 @@
       "sha256": "18aa0642c8fc437c2f4daaab3e0cf2d69385e3428105dd0ce67838301c407220"
     },
     {
+      "title": "随机变量期望方差与协方差",
+      "source": "术语与概念/随机变量期望方差与协方差.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "random variable",
+        "expectation",
+        "variance",
+        "covariance",
+        "独立与不相关"
+      ],
+      "summary": "用随机变量描述不确定测量，区分均值、变异、共同变化和独立性。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "21e80d476359e6d54bb6b679d1d278afcc22471f73bc4e7d6080f5ea9911a0d5"
+    },
+    {
       "title": "零模型与方差组分",
       "source": "术语与概念/零模型与方差组分.md",
       "folder": "术语与概念",
@@ -1983,41 +2726,72 @@
       "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
       "updated": "2026-10-13",
       "sha256": "75e8e4c3a3477a2efa2e58397ec2a3a91bac742db41981a629edd0ebef4cf7af"
+    },
+    {
+      "title": "频率学派与贝叶斯推断",
+      "source": "术语与概念/频率学派与贝叶斯推断.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "frequentist",
+        "Bayesian inference",
+        "credible interval",
+        "可信区间",
+        "先验",
+        "后验"
+      ],
+      "summary": "理解两种推断怎样表达参数不确定性，避免把置信区间、后验概率和P值混读。",
+      "validation": "教材、原始研究或官方文档核对；概念与方法说明",
+      "updated": "2026-10-13",
+      "sha256": "e7466dac0f854cd249d2df08d49e2a998631c741cca07838fec970833e1c04f7"
     }
   ],
   "file_hashes": {
-    "ATAC-seq入门与实践.md": "44ce84a1e8888d736c43864a360fe1b6f2035d0234ce68d09cb4b726a141c9ea",
-    "ChIP-seq入门与实践.md": "d1b9f3f85e5cd9bed87324545e1e5717bc07b0cb70052ac08656603a83285ce9",
-    "DNA甲基化分析入门.md": "135bed5ab6dfe71176d5064df0a7a68fdee8b05d3b2b48c4e290c443014ee415",
+    "ATAC-seq入门与实践.md": "c840fee744310287f6c9ab29e19c466dc9e56c676b744473d9c64c253b959c9c",
+    "ChIP-seq入门与实践.md": "c06bf006344f64d87cd5ded69fbda7bb1579cb6fa279897fd12e0d89e9b34a17",
+    "DNA甲基化分析入门.md": "33e5a642e022b2e6431339be0475a28c484e1737bc2f35aeb0415b909ad0c4cf",
     "GS数据准备与候选个体预测.md": "94155220d2fae71329e4f46e760cb6cba0d7e8a300a09d409ce66a6910324a44",
     "GS训练验证与数据泄漏.md": "93be7359fa1c25412c803d69a7f97eab0326337e56060dab21546099fbcf8ebe",
-    "GWAS从数据准备到结果解释.md": "b1025677817e5f64b8a57d57d4ae4391c713b4899c1bdd3db8d61659c24a4c94",
+    "GWAS从数据准备到结果解释.md": "c1247b87a25ef9fccfc156d1072013e4aa6f91fcca21237a95bafee23044c61b",
     "GWAS参数选择与敏感性分析.md": "566779394e1927f1c14ac60ace4e8509b8c9550c091379d83ca6816add23e758",
     "GWAS常见报错与排查.md": "8b2adc8d19c39cbb52cef75f53bfb336346e4e57642e5146de47c62deeea8cb5",
     "GWAS曼哈顿图QQ图与膨胀因子.md": "810d55ddc8398ed80b39f0c296f728c61d09233b3856d4ff2d114ac5091850f9",
     "GWAS结果字段与等位基因统一.md": "82a9f7eea45c87584c3b7579981776ee1ad154004df40a3ab2591be84dee3013",
     "GWAS软件结果比较与一致性检查.md": "2e8618d2d0c5029634a59bcdf7939da25398e3362db030b98fee20fd475d2927",
     "GWAS软件输入转换与样本对齐.md": "0c053bf027f6f6de99c291515849d6160526a1ac5d410ae3877037a9c021c9f8",
-    "RNA-seq从计数矩阵到差异表达.md": "e86194e95bb0e4c2943975227e031274021d13d005e484a9759df5d042d6b791",
-    "代谢组入门与实践.md": "16f8900e85748cef3972bdd128b38e9412c0d4572c535f3f01546cbe154f67be",
+    "RNA-seq从计数矩阵到差异表达.md": "dbdee86ba2909854d24b31d19480c1a1b7db5f94d0b047313a35477d7382ca78",
+    "代谢组入门与实践.md": "94b985d49f798869c6720ab2fc4e1d24e41914382f62953749b81f37f41e95c1",
     "公开小鼠数据贯通多软件GWAS.md": "34995f6ed682a95bef05884897e066961a5261b188bc025b1eb069e14cf2c074",
-    "单细胞转录组入门与实践.md": "048074da4628055cd8730ad29cb2909cb126f931a33d4b30a4a4c6ef8c28016f",
+    "单细胞与空间组学验证设计.md": "c74c5f73829c2fdfe085584d51e97b20a1eda5babd86d8de52dbd2de7f82d50f",
+    "单细胞转录组入门与实践.md": "dcfbdfeceaa66ca02db3af2e3393a41638de4407b305916216f0faf72c606c81",
+    "变异与群体分析的验证设计.md": "bfb93a3a9781b52d4d9cdf15e84cfbd5fb398e9099c445709d63a8fb13d6b9d8",
     "变异注释与候选证据整理.md": "5d027c094e985628db0dc79628650a9bb18547de916f37812f4d517da54bfb7b",
     "合成家系数据贯通GS.md": "280c9f3e03ee8c24bd60ada3ba7109c84b9d1f411d2b4c5ee21f39885f3e4a82",
+    "合成数据贯通统计推断.md": "965e2395c2c8a91dcd1ac9a7aa5253eab3f717b2c659bd8465ce9c3de12e4e85",
     "基因型质控与过滤.md": "61f0a8d40245175437970b2494f53b6d031f929c30985b3c45a62c44113376e3",
-    "基因组重测序与变异检测.md": "32d9a161eee7dccc0511ae0eefaae0f1567ac4e81e218553a7f019a95ceec3d6",
+    "基因组重测序与变异检测.md": "0e43a38e6e649aa86682ad984728a1799ba80dfd237f84ed8538b68b30a3f07d",
+    "基础算法可复现练习.md": "55cb59a6cf76a4bbe053c120b72f38307f20d8701a7b204bfc741182c34a2d59",
     "多组学整合入门与实践.md": "116f228243c16df1273603608404bbb729f099357596ee13ffbab88e63215f46",
     "小RNA分析入门与实践.md": "05fc572ac1dc6995cf6b1b3ce3cfff8a1d331840477f5bb360d8377aa9d9f1ef",
-    "微生物组分析入门与实践.md": "dfdcc4641b34c5f3ac513ed4515583d8bb860b922bde82af0ca77a40937f6740",
+    "微生物组分析入门与实践.md": "b78ee9a16048fe222f3c0cfd05c3bb852970f818d132e0e39dcca58a3e7d4645",
+    "微生物组差异与验证设计.md": "aa377595c88666a3c57c9b691b5965e8fa392614ab70bdb5284208526725e231",
     "用PCA探索样本的群体结构.md": "b8a7deb89be3b4db4d70e30d51035f4dade554e6c40b8ac979fb02796dbe0c6e",
-    "空间转录组入门与实践.md": "a35afe0bdd74cabfd5951f5277f7ae2d488f945f2bf957bf2ccbb95462bb2629",
+    "空间转录组入门与实践.md": "500930aee8a0d6ac118e163d9db3b19eadf43e49bc0a911a7ef115c5fbd9cf75",
     "系统发育树入门与实践.md": "6e8641cccdd9855d7debe037be4e719ed9ab14e1f41b41e43a1f8353a101d06d",
-    "蛋白质组入门与实践.md": "72ff50da9a79e38029240390198d45d96e4d83af9d26fbed248727f131b9f1cc",
+    "组学验证的层级与证据.md": "1b0fa0b78aec492dbbb745c2f9d5e695071587d9723124088c61e3094ff2b41f",
+    "统计方法选择与分析计划.md": "770d6e194b65182200daadb91575573add6dddcd71b8db2c788d20ed62891072",
+    "蛋白质组与代谢组验证设计.md": "3f29a21e879561632fae7c223587b8bdce693488165381014ea2413ae5e72afe",
+    "蛋白质组入门与实践.md": "a4cafb74af152ee398216f87ee9a3bdb74e0ebdc98fce705af1a715151438491",
+    "表观组峰与调控证据验证.md": "8cbccd3a9333c6a53b121b53dfb8048c964d0b61a2d0b9845a6210f36bfd6910",
+    "转录组差异与qPCR验证设计.md": "3c5184e4e114982a63b4754db45200bc4cbd7991f1eaf548c6200a633bc5f060",
     "长读长测序分析入门.md": "1a80727bdd06369d45d2c3889b31ccdbc20e53ad3d30a2746441adabae066866",
-    "GS算法软件与实践路线.md": "1c452cbf62c7ff1e200dc6b6371bf192b5b920a1ffd5561f74a5082b6cf7f97d",
-    "GWAS软件选择与比较.md": "35078810ab837d8346264af547251e2892eaad047b865614d5099c73d7a779ad",
-    "中文生信学习地图.md": "7511a9af9838aa3e77dd337bb2143a9a82b8aaa9806dcea1f57bfc61f5bfce2c",
-    "组学分析总览与选型.md": "ea53b41b4794b8c66ab120be9636d199e371e4d8a841696e5ecc51954c25e0ea",
+    "GS算法软件与实践路线.md": "88da1122f4a6c07f20f69866bb9125a462fd99709af50c57d3881de6ce6f258c",
+    "GWAS软件选择与比较.md": "bc6eb6d05459586b45ea44976171088fc3cc8208deb48daf962aafcd30e78ccf",
+    "中文生信学习地图.md": "d3cda59485708c22c66eb845f061d69c61064670f72d94d0088540a603996bf5",
+    "生信基础算法学习路线.md": "282620f0384a78223cfac26e63227af5f88753c96b7564ff8e16d73fe703cabe",
+    "组学分析总览与选型.md": "3e706b45e6bdec46bf011f556ee7d2f83f7a56409d6be5c71e8a1230f2ad74aa",
+    "统计学与组学验证学习路线.md": "baa2930234e10e515d207b7e58241d6a15f7cc0b364a7bb99af99e648722bfb4",
     "群体分析与GWAS学习路线.md": "6fcccf621b8a9c05d13a17396d916b6fa828459a78c0a32876eb88b961ae8e4b",
     "ASReml基因组预测接口.md": "ddb4bb8701af6293f6f73254a8931577bdbd0808a9e226a8b66d7b4889b4e654",
     "BGLR贝叶斯预测实践.md": "011c705e4e40a7e98dc506273880af7a3d5c5bd81e6ca791180a911a473dc2e5",
@@ -2032,6 +2806,7 @@
     "Linux与项目目录实践.md": "e4941a0f2e58c379543dcf3c17762c4bc74112c4bd2f0e241de908cfc13cf177",
     "PLINK2使用与版本管理.md": "6cfcb0985555317f7f3a8be2a0473eea2663e555e80a0812622949051625ab9b",
     "PLINK2关联分析详解.md": "45956d0da61aa60776c854c8aa63f0504e6e375108986b3c4c895c1e14a12f4d",
+    "Python统计分析与结果核验.md": "8e9c69dbbcfd810bb69a7cd9ffad0c4b3eef7109e1de55a7965af7bf997905f5",
     "REGENIE两步关联分析.md": "5bc8b0ad6a004f09fc943748eaf04702981ec82ea48cbef08535adc0b60b915b",
     "SAIGE单变异关联分析.md": "b651bf7421f81aa75656b1b1b16d147f72028ae6cd93a20b95fc647614ba1292",
     "TASSEL关联分析实践.md": "bd30ef9f35718ca31f7d7f31c08465aba265d201bf1cc48eb7815fff8d45ae91",
@@ -2059,18 +2834,38 @@
     "GS中的REML混合模型方程与求解.md": "f57168637643f4f09de9254070db19bb1e8e6da4f00e599b91db59f66016832c",
     "PCA原理与实现.md": "cdb8b15b10102bf98149fb0f19ad26ec5b1cd919f30e76ea5a485fec4cbf26d8",
     "Smith-Waterman局部比对.md": "05709db34215b2faf027b8ff232cb24e99d20bfa554068bd25eebefa09b49f1e",
+    "t检验配对设计与Welch检验.md": "6be32a942b7197ef332e6319a44956d23eba6a8dd6e30f963548162146a4dcf8",
+    "似然最大似然与MAP估计.md": "c06a0446baf1dd134c43264ba5bb4824d95449be202130cfc5bb9c39c30a5e1d",
+    "假设检验与双侧单侧选择.md": "f046e266d14250baa7e3d52f29c19045cee4397de5e41c1a5d2867f7d8a7f149",
+    "分类指标ROC与PR曲线.md": "2a939eb5dd74d1395df42603398e624dbba9f930bb011434f38f471374375493",
+    "列联表卡方与Fisher精确检验.md": "530e7529277d9c43739e699169f270b948609d1cbbc8f2ebd302bbdbdeeedc7e",
+    "动态规划与序列比对基础.md": "9f85cf068e4a6882cebdbbe4301630791c3b877b9c245216900af1fe493004a5",
+    "图与最短路径的生信入门.md": "a728a2eaa09e612bff37bb188ad848936a7390801d6323b83712c94a21046e42",
     "富集分析与GSEA.md": "6e58c30d52939280faf3482cd9de9d58aa0ac83fc43213395b956aadd0a4297e",
-    "数据泄漏与交叉验证.md": "e0b5992745a7d6caae51e87c8ded7435032dfc205abcecb8a2ee5aedaf146273",
+    "广义线性模型与逻辑回归.md": "8aa72a5760b32bea15d9f22ab5fec1b0fe46581df91eadafec7819d0696f8539",
+    "排序查找与哈希在生信中的应用.md": "fb29d38651c3f183484acf887419e6ddafdcaa471a911fa09b97049de0f8efa2",
+    "数据泄漏与交叉验证.md": "12693299f1a66ebe352313de4cee2905b9b14d3900644061fb645b337d14b697",
+    "方差分析交互作用与对比.md": "f187652feaaf58a574e3a8d9087a80f10171a7a0e39d5f79ade85e5e47502cce",
+    "梯度下降与数值优化.md": "a5a189a6f0f116ea93b027e83ff6d9c08f6e0616de71c673847c8a43604232c9",
+    "正则化过拟合与模型选择.md": "9b82c477005fc4033d15dc5b26765558842b2f28029310e16d901975890edd34",
+    "正态性方差齐性与模型诊断.md": "13fd6aea730a198f85beed179caa322c8bac3f6f820c2dcd1ff249fa38358820",
+    "相关回归与混杂.md": "d4924a51a41d67223e2b6f5dd2d390aab7931250f8b5b8c020469e6a3717f818",
+    "秩检验符号检验与非参数方法.md": "4ab69ee7e3caf936fcf767c29b93478d1b879a2ecd954533514026cc9684798d",
+    "算法输入输出复杂度与数据结构.md": "e35d9fd3e88fe1d1812b9941b3e3e68a6a10eb0e43de41e4e21c8e6e8f4ad426",
     "系谱BLUP与单步ssGBLUP.md": "3e36ef49998d993a2aa5156464db93b6c69dffe969e251fafadb16237ef7005f",
-    "线性模型与混合模型.md": "afe617c493a8d03d9bf772256add9ade12aad533a19a0badfc3a94dfbe178d34",
+    "线性模型与混合模型.md": "f30954e62922ef73427a284c30b735cbcb22cbbff7b2dbf8afd12ae061ebd8ad",
+    "置换检验与Bootstrap实践.md": "2f571125d4a6ded3df22afefc527cb1c36fbd8bfffeeb2829a20cb877f7bbe80",
     "群体结构与GWAS有什么关系.md": "47b13392cef95d358a72b7f34c5c7c113ec17b64102777ce809e0ddcdd229f01",
+    "聚类Kmeans与层次聚类.md": "acccf71cf654e68178f6362c21fe879bdd534334929f0382f6a4754e0cb13abe",
     "贝叶斯回归与核方法用于GS.md": "8fd7884c7fed4f17f0d4c4f11fe11a45036df9b8707306ca50a7e4aab09496bb",
+    "距离标准化与相似性.md": "07510a4bccc77e1b6a8ed4861320fb0890c1aaaa3eb07998271ff93e3e7bf956",
+    "近邻朴素贝叶斯与决策树入门.md": "bce950b73bae7b86875c27f987c8974dbfcb72627d181ce120d8f1d7cbd04c35",
     "ASV与微生物多样性.md": "7266ca70e5155fc5137994a44293a71d02a8ca48bed8953f014ba0ecb0bd3714",
     "FASTA与FASTQ.md": "3442a45f7426b83c6807492d4acc6211c6b33b2a266bb3d67ea6acb66abe8f11",
     "Hardy-Weinberg平衡与检验.md": "bc445027170b8b9eacc46736bb82b0aeb84491e100c59fadcb566387220b0ab7",
     "LOCO与近端污染.md": "fc6b88ea350f77a2cdae8076733fa178fcbc35496ce1107fa2db7703de6e6c53",
     "MAF与MAC及稀有变异.md": "80957e7a4b23b0ad9df04cde87b9effcd3d18ef719304c738fe4a0372793079a",
-    "P值效应量与多重检验.md": "98d32961984e2df35370c98458066cc6fe5f210b5d02ffbcaf0848a84220e39f",
+    "P值效应量与多重检验.md": "681738ee76f0217d6b2423a9455e161bf87040c41afa101093da198d1416c741",
     "SAM与BAM及CRAM.md": "305d4302c63b87a38afd7d1d1eb2c6e9c2ee1e2196c05dbc701a86b14c5dc791",
     "SNP与基因型是什么.md": "65908b58fe0d0db359cb52e6522f4770974cee46a6e58d8d2951c3869f35cf6b",
     "UMI与细胞条形码.md": "1b6f3cf4eedd38bd13e4172324a60cc1b6ce822476775112f2d23284c99e03d5",
@@ -2085,21 +2880,29 @@
     "基因组坐标与区间.md": "33fc2569a25b4c09ba67baebf9987b0579481991e5ebc960f48b218fcaab15db",
     "基因组选择与GWAS的区别.md": "945e37d1471f84b3ecf28ff7f858199183b754d013e4fac08b1272ee3290e7eb",
     "定相与基因型填充.md": "5035ccaf308da774491efc2ef3d5f9aab012caee4fc55cff77234ac18d7424c5",
-    "实验设计与统计功效.md": "82410278c2233f2ede1e0641c8ed74e415f29a3272a6484bff3f91975bf8130b",
+    "实验设计与统计功效.md": "695af7f54770cbffa243cf784248ef1679e6d6d62da61c8795173b3a2d1da510",
     "峰与FRiP及TSS富集.md": "26cf77a067de3568a3287a2e552ccd49724cedeb84f3d17247bc96a6f7f6d1b0",
+    "常见概率分布与生信场景.md": "0790f1880d88b7d0a300356002d8d297df113a97915d78b00bf41cd59aa525b2",
     "批次效应与混杂.md": "4641b1046ec5db923bb33cd8805449c734ca0852213d5ae9c2caaf2ba565e310",
+    "抽样分布中心极限定理与标准误.md": "371590c8b7e7d552a1ba347dc111b1f4ddcfe49df4552375619086f3c4397ebd",
+    "描述统计与分布图.md": "08068b2fac4a8ac706d21b477d055d89e092eba0f46f584b983ca23534b6ee1c",
+    "数据类型总体样本与抽样.md": "a7fd7e71f9739e15be2ada2a584ef4066110f23ebdc5060f902ab2d4164e4570",
+    "概率条件概率与贝叶斯定理.md": "8f859162ed3451aa7c143fcab661b98f7f5b72fbe7fcd8a18822b72ab119b2f9",
     "比对相似性同源性与覆盖率.md": "28a4618a6f001841a0de85b360a9fa50c06140911926769ddb2dece5f26d2664",
     "测序深度覆盖度与质量分数.md": "6ea106c11bb5ef765a2200001612a03c63a7c64d9b178b0d06e861c0a268d55e",
+    "点估计偏差方差与一致性.md": "ed84a18c230d9e5b566e35963aa258b2ba53b024974262c1be5c5b129c17d7a4",
     "生物学重复与技术重复.md": "5f2d9f3b3f72fba698cbd83a07a392fcc7a4cd45483d2a3db43be2957b7bb138",
-    "缺失值与零值.md": "4a304e6d31fef8a13e52907df4698b6a951c9b5becbf15355e7ae3a3057ce9f9",
-    "置信区间与重采样.md": "0456e02064b3ecb1bfc5a6dcf5650a22a0e86c4f090d25f83043ed79f4584ef0",
+    "缺失值与零值.md": "52741722226853c425cc94c95e53152847d0aaf79119882e58fe1aa8194863f5",
+    "置信区间与重采样.md": "0ae377ac2eb1076b25af4a9a05e8c7ef5b6b7d5af9c54d216996f349b108bb94",
     "群体结构是什么.md": "2799bfedcfa795afd39546c65b20f1a4fa255e89c6e83232cdb8ef8f00d63b09",
     "育种值GEBV准确度与可靠度.md": "4d8942d188fe45927a72856207a6e8401133404647e4c763032a971a7386a644",
     "计数丰度与标准化.md": "0eb02d5ffe5191a9b551b82f95cf879423067fa7ec7bd0636919f3f9af3a3b42",
     "连锁不平衡与LD剪枝.md": "18aa0642c8fc437c2f4daaab3e0cf2d69385e3428105dd0ce67838301c407220",
+    "随机变量期望方差与协方差.md": "21e80d476359e6d54bb6b679d1d278afcc22471f73bc4e7d6080f5ea9911a0d5",
     "零模型与方差组分.md": "75e8e4c3a3477a2efa2e58397ec2a3a91bac742db41981a629edd0ebef4cf7af",
-    "关键词索引.md": "40b6c5f79994cc83ee61d2a8de41d544850c045092b860bd8a72f3cc17bb8e08",
-    "Home.md": "f6f46ef7810a20a911bd8b78154fb0cc03331a55fe3d30002214a41f4c41630c",
-    "_Sidebar.md": "d927ed50ef537d6fbdc710373bfb947f073a57a3cfb1c8a4e2d58ccab81b40d0"
+    "频率学派与贝叶斯推断.md": "e7466dac0f854cd249d2df08d49e2a998631c741cca07838fec970833e1c04f7",
+    "关键词索引.md": "e28e6a617854cf3148590ae38db68969b07cdaec1f0c54ea46b66a85c32ff429",
+    "Home.md": "962af7fcd4c7ed83269fa51696f2d8f8d183ac066cdce1d97b58d5c258b7447d",
+    "_Sidebar.md": "1bd8b4ffaf133c4216179d56d944ae121835cec544b07bb6fc95df18799e2252"
   }
 }

@@ -1,0 +1,5 @@
+# Python 3.10+; see maintenance records for versions actually executed.
+# Bounds express API requirements, not a reproducibility lock file.
+numpy>=1.24
+scipy>=1.15
+matplotlib>=3.7

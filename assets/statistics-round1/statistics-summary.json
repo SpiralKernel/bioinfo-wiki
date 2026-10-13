@@ -1,0 +1,103 @@
+{
+  "seed": 20261013,
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "scope": "Artificial continuous data only; no real omics, wet-lab, classifier, GLM or mixed model fit",
+  "independent_welch": {
+    "effect_B_minus_A": 0.9911493311834085,
+    "SE": 0.356920153745586,
+    "df": 52.00063588834868,
+    "t": 2.776949748514071,
+    "p": 0.007611984011716938,
+    "CI": [
+      0.27493685347634766,
+      1.7073618088904694
+    ]
+  },
+  "paired": {
+    "subjects": 40,
+    "mean_difference": 0.31242484575771745,
+    "paired_p": 0.0019118944778279939,
+    "incorrectly_ignoring_pairs_p": 0.6771682862855856
+  },
+  "permutation": {
+    "effect_B_minus_A": 0.3006801712956845,
+    "p": 0.4194,
+    "resamples": 9999,
+    "exact_six_observations_p": 0.1
+  },
+  "bootstrap": {
+    "method": "BCa",
+    "resamples": 4999,
+    "statistic": "mean(B)-mean(A)",
+    "CI": [
+      0.30345661015916325,
+      1.669495310228878
+    ]
+  },
+  "contingency": {
+    "fisher_table": [
+      [
+        8,
+        2
+      ],
+      [
+        1,
+        9
+      ]
+    ],
+    "odds_ratio": 36.0,
+    "fisher_p": 0.005477494641581329,
+    "chi_square_table": [
+      [
+        20,
+        15,
+        10
+      ],
+      [
+        10,
+        20,
+        15
+      ]
+    ],
+    "chi_square_p": 0.08015367705512555,
+    "min_expected": 12.5
+  },
+  "multiple_testing": {
+    "features": 2000,
+    "nonnull_features_simulation_only": 100,
+    "results": {
+      "raw": {
+        "discoveries": 194,
+        "false_discoveries_simulation_only": 102,
+        "realized_FDP": 0.5257731958762887
+      },
+      "BH": {
+        "discoveries": 62,
+        "false_discoveries_simulation_only": 3,
+        "realized_FDP": 0.04838709677419355
+      },
+      "Bonferroni": {
+        "discoveries": 14,
+        "false_discoveries_simulation_only": 0,
+        "realized_FDP": 0.0
+      }
+    }
+  },
+  "pseudoreplication": {
+    "donors": 20,
+    "cells": 200,
+    "true_group_effect": 0,
+    "correct_donor_level_p": 0.5271346589174564,
+    "incorrectly_independent_cells_p": 0.037571974232586014,
+    "observed_difference": 0.470689267786273
+  },
+  "repeated_confidence_intervals": {
+    "repetitions": 1000,
+    "observations_each": 20,
+    "nominal_coverage": 0.95,
+    "observed_coverage": 0.942
+  }
+}

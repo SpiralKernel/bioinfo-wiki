@@ -25,3 +25,8 @@
 流程尚未在本机运行。自有物种的染色体、线粒体名称、黑名单、TSS 注释与峰调用设置应单独核对，不能复制人类资源。
 
 深入标准见 [ENCODE ATAC 数据标准](https://www.encodeproject.org/data-standards/atac-seq/atac-encode4/)。衔接[RNA-seq从计数矩阵到差异表达](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA-seq%E4%BB%8E%E8%AE%A1%E6%95%B0%E7%9F%A9%E9%98%B5%E5%88%B0%E5%B7%AE%E5%BC%82%E8%A1%A8%E8%BE%BE)与[多组学整合入门与实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%A4%9A%E7%BB%84%E5%AD%A6%E6%95%B4%E5%90%88%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5)。
+
+
+## 统计基础与验证入口
+
+[表观组峰与调控证据验证](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%A1%A8%E8%A7%82%E7%BB%84%E5%B3%B0%E4%B8%8E%E8%B0%83%E6%8E%A7%E8%AF%81%E6%8D%AE%E9%AA%8C%E8%AF%81)补充本任务所需的统计或验证判断。分析前先确认[统计方法选择与分析计划](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95%E9%80%89%E6%8B%A9%E4%B8%8E%E5%88%86%E6%9E%90%E8%AE%A1%E5%88%92)，结果解释时区分[组学验证的层级与证据](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E9%AA%8C%E8%AF%81%E7%9A%84%E5%B1%82%E7%BA%A7%E4%B8%8E%E8%AF%81%E6%8D%AE)。

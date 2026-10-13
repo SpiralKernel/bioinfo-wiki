@@ -6,6 +6,10 @@
 
 ## 从哪里开始
 
+- [统计学与组学验证学习路线](wiki/统计学与组学验证学习路线.md)：概率、估计、基础检验及各组学验证。
+- [生信基础算法学习路线](wiki/生信基础算法学习路线.md)：数据结构、查找、图、动态规划、聚类与优化。
+- [组学验证的层级与证据](wiki/组学验证的层级与证据.md)：计算、统计、技术、独立样本和功能证据。
+
 - [中文生信学习地图](wiki/中文生信学习地图.md)：前置知识与阅读入口。
 - [群体分析与GWAS学习路线](wiki/群体分析与GWAS学习路线.md)：质控、PCA、模型与关联解释。
 - [GWAS软件选择与比较](wiki/GWAS软件选择与比较.md)：PLINK、GEMMA、GCTA、REGENIE、SAIGE、BOLT及育种常用工具。
@@ -48,12 +52,23 @@ python3 examples/plot_genomic_prediction.py
 
 输出在 `examples/output/gs/`，重复运行覆盖同名文件；建议使用项目虚拟环境。实际结果和验证范围见[GS第一轮记录](maintenance/gs-round1-2026-10-13.md)。专业GS软件的模板尚未运行，教学实现不包含REML、MCMC或ssGBLUP。
 
+统计与基础算法练习建议Python 3.10+，依赖NumPy、SciPy 1.15+（rng接口）和Matplotlib：
+
+```bash
+python3 -m pip install -r requirements-teaching.txt
+python3 examples/statistics_demo.py
+python3 examples/basic_algorithms_demo.py
+```
+
+[统计案例](wiki/合成数据贯通统计推断.md)实际运行了均值、配对、分类表、区间、置换、多重校正与供体层级反例；[算法练习](wiki/基础算法可复现练习.md)包含六类小型实现。两者均为人工数据，原始输出分别在 `examples/output/statistics/` 和 `examples/output/basic-algorithms/`，重复运行覆盖同名文件。版本与边界见[本轮维护记录](maintenance/statistics-round1-2026-10-13.md)。分组学验证页提供设计指南，未执行湿实验。
+
 ## 在Obsidian编写并发布
 
 原稿在 Obsidian 的 `知识库/中文生信Wiki`；本仓库 `wiki/` 是生成的发布版。写作属性和维护规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ```bash
 python3 scripts/export_wiki.py --source '/你的Obsidian库/知识库/中文生信Wiki' --refresh-index
+python3 -m pip install -r requirements-teaching.txt
 python3 -m unittest discover -s tests -v
 bash scripts/publish_wiki.sh
 ```
