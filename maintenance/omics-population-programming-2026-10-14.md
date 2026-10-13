@@ -124,3 +124,9 @@ R代码为examples/programming_basics.R。正常原生入口为Rscript或RStudio
 | `assets/programming-round1/r-values.pdf` | `78b9ce58bda8b4dfed348a8c6f774f345935fd68d252b85b2894a636ab1deee1` |
 | `assets/programming-round1/r-values.png` | `84ef503abc71906cd86c76a47371474fbd9eb5d5c1002bbcb7f3c18008f29df3` |
 | `assets/programming-round1/validation.json` | `ff262db841f457fd686725571c689d3453451b19be690ad7e97fa8b11b166f2d` |
+
+## 发布后核验
+
+正文与素材发布完成：主仓库内容提交`5bb3965`，Wiki提交`2ecda8c`。主仓库首次HTTP 408后确认未接收；按相同提交重试成功，没有改写远端历史。
+
+139项公开请求全部通过：77个主仓库变更文件、58个Wiki变更文件（含清单），逐项HTTP 200且SHA-256与本地一致；另4项首页/三条新学习路线HTML入口正常显示Wiki内容。记录见[公开发布核验JSON](omics-population-programming-publication-2026-10-14.json)。审计记录本身随后单独提交，不改变已核验的正文、代码或素材。
