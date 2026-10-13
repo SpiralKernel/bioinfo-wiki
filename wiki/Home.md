@@ -7,6 +7,7 @@
 - [中文生信学习地图](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%B8%AD%E6%96%87%E7%94%9F%E4%BF%A1%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE)：了解前置知识和阅读顺序。
 - [群体分析与GWAS学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E5%88%86%E6%9E%90%E4%B8%8EGWAS%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)：沿熟悉的主线进入分析。
 - [GWAS软件选择与比较](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GWAS%E8%BD%AF%E4%BB%B6%E9%80%89%E6%8B%A9%E4%B8%8E%E6%AF%94%E8%BE%83)：按场景选模型，进入各软件详解。
+- [GS算法软件与实践路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GS%E7%AE%97%E6%B3%95%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%AE%9E%E8%B7%B5%E8%B7%AF%E7%BA%BF)：算法、六种软件和候选预测实践。
 - [组学分析总览与选型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E5%88%86%E6%9E%90%E6%80%BB%E8%A7%88%E4%B8%8E%E9%80%89%E5%9E%8B)：按测量对象选择组学流程。
 - [关键词索引](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%B3%E9%94%AE%E8%AF%8D%E7%B4%A2%E5%BC%95)：搜索中文名、英文名和缩写。
 
@@ -14,18 +15,20 @@
 
 - [合成数据贯通PCA与GWAS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%90%88%E6%88%90%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9APCA%E4%B8%8EGWAS)：120 样本、600 位点的实测示例。
 - [公开小鼠数据贯通多软件GWAS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%AC%E5%BC%80%E5%B0%8F%E9%BC%A0%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9A%E5%A4%9A%E8%BD%AF%E4%BB%B6GWAS)：四个软件、七种配置的公开数据案例。
+- [合成家系数据贯通GS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%90%88%E6%88%90%E5%AE%B6%E7%B3%BB%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9AGS)：GBLUP、家系验证与60个候选预测。
 - [BLAST原理与种子延伸](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BLAST%E5%8E%9F%E7%90%86%E4%B8%8E%E7%A7%8D%E5%AD%90%E5%BB%B6%E4%BC%B8)：用人工字符串理解启发式与精确比对。
 
 其他流程分别提供官方公开数据和实践入口，并注明文档核对与实际运行的区别。
 
-## 学习路线（4）
+## 学习路线（5）
 
+- [GS算法软件与实践路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GS%E7%AE%97%E6%B3%95%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%AE%9E%E8%B7%B5%E8%B7%AF%E7%BA%BF)：从育种值和验证设计出发，连接GBLUP、贝叶斯模型、单步法与六种软件指南。
 - [GWAS软件选择与比较](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GWAS%E8%BD%AF%E4%BB%B6%E9%80%89%E6%8B%A9%E4%B8%8E%E6%AF%94%E8%BE%83)：先根据性状、样本相关性、物种和数据规模选择模型，再选择能够实现并验证它的软件。
 - [中文生信学习地图](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%B8%AD%E6%96%87%E7%94%9F%E4%BF%A1%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE)：从问题、数据和检查点进入生信，按需要跳转到概念、算法、组学流程及实践。
 - [组学分析总览与选型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E5%88%86%E6%9E%90%E6%80%BB%E8%A7%88%E4%B8%8E%E9%80%89%E5%9E%8B)：先明确测量对象和研究问题，再选择输入、模型及可以支持的结论。
 - [群体分析与GWAS学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E5%88%86%E6%9E%90%E4%B8%8EGWAS%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)：从基因型编码和样本审计出发，依次完成群体探索、关联分析和证据解释。
 
-## 术语与概念（31）
+## 术语与概念（33）
 
 - [ASV与微生物多样性](https://github.com/SpiralKernel/bioinfo-wiki/wiki/ASV%E4%B8%8E%E5%BE%AE%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7)：ASV 是扩增子分析中的序列特征，群落多样性指标则从不同角度概括样本内和样本间差异。
 - [FASTA与FASTQ](https://github.com/SpiralKernel/bioinfo-wiki/wiki/FASTA%E4%B8%8EFASTQ)：FASTA 保存序列及标题，FASTQ 还保存逐碱基质量信息，二者服务于不同分析阶段。
@@ -45,6 +48,7 @@
 - [参考基因组与注释版本](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%82%E8%80%83%E5%9F%BA%E5%9B%A0%E7%BB%84%E4%B8%8E%E6%B3%A8%E9%87%8A%E7%89%88%E6%9C%AC)：参考基因组给出坐标与序列，注释说明基因等要素的位置；分析必须记录二者的具体版本。
 - [基因标识符与同源基因](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E6%A0%87%E8%AF%86%E7%AC%A6%E4%B8%8E%E5%90%8C%E6%BA%90%E5%9F%BA%E5%9B%A0)：基因符号、稳定标识符和跨物种同源关系表达不同信息，映射时必须记录来源与版本。
 - [基因组坐标与区间](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%9D%90%E6%A0%87%E4%B8%8E%E5%8C%BA%E9%97%B4)：坐标必须同时带有参考版本、序列名和端点规则，格式转换不能只改文件扩展名。
+- [基因组选择与GWAS的区别](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%80%89%E6%8B%A9%E4%B8%8EGWAS%E7%9A%84%E5%8C%BA%E5%88%AB)：GWAS寻找统计关联，GS预测遗传价值；两者可以结合，但验证目标不同。
 - [定相与基因型填充](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%AE%9A%E7%9B%B8%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E5%A1%AB%E5%85%85)：定相推断等位基因位于哪条单倍型，填充推断未观测基因型，两者都需保留不确定性。
 - [实验设计与统计功效](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%BB%9F%E8%AE%A1%E5%8A%9F%E6%95%88)：实验设计决定哪些问题能被回答；功效是指定效应与检验条件下发现信号的概率。
 - [峰与FRiP及TSS富集](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%B3%B0%E4%B8%8EFRiP%E5%8F%8ATSS%E5%AF%8C%E9%9B%86)：峰是相对背景具有信号富集的区域，FRiP 和 TSS 富集用于从不同角度评价部分染色质测量。
@@ -55,29 +59,38 @@
 - [缺失值与零值](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BC%BA%E5%A4%B1%E5%80%BC%E4%B8%8E%E9%9B%B6%E5%80%BC)：零值是已记录的数值，缺失表示没有可用观测；把二者混用会改变统计问题。
 - [置信区间与重采样](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%E4%B8%8E%E9%87%8D%E9%87%87%E6%A0%B7)：置信区间描述估计精度；重采样必须尊重独立单位和研究设计。
 - [群体结构是什么](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E7%BB%93%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88)：群体结构描述样本之间并非完全均匀的遗传差异模式，分析前需要同时排查技术来源。
+- [育种值GEBV准确度与可靠度](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%82%B2%E7%A7%8D%E5%80%BCGEBV%E5%87%86%E7%A1%AE%E5%BA%A6%E4%B8%8E%E5%8F%AF%E9%9D%A0%E5%BA%A6)：区分加性遗传价值、预测表型、表型相关、真实育种值准确度和基于PEV的可靠度。
 - [计数丰度与标准化](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%AE%A1%E6%95%B0%E4%B8%B0%E5%BA%A6%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96)：原始计数、相对丰度和变换后的数值对应不同问题，模型输入必须与其假设一致。
 - [连锁不平衡与LD剪枝](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%BF%9E%E9%94%81%E4%B8%8D%E5%B9%B3%E8%A1%A1%E4%B8%8ELD%E5%89%AA%E6%9E%9D)：连锁不平衡描述位点等位基因之间的非随机关联，LD 剪枝用于减少所选位点集合中的冗余。
 - [零模型与方差组分](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E9%9B%B6%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%96%B9%E5%B7%AE%E7%BB%84%E5%88%86)：零模型描述没有当前待检验位点效应时的背景；方差组分表示模型中不同变异来源的规模。
 
-## 方法与算法（8）
+## 方法与算法（12）
 
 - [BLAST原理与种子延伸](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BLAST%E5%8E%9F%E7%90%86%E4%B8%8E%E7%A7%8D%E5%AD%90%E5%BB%B6%E4%BC%B8)：BLAST 是序列局部相似性检索的启发式方法族；理解种子、延伸和统计评估比只记命令更重要。
 - [FarmCPU与BLINK原理](https://github.com/SpiralKernel/bioinfo-wiki/wiki/FarmCPU%E4%B8%8EBLINK%E5%8E%9F%E7%90%86)：FarmCPU与BLINK通过迭代选择背景位点帮助检验其他位点，背景选择本身也是分析方法的一部分。
+- [GBLUP与rrBLUP原理及实现](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GBLUP%E4%B8%8ErrBLUP%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0)：用同一套中心化、固定效应与方差缩放，连接个体GBLUP和标记岭回归。
+- [GS中的REML混合模型方程与求解](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GS%E4%B8%AD%E7%9A%84REML%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E6%96%B9%E7%A8%8B%E4%B8%8E%E6%B1%82%E8%A7%A3)：区分方差组分估计、给定参数的BLUP求解和大规模关系矩阵近似。
 - [PCA原理与实现](https://github.com/SpiralKernel/bioinfo-wiki/wiki/PCA%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0)：主成分分析寻找解释数据变化的正交方向；输入矩阵的定义和尺度直接影响结果。
 - [Smith-Waterman局部比对](https://github.com/SpiralKernel/bioinfo-wiki/wiki/Smith-Waterman%E5%B1%80%E9%83%A8%E6%AF%94%E5%AF%B9)：Smith–Waterman 用动态规划找到给定打分规则下的最优局部比对，适合理解序列比对的精确基线。
 - [富集分析与GSEA](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA)：功能富集把特征列表或排序与知识集合连接，结论取决于背景、映射、排序和多重检验。
 - [数据泄漏与交叉验证](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%95%B0%E6%8D%AE%E6%B3%84%E6%BC%8F%E4%B8%8E%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81)：预测评估需要让测试数据保持独立，并在训练折内学习预处理和特征选择。
+- [系谱BLUP与单步ssGBLUP](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%B3%BB%E8%B0%B1BLUP%E4%B8%8E%E5%8D%95%E6%AD%A5ssGBLUP)：单步法把系谱与基因组关系放进统一遗传评估，关键在关系基准、编号和分块一致。
 - [线性模型与混合模型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B)：回归把研究变量与协变量联系到表型，混合模型进一步表示样本相关性或层级结构。
 - [群体结构与GWAS有什么关系](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E7%BB%93%E6%9E%84%E4%B8%8EGWAS%E6%9C%89%E4%BB%80%E4%B9%88%E5%85%B3%E7%B3%BB)：当遗传背景同时关联表型和位点频率时，简单关联可能混入群体差异，需要结合设计和模型处理。
+- [贝叶斯回归与核方法用于GS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%9B%9E%E5%BD%92%E4%B8%8E%E6%A0%B8%E6%96%B9%E6%B3%95%E7%94%A8%E4%BA%8EGS)：不同先验改变标记效应的收缩方式；核模型通过相似性矩阵表达遗传预测结构。
 
-## 工具（22）
+## 工具（28）
 
+- [ASReml基因组预测接口](https://github.com/SpiralKernel/bioinfo-wiki/wiki/ASReml%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%A2%84%E6%B5%8B%E6%8E%A5%E5%8F%A3)：用已知关系矩阵定义遗传随机效应，核对矩阵属性、缺失表型与预测量的区别。
+- [BGLR贝叶斯预测实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BGLR%E8%B4%9D%E5%8F%B6%E6%96%AF%E9%A2%84%E6%B5%8B%E5%AE%9E%E8%B7%B5)：用共同输入建立BRR基线，再比较BayesA/B/C、BL与RKHS，同时检查采样和预测量定义。
 - [BLAST本地检索实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BLAST%E6%9C%AC%E5%9C%B0%E6%A3%80%E7%B4%A2%E5%AE%9E%E8%B7%B5)：用本地数据库理解查询、数据库构建与结果字段，并将正式结论建立在覆盖率和统计解释上。
+- [BLUPF90单步遗传评估流程](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BLUPF90%E5%8D%95%E6%AD%A5%E9%81%97%E4%BC%A0%E8%AF%84%E4%BC%B0%E6%B5%81%E7%A8%8B)：从重编号与参数文件开始，组织方差估计、ssGBLUP预测和结果映射。
 - [BOLT-LMM关联分析](https://github.com/SpiralKernel/bioinfo-wiki/wiki/BOLT-LMM%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90)：BOLT-LMM面向较大队列的混合模型关联，模型模式、样本适用性、参考资源与输出列需要同时核对。
 - [EMMAX关联分析与旧流程兼容](https://github.com/SpiralKernel/bioinfo-wiki/wiki/EMMAX%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90%E4%B8%8E%E6%97%A7%E6%B5%81%E7%A8%8B%E5%85%BC%E5%AE%B9)：EMMAX是混合模型关联的经典实现，理解旧文件编码与顺序是复现已有分析的关键。
 - [GAPIT多模型GWAS实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GAPIT%E5%A4%9A%E6%A8%A1%E5%9E%8BGWAS%E5%AE%9E%E8%B7%B5)：GAPIT把多种关联与预测方法组织在R接口中；每次应明确模型、样本交集及输出，而不是把一键运行当成模型选择。
 - [GCTA与MLMA关联分析](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GCTA%E4%B8%8EMLMA%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90)：GCTA包含多种遗传统计任务；MLMA使用稠密GRM做关联，不能与GREML或fastGWA模块混称。
 - [GEMMA线性混合模型实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GEMMA%E7%BA%BF%E6%80%A7%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E5%AE%9E%E8%B7%B5)：GEMMA以显式亲缘矩阵拟合关联模型，适合学习固定效应、背景相关性和检验方法的连接。
+- [HIBLUP基因组预测实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/HIBLUP%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%A2%84%E6%B5%8B%E5%AE%9E%E8%B7%B5)：按输入信息选择GBLUP或单步模型，区分方差估计与已知参数求解并检查缺失处理。
 - [Linux与项目目录实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/Linux%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E5%AE%9E%E8%B7%B5)：先学会识别路径、检查文本和保存日志，就能建立可追溯的最小分析项目。
 - [PLINK2使用与版本管理](https://github.com/SpiralKernel/bioinfo-wiki/wiki/PLINK2%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86)：PLINK 2 用于基因型处理、PCA 和关联等任务；参数与默认行为需要绑定具体版本。
 - [PLINK2关联分析详解](https://github.com/SpiralKernel/bioinfo-wiki/wiki/PLINK2%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90%E8%AF%A6%E8%A7%A3)：PLINK 2的关联接口按性状拟合回归；正确读取性状、协变量、计数等位基因与错误码比记住一条命令更重要。
@@ -86,6 +99,8 @@
 - [TASSEL关联分析实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/TASSEL%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90%E5%AE%9E%E8%B7%B5)：TASSEL通过图形界面和命令行组织遗传数据与GLM/MLM分析，关键是理解taxa交集、固定效应与亲缘输入。
 - [fastGWA与fastGWA-GLMM](https://github.com/SpiralKernel/bioinfo-wiki/wiki/fastGWA%E4%B8%8EfastGWA-GLMM)：fastGWA利用稀疏关系和快速检验提高可扩展性；数量性状与二分类模块需要分别配置和核验。
 - [rMVP关联分析实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/rMVP%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90%E5%AE%9E%E8%B7%B5)：rMVP通过外存矩阵和并行运行关联分析，转换后的样本顺序及协变量对应是最重要的检查点。
+- [rrBLUP预测实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/rrBLUP%E9%A2%84%E6%B5%8B%E5%AE%9E%E8%B7%B5)：从可检查的输入矩阵开始，用rrBLUP建立单性状GBLUP基线并理解方差、GEBV与PEV。
+- [sommer基因组预测与复杂设计](https://github.com/SpiralKernel/bioinfo-wiki/wiki/sommer%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%A2%84%E6%B5%8B%E4%B8%8E%E5%A4%8D%E6%9D%82%E8%AE%BE%E8%AE%A1)：以当前mmes接口传入已知遗传协方差结构，再逐步扩展多随机效应和复杂设计。
 - [可复现分析与工作流管理](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%AF%E5%A4%8D%E7%8E%B0%E5%88%86%E6%9E%90%E4%B8%8E%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%AE%A1%E7%90%86)：把输入、依赖、参数和产物放进可追踪的运行记录，才能区分计算复现与结果解释。
 - [合成数据贯通PCA与GWAS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%90%88%E6%88%90%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9APCA%E4%B8%8EGWAS)：用固定随机种子的人工数据练习文件交接、质控、PCA 与数量性状关联，不需要下载真实个体数据。
 - [常见生信图表的阅读与制作](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%B8%B8%E8%A7%81%E7%94%9F%E4%BF%A1%E5%9B%BE%E8%A1%A8%E7%9A%84%E9%98%85%E8%AF%BB%E4%B8%8E%E5%88%B6%E4%BD%9C)：先读坐标、数据变换和独立单位，再判断图形支持什么结论。
@@ -104,11 +119,13 @@
 - [UniProt蛋白条目与证据](https://github.com/SpiralKernel/bioinfo-wiki/wiki/UniProt%E8%9B%8B%E7%99%BD%E6%9D%A1%E7%9B%AE%E4%B8%8E%E8%AF%81%E6%8D%AE)：蛋白数据库条目同时包含序列和注释证据，人工审阅状态不等于每项功能都已实验验证。
 - [公共数据库与数据获取](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%AC%E5%85%B1%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%8E%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96)：根据需要的数据层级选择资源，并把 accession、原始文件、处理矩阵和版本信息分别记录。
 
-## 分析工作流（25）
+## 分析工作流（28）
 
 - [ATAC-seq入门与实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/ATAC-seq%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5)：从可及性测序读段得到区域信号与差异分析，重点检查信号质量、重复一致性和共同计数区域。
 - [ChIP-seq入门与实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/ChIP-seq%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5)：ChIP-seq 分析目标富集相对背景的信号分布，必须区分对照、抗体目标与信号宽度。
 - [DNA甲基化分析入门](https://github.com/SpiralKernel/bioinfo-wiki/wiki/DNA%E7%94%B2%E5%9F%BA%E5%8C%96%E5%88%86%E6%9E%90%E5%85%A5%E9%97%A8)：甲基化分析需要匹配测量技术，以覆盖和重复信息估计位点或区域差异。
+- [GS数据准备与候选个体预测](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GS%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87%E4%B8%8E%E5%80%99%E9%80%89%E4%B8%AA%E4%BD%93%E9%A2%84%E6%B5%8B)：整理训练表型、候选基因型、固定效应与基准，保存可用于新批次的完整预测模型。
+- [GS训练验证与数据泄漏](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GS%E8%AE%AD%E7%BB%83%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B3%84%E6%BC%8F)：先定义候选群体，再设计外层验证和内层调参；训练表型之外的信息也可能泄漏。
 - [GWAS从数据准备到结果解释](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GWAS%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87%E5%88%B0%E7%BB%93%E6%9E%9C%E8%A7%A3%E9%87%8A)：将基因型、表型和设计信息连接到合适的关联模型，并审查效应方向与证据边界。
 - [GWAS参数选择与敏感性分析](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GWAS%E5%8F%82%E6%95%B0%E9%80%89%E6%8B%A9%E4%B8%8E%E6%95%8F%E6%84%9F%E6%80%A7%E5%88%86%E6%9E%90)：参数改变会改变信息、背景与检验集合，敏感性分析应有预先理由和完整记录。
 - [GWAS常见报错与排查](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GWAS%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99%E4%B8%8E%E6%8E%92%E6%9F%A5)：先把失败定位到身份、格式、模型、数值或资源，再用最小例子验证修复。
@@ -121,6 +138,7 @@
 - [公开小鼠数据贯通多软件GWAS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%AC%E5%BC%80%E5%B0%8F%E9%BC%A0%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9A%E5%A4%9A%E8%BD%AF%E4%BB%B6GWAS)：用固定版本的公开小鼠数据完成质控、PCA、多软件关联、等位基因统一和诊断图，学习每一步的交接与判断。
 - [单细胞转录组入门与实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8D%95%E7%BB%86%E8%83%9E%E8%BD%AC%E5%BD%95%E7%BB%84%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5)：从细胞或液滴计数出发，检查质量、探索细胞状态，并将供体层面的比较与细胞聚类区分。
 - [变异注释与候选证据整理](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%98%E5%BC%82%E6%B3%A8%E9%87%8A%E4%B8%8E%E5%80%99%E9%80%89%E8%AF%81%E6%8D%AE%E6%95%B4%E7%90%86)：注释把变异映射到转录本与已知资源；候选优先级需要多种证据，注释后果并非功能定论。
+- [合成家系数据贯通GS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%90%88%E6%88%90%E5%AE%B6%E7%B3%BB%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9AGS)：用300个人工个体贯通GBLUP、嵌套验证、家系留出和无表型候选预测。
 - [基因型质控与过滤](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E5%9E%8B%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%BF%87%E6%BB%A4)：先评估样本和位点质量，再按分析目标制定可追溯的过滤规则。
 - [基因组重测序与变异检测](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%87%8D%E6%B5%8B%E5%BA%8F%E4%B8%8E%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B)：从 DNA 读段得到可用于群体分析的变异数据，关键是参考一致性、样本级检查和统一的分型流程。
 - [多组学整合入门与实践](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%A4%9A%E7%BB%84%E5%AD%A6%E6%95%B4%E5%90%88%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5)：整合多个测量层级前，先确认样本对应、特征尺度和具体目标，再选择联合分析方法。

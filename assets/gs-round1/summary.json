@@ -1,0 +1,277 @@
+{
+  "seed": 20261013,
+  "individuals": 240,
+  "markers": 400,
+  "families": 20,
+  "equivalence_max_abs_prediction_error": 9.992007221626409e-16,
+  "model": "Training-centered VanRaden-style K and positive lambda; intercept fitted by GLS",
+  "scope": "Artificial data; no pedigree BLUP, REML, Bayesian sampling, ssGBLUP or commercial software run",
+  "numpy_version": "2.5.4",
+  "validation": {
+    "random": {
+      "mode": "random",
+      "outer_folds": [
+        {
+          "fold": 0,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 17,
+          "lambda_G": 1.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 2.1280334442739544,
+            "0.3": 1.9731833235986675,
+            "1.0": 1.889804639849807,
+            "3.0": 1.900576874848258,
+            "10.0": 1.9978056207550177
+          },
+          "corr_observed_y": 0.4199601964162289,
+          "corr_true_g_simulation_only": 0.4661096621215962,
+          "MSE_observed_y": 2.2785698242882186,
+          "regression_observed_on_prediction": 1.0624762721819132,
+          "fit": {
+            "intercept": -0.21476912617799887,
+            "scale": 155.58573404947919,
+            "markers": 400
+          }
+        },
+        {
+          "fold": 1,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 19,
+          "lambda_G": 3.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 2.7338315250225524,
+            "0.3": 2.435552140321961,
+            "1.0": 2.1949849866355335,
+            "3.0": 2.1132852535543427,
+            "10.0": 2.154387945292507
+          },
+          "corr_observed_y": 0.4625501968637308,
+          "corr_true_g_simulation_only": 0.6184877117364996,
+          "MSE_observed_y": 1.8575694222461834,
+          "regression_observed_on_prediction": 1.566824332547858,
+          "fit": {
+            "intercept": -0.17746146792223338,
+            "scale": 155.45845540364581,
+            "markers": 400
+          }
+        },
+        {
+          "fold": 2,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 18,
+          "lambda_G": 1.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 1.9823466319633172,
+            "0.3": 1.8556808669486273,
+            "1.0": 1.8207808641234033,
+            "3.0": 1.8948166988629886,
+            "10.0": 2.0742649620109423
+          },
+          "corr_observed_y": 0.04290683623824221,
+          "corr_true_g_simulation_only": 0.4786136432527176,
+          "MSE_observed_y": 2.4600250120528635,
+          "regression_observed_on_prediction": 0.09166977865503519,
+          "fit": {
+            "intercept": -0.2154153810979906,
+            "scale": 155.301513671875,
+            "markers": 400
+          }
+        },
+        {
+          "fold": 3,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 19,
+          "lambda_G": 1.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 2.161915726172223,
+            "0.3": 2.0945255291138234,
+            "1.0": 2.0796383462843386,
+            "3.0": 2.098829971748107,
+            "10.0": 2.15919366118136
+          },
+          "corr_observed_y": 0.5366601402599978,
+          "corr_true_g_simulation_only": 0.7613063981657476,
+          "MSE_observed_y": 1.7592088577317302,
+          "regression_observed_on_prediction": 1.2382594715925488,
+          "fit": {
+            "intercept": -0.21529984086574674,
+            "scale": 155.57763671875,
+            "markers": 400
+          }
+        },
+        {
+          "fold": 4,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 19,
+          "lambda_G": 3.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 2.5465318057154853,
+            "0.3": 2.3307109603914835,
+            "1.0": 2.1530956282514637,
+            "3.0": 2.1115349989402277,
+            "10.0": 2.1928345812657626
+          },
+          "corr_observed_y": 0.39406488436097425,
+          "corr_true_g_simulation_only": 0.5995769554515957,
+          "MSE_observed_y": 1.6859124479482797,
+          "regression_observed_on_prediction": 1.0213804860501239,
+          "fit": {
+            "intercept": -0.08672354840222929,
+            "scale": 155.2898220486111,
+            "markers": 400
+          }
+        }
+      ],
+      "mean_fold_corr_y": 0.37122845082783473,
+      "mean_fold_corr_true_g": 0.5848188741456314,
+      "pooled_MSE_y": 2.008257112853455
+    },
+    "family": {
+      "mode": "family",
+      "outer_folds": [
+        {
+          "fold": 0,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 0,
+          "lambda_G": 10.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 2.71757612202331,
+            "0.3": 2.4130332760609434,
+            "1.0": 2.2240601287527704,
+            "3.0": 2.16342785244484,
+            "10.0": 2.1525199190171223
+          },
+          "corr_observed_y": 0.22008422603095762,
+          "corr_true_g_simulation_only": -0.0713964451592093,
+          "MSE_observed_y": 3.034267361318124,
+          "regression_observed_on_prediction": 4.452818591473746,
+          "fit": {
+            "intercept": -0.007718614593511289,
+            "scale": 155.45452202690973,
+            "markers": 400
+          }
+        },
+        {
+          "fold": 1,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 0,
+          "lambda_G": 3.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 2.7227717928695863,
+            "0.3": 2.542621595368008,
+            "1.0": 2.434654170683993,
+            "3.0": 2.4113565833981894,
+            "10.0": 2.4146746651342768
+          },
+          "corr_observed_y": -0.26981346982133064,
+          "corr_true_g_simulation_only": 0.10342675347210421,
+          "MSE_observed_y": 2.2417411681613846,
+          "regression_observed_on_prediction": -1.6173311607028533,
+          "fit": {
+            "intercept": -0.051597706955258275,
+            "scale": 155.09539116753473,
+            "markers": 400
+          }
+        },
+        {
+          "fold": 2,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 0,
+          "lambda_G": 1.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 3.0946486112102796,
+            "0.3": 2.825061444626836,
+            "1.0": 2.69571841060109,
+            "3.0": 2.707000104129565,
+            "10.0": 2.7443738963265916
+          },
+          "corr_observed_y": 0.17387576848042718,
+          "corr_true_g_simulation_only": 0.7035966564360929,
+          "MSE_observed_y": 1.7247271996247182,
+          "regression_observed_on_prediction": 0.4897325818529306,
+          "fit": {
+            "intercept": -0.30387218361344903,
+            "scale": 154.48555501302081,
+            "markers": 400
+          }
+        },
+        {
+          "fold": 3,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 0,
+          "lambda_G": 3.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 2.7196377462252173,
+            "0.3": 2.4115302189410692,
+            "1.0": 2.2380177667897865,
+            "3.0": 2.214671200528105,
+            "10.0": 2.2265429260285514
+          },
+          "corr_observed_y": 0.1998123849235214,
+          "corr_true_g_simulation_only": 0.5915895891211617,
+          "MSE_observed_y": 2.8558603088858576,
+          "regression_observed_on_prediction": 1.3885601412935316,
+          "fit": {
+            "intercept": -0.3053260417598127,
+            "scale": 155.18910047743054,
+            "markers": 400
+          }
+        },
+        {
+          "fold": 4,
+          "train_n": 192,
+          "test_n": 48,
+          "shared_family_IDs": 0,
+          "lambda_G": 10.0,
+          "inner_MSE_by_lambda": {
+            "0.1": 3.0487840698210014,
+            "0.3": 2.715960877107912,
+            "1.0": 2.46047779666567,
+            "3.0": 2.3703489196645653,
+            "10.0": 2.3510737714790024
+          },
+          "corr_observed_y": -0.10455351501670464,
+          "corr_true_g_simulation_only": 0.030404323664039615,
+          "MSE_observed_y": 2.076247444288168,
+          "regression_observed_on_prediction": -1.5703474566785456,
+          "fit": {
+            "intercept": -0.24115481754416704,
+            "scale": 154.8719482421875,
+            "markers": 400
+          }
+        }
+      ],
+      "mean_fold_corr_y": 0.043881078919374185,
+      "mean_fold_corr_true_g": 0.27152417550683783,
+      "pooled_MSE_y": 2.3865686964556505
+    }
+  },
+  "candidate_prediction": {
+    "individuals": 60,
+    "new_families": 5,
+    "lambda_G": 10.0,
+    "inner_MSE_by_lambda": {
+      "0.1": 3.1501823631119246,
+      "0.3": 2.7698906737586686,
+      "1.0": 2.5213073119293625,
+      "3.0": 2.4397887053744842,
+      "10.0": 2.4181172950766827
+    },
+    "selection_basis": "Family-wise training-only inner CV MSE",
+    "phenotype_used_for_candidates": false,
+    "fit": {
+      "intercept": -0.18193387289323973,
+      "scale": 155.51828993055557,
+      "markers": 400
+    }
+  }
+}

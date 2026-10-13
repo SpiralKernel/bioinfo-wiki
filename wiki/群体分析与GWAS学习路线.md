@@ -28,3 +28,7 @@
 能否追溯每个效应值计数哪种等位基因？PCA 用了哪些位点？表型和协变量如何与样本对齐？一个显著位点与因果变异之间还缺少什么证据？
 
 深入查看 [PLINK 2 输入说明](https://www.cog-genomics.org/plink/2.0/input)、[关联模型文档](https://www.cog-genomics.org/plink/2.0/assoc)和 [GEMMA 原始论文](https://doi.org/10.1038/ng.2310)。
+
+## 从关联分析走向预测
+
+若下一步是预测候选个体的遗传价值，进入[GS算法软件与实践路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GS%E7%AE%97%E6%B3%95%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%AE%9E%E8%B7%B5%E8%B7%AF%E7%BA%BF)。先区分[基因组选择与GWAS的区别](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%80%89%E6%8B%A9%E4%B8%8EGWAS%E7%9A%84%E5%8C%BA%E5%88%AB)，再做符合实际候选群体的验证；GWAS显著性不替代预测表现。

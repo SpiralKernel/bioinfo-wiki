@@ -1,10 +1,13 @@
 {
   "schema": 1,
   "generated_files": [
+    "ASReml基因组预测接口.md",
     "ASV与微生物多样性.md",
     "ATAC-seq入门与实践.md",
+    "BGLR贝叶斯预测实践.md",
     "BLAST原理与种子延伸.md",
     "BLAST本地检索实践.md",
+    "BLUPF90单步遗传评估流程.md",
     "BOLT-LMM关联分析.md",
     "ChIP-seq入门与实践.md",
     "DNA甲基化分析入门.md",
@@ -13,10 +16,15 @@
     "FASTA与FASTQ.md",
     "FarmCPU与BLINK原理.md",
     "GAPIT多模型GWAS实践.md",
+    "GBLUP与rrBLUP原理及实现.md",
     "GCTA与MLMA关联分析.md",
     "GEMMA线性混合模型实践.md",
     "GEO数据检索与样本核对.md",
     "GO术语注释与证据.md",
+    "GS中的REML混合模型方程与求解.md",
+    "GS数据准备与候选个体预测.md",
+    "GS算法软件与实践路线.md",
+    "GS训练验证与数据泄漏.md",
     "GWAS从数据准备到结果解释.md",
     "GWAS参数选择与敏感性分析.md",
     "GWAS常见报错与排查.md",
@@ -25,6 +33,7 @@
     "GWAS软件结果比较与一致性检查.md",
     "GWAS软件输入转换与样本对齐.md",
     "GWAS软件选择与比较.md",
+    "HIBLUP基因组预测实践.md",
     "Hardy-Weinberg平衡与检验.md",
     "Home.md",
     "LOCO与近端污染.md",
@@ -49,6 +58,8 @@
     "_Sidebar.md",
     "fastGWA与fastGWA-GLMM.md",
     "rMVP关联分析实践.md",
+    "rrBLUP预测实践.md",
+    "sommer基因组预测与复杂设计.md",
     "中文生信学习地图.md",
     "二分类性状OR与病例对照不平衡.md",
     "亲缘关系与遗传关系矩阵.md",
@@ -62,10 +73,12 @@
     "参考基因组与注释版本.md",
     "变异注释与候选证据整理.md",
     "可复现分析与工作流管理.md",
+    "合成家系数据贯通GS.md",
     "合成数据贯通PCA与GWAS.md",
     "基因型质控与过滤.md",
     "基因标识符与同源基因.md",
     "基因组坐标与区间.md",
+    "基因组选择与GWAS的区别.md",
     "基因组重测序与变异检测.md",
     "多组学整合入门与实践.md",
     "定相与基因型填充.md",
@@ -86,6 +99,7 @@
     "用PCA探索样本的群体结构.md",
     "空间转录组入门与实践.md",
     "系统发育树入门与实践.md",
+    "系谱BLUP与单步ssGBLUP.md",
     "线性模型与混合模型.md",
     "组学分析总览与选型.md",
     "结果报告与数据共享.md",
@@ -94,8 +108,10 @@
     "群体分析与GWAS学习路线.md",
     "群体结构与GWAS有什么关系.md",
     "群体结构是什么.md",
+    "育种值GEBV准确度与可靠度.md",
     "蛋白质组入门与实践.md",
     "计数丰度与标准化.md",
+    "贝叶斯回归与核方法用于GS.md",
     "软件环境与依赖管理.md",
     "连锁不平衡与LD剪枝.md",
     "长读长测序分析入门.md",
@@ -149,6 +165,40 @@
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
       "sha256": "135bed5ab6dfe71176d5064df0a7a68fdee8b05d3b2b48c4e290c443014ee415"
+    },
+    {
+      "title": "GS数据准备与候选个体预测",
+      "source": "分析工作流/GS数据准备与候选个体预测.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GS输入准备",
+        "candidate prediction",
+        "候选育种值预测"
+      ],
+      "summary": "整理训练表型、候选基因型、固定效应与基准，保存可用于新批次的完整预测模型。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "94155220d2fae71329e4f46e760cb6cba0d7e8a300a09d409ce66a6910324a44"
+    },
+    {
+      "title": "GS训练验证与数据泄漏",
+      "source": "分析工作流/GS训练验证与数据泄漏.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GS交叉验证",
+        "family-wise CV",
+        "家系留出",
+        "nested CV",
+        "世代验证"
+      ],
+      "summary": "先定义候选群体，再设计外层验证和内层调参；训练表型之外的信息也可能泄漏。",
+      "validation": "验证逻辑与官方资料核对；嵌套随机/家系划分已运行，家系不重叠检查已通过",
+      "updated": "2026-10-13",
+      "sha256": "93be7359fa1c25412c803d69a7f97eab0326337e56060dab21546099fbcf8ebe"
     },
     {
       "title": "GWAS从数据准备到结果解释",
@@ -343,6 +393,22 @@
       "sha256": "5d027c094e985628db0dc79628650a9bb18547de916f37812f4d517da54bfb7b"
     },
     {
+      "title": "合成家系数据贯通GS",
+      "source": "分析工作流/合成家系数据贯通GS.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GS教学实测",
+        "GS模拟案例",
+        "NumPy GBLUP"
+      ],
+      "summary": "用300个人工个体贯通GBLUP、嵌套验证、家系留出和无表型候选预测。",
+      "validation": "2026-10-13实际运行：300个人工个体、GBLUP/RR等价、两种嵌套验证、60个候选预测和配图；未运行专业GS软件",
+      "updated": "2026-10-13",
+      "sha256": "280c9f3e03ee8c24bd60ada3ba7109c84b9d1f411d2b4c5ee21f39885f3e4a82"
+    },
+    {
       "title": "基因型质控与过滤",
       "source": "分析工作流/基因型质控与过滤.md",
       "folder": "分析工作流",
@@ -500,6 +566,24 @@
       "sha256": "1a80727bdd06369d45d2c3889b31ccdbc20e53ad3d30a2746441adabae066866"
     },
     {
+      "title": "GS算法软件与实践路线",
+      "source": "学习路线/GS算法软件与实践路线.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "status": "可用",
+      "aliases": [
+        "GS",
+        "genomic selection",
+        "genomic prediction",
+        "基因组选择",
+        "基因组预测"
+      ],
+      "summary": "从育种值和验证设计出发，连接GBLUP、贝叶斯模型、单步法与六种软件指南。",
+      "validation": "路线与官方资料核对；NumPy教学案例已运行；六种专业软件尚未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "1c452cbf62c7ff1e200dc6b6371bf192b5b920a1ffd5561f74a5082b6cf7f97d"
+    },
+    {
       "title": "GWAS软件选择与比较",
       "source": "学习路线/GWAS软件选择与比较.md",
       "folder": "学习路线",
@@ -524,7 +608,7 @@
       "summary": "从问题、数据和检查点进入生信，按需要跳转到概念、算法、组学流程及实践。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "590647d810b1264230a581bb347dc6361dda6c460db944cc5c5fc70ef96312fa"
+      "sha256": "7511a9af9838aa3e77dd337bb2143a9a82b8aaa9806dcea1f57bfc61f5bfce2c"
     },
     {
       "title": "组学分析总览与选型",
@@ -548,7 +632,39 @@
       "summary": "从基因型编码和样本审计出发，依次完成群体探索、关联分析和证据解释。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "93d072bd2c063388510c86ba78bb151e94613aea07794af32806e21710aa891b"
+      "sha256": "6fcccf621b8a9c05d13a17396d916b6fa828459a78c0a32876eb88b961ae8e4b"
+    },
+    {
+      "title": "ASReml基因组预测接口",
+      "source": "工具/ASReml基因组预测接口.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "ASReml",
+        "ASReml-R",
+        "knownStruc",
+        "vm"
+      ],
+      "summary": "用已知关系矩阵定义遗传随机效应，核对矩阵属性、缺失表型与预测量的区别。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "ddb4bb8701af6293f6f73254a8931577bdbd0808a9e226a8b66d7b4889b4e654"
+    },
+    {
+      "title": "BGLR贝叶斯预测实践",
+      "source": "工具/BGLR贝叶斯预测实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "BGLR",
+        "Bayesian genomic prediction"
+      ],
+      "summary": "用共同输入建立BRR基线，再比较BayesA/B/C、BL与RKHS，同时检查采样和预测量定义。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "011c705e4e40a7e98dc506273880af7a3d5c5bd81e6ca791180a911a473dc2e5"
     },
     {
       "title": "BLAST本地检索实践",
@@ -565,6 +681,24 @@
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
       "sha256": "5dce809ea72737883e8f4e1b8b7c2a4fddb690894a6d50afc3023e593934fe7a"
+    },
+    {
+      "title": "BLUPF90单步遗传评估流程",
+      "source": "工具/BLUPF90单步遗传评估流程.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "BLUPF90",
+        "BLUPF90+",
+        "RENUMF90",
+        "PREGSF90",
+        "POSTGSF90"
+      ],
+      "summary": "从重编号与参数文件开始，组织方差估计、ssGBLUP预测和结果映射。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "fbac391dfd42064fdfd5227168ccbd19f0f1a8ad5b0180a4797e6751d4ec7ddd"
     },
     {
       "title": "BOLT-LMM关联分析",
@@ -646,6 +780,21 @@
       "validation": "GEMMA 0.98.5公开小鼠GRM、LM、LMM及chr17背景排除对照实测；其他模块未执行",
       "updated": "2026-10-13",
       "sha256": "52ca3f1de0f082094947dc236345a994dcaca893e939d118678d538db1714a4e"
+    },
+    {
+      "title": "HIBLUP基因组预测实践",
+      "source": "工具/HIBLUP基因组预测实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "HIBLUP",
+        "XRM"
+      ],
+      "summary": "按输入信息选择GBLUP或单步模型，区分方差估计与已知参数求解并检查缺失处理。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "8da8b6733402efb27534000c0f542815d8bc38db3f3a26bc229729c6a7da2b3a"
     },
     {
       "title": "Linux与项目目录实践",
@@ -773,6 +922,40 @@
       "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
       "updated": "2026-10-13",
       "sha256": "d96f4d6415cede87bc779e675fa7d7d5ee6c112a9a67e108c96ef682299cbb99"
+    },
+    {
+      "title": "rrBLUP预测实践",
+      "source": "工具/rrBLUP预测实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "rrBLUP",
+        "kin.blup",
+        "mixed.solve",
+        "A.mat"
+      ],
+      "summary": "从可检查的输入矩阵开始，用rrBLUP建立单性状GBLUP基线并理解方差、GEBV与PEV。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "ba9c72da54e8389957c3ad81ca4d499d76f7dfca13d2b3d79327576de8e04949"
+    },
+    {
+      "title": "sommer基因组预测与复杂设计",
+      "source": "工具/sommer基因组预测与复杂设计.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "sommer",
+        "mmes",
+        "vsm",
+        "ism"
+      ],
+      "summary": "以当前mmes接口传入已知遗传协方差结构，再逐步扩展多随机效应和复杂设计。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "ce5722a119d1062f6ffb83b865e646f59a9c9d1547c15f39944020f2ca1d09b5"
     },
     {
       "title": "可复现分析与工作流管理",
@@ -1052,6 +1235,41 @@
       "sha256": "494185cc526a0bd9e142237e3782aeaba449df54f9c13e223c9218a2f5502b7a"
     },
     {
+      "title": "GBLUP与rrBLUP原理及实现",
+      "source": "方法与算法/GBLUP与rrBLUP原理及实现.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "GBLUP",
+        "RR-BLUP",
+        "ridge regression BLUP",
+        "VanRaden矩阵"
+      ],
+      "summary": "用同一套中心化、固定效应与方差缩放，连接个体GBLUP和标记岭回归。",
+      "validation": "公式与原始方法核对；NumPy个体与标记两条路径已运行并通过等价性测试",
+      "updated": "2026-10-13",
+      "sha256": "d793f722bf97aa99c66ebc0f3b3f8c6e69980fcc7efd2ecaa3e18299079f8c24"
+    },
+    {
+      "title": "GS中的REML混合模型方程与求解",
+      "source": "方法与算法/GS中的REML混合模型方程与求解.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "REML",
+        "AI-REML",
+        "MME",
+        "PCG",
+        "APY"
+      ],
+      "summary": "区分方差组分估计、给定参数的BLUP求解和大规模关系矩阵近似。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "f57168637643f4f09de9254070db19bb1e8e6da4f00e599b91db59f66016832c"
+    },
+    {
       "title": "PCA原理与实现",
       "source": "方法与算法/PCA原理与实现.md",
       "folder": "方法与算法",
@@ -1119,6 +1337,24 @@
       "sha256": "e0b5992745a7d6caae51e87c8ded7435032dfc205abcecb8a2ee5aedaf146273"
     },
     {
+      "title": "系谱BLUP与单步ssGBLUP",
+      "source": "方法与算法/系谱BLUP与单步ssGBLUP.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "PBLUP",
+        "ssGBLUP",
+        "single-step GBLUP",
+        "H矩阵",
+        "A22"
+      ],
+      "summary": "单步法把系谱与基因组关系放进统一遗传评估，关键在关系基准、编号和分块一致。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "3e36ef49998d993a2aa5156464db93b6c69dffe969e251fafadb16237ef7005f"
+    },
+    {
       "title": "线性模型与混合模型",
       "source": "方法与算法/线性模型与混合模型.md",
       "folder": "方法与算法",
@@ -1147,6 +1383,25 @@
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
       "sha256": "47b13392cef95d358a72b7f34c5c7c113ec17b64102777ce809e0ddcdd229f01"
+    },
+    {
+      "title": "贝叶斯回归与核方法用于GS",
+      "source": "方法与算法/贝叶斯回归与核方法用于GS.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "BayesA",
+        "BayesB",
+        "BayesC",
+        "Bayesian LASSO",
+        "BRR",
+        "RKHS"
+      ],
+      "summary": "不同先验改变标记效应的收缩方式；核模型通过相似性矩阵表达遗传预测结构。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "8fd7884c7fed4f17f0d4c4f11fe11a45036df9b8707306ca50a7e4aab09496bb"
     },
     {
       "title": "ASV与微生物多样性",
@@ -1469,6 +1724,22 @@
       "sha256": "33fc2569a25b4c09ba67baebf9987b0579481991e5ebc960f48b218fcaab15db"
     },
     {
+      "title": "基因组选择与GWAS的区别",
+      "source": "术语与概念/基因组选择与GWAS的区别.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "genomic selection vs GWAS",
+        "MAS",
+        "标记辅助选择"
+      ],
+      "summary": "GWAS寻找统计关联，GS预测遗传价值；两者可以结合，但验证目标不同。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "945e37d1471f84b3ecf28ff7f858199183b754d013e4fac08b1272ee3290e7eb"
+    },
+    {
       "title": "定相与基因型填充",
       "source": "术语与概念/定相与基因型填充.md",
       "folder": "术语与概念",
@@ -1642,6 +1913,25 @@
       "sha256": "2799bfedcfa795afd39546c65b20f1a4fa255e89c6e83232cdb8ef8f00d63b09"
     },
     {
+      "title": "育种值GEBV准确度与可靠度",
+      "source": "术语与概念/育种值GEBV准确度与可靠度.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "EBV",
+        "GEBV",
+        "PEV",
+        "prediction accuracy",
+        "reliability",
+        "预测能力"
+      ],
+      "summary": "区分加性遗传价值、预测表型、表型相关、真实育种值准确度和基于PEV的可靠度。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "4d8942d188fe45927a72856207a6e8401133404647e4c763032a971a7386a644"
+    },
+    {
       "title": "计数丰度与标准化",
       "source": "术语与概念/计数丰度与标准化.md",
       "folder": "术语与概念",
@@ -1699,6 +1989,8 @@
     "ATAC-seq入门与实践.md": "44ce84a1e8888d736c43864a360fe1b6f2035d0234ce68d09cb4b726a141c9ea",
     "ChIP-seq入门与实践.md": "d1b9f3f85e5cd9bed87324545e1e5717bc07b0cb70052ac08656603a83285ce9",
     "DNA甲基化分析入门.md": "135bed5ab6dfe71176d5064df0a7a68fdee8b05d3b2b48c4e290c443014ee415",
+    "GS数据准备与候选个体预测.md": "94155220d2fae71329e4f46e760cb6cba0d7e8a300a09d409ce66a6910324a44",
+    "GS训练验证与数据泄漏.md": "93be7359fa1c25412c803d69a7f97eab0326337e56060dab21546099fbcf8ebe",
     "GWAS从数据准备到结果解释.md": "b1025677817e5f64b8a57d57d4ae4391c713b4899c1bdd3db8d61659c24a4c94",
     "GWAS参数选择与敏感性分析.md": "566779394e1927f1c14ac60ace4e8509b8c9550c091379d83ca6816add23e758",
     "GWAS常见报错与排查.md": "8b2adc8d19c39cbb52cef75f53bfb336346e4e57642e5146de47c62deeea8cb5",
@@ -1711,6 +2003,7 @@
     "公开小鼠数据贯通多软件GWAS.md": "34995f6ed682a95bef05884897e066961a5261b188bc025b1eb069e14cf2c074",
     "单细胞转录组入门与实践.md": "048074da4628055cd8730ad29cb2909cb126f931a33d4b30a4a4c6ef8c28016f",
     "变异注释与候选证据整理.md": "5d027c094e985628db0dc79628650a9bb18547de916f37812f4d517da54bfb7b",
+    "合成家系数据贯通GS.md": "280c9f3e03ee8c24bd60ada3ba7109c84b9d1f411d2b4c5ee21f39885f3e4a82",
     "基因型质控与过滤.md": "61f0a8d40245175437970b2494f53b6d031f929c30985b3c45a62c44113376e3",
     "基因组重测序与变异检测.md": "32d9a161eee7dccc0511ae0eefaae0f1567ac4e81e218553a7f019a95ceec3d6",
     "多组学整合入门与实践.md": "116f228243c16df1273603608404bbb729f099357596ee13ffbab88e63215f46",
@@ -1721,16 +2014,21 @@
     "系统发育树入门与实践.md": "6e8641cccdd9855d7debe037be4e719ed9ab14e1f41b41e43a1f8353a101d06d",
     "蛋白质组入门与实践.md": "72ff50da9a79e38029240390198d45d96e4d83af9d26fbed248727f131b9f1cc",
     "长读长测序分析入门.md": "1a80727bdd06369d45d2c3889b31ccdbc20e53ad3d30a2746441adabae066866",
+    "GS算法软件与实践路线.md": "1c452cbf62c7ff1e200dc6b6371bf192b5b920a1ffd5561f74a5082b6cf7f97d",
     "GWAS软件选择与比较.md": "35078810ab837d8346264af547251e2892eaad047b865614d5099c73d7a779ad",
-    "中文生信学习地图.md": "590647d810b1264230a581bb347dc6361dda6c460db944cc5c5fc70ef96312fa",
+    "中文生信学习地图.md": "7511a9af9838aa3e77dd337bb2143a9a82b8aaa9806dcea1f57bfc61f5bfce2c",
     "组学分析总览与选型.md": "ea53b41b4794b8c66ab120be9636d199e371e4d8a841696e5ecc51954c25e0ea",
-    "群体分析与GWAS学习路线.md": "93d072bd2c063388510c86ba78bb151e94613aea07794af32806e21710aa891b",
+    "群体分析与GWAS学习路线.md": "6fcccf621b8a9c05d13a17396d916b6fa828459a78c0a32876eb88b961ae8e4b",
+    "ASReml基因组预测接口.md": "ddb4bb8701af6293f6f73254a8931577bdbd0808a9e226a8b66d7b4889b4e654",
+    "BGLR贝叶斯预测实践.md": "011c705e4e40a7e98dc506273880af7a3d5c5bd81e6ca791180a911a473dc2e5",
     "BLAST本地检索实践.md": "5dce809ea72737883e8f4e1b8b7c2a4fddb690894a6d50afc3023e593934fe7a",
+    "BLUPF90单步遗传评估流程.md": "fbac391dfd42064fdfd5227168ccbd19f0f1a8ad5b0180a4797e6751d4ec7ddd",
     "BOLT-LMM关联分析.md": "2c7c7add7fe4fa5b2c8318d143792d1074994e64488d470495442a577adb92b1",
     "EMMAX关联分析与旧流程兼容.md": "394bab168dc4b650521eb2a8ba881a9ca0f096d7878e17e3fbf5f514af570de6",
     "GAPIT多模型GWAS实践.md": "29081e5b781248476997262db4ae8582a3cf5ec8038ac27c2ce9f9fdd02edfd3",
     "GCTA与MLMA关联分析.md": "8541d96badac3bd515faf3a12d680376ed97cd5e67c0ea4ffa5f52d8cfe926a9",
     "GEMMA线性混合模型实践.md": "52ca3f1de0f082094947dc236345a994dcaca893e939d118678d538db1714a4e",
+    "HIBLUP基因组预测实践.md": "8da8b6733402efb27534000c0f542815d8bc38db3f3a26bc229729c6a7da2b3a",
     "Linux与项目目录实践.md": "e4941a0f2e58c379543dcf3c17762c4bc74112c4bd2f0e241de908cfc13cf177",
     "PLINK2使用与版本管理.md": "6cfcb0985555317f7f3a8be2a0473eea2663e555e80a0812622949051625ab9b",
     "PLINK2关联分析详解.md": "45956d0da61aa60776c854c8aa63f0504e6e375108986b3c4c895c1e14a12f4d",
@@ -1739,6 +2037,8 @@
     "TASSEL关联分析实践.md": "bd30ef9f35718ca31f7d7f31c08465aba265d201bf1cc48eb7815fff8d45ae91",
     "fastGWA与fastGWA-GLMM.md": "65e7405be4b3b0e26d673d220df8759ccafb497cab5e2a73a5eb4dcdde0de61e",
     "rMVP关联分析实践.md": "d96f4d6415cede87bc779e675fa7d7d5ee6c112a9a67e108c96ef682299cbb99",
+    "rrBLUP预测实践.md": "ba9c72da54e8389957c3ad81ca4d499d76f7dfca13d2b3d79327576de8e04949",
+    "sommer基因组预测与复杂设计.md": "ce5722a119d1062f6ffb83b865e646f59a9c9d1547c15f39944020f2ca1d09b5",
     "可复现分析与工作流管理.md": "2968e66677110876ce89766ad60ad41fad24940c88e3f3ac768ab3d8960d018b",
     "合成数据贯通PCA与GWAS.md": "2ad011b5d6b1c6d6cb49cd863fdce776f785d3aeb3b3d294022cf67f72c8a5e7",
     "常见生信图表的阅读与制作.md": "2e33dfdf86be21836d5ddce3a67274cd5dd943f7276cb173247eeb1dcdc1fc3c",
@@ -1755,12 +2055,16 @@
     "公共数据库与数据获取.md": "bd73d408307570d90a610f1ea21cf48e8e404e1e90bf00bc43ead7c71e659c97",
     "BLAST原理与种子延伸.md": "47686b73ac5378ac8db20ba03f3a7bea5f907de9b369687886027e9b94cc781a",
     "FarmCPU与BLINK原理.md": "494185cc526a0bd9e142237e3782aeaba449df54f9c13e223c9218a2f5502b7a",
+    "GBLUP与rrBLUP原理及实现.md": "d793f722bf97aa99c66ebc0f3b3f8c6e69980fcc7efd2ecaa3e18299079f8c24",
+    "GS中的REML混合模型方程与求解.md": "f57168637643f4f09de9254070db19bb1e8e6da4f00e599b91db59f66016832c",
     "PCA原理与实现.md": "cdb8b15b10102bf98149fb0f19ad26ec5b1cd919f30e76ea5a485fec4cbf26d8",
     "Smith-Waterman局部比对.md": "05709db34215b2faf027b8ff232cb24e99d20bfa554068bd25eebefa09b49f1e",
     "富集分析与GSEA.md": "6e58c30d52939280faf3482cd9de9d58aa0ac83fc43213395b956aadd0a4297e",
     "数据泄漏与交叉验证.md": "e0b5992745a7d6caae51e87c8ded7435032dfc205abcecb8a2ee5aedaf146273",
+    "系谱BLUP与单步ssGBLUP.md": "3e36ef49998d993a2aa5156464db93b6c69dffe969e251fafadb16237ef7005f",
     "线性模型与混合模型.md": "afe617c493a8d03d9bf772256add9ade12aad533a19a0badfc3a94dfbe178d34",
     "群体结构与GWAS有什么关系.md": "47b13392cef95d358a72b7f34c5c7c113ec17b64102777ce809e0ddcdd229f01",
+    "贝叶斯回归与核方法用于GS.md": "8fd7884c7fed4f17f0d4c4f11fe11a45036df9b8707306ca50a7e4aab09496bb",
     "ASV与微生物多样性.md": "7266ca70e5155fc5137994a44293a71d02a8ca48bed8953f014ba0ecb0bd3714",
     "FASTA与FASTQ.md": "3442a45f7426b83c6807492d4acc6211c6b33b2a266bb3d67ea6acb66abe8f11",
     "Hardy-Weinberg平衡与检验.md": "bc445027170b8b9eacc46736bb82b0aeb84491e100c59fadcb566387220b0ab7",
@@ -1779,6 +2083,7 @@
     "参考基因组与注释版本.md": "1b21bea1597cad155d14105acba52b20fc47e04eef32b02483fb2f704f74df7a",
     "基因标识符与同源基因.md": "014c26142aadd4e42b00f1b834d0dd1a289c74bec43ed159e984432a25f847e8",
     "基因组坐标与区间.md": "33fc2569a25b4c09ba67baebf9987b0579481991e5ebc960f48b218fcaab15db",
+    "基因组选择与GWAS的区别.md": "945e37d1471f84b3ecf28ff7f858199183b754d013e4fac08b1272ee3290e7eb",
     "定相与基因型填充.md": "5035ccaf308da774491efc2ef3d5f9aab012caee4fc55cff77234ac18d7424c5",
     "实验设计与统计功效.md": "82410278c2233f2ede1e0641c8ed74e415f29a3272a6484bff3f91975bf8130b",
     "峰与FRiP及TSS富集.md": "26cf77a067de3568a3287a2e552ccd49724cedeb84f3d17247bc96a6f7f6d1b0",
@@ -1789,11 +2094,12 @@
     "缺失值与零值.md": "4a304e6d31fef8a13e52907df4698b6a951c9b5becbf15355e7ae3a3057ce9f9",
     "置信区间与重采样.md": "0456e02064b3ecb1bfc5a6dcf5650a22a0e86c4f090d25f83043ed79f4584ef0",
     "群体结构是什么.md": "2799bfedcfa795afd39546c65b20f1a4fa255e89c6e83232cdb8ef8f00d63b09",
+    "育种值GEBV准确度与可靠度.md": "4d8942d188fe45927a72856207a6e8401133404647e4c763032a971a7386a644",
     "计数丰度与标准化.md": "0eb02d5ffe5191a9b551b82f95cf879423067fa7ec7bd0636919f3f9af3a3b42",
     "连锁不平衡与LD剪枝.md": "18aa0642c8fc437c2f4daaab3e0cf2d69385e3428105dd0ce67838301c407220",
     "零模型与方差组分.md": "75e8e4c3a3477a2efa2e58397ec2a3a91bac742db41981a629edd0ebef4cf7af",
-    "关键词索引.md": "3c9b1afecab289ff666f22d505f37a6a22c9a9afdb8a6be16f16ec031b8f6a8a",
-    "Home.md": "8684c867aa5adbb9933127a7c1ccbe78963a42371d61f0bddcf579c871435659",
-    "_Sidebar.md": "ba7da30f386ca8953343812eb492c81c5886527890030f496da85ee79c219ad9"
+    "关键词索引.md": "40b6c5f79994cc83ee61d2a8de41d544850c045092b860bd8a72f3cc17bb8e08",
+    "Home.md": "f6f46ef7810a20a911bd8b78154fb0cc03331a55fe3d30002214a41f4c41630c",
+    "_Sidebar.md": "d927ed50ef537d6fbdc710373bfb947f073a57a3cfb1c8a4e2d58ccab81b40d0"
   }
 }
