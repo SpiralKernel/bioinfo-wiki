@@ -152,6 +152,11 @@ def export(source, output, refresh_index=False):
             raise ValueError(f'Wiki 页面名含不支持字符：{note.stem}')
         names.add(note.stem)
         metadata, body = read_note(note.read_text())
+        if metadata.get('status') in {'草稿', '待编写'}:
+            names.remove(note.stem)
+            continue
+        if metadata.get('status') not in {'可用', '待核验', '待更新'}:
+            raise ValueError(f'{note.name}: status 需使用草稿、可用、待核验或待更新')
         if not body.startswith('# ') or not isinstance(metadata.get('summary'), str) or not metadata['summary'].strip():
             raise ValueError(f'{note.name}: 缺少正文标题或 summary 属性')
         if not metadata.get('updated') or not metadata.get('validation'):
@@ -160,7 +165,7 @@ def export(source, output, refresh_index=False):
         for key in (note.stem, relative, f'知识库/中文生信Wiki/{relative}'):
             targets[key] = note.stem
         item = {'title': note.stem, 'source': relative+'.md', 'folder': note.relative_to(source).parts[0],
-                'kind': metadata.get('article_kind', ''), 'aliases': metadata.get('aliases', []),
+                'kind': metadata.get('article_kind', ''), 'status': metadata['status'], 'aliases': metadata.get('aliases', []),
                 'summary': metadata['summary'], 'validation': metadata.get('validation', ''),
                 'updated': metadata.get('updated', ''), 'body': note.read_text(), 'path': note}
         records.append(item)
@@ -174,7 +179,7 @@ def export(source, output, refresh_index=False):
         text = render_note(item['body'], item['path'], targets)
         # Keep execution status visible after removing private/editorial properties.
         first, rest = text.split('\n', 1)
-        stamp = f'> 更新：{item["updated"]}；验证范围：{item["validation"]}。'
+        stamp = f'> 更新：{item["updated"]}；状态：{item["status"]}；验证范围：{item["validation"]}。'
         rendered[item['title']+'.md'] = first+'\n\n'+stamp+'\n'+rest
     rendered[INDEX+'.md'] = build_index(records)
     home = ['# 中文生信 Wiki', '',

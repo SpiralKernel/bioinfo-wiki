@@ -35,7 +35,7 @@ class WikiToolsTest(unittest.TestCase):
 
     def note(self, title, body='正文。', aliases=None):
         path = self.source/'术语与概念'/f'{title}.md'
-        path.write_text('---\nsummary: "一句话。"\nupdated: "2026-10-13"\n'
+        path.write_text('---\nstatus: 可用\nsummary: "一句话。"\nupdated: "2026-10-13"\n'
                         'validation: "测试样例"\naliases: '+json.dumps(aliases or [])+
                         '\n---\n\n# '+title+'\n\n'+body+'\n')
         return path
@@ -108,6 +108,17 @@ class WikiToolsTest(unittest.TestCase):
         (self.output/'甲.md').write_text('导出后修改')
         with self.assertRaisesRegex(ValueError, '清单不符'):
             synchronizer.sync(self.output, self.destination)
+
+    def test_drafts_are_not_published_and_cannot_be_linked(self):
+        self.note('已完成')
+        path = self.note('草稿', '未完成内容')
+        path.write_text(path.read_text().replace('status: 可用', 'status: 草稿'))
+        result = exporter.export(self.source, self.output)
+        self.assertEqual([r['title'] for r in result['pages']], ['已完成'])
+        self.assertFalse((self.output/'草稿.md').exists())
+        self.note('已完成', '[[草稿]]')
+        with self.assertRaisesRegex(ValueError, '内部链接'):
+            exporter.export(self.source, self.output)
 
     def test_legacy_upgrade_requires_matching_previous_content(self):
         self.note('甲')
