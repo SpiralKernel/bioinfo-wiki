@@ -6,6 +6,10 @@
 
 ## 从哪里开始
 
+- [R与Python生信编程入门路线](wiki/R与Python生信编程入门路线.md)：下载项目、运行脚本、语法、表格、绘图、环境与排错。
+- [组学分析方法学习路线](wiki/组学分析方法学习路线.md)：RNA、单细胞、表观组、蛋白、代谢、微生物与多组学方法。
+- [群体遗传学分析学习路线](wiki/群体遗传学分析学习路线.md)：多样性、FST、祖源、近交、LD、选择和历史。
+
 - [测序技术与PCR学习路线](wiki/测序技术与PCR学习路线.md)：PCR、Sanger、二代、长读长、建库与质控。
 - [人工区间贯通测序指标](wiki/人工区间贯通测序指标.md)：可运行的深度、双端重叠、重复、Phred和N50算例。
 
@@ -26,6 +30,21 @@
 各篇标明更新时间与验证范围。组学实践包含官方数据、检查点和详细教程入口；本机没有运行的流程已明确标注。
 
 ## 运行教学例子
+
+先[下载项目ZIP](https://github.com/SpiralKernel/bioinfo-wiki/archive/refs/heads/main.zip)并解压，在含README.md与examples的根目录运行。Windows、macOS/Linux和RStudio的具体进入目录步骤见[路径与项目组织](wiki/R与Python路径文件与项目组织.md)。
+
+第一张表无需第三方包。macOS/Linux用`python3 examples/programming_basics.py`，Windows PowerShell用`python examples/programming_basics.py`；R控制台在项目根目录执行`source("examples/programming_basics.R")`。两张乱序人工表均得到8行、1个缺失、A有效n=3/均值2、B有效n=4/均值5.5。重复执行覆盖`examples/output/programming/`对应语言的同名文件。
+
+需要第三方依赖时统一用项目环境；以下为macOS/Linux，Windows完整对应命令见[R包Python包与可复现环境](wiki/R包Python包与可复现环境.md)：
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-teaching.txt
+.venv/bin/python examples/programming_basics.py --plot
+.venv/bin/python examples/population_genetics_demo.py
+```
+
+群体案例内置8条完整单倍型×12位置，输出到`examples/output/population-genetics/`；导出的TSV为输出副本。教学指标不是专业WC/Hudson、ROH或历史推断实现。Python与群体案例已运行，base R完整表格/模型/绘图脚本通过WebR R4.6.0执行；本机没有原生Rscript，也未执行DESeq2等第三方R包。结果、两位审阅者的反馈与修改见[本轮维护记录](maintenance/omics-population-programming-2026-10-14.md)。
 
 Python 3.9+ 可运行序列比对教学例子；它不依赖第三方包，不是完整BLAST实现：
 
@@ -48,9 +67,8 @@ PLINK2_BIN=/完整路径/plink2 bash examples/run_population_demo.sh
 GS教学例子依赖NumPy，配图另需Matplotlib：
 
 ```bash
-python3 -m pip install numpy matplotlib
-python3 examples/genomic_prediction_demo.py
-python3 examples/plot_genomic_prediction.py
+.venv/bin/python examples/genomic_prediction_demo.py
+.venv/bin/python examples/plot_genomic_prediction.py
 ```
 
 输出在 `examples/output/gs/`，重复运行覆盖同名文件；建议使用项目虚拟环境。实际结果和验证范围见[GS第一轮记录](maintenance/gs-round1-2026-10-13.md)。专业GS软件的模板尚未运行，教学实现不包含REML、MCMC或ssGBLUP。
@@ -58,9 +76,8 @@ python3 examples/plot_genomic_prediction.py
 统计与基础算法练习建议Python 3.10+，依赖NumPy、SciPy 1.15+（rng接口）和Matplotlib：
 
 ```bash
-python3 -m pip install -r requirements-teaching.txt
-python3 examples/statistics_demo.py
-python3 examples/basic_algorithms_demo.py
+.venv/bin/python examples/statistics_demo.py
+.venv/bin/python examples/basic_algorithms_demo.py
 ```
 
 [统计案例](wiki/合成数据贯通统计推断.md)实际运行了均值、配对、分类表、区间、置换、多重校正与供体层级反例；[算法练习](wiki/基础算法可复现练习.md)包含六类小型实现。两者均为人工数据，原始输出分别在 `examples/output/statistics/` 和 `examples/output/basic-algorithms/`，重复运行覆盖同名文件。版本与边界见[本轮维护记录](maintenance/statistics-round1-2026-10-13.md)。分组学验证页提供设计指南，未执行湿实验。
@@ -80,8 +97,7 @@ python3 examples/plot_sequencing_metrics.py
 
 ```bash
 python3 scripts/export_wiki.py --source '/你的Obsidian库/知识库/中文生信Wiki' --refresh-index
-python3 -m pip install -r requirements-teaching.txt
-python3 -m unittest discover -s tests -v
+.venv/bin/python -m unittest discover -s tests -v
 bash scripts/publish_wiki.sh
 ```
 

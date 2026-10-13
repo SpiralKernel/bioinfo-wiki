@@ -1,6 +1,6 @@
 # 连锁不平衡与LD剪枝
 
-> 更新：2026-10-13；状态：可用；验证范围：文档核对；操作需按所用环境验证。
+> 更新：2026-10-14；状态：可用；验证范围：文档核对；操作需按所用环境验证。
 
 连锁不平衡描述位点等位基因之间的非随机关联，LD 剪枝用于减少所选位点集合中的冗余。
 
@@ -15,3 +15,7 @@
 PLINK 2 的 `--indep-pairwise 50 5 0.2` 示例中，50 是位点数窗口，5 是移动的位点数，0.2 是 r² 阈值。加入 `kb` 时单位和版本要求会改变。输出的 `.prune.in` 需要再用 `--extract` 应用，不能以为生成名单后当前数据自动被剪枝。
 
 参数是练习选择，实际应结合物种 LD 范围和目标比较。见[基因型质控与过滤](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E5%9E%8B%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%BF%87%E6%BB%A4)及 [PLINK 剪枝手册](https://www.cog-genomics.org/plink/2.0/ld)、[clumping 手册](https://www.cog-genomics.org/plink/2.0/postproc)。
+
+## 对应方法与深入
+
+[LD衰减与遗传距离分析](https://github.com/SpiralKernel/bioinfo-wiki/wiki/LD%E8%A1%B0%E5%87%8F%E4%B8%8E%E9%81%97%E4%BC%A0%E8%B7%9D%E7%A6%BB%E5%88%86%E6%9E%90)解释输入条件和适用边界；软件运行步骤与方法假设一起核对。

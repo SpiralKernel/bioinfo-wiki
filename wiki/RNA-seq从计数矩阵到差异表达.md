@@ -1,6 +1,6 @@
 # RNA-seq从计数矩阵到差异表达
 
-> 更新：2026-10-13；状态：可用；验证范围：文档核对；完整流程未在本机运行。
+> 更新：2026-10-14；状态：可用；验证范围：文档核对；完整流程未在本机运行。
 
 从基因计数和实验设计出发，估计表达差异，并区分统计证据、效应大小与功能解释。
 
@@ -10,7 +10,7 @@
 
 ## 可复现的官方数据练习
 
-需要 R、Bioconductor 的 airway 与 DESeq2；安装版本应与当前 Bioconductor 发布匹配。以下代码基于公开 airway 数据接口，已核对文档，当前环境没有 R，尚未实际执行。
+需要原生R及Bioconductor的airway与DESeq2。先按[R包Python包与可复现环境](https://github.com/SpiralKernel/bioinfo-wiki/wiki/R%E5%8C%85Python%E5%8C%85%E4%B8%8E%E5%8F%AF%E5%A4%8D%E7%8E%B0%E7%8E%AF%E5%A2%83)在R控制台安装这两个包，再执行下面代码；安装与载入不同。该专业流程已核对文档，尚未执行。新基础表格脚本虽通过WebR运行，不代表DESeq2已安装或运行。
 
 ```r
 library(airway)
@@ -44,3 +44,7 @@ sessionInfo()
 ## 测序技术与上游输入
 
 先确认[RNA测序建库选择与偏倚](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E6%B5%8B%E5%BA%8F%E5%BB%BA%E5%BA%93%E9%80%89%E6%8B%A9%E4%B8%8E%E5%81%8F%E5%80%9A)与[链特异性与RNA测序方向](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E9%93%BE%E7%89%B9%E5%BC%82%E6%80%A7%E4%B8%8ERNA%E6%B5%8B%E5%BA%8F%E6%96%B9%E5%90%91)，再生成计数；RNA来源、UMI和read布局影响有效计数。
+
+## 对应方法与深入
+
+[RNA计数模型差异表达与效应收缩](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E8%AE%A1%E6%95%B0%E6%A8%A1%E5%9E%8B%E5%B7%AE%E5%BC%82%E8%A1%A8%E8%BE%BE%E4%B8%8E%E6%95%88%E5%BA%94%E6%94%B6%E7%BC%A9)、[组学批次校正与信号保留](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E6%89%B9%E6%AC%A1%E6%A0%A1%E6%AD%A3%E4%B8%8E%E4%BF%A1%E5%8F%B7%E4%BF%9D%E7%95%99)解释输入条件和适用边界；软件运行步骤与方法假设一起核对。

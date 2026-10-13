@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-14",
+  "python": {
+    "rows": 8,
+    "missing": 1,
+    "groups": {
+      "A": {
+        "n": 3,
+        "mean": 2.0
+      },
+      "B": {
+        "n": 4,
+        "mean": 5.5
+      }
+    },
+    "python_version": "3.14.8",
+    "scope": "Eight artificial samples; descriptive learning example, no biological inference"
+  },
+  "R": {
+    "runtime": "R version 4.6.0 (2026-04-24)",
+    "execution": "WebR WASM; native Rscript not installed",
+    "rows": 8,
+    "missing": 1,
+    "groups": {
+      "A": {
+        "n": 3,
+        "mean": 2
+      },
+      "B": {
+        "n": 4,
+        "mean": 5.5
+      }
+    },
+    "coefficient_B": 3.500000000000002,
+    "leading_zero_id_preserved": true,
+    "NaN_rejected": true
+  },
+  "joined_csv_semantic_match": true,
+  "scope": "Artificial teaching tables; R executed via WebR WASM, native Rscript and third-party R packages not installed"
+}

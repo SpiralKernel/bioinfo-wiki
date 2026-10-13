@@ -1,6 +1,6 @@
 # 群体分析与GWAS学习路线
 
-> 更新：2026-10-13；状态：可用；验证范围：文档核对；操作需按所用环境验证。
+> 更新：2026-10-14；状态：可用；验证范围：文档核对；操作需按所用环境验证。
 
 从基因型编码和样本审计出发，依次完成群体探索、关联分析和证据解释。
 
@@ -32,3 +32,7 @@
 ## 从关联分析走向预测
 
 若下一步是预测候选个体的遗传价值，进入[GS算法软件与实践路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GS%E7%AE%97%E6%B3%95%E8%BD%AF%E4%BB%B6%E4%B8%8E%E5%AE%9E%E8%B7%B5%E8%B7%AF%E7%BA%BF)。先区分[基因组选择与GWAS的区别](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%80%89%E6%8B%A9%E4%B8%8EGWAS%E7%9A%84%E5%8C%BA%E5%88%AB)，再做符合实际候选群体的验证；GWAS显著性不替代预测表现。
+
+## 遗传变异模式与过程
+
+本路线以性状关联为主。若问题是多样性、群体分化、近交、选择或历史，转入[群体遗传学分析学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E9%81%97%E4%BC%A0%E5%AD%A6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)。两类任务的样本、频率筛选及LD处理目的不同，不应复用同一套过滤结果而不审查。

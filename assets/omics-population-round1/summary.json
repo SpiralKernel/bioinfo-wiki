@@ -1,0 +1,552 @@
+{
+  "seed": 20261013,
+  "numpy_version": "2.5.4",
+  "scope": "Complete artificial phased binary haplotypes; no VCF, ancestry, ROH, selection or demographic software run",
+  "all": {
+    "haplotypes": 8,
+    "callable_sites": 12,
+    "segregating_sites": 5,
+    "pi_total": 2.75,
+    "pi_per_site": 0.22916666666666666,
+    "theta_W_total": 1.9283746556473829,
+    "theta_W_per_site": 0.16069788797061524,
+    "Tajima_D": 1.932104504549585
+  },
+  "A": {
+    "haplotypes": 4,
+    "callable_sites": 12,
+    "segregating_sites": 5,
+    "pi_total": 2.6666666666666665,
+    "pi_per_site": 0.2222222222222222,
+    "theta_W_total": 2.7272727272727275,
+    "theta_W_per_site": 0.2272727272727273,
+    "Tajima_D": -0.2124916997050938
+  },
+  "B": {
+    "haplotypes": 4,
+    "callable_sites": 12,
+    "segregating_sites": 4,
+    "pi_total": 2.1666666666666665,
+    "pi_per_site": 0.18055555555555555,
+    "theta_W_total": 2.181818181818182,
+    "theta_W_per_site": 0.18181818181818185,
+    "Tajima_D": -0.06501024948259031
+  },
+  "descriptive_differentiation": {
+    "estimator": "Descriptive equal-population-weight (sum HT - sum HS) / sum HT; no finite-sample correction",
+    "FST": 0.24675324675324675,
+    "sum_HT": 2.40625,
+    "sum_HS": 1.8125
+  },
+  "LD_all_first_two_sites": {
+    "p": 0.625,
+    "q": 0.625,
+    "D": 0.109375,
+    "r2": 0.21777777777777776
+  },
+  "LD_B_first_two_sites": {
+    "p": 1.0,
+    "q": 0.75,
+    "D": 0.0,
+    "r2": null
+  },
+  "drift_model": "Neutral diploid Wright-Fisher, fixed Ne, no mutation/migration/selection, p0=0.5; 500 independent simulated populations",
+  "drift": {
+    "50": [
+      {
+        "generation": 0,
+        "mean_frequency": 0.5,
+        "variance_frequency": 0.0,
+        "theoretical_variance": 0.0
+      },
+      {
+        "generation": 1,
+        "mean_frequency": 0.50346,
+        "variance_frequency": 0.0025570284,
+        "theoretical_variance": 0.0025000000000000022
+      },
+      {
+        "generation": 2,
+        "mean_frequency": 0.50482,
+        "variance_frequency": 0.0051241676,
+        "theoretical_variance": 0.004975000000000007
+      },
+      {
+        "generation": 3,
+        "mean_frequency": 0.50418,
+        "variance_frequency": 0.0074151276,
+        "theoretical_variance": 0.007425249999999994
+      },
+      {
+        "generation": 4,
+        "mean_frequency": 0.50014,
+        "variance_frequency": 0.0104229804,
+        "theoretical_variance": 0.009850997500000014
+      },
+      {
+        "generation": 5,
+        "mean_frequency": 0.49966000000000005,
+        "variance_frequency": 0.012852484399999997,
+        "theoretical_variance": 0.012252487525000022
+      },
+      {
+        "generation": 6,
+        "mean_frequency": 0.50052,
+        "variance_frequency": 0.0155197296,
+        "theoretical_variance": 0.01462996264975
+      },
+      {
+        "generation": 7,
+        "mean_frequency": 0.50156,
+        "variance_frequency": 0.0175599664,
+        "theoretical_variance": 0.01698366302325252
+      },
+      {
+        "generation": 8,
+        "mean_frequency": 0.506,
+        "variance_frequency": 0.0195288,
+        "theoretical_variance": 0.019313826393019984
+      },
+      {
+        "generation": 9,
+        "mean_frequency": 0.50636,
+        "variance_frequency": 0.0220207504,
+        "theoretical_variance": 0.021620688129089793
+      },
+      {
+        "generation": 10,
+        "mean_frequency": 0.5088199999999999,
+        "variance_frequency": 0.024311207600000002,
+        "theoretical_variance": 0.023904481247798898
+      },
+      {
+        "generation": 11,
+        "mean_frequency": 0.50826,
+        "variance_frequency": 0.0275955724,
+        "theoretical_variance": 0.026165436435320905
+      },
+      {
+        "generation": 12,
+        "mean_frequency": 0.50936,
+        "variance_frequency": 0.0300015904,
+        "theoretical_variance": 0.028403782070967692
+      },
+      {
+        "generation": 13,
+        "mean_frequency": 0.51512,
+        "variance_frequency": 0.0320849856,
+        "theoretical_variance": 0.03061974425025804
+      },
+      {
+        "generation": 14,
+        "mean_frequency": 0.5150399999999999,
+        "variance_frequency": 0.0328469984,
+        "theoretical_variance": 0.032813546807755445
+      },
+      {
+        "generation": 15,
+        "mean_frequency": 0.51166,
+        "variance_frequency": 0.0342698444,
+        "theoretical_variance": 0.03498541133967789
+      },
+      {
+        "generation": 16,
+        "mean_frequency": 0.5133,
+        "variance_frequency": 0.03717371,
+        "theoretical_variance": 0.03713555722628112
+      },
+      {
+        "generation": 17,
+        "mean_frequency": 0.51018,
+        "variance_frequency": 0.0375669676,
+        "theoretical_variance": 0.03926420165401831
+      },
+      {
+        "generation": 18,
+        "mean_frequency": 0.5084,
+        "variance_frequency": 0.03943424,
+        "theoretical_variance": 0.04137155963747813
+      },
+      {
+        "generation": 19,
+        "mean_frequency": 0.50836,
+        "variance_frequency": 0.0424929104,
+        "theoretical_variance": 0.04345784404110334
+      },
+      {
+        "generation": 20,
+        "mean_frequency": 0.5080399999999999,
+        "variance_frequency": 0.0445249584,
+        "theoretical_variance": 0.04552326560069231
+      },
+      {
+        "generation": 21,
+        "mean_frequency": 0.50514,
+        "variance_frequency": 0.047199380400000004,
+        "theoretical_variance": 0.047568032944685396
+      },
+      {
+        "generation": 22,
+        "mean_frequency": 0.50246,
+        "variance_frequency": 0.049328548400000005,
+        "theoretical_variance": 0.04959235261523853
+      },
+      {
+        "generation": 23,
+        "mean_frequency": 0.5010399999999999,
+        "variance_frequency": 0.0497033184,
+        "theoretical_variance": 0.051596429089086154
+      },
+      {
+        "generation": 24,
+        "mean_frequency": 0.49922,
+        "variance_frequency": 0.0530067916,
+        "theoretical_variance": 0.05358046479819531
+      },
+      {
+        "generation": 25,
+        "mean_frequency": 0.49898000000000003,
+        "variance_frequency": 0.0544151596,
+        "theoretical_variance": 0.05554466015021334
+      },
+      {
+        "generation": 26,
+        "mean_frequency": 0.49888,
+        "variance_frequency": 0.05666354559999999,
+        "theoretical_variance": 0.05748921354871123
+      },
+      {
+        "generation": 27,
+        "mean_frequency": 0.49954,
+        "variance_frequency": 0.0572215884,
+        "theoretical_variance": 0.059414321413224114
+      },
+      {
+        "generation": 28,
+        "mean_frequency": 0.49868,
+        "variance_frequency": 0.059479057599999996,
+        "theoretical_variance": 0.06132017819909186
+      },
+      {
+        "generation": 29,
+        "mean_frequency": 0.49586,
+        "variance_frequency": 0.06019746040000001,
+        "theoretical_variance": 0.06320697641710096
+      },
+      {
+        "generation": 30,
+        "mean_frequency": 0.49505999999999994,
+        "variance_frequency": 0.062464196400000005,
+        "theoretical_variance": 0.06507490665292995
+      },
+      {
+        "generation": 31,
+        "mean_frequency": 0.49576,
+        "variance_frequency": 0.0653240224,
+        "theoretical_variance": 0.06692415758640063
+      },
+      {
+        "generation": 32,
+        "mean_frequency": 0.4963000000000001,
+        "variance_frequency": 0.06679091,
+        "theoretical_variance": 0.06875491601053665
+      },
+      {
+        "generation": 33,
+        "mean_frequency": 0.49594,
+        "variance_frequency": 0.0690757164,
+        "theoretical_variance": 0.07056736685043127
+      },
+      {
+        "generation": 34,
+        "mean_frequency": 0.49758,
+        "variance_frequency": 0.0700643436,
+        "theoretical_variance": 0.07236169318192698
+      },
+      {
+        "generation": 35,
+        "mean_frequency": 0.49684000000000006,
+        "variance_frequency": 0.0719032144,
+        "theoretical_variance": 0.07413807625010771
+      },
+      {
+        "generation": 36,
+        "mean_frequency": 0.49282,
+        "variance_frequency": 0.0730462476,
+        "theoretical_variance": 0.07589669548760664
+      },
+      {
+        "generation": 37,
+        "mean_frequency": 0.4949000000000001,
+        "variance_frequency": 0.07473819000000001,
+        "theoretical_variance": 0.07763772853273057
+      },
+      {
+        "generation": 38,
+        "mean_frequency": 0.4944200000000001,
+        "variance_frequency": 0.07711426359999998,
+        "theoretical_variance": 0.07936135124740326
+      },
+      {
+        "generation": 39,
+        "mean_frequency": 0.49144,
+        "variance_frequency": 0.07700392639999999,
+        "theoretical_variance": 0.08106773773492923
+      },
+      {
+        "generation": 40,
+        "mean_frequency": 0.49144,
+        "variance_frequency": 0.0800439264,
+        "theoretical_variance": 0.08275706035757993
+      }
+    ],
+    "500": [
+      {
+        "generation": 0,
+        "mean_frequency": 0.5,
+        "variance_frequency": 0.0,
+        "theoretical_variance": 0.0
+      },
+      {
+        "generation": 1,
+        "mean_frequency": 0.50007,
+        "variance_frequency": 0.00027428510000000034,
+        "theoretical_variance": 0.0002500000000000002
+      },
+      {
+        "generation": 2,
+        "mean_frequency": 0.5015299999999999,
+        "variance_frequency": 0.0005067691000000005,
+        "theoretical_variance": 0.0004997499999999933
+      },
+      {
+        "generation": 3,
+        "mean_frequency": 0.5014959999999999,
+        "variance_frequency": 0.0007522379840000006,
+        "theoretical_variance": 0.0007492502499999998
+      },
+      {
+        "generation": 4,
+        "mean_frequency": 0.502156,
+        "variance_frequency": 0.0010884076640000004,
+        "theoretical_variance": 0.0009985009997499905
+      },
+      {
+        "generation": 5,
+        "mean_frequency": 0.502936,
+        "variance_frequency": 0.0013089719040000002,
+        "theoretical_variance": 0.001247502498750247
+      },
+      {
+        "generation": 6,
+        "mean_frequency": 0.50325,
+        "variance_frequency": 0.0015055955000000006,
+        "theoretical_variance": 0.0014962549962515004
+      },
+      {
+        "generation": 7,
+        "mean_frequency": 0.503534,
+        "variance_frequency": 0.0017550928440000005,
+        "theoretical_variance": 0.0017447587412552368
+      },
+      {
+        "generation": 8,
+        "mean_frequency": 0.502372,
+        "variance_frequency": 0.0020526576160000004,
+        "theoretical_variance": 0.0019930139825140025
+      },
+      {
+        "generation": 9,
+        "mean_frequency": 0.502518,
+        "variance_frequency": 0.002321069676,
+        "theoretical_variance": 0.0022410209685314875
+      },
+      {
+        "generation": 10,
+        "mean_frequency": 0.501328,
+        "variance_frequency": 0.0026133484160000002,
+        "theoretical_variance": 0.0024887799475629413
+      },
+      {
+        "generation": 11,
+        "mean_frequency": 0.501404,
+        "variance_frequency": 0.002924456784,
+        "theoretical_variance": 0.0027362911676153956
+      },
+      {
+        "generation": 12,
+        "mean_frequency": 0.501434,
+        "variance_frequency": 0.003018521644,
+        "theoretical_variance": 0.002983554876447775
+      },
+      {
+        "generation": 13,
+        "mean_frequency": 0.501718,
+        "variance_frequency": 0.003230838476,
+        "theoretical_variance": 0.0032305713215713128
+      },
+      {
+        "generation": 14,
+        "mean_frequency": 0.501798,
+        "variance_frequency": 0.003503265195999999,
+        "theoretical_variance": 0.0034773407502497466
+      },
+      {
+        "generation": 15,
+        "mean_frequency": 0.5019239999999999,
+        "variance_frequency": 0.0036378782239999997,
+        "theoretical_variance": 0.0037238634094995116
+      },
+      {
+        "generation": 16,
+        "mean_frequency": 0.500996,
+        "variance_frequency": 0.003972483984,
+        "theoretical_variance": 0.003970139546090018
+      },
+      {
+        "generation": 17,
+        "mean_frequency": 0.50071,
+        "variance_frequency": 0.0043070139,
+        "theoretical_variance": 0.0042161694065439015
+      },
+      {
+        "generation": 18,
+        "mean_frequency": 0.5003759999999999,
+        "variance_frequency": 0.004370326624000001,
+        "theoretical_variance": 0.004461953237137384
+      },
+      {
+        "generation": 19,
+        "mean_frequency": 0.500462,
+        "variance_frequency": 0.004654348556,
+        "theoretical_variance": 0.004707491283900245
+      },
+      {
+        "generation": 20,
+        "mean_frequency": 0.501636,
+        "variance_frequency": 0.004883275504,
+        "theoretical_variance": 0.004952783792616322
+      },
+      {
+        "generation": 21,
+        "mean_frequency": 0.50059,
+        "variance_frequency": 0.005114017899999999,
+        "theoretical_variance": 0.005197831008823706
+      },
+      {
+        "generation": 22,
+        "mean_frequency": 0.49996999999999997,
+        "variance_frequency": 0.0051645731,
+        "theoretical_variance": 0.005442633177814904
+      },
+      {
+        "generation": 23,
+        "mean_frequency": 0.499732,
+        "variance_frequency": 0.0052887001760000005,
+        "theoretical_variance": 0.005687190544637066
+      },
+      {
+        "generation": 24,
+        "mean_frequency": 0.50003,
+        "variance_frequency": 0.0055589411,
+        "theoretical_variance": 0.0059315033540924544
+      },
+      {
+        "generation": 25,
+        "mean_frequency": 0.499718,
+        "variance_frequency": 0.005716210475999999,
+        "theoretical_variance": 0.0061755718507383595
+      },
+      {
+        "generation": 26,
+        "mean_frequency": 0.49979199999999996,
+        "variance_frequency": 0.006039152736,
+        "theoretical_variance": 0.006419396278887601
+      },
+      {
+        "generation": 27,
+        "mean_frequency": 0.49896999999999997,
+        "variance_frequency": 0.0061999691,
+        "theoretical_variance": 0.006662976882608723
+      },
+      {
+        "generation": 28,
+        "mean_frequency": 0.49938,
+        "variance_frequency": 0.0065117316,
+        "theoretical_variance": 0.0069063139057261025
+      },
+      {
+        "generation": 29,
+        "mean_frequency": 0.499798,
+        "variance_frequency": 0.006976181195999999,
+        "theoretical_variance": 0.007149407591820395
+      },
+      {
+        "generation": 30,
+        "mean_frequency": 0.49957399999999996,
+        "variance_frequency": 0.007094272524,
+        "theoretical_variance": 0.007392258184228562
+      },
+      {
+        "generation": 31,
+        "mean_frequency": 0.499222,
+        "variance_frequency": 0.0072791327159999995,
+        "theoretical_variance": 0.007634865926044343
+      },
+      {
+        "generation": 32,
+        "mean_frequency": 0.49926800000000005,
+        "variance_frequency": 0.007622520176,
+        "theoretical_variance": 0.007877231060118312
+      },
+      {
+        "generation": 33,
+        "mean_frequency": 0.49978999999999996,
+        "variance_frequency": 0.0079372179,
+        "theoretical_variance": 0.008119353829058179
+      },
+      {
+        "generation": 34,
+        "mean_frequency": 0.500386,
+        "variance_frequency": 0.008293169004000001,
+        "theoretical_variance": 0.008361234475229129
+      },
+      {
+        "generation": 35,
+        "mean_frequency": 0.500198,
+        "variance_frequency": 0.008583882796000001,
+        "theoretical_variance": 0.0086028732407539
+      },
+      {
+        "generation": 36,
+        "mean_frequency": 0.500208,
+        "variance_frequency": 0.008822616736,
+        "theoretical_variance": 0.008844270367513146
+      },
+      {
+        "generation": 37,
+        "mean_frequency": 0.50043,
+        "variance_frequency": 0.0090051571,
+        "theoretical_variance": 0.009085426097145632
+      },
+      {
+        "generation": 38,
+        "mean_frequency": 0.49933799999999995,
+        "variance_frequency": 0.009292579756000001,
+        "theoretical_variance": 0.009326340671048483
+      },
+      {
+        "generation": 39,
+        "mean_frequency": 0.498322,
+        "variance_frequency": 0.009600142316,
+        "theoretical_variance": 0.009567014330377432
+      },
+      {
+        "generation": 40,
+        "mean_frequency": 0.498004,
+        "variance_frequency": 0.009943403984,
+        "theoretical_variance": 0.009807447316047047
+      }
+    ]
+  }
+}

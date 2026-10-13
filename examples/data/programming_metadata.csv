@@ -1,0 +1,9 @@
+sample_id,condition,batch
+S05,B,I
+S01,A,I
+S06,B,II
+S02,A,II
+S07,B,I
+S03,A,I
+S08,B,II
+S04,A,II
