@@ -8,6 +8,10 @@
 
 需要经过[基因型质控与过滤](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%9F%BA%E5%9B%A0%E5%9E%8B%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%BF%87%E6%BB%A4)的数据、表型定义、样本表、协变量以及必要的亲缘信息。先明确数量性状还是二分类、独立单位、测量单位、缺失值和排除标准。
 
+## 软件与完整案例入口
+
+先读[GWAS软件选择与比较](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GWAS%E8%BD%AF%E4%BB%B6%E9%80%89%E6%8B%A9%E4%B8%8E%E6%AF%94%E8%BE%83)。本页保留主流程，实际公开数据、多软件命令与诊断图见[公开小鼠数据贯通多软件GWAS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%AC%E5%BC%80%E5%B0%8F%E9%BC%A0%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9A%E5%A4%9A%E8%BD%AF%E4%BB%B6GWAS)；特定软件参数在各自详细页维护。
+
 ## 1. 样本对齐与模型选择
 
 按 ID 对齐表型和协变量，检查合并后的组别、缺失与共线性。有家系或相关样本时评估混合模型，而不是把所有分析都称作普通线性回归。见[线性模型与混合模型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B)。

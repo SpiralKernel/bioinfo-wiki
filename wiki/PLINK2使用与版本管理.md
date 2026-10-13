@@ -24,3 +24,5 @@ plink2 --pfile cohort --missing --freq --out results/input_check
 ## 结果检查与深入
 
 每次保留 `.log`，检查最终样本/位点数、警告与输出列。格式详见 [PLINK 文件参考](https://www.cog-genomics.org/plink/2.0/formats)。从[合成数据贯通PCA与GWAS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%90%88%E6%88%90%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9APCA%E4%B8%8EGWAS)开始练习，再进入真实数据。
+
+关联模型、参数与逐列输出见[PLINK2关联分析详解](https://github.com/SpiralKernel/bioinfo-wiki/wiki/PLINK2%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90%E8%AF%A6%E8%A7%A3)；使用亲缘模型前先比较[GWAS软件选择与比较](https://github.com/SpiralKernel/bioinfo-wiki/wiki/GWAS%E8%BD%AF%E4%BB%B6%E9%80%89%E6%8B%A9%E4%B8%8E%E6%AF%94%E8%BE%83)。

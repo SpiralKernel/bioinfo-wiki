@@ -1,0 +1,11 @@
+{
+  "analyzed_samples": 1410,
+  "geno": 0.05,
+  "mind": 0.05,
+  "variants_by_MAF_threshold": {
+    "0.01": 9100,
+    "0.05": 8544,
+    "0.1": 7757
+  },
+  "scope": "Frequency-filter counts only; models not refit for each threshold"
+}

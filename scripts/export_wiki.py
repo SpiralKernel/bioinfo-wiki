@@ -187,10 +187,12 @@ def export(source, output, refresh_index=False):
             '## 建议从这里开始', '',
             f'- [中文生信学习地图]({page_url("中文生信学习地图")})：了解前置知识和阅读顺序。',
             f'- [群体分析与GWAS学习路线]({page_url("群体分析与GWAS学习路线")})：沿熟悉的主线进入分析。',
+            f'- [GWAS软件选择与比较]({page_url("GWAS软件选择与比较")})：按场景选模型，进入各软件详解。',
             f'- [组学分析总览与选型]({page_url("组学分析总览与选型")})：按测量对象选择组学流程。',
             f'- [关键词索引]({page_url(INDEX)})：搜索中文名、英文名和缩写。', '',
             '## 可以立即运行的练习', '',
             f'- [合成数据贯通PCA与GWAS]({page_url("合成数据贯通PCA与GWAS")})：120 样本、600 位点的实测示例。',
+            f'- [公开小鼠数据贯通多软件GWAS]({page_url("公开小鼠数据贯通多软件GWAS")})：四个软件、七种配置的公开数据案例。',
             f'- [BLAST原理与种子延伸]({page_url("BLAST原理与种子延伸")})：用人工字符串理解启发式与精确比对。', '',
             '其他流程分别提供官方公开数据和实践入口，并注明文档核对与实际运行的区别。', '']
     # Curated routes are optional when exporting a smaller authored collection.

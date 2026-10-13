@@ -5,33 +5,58 @@
     "ATAC-seq入门与实践.md",
     "BLAST原理与种子延伸.md",
     "BLAST本地检索实践.md",
+    "BOLT-LMM关联分析.md",
     "ChIP-seq入门与实践.md",
     "DNA甲基化分析入门.md",
+    "EMMAX关联分析与旧流程兼容.md",
     "Ensembl参考与注释查询.md",
     "FASTA与FASTQ.md",
+    "FarmCPU与BLINK原理.md",
+    "GAPIT多模型GWAS实践.md",
+    "GCTA与MLMA关联分析.md",
+    "GEMMA线性混合模型实践.md",
     "GEO数据检索与样本核对.md",
     "GO术语注释与证据.md",
     "GWAS从数据准备到结果解释.md",
+    "GWAS参数选择与敏感性分析.md",
+    "GWAS常见报错与排查.md",
+    "GWAS曼哈顿图QQ图与膨胀因子.md",
+    "GWAS结果字段与等位基因统一.md",
+    "GWAS软件结果比较与一致性检查.md",
+    "GWAS软件输入转换与样本对齐.md",
+    "GWAS软件选择与比较.md",
     "Hardy-Weinberg平衡与检验.md",
     "Home.md",
+    "LOCO与近端污染.md",
     "Linux与项目目录实践.md",
+    "MAF与MAC及稀有变异.md",
     "PCA原理与实现.md",
     "PLINK2使用与版本管理.md",
+    "PLINK2关联分析详解.md",
     "P值效应量与多重检验.md",
+    "REGENIE两步关联分析.md",
     "RNA-seq从计数矩阵到差异表达.md",
+    "SAIGE单变异关联分析.md",
     "SAM与BAM及CRAM.md",
     "SNP与基因型是什么.md",
     "SRA与ENA读段检索.md",
     "Smith-Waterman局部比对.md",
+    "TASSEL关联分析实践.md",
     "UMI与细胞条形码.md",
     "UniProt蛋白条目与证据.md",
     "VCF与基因型编码.md",
+    "Wald似然比与得分检验.md",
     "_Sidebar.md",
+    "fastGWA与fastGWA-GLMM.md",
+    "rMVP关联分析实践.md",
     "中文生信学习地图.md",
+    "二分类性状OR与病例对照不平衡.md",
     "亲缘关系与遗传关系矩阵.md",
     "从DNA到RNA和蛋白质.md",
     "代谢组入门与实践.md",
     "公共数据库与数据获取.md",
+    "公开小鼠数据贯通多软件GWAS.md",
+    "关联模型中的协变量与残差.md",
     "关键词索引.md",
     "单细胞转录组入门与实践.md",
     "参考基因组与注释版本.md",
@@ -73,7 +98,8 @@
     "计数丰度与标准化.md",
     "软件环境与依赖管理.md",
     "连锁不平衡与LD剪枝.md",
-    "长读长测序分析入门.md"
+    "长读长测序分析入门.md",
+    "零模型与方差组分.md"
   ],
   "pages": [
     {
@@ -134,7 +160,103 @@
       "summary": "将基因型、表型和设计信息连接到合适的关联模型，并审查效应方向与证据边界。",
       "validation": "合成数据实测",
       "updated": "2026-10-13",
-      "sha256": "823fec9630b6b2db1408d0634c7fdbddb4eb264002014edda5a8466726a5a68e"
+      "sha256": "b1025677817e5f64b8a57d57d4ae4391c713b4899c1bdd3db8d61659c24a4c94"
+    },
+    {
+      "title": "GWAS参数选择与敏感性分析",
+      "source": "分析工作流/GWAS参数选择与敏感性分析.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GWAS参数选择",
+        "GWAS敏感性分析"
+      ],
+      "summary": "参数改变会改变信息、背景与检验集合，敏感性分析应有预先理由和完整记录。",
+      "validation": "公开小鼠MAF门槛计数、PC0/PC3和chr17背景对照实测；未做全部参数组合的模型重拟合",
+      "updated": "2026-10-13",
+      "sha256": "566779394e1927f1c14ac60ace4e8509b8c9550c091379d83ca6816add23e758"
+    },
+    {
+      "title": "GWAS常见报错与排查",
+      "source": "分析工作流/GWAS常见报错与排查.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GWAS排错",
+        "GWAS FAQ",
+        "GWAS错误码"
+      ],
+      "summary": "先把失败定位到身份、格式、模型、数值或资源，再用最小例子验证修复。",
+      "validation": "实际案例的格式与方向问题已核对；症状表其他路径按官方文档整理，未逐项复现",
+      "updated": "2026-10-13",
+      "sha256": "8b2adc8d19c39cbb52cef75f53bfb336346e4e57642e5146de47c62deeea8cb5"
+    },
+    {
+      "title": "GWAS曼哈顿图QQ图与膨胀因子",
+      "source": "分析工作流/GWAS曼哈顿图QQ图与膨胀因子.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GWAS Manhattan",
+        "GWAS QQ",
+        "lambda GC",
+        "λGC",
+        "genomic inflation factor"
+      ],
+      "summary": "图形用于定位信号与诊断分布，必须连同样本结构、检验、LD和模型背景解释。",
+      "validation": "实际结果绘图、统一坐标与1df λGC计算实测；图形不构成正式软件基准",
+      "updated": "2026-10-13",
+      "sha256": "810d55ddc8398ed80b39f0c296f728c61d09233b3856d4ff2d114ac5091850f9"
+    },
+    {
+      "title": "GWAS结果字段与等位基因统一",
+      "source": "分析工作流/GWAS结果字段与等位基因统一.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GWAS结果字段",
+        "effect allele harmonization",
+        "效应等位基因统一"
+      ],
+      "summary": "跨软件结果表先统一位点、效应方向、性状尺度和P值表示，再比较统计量。",
+      "validation": "公开小鼠七种配置结果字段、52个位点方向翻转与同模型一致性实测",
+      "updated": "2026-10-13",
+      "sha256": "82a9f7eea45c87584c3b7579981776ee1ad154004df40a3ab2591be84dee3013"
+    },
+    {
+      "title": "GWAS软件结果比较与一致性检查",
+      "source": "分析工作流/GWAS软件结果比较与一致性检查.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GWAS软件比较实践",
+        "GWAS一致性"
+      ],
+      "summary": "先用同一模型检查软件交接，再解释不同模型的结果；单一数据集的显著数量不构成软件排名。",
+      "validation": "公开小鼠七种配置及chr17对照实测；不是跨场景性能、功效或错误控制基准",
+      "updated": "2026-10-13",
+      "sha256": "2e8618d2d0c5029634a59bcdf7939da25398e3362db030b98fee20fd475d2927"
+    },
+    {
+      "title": "GWAS软件输入转换与样本对齐",
+      "source": "分析工作流/GWAS软件输入转换与样本对齐.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "GWAS文件转换",
+        "GWAS样本对齐",
+        "FID IID"
+      ],
+      "summary": "转换必须保持样本身份、位点身份、等位基因编码和性状含义；格式可以读入不代表转换正确。",
+      "validation": "公开小鼠PLINK/GEMMA/GCTA/REGENIE输入转换与ID核对实测；其余约定按官方文档核对",
+      "updated": "2026-10-13",
+      "sha256": "0c053bf027f6f6de99c291515849d6160526a1ac5d410ae3877037a9c021c9f8"
     },
     {
       "title": "RNA-seq从计数矩阵到差异表达",
@@ -167,6 +289,22 @@
       "validation": "文档核对；完整流程未在本机运行",
       "updated": "2026-10-13",
       "sha256": "16f8900e85748cef3972bdd128b38e9412c0d4572c535f3f01546cbe154f67be"
+    },
+    {
+      "title": "公开小鼠数据贯通多软件GWAS",
+      "source": "分析工作流/公开小鼠数据贯通多软件GWAS.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [
+        "公开GWAS案例",
+        "小鼠GWAS练习",
+        "mouse_hs1940"
+      ],
+      "summary": "用固定版本的公开小鼠数据完成质控、PCA、多软件关联、等位基因统一和诊断图，学习每一步的交接与判断。",
+      "validation": "四个软件与七种主要配置端到端实测；附加chr17对照与MAF计数实测，完整全基因组LOCO未执行",
+      "updated": "2026-10-13",
+      "sha256": "34995f6ed682a95bef05884897e066961a5261b188bc025b1eb069e14cf2c074"
     },
     {
       "title": "单细胞转录组入门与实践",
@@ -362,6 +500,21 @@
       "sha256": "1a80727bdd06369d45d2c3889b31ccdbc20e53ad3d30a2746441adabae066866"
     },
     {
+      "title": "GWAS软件选择与比较",
+      "source": "学习路线/GWAS软件选择与比较.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "status": "可用",
+      "aliases": [
+        "GWAS软件",
+        "GWAS工具比较"
+      ],
+      "summary": "先根据性状、样本相关性、物种和数据规模选择模型，再选择能够实现并验证它的软件。",
+      "validation": "选型资料核对；贯穿案例实测PLINK、GEMMA、GCTA及REGENIE，其他软件未执行",
+      "updated": "2026-10-13",
+      "sha256": "35078810ab837d8346264af547251e2892eaad047b865614d5099c73d7a779ad"
+    },
+    {
       "title": "中文生信学习地图",
       "source": "学习路线/中文生信学习地图.md",
       "folder": "学习路线",
@@ -395,7 +548,7 @@
       "summary": "从基因型编码和样本审计出发，依次完成群体探索、关联分析和证据解释。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "b28c47659cf93989aa0ba8a50cc77645af66e96592864614fcf2e6d7c6f91a68"
+      "sha256": "93d072bd2c063388510c86ba78bb151e94613aea07794af32806e21710aa891b"
     },
     {
       "title": "BLAST本地检索实践",
@@ -412,6 +565,87 @@
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
       "sha256": "5dce809ea72737883e8f4e1b8b7c2a4fddb690894a6d50afc3023e593934fe7a"
+    },
+    {
+      "title": "BOLT-LMM关联分析",
+      "source": "工具/BOLT-LMM关联分析.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "BOLT-LMM",
+        "BOLT-REML",
+        "BOLT-LMM-inf"
+      ],
+      "summary": "BOLT-LMM面向较大队列的混合模型关联，模型模式、样本适用性、参考资源与输出列需要同时核对。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "2c7c7add7fe4fa5b2c8318d143792d1074994e64488d470495442a577adb92b1"
+    },
+    {
+      "title": "EMMAX关联分析与旧流程兼容",
+      "source": "工具/EMMAX关联分析与旧流程兼容.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "EMMAX",
+        "EMMA",
+        "emmax-kin",
+        "TPED"
+      ],
+      "summary": "EMMAX是混合模型关联的经典实现，理解旧文件编码与顺序是复现已有分析的关键。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "394bab168dc4b650521eb2a8ba881a9ca0f096d7878e17e3fbf5f514af570de6"
+    },
+    {
+      "title": "GAPIT多模型GWAS实践",
+      "source": "工具/GAPIT多模型GWAS实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "GAPIT",
+        "GAPIT4",
+        "GAPIT3"
+      ],
+      "summary": "GAPIT把多种关联与预测方法组织在R接口中；每次应明确模型、样本交集及输出，而不是把一键运行当成模型选择。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "29081e5b781248476997262db4ae8582a3cf5ec8038ac27c2ce9f9fdd02edfd3"
+    },
+    {
+      "title": "GCTA与MLMA关联分析",
+      "source": "工具/GCTA与MLMA关联分析.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "GCTA",
+        "MLMA",
+        "MLMA-LOCO"
+      ],
+      "summary": "GCTA包含多种遗传统计任务；MLMA使用稠密GRM做关联，不能与GREML或fastGWA模块混称。",
+      "validation": "GCTA v1.94.1公开小鼠稠密GRM及MLMA实测；GREML、COJO和完整MLMA-LOCO未执行",
+      "updated": "2026-10-13",
+      "sha256": "8541d96badac3bd515faf3a12d680376ed97cd5e67c0ea4ffa5f52d8cfe926a9"
+    },
+    {
+      "title": "GEMMA线性混合模型实践",
+      "source": "工具/GEMMA线性混合模型实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "GEMMA",
+        "GEMMA LMM",
+        "GEMMA LM"
+      ],
+      "summary": "GEMMA以显式亲缘矩阵拟合关联模型，适合学习固定效应、背景相关性和检验方法的连接。",
+      "validation": "GEMMA 0.98.5公开小鼠GRM、LM、LMM及chr17背景排除对照实测；其他模块未执行",
+      "updated": "2026-10-13",
+      "sha256": "52ca3f1de0f082094947dc236345a994dcaca893e939d118678d538db1714a4e"
     },
     {
       "title": "Linux与项目目录实践",
@@ -438,7 +672,107 @@
       "summary": "PLINK 2 用于基因型处理、PCA 和关联等任务；参数与默认行为需要绑定具体版本。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "c633df82fa22101bd77be8b8f86d1d7eecafa581a6fa38ca5e3ba6ab796b360d"
+      "sha256": "6cfcb0985555317f7f3a8be2a0473eea2663e555e80a0812622949051625ab9b"
+    },
+    {
+      "title": "PLINK2关联分析详解",
+      "source": "工具/PLINK2关联分析详解.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "PLINK glm",
+        "PLINK2 GWAS"
+      ],
+      "summary": "PLINK 2的关联接口按性状拟合回归；正确读取性状、协变量、计数等位基因与错误码比记住一条命令更重要。",
+      "validation": "公开小鼠数据的连续性状回归实测；二分类模板与扩展参数未执行",
+      "updated": "2026-10-13",
+      "sha256": "45956d0da61aa60776c854c8aa63f0504e6e375108986b3c4c895c1e14a12f4d"
+    },
+    {
+      "title": "REGENIE两步关联分析",
+      "source": "工具/REGENIE两步关联分析.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "REGENIE",
+        "regenie",
+        "ridge regression",
+        "全基因组回归"
+      ],
+      "summary": "REGENIE先学习背景遗传预测，再结合按染色体留出的预测检验位点；两步文件、样本与性状必须保持对应。",
+      "validation": "REGENIE v4.1.3.gz公开小鼠数量性状Step 1与Step 2实测；二分类、集合和生存分析未执行",
+      "updated": "2026-10-13",
+      "sha256": "5bc8b0ad6a004f09fc943748eaf04702981ec82ea48cbef08535adc0b60b915b"
+    },
+    {
+      "title": "SAIGE单变异关联分析",
+      "source": "工具/SAIGE单变异关联分析.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "SAIGE",
+        "SAIGE single variant",
+        "SAIGE-GENE"
+      ],
+      "summary": "SAIGE先拟合零混合模型，再做单变异检验；二分类的SPA处理与样本相关性建模需要共同核对。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "b651bf7421f81aa75656b1b1b16d147f72028ae6cd93a20b95fc647614ba1292"
+    },
+    {
+      "title": "TASSEL关联分析实践",
+      "source": "工具/TASSEL关联分析实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "TASSEL",
+        "TASSEL5",
+        "taxa",
+        "P3D",
+        "CMLM"
+      ],
+      "summary": "TASSEL通过图形界面和命令行组织遗传数据与GLM/MLM分析，关键是理解taxa交集、固定效应与亲缘输入。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "bd30ef9f35718ca31f7d7f31c08465aba265d201bf1cc48eb7815fff8d45ae91"
+    },
+    {
+      "title": "fastGWA与fastGWA-GLMM",
+      "source": "工具/fastGWA与fastGWA-GLMM.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "fastGWA",
+        "fastGWA-GLMM",
+        "sparse GRM",
+        "GRAMMAR-Gamma"
+      ],
+      "summary": "fastGWA利用稀疏关系和快速检验提高可扩展性；数量性状与二分类模块需要分别配置和核验。",
+      "validation": "GCTA v1.94.1稀疏GRM及fastGWA数量性状实测；fastGWA-GLMM二分类未执行",
+      "updated": "2026-10-13",
+      "sha256": "65e7405be4b3b0e26d673d220df8759ccafb497cab5e2a73a5eb4dcdde0de61e"
+    },
+    {
+      "title": "rMVP关联分析实践",
+      "source": "工具/rMVP关联分析实践.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "rMVP",
+        "MVP",
+        "bigmemory",
+        "内存映射"
+      ],
+      "summary": "rMVP通过外存矩阵和并行运行关联分析，转换后的样本顺序及协变量对应是最重要的检查点。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "d96f4d6415cede87bc779e675fa7d7d5ee6c112a9a67e108c96ef682299cbb99"
     },
     {
       "title": "可复现分析与工作流管理",
@@ -701,6 +1035,23 @@
       "sha256": "47686b73ac5378ac8db20ba03f3a7bea5f907de9b369687886027e9b94cc781a"
     },
     {
+      "title": "FarmCPU与BLINK原理",
+      "source": "方法与算法/FarmCPU与BLINK原理.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "FarmCPU",
+        "BLINK",
+        "pseudo-QTN",
+        "BIC"
+      ],
+      "summary": "FarmCPU与BLINK通过迭代选择背景位点帮助检验其他位点，背景选择本身也是分析方法的一部分。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "494185cc526a0bd9e142237e3782aeaba449df54f9c13e223c9218a2f5502b7a"
+    },
+    {
       "title": "PCA原理与实现",
       "source": "方法与算法/PCA原理与实现.md",
       "folder": "方法与算法",
@@ -783,7 +1134,7 @@
       "summary": "回归把研究变量与协变量联系到表型，混合模型进一步表示样本相关性或层级结构。",
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
-      "sha256": "27bc72d709b2f663db379c6120ef06eb75955c9e93ea75e544254f800c5e3ad4"
+      "sha256": "afe617c493a8d03d9bf772256add9ade12aad533a19a0badfc3a94dfbe178d34"
     },
     {
       "title": "群体结构与GWAS有什么关系",
@@ -846,6 +1197,40 @@
       "validation": "文档核对；纸面例子核算；外部分析未在本机执行",
       "updated": "2026-10-13",
       "sha256": "bc445027170b8b9eacc46736bb82b0aeb84491e100c59fadcb566387220b0ab7"
+    },
+    {
+      "title": "LOCO与近端污染",
+      "source": "术语与概念/LOCO与近端污染.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "LOCO",
+        "leave one chromosome out",
+        "proximal contamination"
+      ],
+      "summary": "LOCO在检验某条染色体时把它排除出背景遗传表示，以减少局部信号被背景模型吸收。",
+      "validation": "文档核对；公开小鼠第17号染色体的GEMMA背景排除对照实测，未做完整全基因组LOCO",
+      "updated": "2026-10-13",
+      "sha256": "fc6b88ea350f77a2cdae8076733fa178fcbc35496ce1107fa2db7703de6e6c53"
+    },
+    {
+      "title": "MAF与MAC及稀有变异",
+      "source": "术语与概念/MAF与MAC及稀有变异.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "MAF",
+        "MAC",
+        "minor allele frequency",
+        "minor allele count",
+        "rare variant"
+      ],
+      "summary": "频率描述相对比例，等位基因计数描述实际信息量；低频位点需要同时审查样本与统计近似。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "80957e7a4b23b0ad9df04cde87b9effcd3d18ef719304c738fe4a0372793079a"
     },
     {
       "title": "P值效应量与多重检验",
@@ -938,6 +1323,42 @@
       "sha256": "37307a3f59fb6f0da3f44e1e12d7583b59b8f7f95935aa93767be1346b4a2fee"
     },
     {
+      "title": "Wald似然比与得分检验",
+      "source": "术语与概念/Wald似然比与得分检验.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "Wald test",
+        "likelihood ratio test",
+        "LRT",
+        "score test"
+      ],
+      "summary": "不同检验从参数、似然改善或零模型局部变化评估证据，软件输出的P值必须注明检验类型。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "1913a866571880c3a05f700f67c9984b6b277460d715613438b69889ffe47425"
+    },
+    {
+      "title": "二分类性状OR与病例对照不平衡",
+      "source": "术语与概念/二分类性状OR与病例对照不平衡.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "binary trait",
+        "case-control",
+        "odds ratio",
+        "OR",
+        "Firth",
+        "SPA"
+      ],
+      "summary": "二分类关联需要核对标签、病例与对照中的等位基因计数，以及模型是否能处理稀疏和相关样本。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "dab97c2dd81d778a48661c9bf4908c182fd131029557492b282211da69a54a25"
+    },
+    {
       "title": "亲缘关系与遗传关系矩阵",
       "source": "术语与概念/亲缘关系与遗传关系矩阵.md",
       "folder": "术语与概念",
@@ -975,6 +1396,23 @@
       "validation": "文档核对；纸面例子核算；外部分析未在本机执行",
       "updated": "2026-10-13",
       "sha256": "794700093e2c457e5d0f41d4e688a914ca7092bfbdd57b546b683ef066d75270"
+    },
+    {
+      "title": "关联模型中的协变量与残差",
+      "source": "术语与概念/关联模型中的协变量与残差.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "covariate",
+        "residual",
+        "design matrix",
+        "共线性"
+      ],
+      "summary": "协变量定义调整后的比较，残差描述模型尚未解释的部分；二者都不能靠机械添加代替研究设计。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "cc1dbaf3e503448c1b37eeb1aa09f4cf5d1e51dece11be023ebdb17a00b51ddf"
     },
     {
       "title": "参考基因组与注释版本",
@@ -1237,15 +1675,40 @@
       "validation": "文档核对；操作需按所用环境验证",
       "updated": "2026-10-13",
       "sha256": "18aa0642c8fc437c2f4daaab3e0cf2d69385e3428105dd0ce67838301c407220"
+    },
+    {
+      "title": "零模型与方差组分",
+      "source": "术语与概念/零模型与方差组分.md",
+      "folder": "术语与概念",
+      "kind": "术语",
+      "status": "可用",
+      "aliases": [
+        "null model",
+        "variance component",
+        "REML",
+        "PVE",
+        "遗传率"
+      ],
+      "summary": "零模型描述没有当前待检验位点效应时的背景；方差组分表示模型中不同变异来源的规模。",
+      "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
+      "updated": "2026-10-13",
+      "sha256": "75e8e4c3a3477a2efa2e58397ec2a3a91bac742db41981a629edd0ebef4cf7af"
     }
   ],
   "file_hashes": {
     "ATAC-seq入门与实践.md": "44ce84a1e8888d736c43864a360fe1b6f2035d0234ce68d09cb4b726a141c9ea",
     "ChIP-seq入门与实践.md": "d1b9f3f85e5cd9bed87324545e1e5717bc07b0cb70052ac08656603a83285ce9",
     "DNA甲基化分析入门.md": "135bed5ab6dfe71176d5064df0a7a68fdee8b05d3b2b48c4e290c443014ee415",
-    "GWAS从数据准备到结果解释.md": "823fec9630b6b2db1408d0634c7fdbddb4eb264002014edda5a8466726a5a68e",
+    "GWAS从数据准备到结果解释.md": "b1025677817e5f64b8a57d57d4ae4391c713b4899c1bdd3db8d61659c24a4c94",
+    "GWAS参数选择与敏感性分析.md": "566779394e1927f1c14ac60ace4e8509b8c9550c091379d83ca6816add23e758",
+    "GWAS常见报错与排查.md": "8b2adc8d19c39cbb52cef75f53bfb336346e4e57642e5146de47c62deeea8cb5",
+    "GWAS曼哈顿图QQ图与膨胀因子.md": "810d55ddc8398ed80b39f0c296f728c61d09233b3856d4ff2d114ac5091850f9",
+    "GWAS结果字段与等位基因统一.md": "82a9f7eea45c87584c3b7579981776ee1ad154004df40a3ab2591be84dee3013",
+    "GWAS软件结果比较与一致性检查.md": "2e8618d2d0c5029634a59bcdf7939da25398e3362db030b98fee20fd475d2927",
+    "GWAS软件输入转换与样本对齐.md": "0c053bf027f6f6de99c291515849d6160526a1ac5d410ae3877037a9c021c9f8",
     "RNA-seq从计数矩阵到差异表达.md": "e86194e95bb0e4c2943975227e031274021d13d005e484a9759df5d042d6b791",
     "代谢组入门与实践.md": "16f8900e85748cef3972bdd128b38e9412c0d4572c535f3f01546cbe154f67be",
+    "公开小鼠数据贯通多软件GWAS.md": "34995f6ed682a95bef05884897e066961a5261b188bc025b1eb069e14cf2c074",
     "单细胞转录组入门与实践.md": "048074da4628055cd8730ad29cb2909cb126f931a33d4b30a4a4c6ef8c28016f",
     "变异注释与候选证据整理.md": "5d027c094e985628db0dc79628650a9bb18547de916f37812f4d517da54bfb7b",
     "基因型质控与过滤.md": "61f0a8d40245175437970b2494f53b6d031f929c30985b3c45a62c44113376e3",
@@ -1258,12 +1721,24 @@
     "系统发育树入门与实践.md": "6e8641cccdd9855d7debe037be4e719ed9ab14e1f41b41e43a1f8353a101d06d",
     "蛋白质组入门与实践.md": "72ff50da9a79e38029240390198d45d96e4d83af9d26fbed248727f131b9f1cc",
     "长读长测序分析入门.md": "1a80727bdd06369d45d2c3889b31ccdbc20e53ad3d30a2746441adabae066866",
+    "GWAS软件选择与比较.md": "35078810ab837d8346264af547251e2892eaad047b865614d5099c73d7a779ad",
     "中文生信学习地图.md": "590647d810b1264230a581bb347dc6361dda6c460db944cc5c5fc70ef96312fa",
     "组学分析总览与选型.md": "ea53b41b4794b8c66ab120be9636d199e371e4d8a841696e5ecc51954c25e0ea",
-    "群体分析与GWAS学习路线.md": "b28c47659cf93989aa0ba8a50cc77645af66e96592864614fcf2e6d7c6f91a68",
+    "群体分析与GWAS学习路线.md": "93d072bd2c063388510c86ba78bb151e94613aea07794af32806e21710aa891b",
     "BLAST本地检索实践.md": "5dce809ea72737883e8f4e1b8b7c2a4fddb690894a6d50afc3023e593934fe7a",
+    "BOLT-LMM关联分析.md": "2c7c7add7fe4fa5b2c8318d143792d1074994e64488d470495442a577adb92b1",
+    "EMMAX关联分析与旧流程兼容.md": "394bab168dc4b650521eb2a8ba881a9ca0f096d7878e17e3fbf5f514af570de6",
+    "GAPIT多模型GWAS实践.md": "29081e5b781248476997262db4ae8582a3cf5ec8038ac27c2ce9f9fdd02edfd3",
+    "GCTA与MLMA关联分析.md": "8541d96badac3bd515faf3a12d680376ed97cd5e67c0ea4ffa5f52d8cfe926a9",
+    "GEMMA线性混合模型实践.md": "52ca3f1de0f082094947dc236345a994dcaca893e939d118678d538db1714a4e",
     "Linux与项目目录实践.md": "e4941a0f2e58c379543dcf3c17762c4bc74112c4bd2f0e241de908cfc13cf177",
-    "PLINK2使用与版本管理.md": "c633df82fa22101bd77be8b8f86d1d7eecafa581a6fa38ca5e3ba6ab796b360d",
+    "PLINK2使用与版本管理.md": "6cfcb0985555317f7f3a8be2a0473eea2663e555e80a0812622949051625ab9b",
+    "PLINK2关联分析详解.md": "45956d0da61aa60776c854c8aa63f0504e6e375108986b3c4c895c1e14a12f4d",
+    "REGENIE两步关联分析.md": "5bc8b0ad6a004f09fc943748eaf04702981ec82ea48cbef08535adc0b60b915b",
+    "SAIGE单变异关联分析.md": "b651bf7421f81aa75656b1b1b16d147f72028ae6cd93a20b95fc647614ba1292",
+    "TASSEL关联分析实践.md": "bd30ef9f35718ca31f7d7f31c08465aba265d201bf1cc48eb7815fff8d45ae91",
+    "fastGWA与fastGWA-GLMM.md": "65e7405be4b3b0e26d673d220df8759ccafb497cab5e2a73a5eb4dcdde0de61e",
+    "rMVP关联分析实践.md": "d96f4d6415cede87bc779e675fa7d7d5ee6c112a9a67e108c96ef682299cbb99",
     "可复现分析与工作流管理.md": "2968e66677110876ce89766ad60ad41fad24940c88e3f3ac768ab3d8960d018b",
     "合成数据贯通PCA与GWAS.md": "2ad011b5d6b1c6d6cb49cd863fdce776f785d3aeb3b3d294022cf67f72c8a5e7",
     "常见生信图表的阅读与制作.md": "2e33dfdf86be21836d5ddce3a67274cd5dd943f7276cb173247eeb1dcdc1fc3c",
@@ -1279,22 +1754,28 @@
     "UniProt蛋白条目与证据.md": "19ab1a2592e6267e0315406ac17003d0449d4ec1e49641f519201030896c9c09",
     "公共数据库与数据获取.md": "bd73d408307570d90a610f1ea21cf48e8e404e1e90bf00bc43ead7c71e659c97",
     "BLAST原理与种子延伸.md": "47686b73ac5378ac8db20ba03f3a7bea5f907de9b369687886027e9b94cc781a",
+    "FarmCPU与BLINK原理.md": "494185cc526a0bd9e142237e3782aeaba449df54f9c13e223c9218a2f5502b7a",
     "PCA原理与实现.md": "cdb8b15b10102bf98149fb0f19ad26ec5b1cd919f30e76ea5a485fec4cbf26d8",
     "Smith-Waterman局部比对.md": "05709db34215b2faf027b8ff232cb24e99d20bfa554068bd25eebefa09b49f1e",
     "富集分析与GSEA.md": "6e58c30d52939280faf3482cd9de9d58aa0ac83fc43213395b956aadd0a4297e",
     "数据泄漏与交叉验证.md": "e0b5992745a7d6caae51e87c8ded7435032dfc205abcecb8a2ee5aedaf146273",
-    "线性模型与混合模型.md": "27bc72d709b2f663db379c6120ef06eb75955c9e93ea75e544254f800c5e3ad4",
+    "线性模型与混合模型.md": "afe617c493a8d03d9bf772256add9ade12aad533a19a0badfc3a94dfbe178d34",
     "群体结构与GWAS有什么关系.md": "47b13392cef95d358a72b7f34c5c7c113ec17b64102777ce809e0ddcdd229f01",
     "ASV与微生物多样性.md": "7266ca70e5155fc5137994a44293a71d02a8ca48bed8953f014ba0ecb0bd3714",
     "FASTA与FASTQ.md": "3442a45f7426b83c6807492d4acc6211c6b33b2a266bb3d67ea6acb66abe8f11",
     "Hardy-Weinberg平衡与检验.md": "bc445027170b8b9eacc46736bb82b0aeb84491e100c59fadcb566387220b0ab7",
+    "LOCO与近端污染.md": "fc6b88ea350f77a2cdae8076733fa178fcbc35496ce1107fa2db7703de6e6c53",
+    "MAF与MAC及稀有变异.md": "80957e7a4b23b0ad9df04cde87b9effcd3d18ef719304c738fe4a0372793079a",
     "P值效应量与多重检验.md": "98d32961984e2df35370c98458066cc6fe5f210b5d02ffbcaf0848a84220e39f",
     "SAM与BAM及CRAM.md": "305d4302c63b87a38afd7d1d1eb2c6e9c2ee1e2196c05dbc701a86b14c5dc791",
     "SNP与基因型是什么.md": "65908b58fe0d0db359cb52e6522f4770974cee46a6e58d8d2951c3869f35cf6b",
     "UMI与细胞条形码.md": "1b6f3cf4eedd38bd13e4172324a60cc1b6ce822476775112f2d23284c99e03d5",
     "VCF与基因型编码.md": "37307a3f59fb6f0da3f44e1e12d7583b59b8f7f95935aa93767be1346b4a2fee",
+    "Wald似然比与得分检验.md": "1913a866571880c3a05f700f67c9984b6b277460d715613438b69889ffe47425",
+    "二分类性状OR与病例对照不平衡.md": "dab97c2dd81d778a48661c9bf4908c182fd131029557492b282211da69a54a25",
     "亲缘关系与遗传关系矩阵.md": "7195c757dcfcf5e9e84862e3a33c89ceb29537c5b89b855a8067f3927e848691",
     "从DNA到RNA和蛋白质.md": "794700093e2c457e5d0f41d4e688a914ca7092bfbdd57b546b683ef066d75270",
+    "关联模型中的协变量与残差.md": "cc1dbaf3e503448c1b37eeb1aa09f4cf5d1e51dece11be023ebdb17a00b51ddf",
     "参考基因组与注释版本.md": "1b21bea1597cad155d14105acba52b20fc47e04eef32b02483fb2f704f74df7a",
     "基因标识符与同源基因.md": "014c26142aadd4e42b00f1b834d0dd1a289c74bec43ed159e984432a25f847e8",
     "基因组坐标与区间.md": "33fc2569a25b4c09ba67baebf9987b0579481991e5ebc960f48b218fcaab15db",
@@ -1310,8 +1791,9 @@
     "群体结构是什么.md": "2799bfedcfa795afd39546c65b20f1a4fa255e89c6e83232cdb8ef8f00d63b09",
     "计数丰度与标准化.md": "0eb02d5ffe5191a9b551b82f95cf879423067fa7ec7bd0636919f3f9af3a3b42",
     "连锁不平衡与LD剪枝.md": "18aa0642c8fc437c2f4daaab3e0cf2d69385e3428105dd0ce67838301c407220",
-    "关键词索引.md": "eba637fd3d99e3dddccb834345ded5b50ecca01a192ed4c66c95e5a3f98e2158",
-    "Home.md": "3413e6dc0dd8bfc4707f91b0c9671a4dc19084e585c7acadebce2c4f4051028f",
-    "_Sidebar.md": "b51fea39c27461cc19e26707afb4918729c21402423e67284677398465a87877"
+    "零模型与方差组分.md": "75e8e4c3a3477a2efa2e58397ec2a3a91bac742db41981a629edd0ebef4cf7af",
+    "关键词索引.md": "3c9b1afecab289ff666f22d505f37a6a22c9a9afdb8a6be16f16ec031b8f6a8a",
+    "Home.md": "8684c867aa5adbb9933127a7c1ccbe78963a42371d61f0bddcf579c871435659",
+    "_Sidebar.md": "ba7da30f386ca8953343812eb492c81c5886527890030f496da85ee79c219ad9"
   }
 }

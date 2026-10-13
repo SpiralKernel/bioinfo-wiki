@@ -1,0 +1,171 @@
+{
+  "samples": 1410,
+  "variants": 8544,
+  "LD_pruned_variants": 649,
+  "bonferroni_threshold": 5.852059925093633e-06,
+  "methods": {
+    "PLINK no PC": {
+      "variants": 8544,
+      "lambda_GC_1df": 22.47447660367701,
+      "bonferroni_hits": 2633,
+      "allele_flips_to_PLINK_PC3": 0,
+      "top_variant": {
+        "ID": "rs3665150",
+        "CHR": "17",
+        "POS": 34341052,
+        "EA": "A",
+        "OA": "C",
+        "EAF": 0.344326,
+        "BETA": -0.610384,
+        "SE": 0.0370768,
+        "NEG_LOG10_P": 55.10105443698525,
+        "N": 1410
+      }
+    },
+    "PLINK PC3": {
+      "variants": 8544,
+      "lambda_GC_1df": 6.574795154983582,
+      "bonferroni_hits": 681,
+      "allele_flips_to_PLINK_PC3": 0,
+      "top_variant": {
+        "ID": "rs6249614",
+        "CHR": "17",
+        "POS": 33563059,
+        "EA": "A",
+        "OA": "C",
+        "EAF": 0.343617,
+        "BETA": -0.471265,
+        "SE": 0.036172,
+        "NEG_LOG10_P": 35.98756352300575,
+        "N": 1410
+      }
+    },
+    "GEMMA LM": {
+      "variants": 8544,
+      "lambda_GC_1df": 6.574796430509578,
+      "bonferroni_hits": 681,
+      "allele_flips_to_PLINK_PC3": 52,
+      "top_variant": {
+        "ID": "rs6249614",
+        "CHR": "17",
+        "POS": 33563059,
+        "EA": "A",
+        "OA": "C",
+        "EAF": 0.344,
+        "BETA": -0.4712653,
+        "SE": 0.03617197,
+        "NEG_LOG10_P": 35.98756310097157,
+        "N": 1410
+      }
+    },
+    "GEMMA LMM": {
+      "variants": 8544,
+      "lambda_GC_1df": 0.7805624840417,
+      "bonferroni_hits": 20,
+      "allele_flips_to_PLINK_PC3": 52,
+      "top_variant": {
+        "ID": "rs6249614",
+        "CHR": "17",
+        "POS": 33563059,
+        "EA": "A",
+        "OA": "C",
+        "EAF": 0.344,
+        "BETA": -0.4467002,
+        "SE": 0.05671845,
+        "NEG_LOG10_P": 14.17201636357178,
+        "N": 1410
+      }
+    },
+    "GCTA MLMA": {
+      "variants": 8544,
+      "lambda_GC_1df": 0.7730493035309001,
+      "bonferroni_hits": 19,
+      "allele_flips_to_PLINK_PC3": 52,
+      "top_variant": {
+        "ID": "rs13482968",
+        "CHR": "17",
+        "POS": 37131683,
+        "EA": "G",
+        "OA": "A",
+        "EAF": 0.446454,
+        "BETA": 0.396993,
+        "SE": 0.0520638,
+        "NEG_LOG10_P": 13.613016179537318,
+        "N": 1410
+      }
+    },
+    "GCTA fastGWA": {
+      "variants": 8544,
+      "lambda_GC_1df": 1.0855726709813323,
+      "bonferroni_hits": 32,
+      "allele_flips_to_PLINK_PC3": 52,
+      "top_variant": {
+        "ID": "rs6249614",
+        "CHR": "17",
+        "POS": 33563059,
+        "EA": "A",
+        "OA": "C",
+        "EAF": 0.343617,
+        "BETA": -0.404748,
+        "SE": 0.047735,
+        "NEG_LOG10_P": 16.64396266380928,
+        "N": 1410
+      }
+    },
+    "REGENIE": {
+      "variants": 8544,
+      "lambda_GC_1df": 2.0249384048773784,
+      "bonferroni_hits": 69,
+      "allele_flips_to_PLINK_PC3": 52,
+      "top_variant": {
+        "ID": "rs6249614",
+        "CHR": "17",
+        "POS": 33563059,
+        "EA": "A",
+        "OA": "C",
+        "EAF": 0.343617,
+        "BETA": -0.336197,
+        "SE": 0.0343471,
+        "NEG_LOG10_P": 21.8979,
+        "N": 1410
+      }
+    }
+  },
+  "matched_LM_check": {
+    "max_abs_beta_difference": 5.000000000143778e-07,
+    "max_abs_neg_log10_p_difference": 2.1568114834114027e-06
+  },
+  "chr17_LOCO": {
+    "tested_variants": 288,
+    "target": "rs6249614",
+    "whole_genome_GRM": {
+      "ID": "rs6249614",
+      "CHR": "17",
+      "POS": 33563059,
+      "EA": "A",
+      "OA": "C",
+      "EAF": 0.344,
+      "BETA": -0.4467002,
+      "SE": 0.05671845,
+      "NEG_LOG10_P": 14.17201636357178,
+      "N": 1410
+    },
+    "GRM_excluding_chr17": {
+      "ID": "rs6249614",
+      "CHR": "17",
+      "POS": 33563059,
+      "EA": "A",
+      "OA": "C",
+      "EAF": 0.344,
+      "BETA": -0.4006389,
+      "SE": 0.03531248,
+      "NEG_LOG10_P": 27.881460495116986,
+      "N": 1410
+    },
+    "allele_flips": 1
+  },
+  "software_for_figures": {
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  }
+}

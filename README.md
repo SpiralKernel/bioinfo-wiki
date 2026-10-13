@@ -8,6 +8,8 @@
 
 - [中文生信学习地图](wiki/中文生信学习地图.md)：前置知识与阅读入口。
 - [群体分析与GWAS学习路线](wiki/群体分析与GWAS学习路线.md)：质控、PCA、模型与关联解释。
+- [GWAS软件选择与比较](wiki/GWAS软件选择与比较.md)：PLINK、GEMMA、GCTA、REGENIE、SAIGE、BOLT及育种常用工具。
+- [公开小鼠数据贯通多软件GWAS](wiki/公开小鼠数据贯通多软件GWAS.md)：真实公开数据、四个软件、七种配置及结果诊断图。
 - [组学分析总览与选型](wiki/组学分析总览与选型.md)：按研究问题选择测量与流程。
 - [合成数据贯通PCA与GWAS](wiki/合成数据贯通PCA与GWAS.md)：本项目实际运行的练习。
 - [BLAST原理与种子延伸](wiki/BLAST原理与种子延伸.md)：人工字符串教学实现。
@@ -31,6 +33,8 @@ PLINK2_BIN=/完整路径/plink2 bash examples/run_population_demo.sh
 ```
 
 输出在 `examples/output/population/`，重复运行覆盖其中同名结果。详见[实测记录](maintenance/validation-2026-10-13.md)。二进制、练习输出和原稿私有备份不提交。
+
+完整公开小鼠案例的工具依赖、运行方式与验证范围见[第二轮GWAS记录](maintenance/gwas-round2-2026-10-13.md)。代码为 `examples/gwas_software_demo.py` 和 `examples/plot_gwas_comparison.py`；公开配图与汇总指标在 `assets/gwas-round2/`，个体数据仍不纳入仓库。
 
 ## 在Obsidian编写并发布
 
