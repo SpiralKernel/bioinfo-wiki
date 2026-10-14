@@ -1,0 +1,43 @@
+##fileformat=VCFv4.3
+##reference=toy.fa
+##contig=<ID=chrToy,length=1400>
+##contig=<ID=chrOther,length=400>
+##FILTER=<ID=LowQual,Description="Artificial low site quality">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Alternate allele count">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Called allele count">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Alternate allele frequency">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Structural variant type">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End coordinate">
+##INFO=<ID=SVLEN,Number=A,Type=Integer,Description="Structural variant length">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="Mate breakend ID">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="Artificial event ID">
+##INFO=<ID=RU,Number=1,Type=String,Description="Repeat unit">
+##INFO=<ID=TEFAMILY,Number=1,Type=String,Description="Custom artificial TE family; not a universal caller field">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+##FORMAT=<ID=CN,Number=1,Type=Float,Description="Artificial copy number estimate">
+##FORMAT=<ID=REPCN,Number=1,Type=String,Description="Custom artificial repeat counts; not a universal caller field">
+##ALT=<ID=DEL,Description="Artificial DEL allele">
+##ALT=<ID=DUP,Description="Artificial DUP allele">
+##ALT=<ID=INV,Description="Artificial INV allele">
+##ALT=<ID=CNV,Description="Artificial CNV allele">
+##ALT=<ID=STR12,Description="Artificial STR12 allele">
+##ALT=<ID=INS:ME:ToyTE,Description="Artificial INS:ME:ToyTE allele">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	S01	S02	S03
+chrToy	100	snv	G	A	60	PASS	AC=5;AN=6;AF=0.8333333	GT:DP:GQ:CN:REPCN	0/1:12:50:.:.	1/1:20:50:.:.	1/1:24:0:.:.
+chrToy	150	mnv	CA	AC	60	PASS	AC=1;AN=4;AF=0.25	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.
+chrToy	200	left_shift	A	AA	60	PASS	AC=1;AN=4;AF=0.25	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.
+chrToy	250	mixed	C	G,CA	60	PASS	AC=1,2;AN=4;AF=0.25,0.5	GT:DP:GQ:CN:REPCN	1/2:20:50:.:.	0/2:20:50:.:.	./.:0:0:.:.
+chrToy	300	small_del	ATGC	A	60	PASS	AC=1;AN=4;AF=0.25	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.
+chrToy	350	low_site	G	A	10	LowQual	AC=1;AN=4;AF=0.25	GT:DP:GQ:CN:REPCN	0/1:3:8:.:.	0/0:30:50:.:.	./.:0:0:.:.
+chrToy	400	unassessed	A	C	60	.	AC=1;AN=4;AF=0.25	GT:DP:GQ:CN:REPCN	0/1:3:50:.:.	0/0:30:8:.:.	./.:0:0:.:.
+chrToy	450	missing	A	C	60	PASS	AC=1;AN=4;AF=0.25	GT:DP:GQ:CN:REPCN	./.:0:50:.:.	0/0:20:50:.:.	0/1:18:0:.:.
+chrToy	500	sv_del	T	<DEL>	60	PASS	AC=1;AN=4;AF=0.25;SVTYPE=DEL;END=560;SVLEN=-60	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.
+chrToy	600	sv_inv	G	<INV>	60	PASS	AC=1;AN=4;AF=0.25;SVTYPE=INV;END=680	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.
+chrToy	700	sv_dup	G	<DUP>	60	PASS	AC=1;AN=4;AF=0.25;SVTYPE=DUP;END=760;SVLEN=60	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.
+chrToy	800	cnv	T	<CNV>	60	PASS	AC=2;AN=6;AF=0.3333333;SVTYPE=CNV;END=900	GT:DP:GQ:CN:REPCN	0/0:20:50:2:.	0/1:20:50:1:.	0/1:0:0:3:.
+chrToy	1000	bnd1	T	T]chrOther:200]	60	PASS	AC=1;AN=4;AF=0.25;SVTYPE=BND;MATEID=bnd2;EVENT=toyBND	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.
+chrToy	1100	str	T	<STR12>	60	PASS	AC=1;AN=4;AF=0.25;SVTYPE=STR;END=1130;RU=CAG	GT:DP:GQ:CN:REPCN	0/1:20:50:.:10/12	0/0:20:50:.:10/10	./.:0:0:.:.
+chrToy	1200	te	A	<INS:ME:ToyTE>	60	PASS	AC=1;AN=4;AF=0.25;SVTYPE=INS;TEFAMILY=ToyTE	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.
+chrOther	200	bnd2	T	T]chrToy:1000]	60	PASS	AC=1;AN=4;AF=0.25;SVTYPE=BND;MATEID=bnd1;EVENT=toyBND	GT:DP:GQ:CN:REPCN	0/1:20:50:.:.	0/0:20:50:.:.	./.:0:0:.:.

@@ -1,0 +1,456 @@
+[
+  {
+    "command": [
+      "bcftools",
+      "--version"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "norm",
+      "--no-version",
+      "-f",
+      "toy.fa",
+      "-c",
+      "e",
+      "-m",
+      "-any",
+      "-Ov",
+      "-o",
+      "normalized.unsorted.vcf",
+      "calls.vcf"
+    ],
+    "stderr": "Lines   total/split/joined/realigned/mismatch_removed/dup_removed/skipped:\t16/1/0/1/0/0/0\n"
+  },
+  {
+    "command": [
+      "bcftools",
+      "sort",
+      "-Oz",
+      "-o",
+      "normalized.vcf.gz",
+      "normalized.unsorted.vcf"
+    ],
+    "stderr": "Writing to /tmp/bcftools.xbk3VD\nMerging 1 temporary files\nDone\nCleaning\n"
+  },
+  {
+    "command": [
+      "bcftools",
+      "index",
+      "-f",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-Ov",
+      "-o",
+      "normalized.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\".\"",
+      "-Ov",
+      "-o",
+      "sequence_resolved.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\".\"",
+      "-v",
+      "snps",
+      "-Ov",
+      "-o",
+      "snps.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\".\"",
+      "-v",
+      "indels",
+      "-Ov",
+      "-o",
+      "indels.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\".\"",
+      "-v",
+      "mnps",
+      "-Ov",
+      "-o",
+      "mnps.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\"DEL\"",
+      "-Ov",
+      "-o",
+      "symbolic_del.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\"INV\"",
+      "-Ov",
+      "-o",
+      "inv.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\"DUP\"",
+      "-Ov",
+      "-o",
+      "dup.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\"BND\"",
+      "-Ov",
+      "-o",
+      "bnd.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\"CNV\"",
+      "-Ov",
+      "-o",
+      "cnv.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/SVTYPE=\"STR\"",
+      "-Ov",
+      "-o",
+      "str.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "INFO/TEFAMILY!=\".\"",
+      "-Ov",
+      "-o",
+      "te.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-f",
+      "PASS",
+      "-Ov",
+      "-o",
+      "pass.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-f",
+      "PASS,.",
+      "-Ov",
+      "-o",
+      "pass_or_unassessed.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-R",
+      "regions.bed",
+      "--regions-overlap",
+      "record",
+      "-Ov",
+      "-o",
+      "region_record.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-R",
+      "regions.bed",
+      "--regions-overlap",
+      "pos",
+      "-Ov",
+      "-o",
+      "region_pos.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-S",
+      "samples.txt",
+      "-Ov",
+      "-o",
+      "sample_S01.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "+fill-tags",
+      "sample_S01.vcf",
+      "-Ov",
+      "-o",
+      "sample_S01.tags.vcf",
+      "--",
+      "-t",
+      "AC,AN,AF"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "GT=\"alt\"",
+      "-Ov",
+      "-o",
+      "S01_nonref.vcf",
+      "sample_S01.tags.vcf"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "FMT/DP>=8 & FMT/GQ>=20",
+      "-Ov",
+      "-o",
+      "same_sample_quality.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "view",
+      "--no-version",
+      "-i",
+      "FMT/DP>=8 && FMT/GQ>=20",
+      "-Ov",
+      "-o",
+      "cross_sample_quality.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "norm",
+      "--no-version",
+      "-a",
+      "--atom-overlaps",
+      ".",
+      "-f",
+      "toy.fa",
+      "-Ov",
+      "-o",
+      "atomized.vcf",
+      "sequence_resolved.vcf"
+    ],
+    "stderr": "Lines   total/split/joined/realigned/mismatch_removed/dup_removed/skipped:\t9/0/0/0/0/0/0\n"
+  },
+  {
+    "command": [
+      "bcftools",
+      "filter",
+      "--no-version",
+      "-S",
+      ".",
+      "-e",
+      "FMT/DP<8 | FMT/DP=\".\" | FMT/GQ<20 | FMT/GQ=\".\"",
+      "-Ov",
+      "-o",
+      "masked.vcf",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "+fill-tags",
+      "masked.vcf",
+      "-Ov",
+      "-o",
+      "masked.tags.vcf",
+      "--",
+      "-t",
+      "AC,AN,AF"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "query",
+      "-f",
+      "%CHROM\t%POS\t%ID\t%REF\t%ALT\t%FILTER[\t%GT]\n",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "query",
+      "-i",
+      "INFO/SVTYPE=\"CNV\"",
+      "-f",
+      "%CHROM\t%POS\t%INFO/END[\t%SAMPLE=%CN]\n",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "query",
+      "-i",
+      "INFO/SVTYPE=\"STR\"",
+      "-f",
+      "%CHROM\t%POS\t%INFO/RU[\t%SAMPLE=%REPCN]\n",
+      "normalized.vcf.gz"
+    ],
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bcftools",
+      "mpileup",
+      "-f",
+      "toy.fa",
+      "-Ob",
+      "-o",
+      "pileup.bcf",
+      "toy.sam"
+    ],
+    "stderr": "[mpileup] 1 samples in 1 input files\n[mpileup] maximum number of reads per input file set to -d 250\n"
+  },
+  {
+    "command": [
+      "bcftools",
+      "call",
+      "-m",
+      "-v",
+      "-Ov",
+      "-o",
+      "toy_called.vcf",
+      "pileup.bcf"
+    ],
+    "stderr": "Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid\n"
+  }
+]

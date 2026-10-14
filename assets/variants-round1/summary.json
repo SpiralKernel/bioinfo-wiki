@@ -1,0 +1,211 @@
+{
+  "scope": "Artificial VCF extraction and artificial SAM small-variant calling only; no real data, mapper, SV/CNV/STR/TE caller, clinical inference or benchmark",
+  "versions": [
+    "bcftools 1.22",
+    "Using htslib 1.22"
+  ],
+  "raw_records": 16,
+  "normalized_records": 17,
+  "atomized_sequence_records": 10,
+  "samples": [
+    "S01",
+    "S02",
+    "S03"
+  ],
+  "selected_ids": {
+    "snps": [
+      "snv",
+      "mixed",
+      "low_site",
+      "unassessed",
+      "missing"
+    ],
+    "indels": [
+      "left_shift",
+      "mixed",
+      "small_del"
+    ],
+    "mnps": [
+      "mnv"
+    ],
+    "symbolic_del": [
+      "sv_del"
+    ],
+    "inv": [
+      "sv_inv"
+    ],
+    "dup": [
+      "sv_dup"
+    ],
+    "bnd": [
+      "bnd1",
+      "bnd2"
+    ],
+    "cnv": [
+      "cnv"
+    ],
+    "str": [
+      "str"
+    ],
+    "te": [
+      "te"
+    ],
+    "pass": [
+      "snv",
+      "mnv",
+      "left_shift",
+      "mixed",
+      "mixed",
+      "small_del",
+      "missing",
+      "sv_del",
+      "sv_inv",
+      "sv_dup",
+      "cnv",
+      "bnd1",
+      "str",
+      "te",
+      "bnd2"
+    ],
+    "pass_or_unassessed": [
+      "snv",
+      "mnv",
+      "left_shift",
+      "mixed",
+      "mixed",
+      "small_del",
+      "unassessed",
+      "missing",
+      "sv_del",
+      "sv_inv",
+      "sv_dup",
+      "cnv",
+      "bnd1",
+      "str",
+      "te",
+      "bnd2"
+    ],
+    "region_record": [
+      "small_del"
+    ],
+    "region_pos": [],
+    "S01_nonref": [
+      "snv",
+      "mnv",
+      "left_shift",
+      "mixed",
+      "mixed",
+      "small_del",
+      "low_site",
+      "unassessed",
+      "sv_del",
+      "sv_inv",
+      "sv_dup",
+      "bnd1",
+      "str",
+      "te",
+      "bnd2"
+    ],
+    "same_sample_quality": [
+      "snv",
+      "mnv",
+      "left_shift",
+      "mixed",
+      "mixed",
+      "small_del",
+      "low_site",
+      "missing",
+      "sv_del",
+      "sv_inv",
+      "sv_dup",
+      "cnv",
+      "bnd1",
+      "str",
+      "te",
+      "bnd2"
+    ],
+    "cross_sample_quality": [
+      "snv",
+      "mnv",
+      "left_shift",
+      "mixed",
+      "mixed",
+      "small_del",
+      "low_site",
+      "unassessed",
+      "missing",
+      "sv_del",
+      "sv_inv",
+      "sv_dup",
+      "cnv",
+      "bnd1",
+      "str",
+      "te",
+      "bnd2"
+    ]
+  },
+  "counts": {
+    "snps": 5,
+    "indels": 3,
+    "mnps": 1,
+    "symbolic_del": 1,
+    "inv": 1,
+    "dup": 1,
+    "bnd": 2,
+    "cnv": 1,
+    "str": 1,
+    "te": 1,
+    "pass": 15,
+    "pass_or_unassessed": 16,
+    "region_record": 1,
+    "region_pos": 0,
+    "S01_nonref": 15,
+    "same_sample_quality": 16,
+    "cross_sample_quality": 17
+  },
+  "left_shift": {
+    "input_pos": 200,
+    "output_pos": 179
+  },
+  "sample_subset_snv": {
+    "view_info": {
+      "AC": "1",
+      "AN": "2",
+      "AF": "0.833333"
+    },
+    "recomputed_info": {
+      "AC": "1",
+      "AN": "2",
+      "AF": "0.5"
+    }
+  },
+  "masked_low_site": {
+    "genotypes": [
+      "./.",
+      "0/0",
+      "./."
+    ],
+    "info": {
+      "AC": "0",
+      "AN": "2",
+      "AF": "0"
+    }
+  },
+  "bnd_records": 2,
+  "bnd_unique_event_ids": 1,
+  "artificial_call": {
+    "pos": 100,
+    "ref": "G",
+    "alt": "A",
+    "gt": "0/1",
+    "alignments": 40
+  },
+  "input_sha256": {
+    "toy.fa": "9c639e1041ac2252cfa290c5f9b487c507b0d992238ef25e8f2d315f7650d32d",
+    "toy.fa.fai": "7f18c17c02ed9b87d1cbbbb5aae24b35f1bc0a32c089c96352a72e951f69e91b",
+    "calls.vcf": "326687e9cc8619b332ae5db8e97c2d52a7a9f801bb263f951b8fff7006e90219",
+    "regions.bed": "554686e256c865163092a5dd9f23aa12e142487cf06bf7c9db870b7007bf0c33",
+    "samples.txt": "145b99e5e221c92e13473061e93dcf88820af6643a43304d05853e8cffe469e2",
+    "toy.sam": "a27703e3c7751dd4f5c98b1c478ec166b0d3d281a928e8dd27418e43fd3d92a5"
+  }
+}

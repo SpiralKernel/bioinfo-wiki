@@ -1,0 +1,10 @@
+locus_id	sample_id	status	evidence
+toyGene1	S02	absent	Artificial high-confidence deletion evidence
+toyGene2	S01	present	Artificial ortholog and sequence evidence
+toyGene1	S01	present	Artificial ortholog and sequence evidence
+toyGene3	S03	unknown	Artificial unresolved assembly gap
+toyGene2	S02	present	Artificial ortholog and sequence evidence
+toyGene1	S03	unknown	Artificial insufficient callable coverage
+toyGene3	S01	absent	Artificial high-confidence deletion evidence
+toyGene2	S03	present	Artificial ortholog and sequence evidence
+toyGene3	S02	present	Artificial ortholog and sequence evidence

@@ -1,0 +1,14 @@
+{
+  "scope": "Already assessed artificial evidence only; formatting, not genomic PAV discovery",
+  "loci": 3,
+  "samples": [
+    "S01",
+    "S02",
+    "S03"
+  ],
+  "cells": {
+    "1": 5,
+    "0": 2,
+    "NA": 2
+  }
+}

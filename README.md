@@ -6,6 +6,9 @@
 
 ## 从哪里开始
 
+- [变异检测分型与提取学习路线](wiki/变异检测分型与提取学习路线.md)：SNV/Indel、SV、CNV/PAV、STR、TE及生殖系/体细胞场景。
+- [人工VCF贯通变异分类与提取](wiki/人工VCF贯通变异分类与提取.md)：16条人工记录、真实bcftools操作与可核对输出。
+
 - [R与Python生信编程入门路线](wiki/R与Python生信编程入门路线.md)：下载项目、运行脚本、语法、表格、绘图、环境与排错。
 - [组学分析方法学习路线](wiki/组学分析方法学习路线.md)：RNA、单细胞、表观组、蛋白、代谢、微生物与多组学方法。
 - [群体遗传学分析学习路线](wiki/群体遗传学分析学习路线.md)：多样性、FST、祖源、近交、LD、选择和历史。
@@ -45,6 +48,17 @@ python3 -m venv .venv
 ```
 
 群体案例内置8条完整单倍型×12位置，输出到`examples/output/population-genetics/`；导出的TSV为输出副本。教学指标不是专业WC/Hudson、ROH或历史推断实现。Python与群体案例已运行，base R完整表格/模型/绘图脚本通过WebR R4.6.0执行；本机没有原生Rscript，也未执行DESeq2等第三方R包。结果、两位审阅者的反馈与修改见[本轮维护记录](maintenance/omics-population-programming-2026-10-14.md)。
+
+本轮变异案例需要bcftools1.22与+fill-tags插件，基础Python代码只用标准库。先按[bcftools环境页](wiki/bcftools变异操作与表达式.md)建立环境；以下从项目根目录运行：
+
+```bash
+conda run -n variants python examples/variant_extraction_demo.py
+python3 examples/pav_matrix_demo.py
+# 配图另需已安装Matplotlib的项目Python环境：
+.venv/bin/python examples/plot_variant_extraction.py
+```
+
+固定人工输入在`examples/data/variants/`，输出分别为`examples/output/variants/`与`examples/output/pav-matrix/`，重复执行覆盖同名输出。VCF案例实际运行了标准化、类型/区域/样本提取、GT掩蔽与频率重算，还用40条人工SAM比对调用一个已知杂合SNV；未执行真实read mapper或专业SV/CNV/STR/TE调用器。PAV脚本只整理已经人工指定的状态，保留未知为NA，不发现基因缺失。详情见[变异首轮记录](maintenance/variants-round1-2026-10-14.md)。
 
 Python 3.9+ 可运行序列比对教学例子；它不依赖第三方包，不是完整BLAST实现：
 
@@ -97,7 +111,8 @@ python3 examples/plot_sequencing_metrics.py
 
 ```bash
 python3 scripts/export_wiki.py --source '/你的Obsidian库/知识库/中文生信Wiki' --refresh-index
-.venv/bin/python -m unittest discover -s tests -v
+# 变异集成检查需同一环境的bcftools与+fill-tags；没有时会明确跳过3项：
+conda run -n variants .venv/bin/python -m unittest discover -s tests -v
 bash scripts/publish_wiki.sh
 ```
 
@@ -114,7 +129,7 @@ examples/                  人工数据与算法教学代码
 scripts/export_wiki.py     校验链接、导出文章、生成导航和索引
 scripts/sync_wiki_files.py  校验清单并保护远程人工修改
 scripts/publish_wiki.sh     发布到Wiki独立仓库
-tests/                     导出与同步行为检查
+tests/                     教学算法、字段语义、导出与安全同步检查
 maintenance/               验证记录（私有备份目录除外）
 wiki/                      可检查和提交的发布文件
 ```

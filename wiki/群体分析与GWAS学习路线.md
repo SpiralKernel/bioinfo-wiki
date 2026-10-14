@@ -36,3 +36,7 @@
 ## 遗传变异模式与过程
 
 本路线以性状关联为主。若问题是多样性、群体分化、近交、选择或历史，转入[群体遗传学分析学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E9%81%97%E4%BC%A0%E5%AD%A6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)。两类任务的样本、频率筛选及LD处理目的不同，不应复用同一套过滤结果而不审查。
+
+## 如果还没有基因型
+
+已有VCF/PLINK输入可继续本路线；只有FASTQ/BAM时，先按[变异检测分型与提取学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E5%88%86%E5%9E%8B%E4%B8%8E%E6%8F%90%E5%8F%96%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)生成并核查对应变异。不同类型的分型/剂量、缺失和样本对齐不能一律视为二倍体SNP矩阵。

@@ -1,6 +1,6 @@
 # 测序技术与PCR学习路线
 
-> 更新：2026-10-13；状态：可用；验证范围：官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序。
+> 更新：2026-10-14；状态：可用；验证范围：官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序。
 
 从PCR、文库和信号读出理解测序，再按目标选择技术、数据和质量检查。
 
@@ -43,3 +43,7 @@ PCR扩增特定区域，建库让分子适合测序，仪器将分子相关信�
 本轮为原理、设计与判读指南，没有执行PCR、建库或测序仪。人工计算只能核对指标定义，不能替代真实平台验证。
 
 来源：[NHGRI PCR](https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet)、[Illumina单双端](https://www.illumina.com/science/technology/next-generation-sequencing/plan-experiments/paired-end-vs-single-read.html)、[PacBio HiFi](https://www.pacb.com/technology/hifi-sequencing/how-it-works/)、[Nanopore原理](https://nanoporetech.com/platform/technology/)。
+
+## DNA测序之后
+
+变异目标与平台条件由[变异检测分型与提取学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E5%88%86%E5%9E%8B%E4%B8%8E%E6%8F%90%E5%8F%96%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)衔接，区分长短读长小变异、SV、CNV/PAV和重复相关任务。测序产量或读长本身不能证明所有类型已经准确检出。

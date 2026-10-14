@@ -1,6 +1,6 @@
 # SNP与基因型是什么
 
-> 更新：2026-10-13；状态：可用；验证范围：文档核对；操作需按所用环境验证。
+> 更新：2026-10-14；状态：可用；验证范围：文档核对；操作需按所用环境验证。
 
 SNP 描述单碱基位点的变异，基因型描述某个体在该位点携带的等位基因组合。
 
@@ -37,3 +37,7 @@ PLINK 的 PED/MAP、BED/BIM/FAM 和 PGEN/PVAR/PSAM 是不同的存储系统。BE
 在[合成数据贯通PCA与GWAS](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%90%88%E6%88%90%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9APCA%E4%B8%8EGWAS)中，我们给 G 剂量设置正效应；实际结果的 A1 是 A，BETA 为负。解读时必须同时读 A1 和 BETA。
 
 下一步读[连锁不平衡与LD剪枝](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E8%BF%9E%E9%94%81%E4%B8%8D%E5%B9%B3%E8%A1%A1%E4%B8%8ELD%E5%89%AA%E6%9E%9D)及[群体结构是什么](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E7%BB%93%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88)。
+
+## 其他变异与记录方式
+
+[SNVIndelMNV与复杂变异](https://github.com/SpiralKernel/bioinfo-wiki/wiki/SNVIndelMNV%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%8F%98%E5%BC%82)进一步区分单碱基替换、群体多态性语境、插入缺失、多碱基替换及混合ALT。结构与拷贝变化进入[结构变异CNV与PAV](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82CNV%E4%B8%8EPAV)，实际输入输出由[变异检测分型与提取学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E5%88%86%E5%9E%8B%E4%B8%8E%E6%8F%90%E5%8F%96%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)串联。
