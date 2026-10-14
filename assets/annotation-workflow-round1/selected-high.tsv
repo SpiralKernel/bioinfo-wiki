@@ -1,0 +1,7 @@
+chrom	pos	record_id	ref	alt	gene	transcript	effect	impact	hgvs_c	hgvs_p	warnings
+chrToy	107	multi	C	T	gPlus	txPlus1	stop_gained	HIGH	c.7C>T	p.Gln3*	.
+chrToy	107	multi	C	T	gPlus	txPlus2	stop_gained	HIGH	c.7C>T	p.Gln3*	.
+chrToy	130	frameshift	T	TA	gPlus	txPlus1	frameshift_variant	HIGH	c.30_31insA	p.Ala11fs	.
+chrToy	130	frameshift	T	TA	gPlus	txPlus2	frameshift_variant	HIGH	c.30_31insA	p.Ala11fs	.
+chrToy	161	splice_donor	G	A	gPlus	txPlus1	splice_donor_variant&intron_variant	HIGH	c.60+1G>A	.	.
+chrToy	161	splice_donor	G	A	gPlus	txPlus2	splice_donor_variant&intron_variant	HIGH	c.60+1G>A	.	.

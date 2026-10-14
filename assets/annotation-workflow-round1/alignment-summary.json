@@ -1,0 +1,33 @@
+{
+  "scope": "Artificial 40 single-end 150 bp reads, 1.6 kb reference; real mapping/BAM checks/calling; no real-sample accuracy benchmark",
+  "versions": {
+    "minimap2": [
+      "2.30-r1287"
+    ],
+    "samtools": [
+      "samtools 1.22",
+      "Using htslib 1.22"
+    ],
+    "bcftools": [
+      "bcftools 1.22",
+      "Using htslib 1.22"
+    ]
+  },
+  "primary_mapped": 40,
+  "input_reads": 40,
+  "call": {
+    "chrom": "chrToy",
+    "pos": 105,
+    "ref": "C",
+    "alt": "T",
+    "gt": "0/1"
+  },
+  "coverage": [
+    "#rname\tstartpos\tendpos\tnumreads\tcovbases\tcoverage\tmeandepth\tmeanbaseq\tmeanmapq",
+    "chrToy\t1\t1600\t40\t169\t10.5625\t3.75\t40\t60"
+  ],
+  "input_sha256": {
+    "genome.fa": "bbdb4397c75c6549ce4e3f613483940deee7dec3daf37ab5187e444066f9dbdd",
+    "reads.fastq": "641d21892124aa2b586e2c385bcd895b332dd48a2b268491d31b5134c0e366e5"
+  }
+}

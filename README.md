@@ -6,6 +6,8 @@
 
 ## 从哪里开始
 
+- [变异注释与功能解释学习路线](wiki/变异注释与功能解释学习路线.md)：基因模型、转录本、后果提取和候选证据。
+- [生信缺口清单与维护优先级](wiki/生信缺口清单与维护优先级.md)：尚需补齐的真实数据和专业软件任务。
 - [变异检测分型与提取学习路线](wiki/变异检测分型与提取学习路线.md)：SNV/Indel、SV、CNV/PAV、STR、TE及生殖系/体细胞场景。
 - [人工VCF贯通变异分类与提取](wiki/人工VCF贯通变异分类与提取.md)：16条人工记录、真实bcftools操作与可核对输出。
 
@@ -60,6 +62,19 @@ python3 examples/pav_matrix_demo.py
 
 固定人工输入在`examples/data/variants/`，输出分别为`examples/output/variants/`与`examples/output/pav-matrix/`，重复执行覆盖同名输出。VCF案例实际运行了标准化、类型/区域/样本提取、GT掩蔽与频率重算，还用40条人工SAM比对调用一个已知杂合SNV；未执行真实read mapper或专业SV/CNV/STR/TE调用器。PAV脚本只整理已经人工指定的状态，保留未知为NA，不发现基因缺失。详情见[变异首轮记录](maintenance/variants-round1-2026-10-14.md)。
 
+新增注释、真实mapper调用链和工作流案例：Java/SnpEff/bedtools环境准备见[注释案例](wiki/人工基因贯通区间注释与后果提取.md)，minimap2/samtools/bcftools环境见[FASTQ案例](wiki/从FASTQ到比对检查与变异调用.md)。确认工具在PATH并设置SNPEFF_JAR为核心jar的绝对路径后，在项目根目录运行：
+
+```bash
+python3 examples/annotation_demo.py
+python3 examples/genome_alignment_demo.py
+# 绘图另需项目Matplotlib环境：
+.venv/bin/python examples/plot_annotation.py
+```
+
+输出分别在examples/output/annotation、alignment-chain、annotation-plots，重复执行覆盖同名文件。固定输入是1600bp人工参考、三条转录本、12条VCF及40条人工FASTQ；注释VCF与reads调用结果是两个不同任务。实际验证3条CDS/蛋白零错误、负链与多ALT关联，以及预设杂合SNV。Snakemake9.27.0的安装、首次运行与缺失表恢复见[工作流案例](wiki/最小注释工作流与Snakemake恢复.md)，验证器仅使用新的独立目录。
+
+本轮VEP、版本转换、多倍体/细胞器专业分析未执行。结果、工具归档SHA和范围见[注释与工作流记录](maintenance/annotation-workflow-round1-2026-10-14.md)。
+
 Python 3.9+ 可运行序列比对教学例子；它不依赖第三方包，不是完整BLAST实现：
 
 ```bash
@@ -111,7 +126,7 @@ python3 examples/plot_sequencing_metrics.py
 
 ```bash
 python3 scripts/export_wiki.py --source '/你的Obsidian库/知识库/中文生信Wiki' --refresh-index
-# 变异集成检查需同一环境的bcftools与+fill-tags；没有时会明确跳过3项：
+# 完整集成检查另需bcftools及+fill-tags、Java/SnpEff、bedtools、minimap2和samtools；缺少工具时相应项目明确跳过：
 conda run -n variants .venv/bin/python -m unittest discover -s tests -v
 bash scripts/publish_wiki.sh
 ```

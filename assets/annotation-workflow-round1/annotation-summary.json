@@ -1,0 +1,119 @@
+{
+  "scope": "Artificial genome and variants; actual local SnpEff database checks and annotation, bedtools intervals; not gene-function validation or a real-organism benchmark",
+  "build": {
+    "snpeff_version": "SnpEff\t5.4c\t2026-02-23",
+    "jar_sha256": "5e8f75cbf908a33c6fb2e65c81e66fe31236cb21bb0195541c4703d8202c22b3",
+    "checks": [
+      "\tCDS check:\ttoy\tOK: 3\tWarnings: 0\tNot found: 0\tErrors: 0\tError percentage: 0.0%",
+      "\t+++\tProtein check:\ttoy\tOK: 3\tNot found: 0\tErrors: 0\tError percentage: 0.0%",
+      "# Checked transcripts        : ",
+      "#               Total Errors :      0 ( 0.00% )"
+    ],
+    "sequence_checks": {
+      "CDS": {
+        "ok": 3,
+        "errors": 0
+      },
+      "Protein": {
+        "ok": 3,
+        "errors": 0
+      }
+    },
+    "input_sha256": {
+      "genome.fa": "bbdb4397c75c6549ce4e3f613483940deee7dec3daf37ab5187e444066f9dbdd",
+      "genes.gff3": "ea1971d7b2040bcf075219b55f3b3af0ca4c763a24b0615eb40dd03562583abe",
+      "cds.fa": "daa6e482ec42372f2096cf28918e8aa61b94dbf26db9bc6abc63ce6bbf4e0ef9",
+      "protein.fa": "0c8615151d46ffb7320fd0d77b39f5b16fea7a9eb24aa670ca44f4ef013d59e4"
+    }
+  },
+  "intervals": {
+    "bedtools_version": "bedtools v2.31.1",
+    "vcf_records": 12,
+    "gene_overlap_pairs": 9,
+    "gene_overlap_unique_records": 9,
+    "exon_overlap_pairs": 11,
+    "exon_overlap_unique_records": 7,
+    "tie_window": [
+      {
+        "gene": "gPlus",
+        "distance": 120
+      },
+      {
+        "gene": "gMinus",
+        "distance": 120
+      }
+    ],
+    "input_sha256": {
+      "genome.fa": "bbdb4397c75c6549ce4e3f613483940deee7dec3daf37ab5187e444066f9dbdd",
+      "genes.gff3": "ea1971d7b2040bcf075219b55f3b3af0ca4c763a24b0615eb40dd03562583abe",
+      "variants.vcf": "013c3feee66730bc5530e0bc16f6c003a72fc9ea36771033638eb87a36d24d3e",
+      "boundaries.bed": "6fffd235abcaf5c126ca877e81fc3d21dcce4872064f5305657f7b072a981bd7"
+    }
+  },
+  "annotation_rows": 21,
+  "high_annotation_rows": 6,
+  "high_record_alleles": [
+    "frameshift:TA",
+    "multi:T",
+    "splice_donor:A"
+  ],
+  "impact_annotation_row_counts": {
+    "MODIFIER": 6,
+    "MODERATE": 6,
+    "LOW": 3,
+    "HIGH": 6
+  },
+  "negative_strand_example": {
+    "chrom": "chrToy",
+    "pos": 996,
+    "record_id": "minus_missense",
+    "ref": "G",
+    "alt": "A",
+    "gene": "gMinus",
+    "transcript": "txMinus",
+    "effect": "missense_variant",
+    "impact": "MODERATE",
+    "hgvs_c": "c.5C>T",
+    "hgvs_p": "p.Ala2Val",
+    "warnings": ""
+  },
+  "transcript_specific": [
+    {
+      "chrom": "chrToy",
+      "pos": 325,
+      "record_id": "transcript_specific",
+      "ref": "G",
+      "alt": "A",
+      "gene": "gPlus",
+      "transcript": "txPlus1",
+      "effect": "missense_variant",
+      "impact": "MODERATE",
+      "hgvs_c": "c.85G>A",
+      "hgvs_p": "p.Ala29Thr",
+      "warnings": ""
+    },
+    {
+      "chrom": "chrToy",
+      "pos": 325,
+      "record_id": "transcript_specific",
+      "ref": "G",
+      "alt": "A",
+      "gene": "gPlus",
+      "transcript": "txPlus2",
+      "effect": "intron_variant",
+      "impact": "MODIFIER",
+      "hgvs_c": "c.61-76G>A",
+      "hgvs_p": "",
+      "warnings": ""
+    }
+  ],
+  "input_sha256": {
+    "genome.fa": "bbdb4397c75c6549ce4e3f613483940deee7dec3daf37ab5187e444066f9dbdd",
+    "genes.gff3": "ea1971d7b2040bcf075219b55f3b3af0ca4c763a24b0615eb40dd03562583abe",
+    "cds.fa": "daa6e482ec42372f2096cf28918e8aa61b94dbf26db9bc6abc63ce6bbf4e0ef9",
+    "protein.fa": "0c8615151d46ffb7320fd0d77b39f5b16fea7a9eb24aa670ca44f4ef013d59e4",
+    "variants.vcf": "013c3feee66730bc5530e0bc16f6c003a72fc9ea36771033638eb87a36d24d3e",
+    "boundaries.bed": "6fffd235abcaf5c126ca877e81fc3d21dcce4872064f5305657f7b072a981bd7"
+  },
+  "publication_note": "Only sequence-check result lines retained; local absolute file-path lines omitted from public copy."
+}

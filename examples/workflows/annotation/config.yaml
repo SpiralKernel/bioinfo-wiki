@@ -1,0 +1,3 @@
+# Run from the project root with --directory examples/output/annotation-workflow.
+# Set SNPEFF_JAR to the absolute path of your jar; BEDTOOLS_BIN is optional on PATH.
+output: results

@@ -1,0 +1,23 @@
+{
+  "scope": "Actual local Snakemake dependency scheduling on artificial annotation case; no cluster/container/cloud benchmark",
+  "snakemake_version": "9.27.0",
+  "first_run_rules": [
+    "intervals",
+    "build_database",
+    "annotate",
+    "report",
+    "all"
+  ],
+  "no_change_rules": [],
+  "recovery_rules": [
+    "annotate",
+    "report",
+    "all"
+  ],
+  "no_change_preserves_output_mtimes": true,
+  "missing_table_restored_identically": true,
+  "database_reused": true,
+  "interval_results_reused": true,
+  "report_regenerated": true,
+  "final_summary_sha256": "2adbe916eb4a92032438b501141721a6d1343ef963f4a7f476f4b99330fa64ea"
+}

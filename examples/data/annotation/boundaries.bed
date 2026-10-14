@@ -1,0 +1,7 @@
+chrToy	99	100	before_plus
+chrToy	100	101	first_plus
+chrToy	459	460	last_plus
+chrToy	460	461	after_plus
+chrToy	579	581	tie_window
+chrToy	999	1000	first_minus
+chrToy	1000	1001	before_minus

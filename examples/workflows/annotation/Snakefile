@@ -1,0 +1,95 @@
+"""A tested local dependency graph for the artificial annotation case."""
+from pathlib import Path
+import os
+import sys
+
+PROJECT=Path(workflow.basedir).resolve().parents[2]
+SOURCE=PROJECT/'examples/data/annotation'
+SCRIPT=PROJECT/'examples/annotation_demo.py'
+OUT=Path(config.get('output','results')).resolve()
+JAR=Path(config.get('snpeff_jar') or os.environ.get('SNPEFF_JAR','tools/snpEff/snpEff.jar')).expanduser().resolve()
+CORE=Path(config.get('snpeff_config') or os.environ.get('SNPEFF_CONFIG',str(JAR.parent/'snpEff.config'))).expanduser().resolve()
+BEDTOOLS=config.get('bedtools') or os.environ.get('BEDTOOLS_BIN','bedtools')
+JAVA=config.get('java') or os.environ.get('JAVA_BIN','java')
+
+rule all:
+    input:
+        # Explicit deliverables: a present report must not hide a missing table.
+        str(OUT/'summary.json'), str(OUT/'annotation/annotated.vcf'),
+        str(OUT/'annotation/consequences.tsv'), str(OUT/'annotation/selected-high.tsv'),
+        str(OUT/'intervals/gene-overlaps.tsv'), str(OUT/'intervals/exon-overlaps.tsv'),
+        str(OUT/'intervals/closest.tsv')
+
+rule build_database:
+    input:
+        script=str(SCRIPT), jar=str(JAR), config=str(CORE),
+        genome=str(SOURCE/'genome.fa'), gff=str(SOURCE/'genes.gff3'),
+        cds=str(SOURCE/'cds.fa'), protein=str(SOURCE/'protein.fa')
+    output:
+        database=str(OUT/'database/data/toy/snpEffectPredictor.bin'),
+        sequence=str(OUT/'database/data/toy/sequence.bin'),
+        config=str(OUT/'database/snpeff.config'), verification=str(OUT/'build-verification.json')
+    params:
+        python=sys.executable, source=str(SOURCE), out=str(OUT), java=JAVA
+    threads: 1
+    resources:
+        mem_mb=768
+    log:
+        str(OUT/'build-rule.log')
+    shell:
+        "{params.python:q} {input.script:q} --step build --input-dir {params.source:q} "
+        "--output {params.out:q} --snpeff-jar {input.jar:q} --snpeff-config {input.config:q} "
+        "--java {params.java:q} > {log:q} 2>&1"
+
+rule annotate:
+    input:
+        script=str(SCRIPT), jar=str(JAR), vcf=str(SOURCE/'variants.vcf'),
+        database=rules.build_database.output.database, sequence=rules.build_database.output.sequence,
+        config=rules.build_database.output.config
+    output:
+        vcf=str(OUT/'annotation/annotated.vcf'), table=str(OUT/'annotation/consequences.tsv'),
+        selected=str(OUT/'annotation/selected-high.tsv'), verification=str(OUT/'annotation-verification.json')
+    params:
+        python=sys.executable, source=str(SOURCE), out=str(OUT), java=JAVA
+    threads: 1
+    resources:
+        mem_mb=768
+    log:
+        str(OUT/'annotate-rule.log')
+    shell:
+        "{params.python:q} {input.script:q} --step annotate --input-dir {params.source:q} "
+        "--output {params.out:q} --snpeff-jar {input.jar:q} --java {params.java:q} > {log:q} 2>&1"
+
+rule intervals:
+    input:
+        script=str(SCRIPT), genome=str(SOURCE/'genome.fa'), gff=str(SOURCE/'genes.gff3'),
+        vcf=str(SOURCE/'variants.vcf'), boundaries=str(SOURCE/'boundaries.bed')
+    output:
+        verification=str(OUT/'interval-verification.json'), genes=str(OUT/'intervals/gene-overlaps.tsv'),
+        exons=str(OUT/'intervals/exon-overlaps.tsv'), closest=str(OUT/'intervals/closest.tsv')
+    params:
+        python=sys.executable, source=str(SOURCE), out=str(OUT), bedtools=BEDTOOLS
+    threads: 1
+    log:
+        str(OUT/'intervals-rule.log')
+    shell:
+        "{params.python:q} {input.script:q} --step intervals --input-dir {params.source:q} "
+        "--output {params.out:q} --bedtools {params.bedtools:q} > {log:q} 2>&1"
+
+rule report:
+    input:
+        script=str(SCRIPT), build=rules.build_database.output.verification,
+        vcf=rules.annotate.output.vcf, table=rules.annotate.output.table,
+        selected=rules.annotate.output.selected, intervals=rules.intervals.output.verification,
+        annotation=rules.annotate.output.verification,
+        genes=rules.intervals.output.genes, exons=rules.intervals.output.exons,
+        closest=rules.intervals.output.closest
+    output:
+        str(OUT/'summary.json')
+    params:
+        python=sys.executable, source=str(SOURCE), out=str(OUT)
+    log:
+        str(OUT/'report-rule.log')
+    shell:
+        "{params.python:q} {input.script:q} --step report --input-dir {params.source:q} "
+        "--output {params.out:q} > {log:q} 2>&1"

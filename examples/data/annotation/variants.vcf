@@ -1,0 +1,17 @@
+##fileformat=VCFv4.3
+##reference=genome.fa
+##contig=<ID=chrToy,length=1600>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	S01
+chrToy	100	before_gene	G	A	60	PASS	.	GT	0/1
+chrToy	105	plus_missense	C	T	60	PASS	.	GT	0/1
+chrToy	106	plus_synonymous	T	C	60	PASS	.	GT	0/1
+chrToy	107	multi	C	T,A	60	PASS	.	GT	1/2
+chrToy	130	frameshift	T	TA	60	PASS	.	GT	0/1
+chrToy	161	splice_donor	G	A	60	PASS	.	GT	0/1
+chrToy	220	intron	A	C	60	PASS	.	GT	0/1
+chrToy	325	transcript_specific	G	A	60	PASS	.	GT	0/1
+chrToy	600	between_genes	G	A	60	PASS	.	GT	0/1
+chrToy	995	minus_synonymous	A	G	60	PASS	.	GT	0/1
+chrToy	996	minus_missense	G	A	60	PASS	.	GT	0/1
+chrToy	1001	after_gene	C	A	60	PASS	.	GT	0/1

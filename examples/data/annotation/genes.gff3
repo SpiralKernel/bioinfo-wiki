@@ -1,0 +1,19 @@
+##gff-version 3
+##sequence-region chrToy 1 1600
+chrToy	artificial	gene	101	460	.	+	.	ID=gPlus;Name=ToyPlus
+chrToy	artificial	mRNA	101	360	.	+	.	ID=txPlus1;Parent=gPlus;Name=txPlus1
+chrToy	artificial	mRNA	101	460	.	+	.	ID=txPlus2;Parent=gPlus;Name=txPlus2
+chrToy	artificial	gene	701	1000	.	-	.	ID=gMinus;Name=ToyMinus
+chrToy	artificial	mRNA	701	1000	.	-	.	ID=txMinus;Parent=gMinus;Name=txMinus
+chrToy	artificial	exon	101	160	.	+	.	ID=exon.txPlus1.1;Parent=txPlus1
+chrToy	artificial	CDS	101	160	.	+	0	ID=cds.txPlus1.1;Parent=txPlus1
+chrToy	artificial	exon	301	360	.	+	.	ID=exon.txPlus1.2;Parent=txPlus1
+chrToy	artificial	CDS	301	360	.	+	0	ID=cds.txPlus1.2;Parent=txPlus1
+chrToy	artificial	exon	101	160	.	+	.	ID=exon.txPlus2.1;Parent=txPlus2
+chrToy	artificial	CDS	101	160	.	+	0	ID=cds.txPlus2.1;Parent=txPlus2
+chrToy	artificial	exon	401	460	.	+	.	ID=exon.txPlus2.2;Parent=txPlus2
+chrToy	artificial	CDS	401	460	.	+	0	ID=cds.txPlus2.2;Parent=txPlus2
+chrToy	artificial	exon	701	760	.	-	.	ID=exon.txMinus.1;Parent=txMinus
+chrToy	artificial	CDS	701	760	.	-	0	ID=cds.txMinus.1;Parent=txMinus
+chrToy	artificial	exon	941	1000	.	-	.	ID=exon.txMinus.2;Parent=txMinus
+chrToy	artificial	CDS	941	1000	.	-	0	ID=cds.txMinus.2;Parent=txMinus

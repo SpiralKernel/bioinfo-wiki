@@ -1,0 +1,9 @@
+chrToy	104	105	plus_missense	0	.	chrToy	100	460	gPlus	0	+
+chrToy	105	106	plus_synonymous	0	.	chrToy	100	460	gPlus	0	+
+chrToy	106	107	multi	0	.	chrToy	100	460	gPlus	0	+
+chrToy	129	130	frameshift	0	.	chrToy	100	460	gPlus	0	+
+chrToy	160	161	splice_donor	0	.	chrToy	100	460	gPlus	0	+
+chrToy	219	220	intron	0	.	chrToy	100	460	gPlus	0	+
+chrToy	324	325	transcript_specific	0	.	chrToy	100	460	gPlus	0	+
+chrToy	994	995	minus_synonymous	0	.	chrToy	700	1000	gMinus	0	-
+chrToy	995	996	minus_missense	0	.	chrToy	700	1000	gMinus	0	-

@@ -1,6 +1,6 @@
 # SAM与BAM及CRAM
 
-> 更新：2026-10-13；状态：可用；验证范围：文档核对；操作需按所用环境验证。
+> 更新：2026-10-14；状态：可用；验证范围：文档核对；操作需按所用环境验证。
 
 SAM、BAM 和 CRAM 表达序列比对记录，坐标排序、索引和参考资源决定很多下游操作能否正确进行。
 
@@ -26,3 +26,9 @@ samtools view -H sample.bam
 ## 测序技术与上游输入
 
 [测序数据格式与原始信号](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E4%B8%8E%E5%8E%9F%E5%A7%8B%E4%BF%A1%E5%8F%B7)解释未比对BAM与原始信号；BAM转FASTQ可能丢辅助标签，不能仅凭后缀判断数据阶段。
+
+## 从文件格式走到检查
+
+[samtools比对检查与覆盖统计](https://github.com/SpiralKernel/bioinfo-wiki/wiki/samtools%E6%AF%94%E5%AF%B9%E6%A3%80%E6%9F%A5%E4%B8%8E%E8%A6%86%E7%9B%96%E7%BB%9F%E8%AE%A1)实际运行排序、quickcheck、索引、flagstat与coverage，并用缺少EOF的人工BAM验证检查失败。quickcheck不扫描全部内部数据，通过不能证明文件完全无损。
+
+从FASTQ产生这些比对见[从FASTQ到比对检查与变异调用](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%BB%8EFASTQ%E5%88%B0%E6%AF%94%E5%AF%B9%E6%A3%80%E6%9F%A5%E4%B8%8E%E5%8F%98%E5%BC%82%E8%B0%83%E7%94%A8)；选择比对模式见[minimap2BWA与比对器选择](https://github.com/SpiralKernel/bioinfo-wiki/wiki/minimap2BWA%E4%B8%8E%E6%AF%94%E5%AF%B9%E5%99%A8%E9%80%89%E6%8B%A9)。
