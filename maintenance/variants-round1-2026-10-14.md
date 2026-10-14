@@ -113,3 +113,9 @@ python3 examples/pav_matrix_demo.py
 | `summary.json` | `26b107916ec2861fd239e2cb431f3b9cb0ef7440039be0ec9ab32a0d1c54e77d` |
 | `variant-records.png` | `5d3029cbe52d21baa45e46d0e75670c05b2e455d194b4429eac3cc19fc8ad10c` |
 | `variant-records.svg` | `a60c879a0071cc523910a6e16a6d3d299354de7eac6cf5cdb2ff83fc08b86332` |
+
+## 发布后核验
+
+主仓库内容提交`47fdf24`，Wiki提交`7a19c7b`。122项公开请求全部通过：71个主仓库变更文件及47个Wiki变更文件HTTP 200、SHA-256与本地一致；首页、新路线、VCF案例和PAV矩阵共4个HTML入口正常显示Wiki内容。
+
+[公开核验JSON](variants-publication-2026-10-14.json)保留逐项结果。核验记录随后单独提交，已核验正文、代码、人工输入及素材保持原内容版本。

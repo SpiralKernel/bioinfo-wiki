@@ -1,0 +1,1104 @@
+{
+  "date": "2026-10-14",
+  "checked_at_UTC": "2026-10-14T01:23:18.113885+00:00",
+  "main_content_commit": "47fdf24a400b73e0bef0206cbbdac720a3e92133",
+  "wiki_commit": "7a19c7b587afbb9be7e5648e58965e6e286ec1d7",
+  "requests": 122,
+  "verified": 122,
+  "results": [
+    {
+      "kind": "main",
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/README.md",
+      "expected_sha256": "0efff9aa0bd11c5276b433c97660ff0b693d33f11abf92390a532e2cb302625b",
+      "status": 200,
+      "actual_sha256": "0efff9aa0bd11c5276b433c97660ff0b693d33f11abf92390a532e2cb302625b",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/cnv.tsv",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/cnv.tsv",
+      "expected_sha256": "b81356da1dba6a1bd3fc4d33559bf614077283d2d78cdf985da2f01d0bfb2a79",
+      "status": 200,
+      "actual_sha256": "b81356da1dba6a1bd3fc4d33559bf614077283d2d78cdf985da2f01d0bfb2a79",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/commands.json",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/commands.json",
+      "expected_sha256": "7290bb84df9432ffa9d9c7efc6fc716bfbf77d7c1084cf2a579d05c6bfca1d54",
+      "status": 200,
+      "actual_sha256": "7290bb84df9432ffa9d9c7efc6fc716bfbf77d7c1084cf2a579d05c6bfca1d54",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/normalized.vcf",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/normalized.vcf",
+      "expected_sha256": "fa2464dc960de4905ccbb058d97b8817559e30b69763dab648f86aa1aebe8d2f",
+      "status": 200,
+      "actual_sha256": "fa2464dc960de4905ccbb058d97b8817559e30b69763dab648f86aa1aebe8d2f",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/pav-matrix.tsv",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/pav-matrix.tsv",
+      "expected_sha256": "d265386266c60600756845a6b4ff7be5ad74b6ececbe5a511b00fe0fa032f4dd",
+      "status": 200,
+      "actual_sha256": "d265386266c60600756845a6b4ff7be5ad74b6ececbe5a511b00fe0fa032f4dd",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/pav-summary.json",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/pav-summary.json",
+      "expected_sha256": "a08162bc40f7ae4c9a02ced2f1687f339cab39d199b1afe552184efd08e4df09",
+      "status": 200,
+      "actual_sha256": "a08162bc40f7ae4c9a02ced2f1687f339cab39d199b1afe552184efd08e4df09",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/str.tsv",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/str.tsv",
+      "expected_sha256": "7d40a1341ea35f514d0ec32147d8aa1a81877c6646820b4f3b18d3f83fa3864e",
+      "status": 200,
+      "actual_sha256": "7d40a1341ea35f514d0ec32147d8aa1a81877c6646820b4f3b18d3f83fa3864e",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/summary.json",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/summary.json",
+      "expected_sha256": "26b107916ec2861fd239e2cb431f3b9cb0ef7440039be0ec9ab32a0d1c54e77d",
+      "status": 200,
+      "actual_sha256": "26b107916ec2861fd239e2cb431f3b9cb0ef7440039be0ec9ab32a0d1c54e77d",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/variant-records.png",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/variant-records.png",
+      "expected_sha256": "5d3029cbe52d21baa45e46d0e75670c05b2e455d194b4429eac3cc19fc8ad10c",
+      "status": 200,
+      "actual_sha256": "5d3029cbe52d21baa45e46d0e75670c05b2e455d194b4429eac3cc19fc8ad10c",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "assets/variants-round1/variant-records.svg",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/assets/variants-round1/variant-records.svg",
+      "expected_sha256": "a60c879a0071cc523910a6e16a6d3d299354de7eac6cf5cdb2ff83fc08b86332",
+      "status": 200,
+      "actual_sha256": "a60c879a0071cc523910a6e16a6d3d299354de7eac6cf5cdb2ff83fc08b86332",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/data/variants/README.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/data/variants/README.md",
+      "expected_sha256": "bcb387e9401311f4e09ba70f60adffb8d67bdbc9bbf3ac67a00373d606140b7f",
+      "status": 200,
+      "actual_sha256": "bcb387e9401311f4e09ba70f60adffb8d67bdbc9bbf3ac67a00373d606140b7f",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/data/variants/calls.vcf",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/data/variants/calls.vcf",
+      "expected_sha256": "326687e9cc8619b332ae5db8e97c2d52a7a9f801bb263f951b8fff7006e90219",
+      "status": 200,
+      "actual_sha256": "326687e9cc8619b332ae5db8e97c2d52a7a9f801bb263f951b8fff7006e90219",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/data/variants/pav_evidence.tsv",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/data/variants/pav_evidence.tsv",
+      "expected_sha256": "3c0795f28906fdc1477f8ba55df444163fcf45d52f184d10c3b5e284e5d8999e",
+      "status": 200,
+      "actual_sha256": "3c0795f28906fdc1477f8ba55df444163fcf45d52f184d10c3b5e284e5d8999e",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/data/variants/regions.bed",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/data/variants/regions.bed",
+      "expected_sha256": "554686e256c865163092a5dd9f23aa12e142487cf06bf7c9db870b7007bf0c33",
+      "status": 200,
+      "actual_sha256": "554686e256c865163092a5dd9f23aa12e142487cf06bf7c9db870b7007bf0c33",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/data/variants/samples.txt",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/data/variants/samples.txt",
+      "expected_sha256": "145b99e5e221c92e13473061e93dcf88820af6643a43304d05853e8cffe469e2",
+      "status": 200,
+      "actual_sha256": "145b99e5e221c92e13473061e93dcf88820af6643a43304d05853e8cffe469e2",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/data/variants/toy.fa",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/data/variants/toy.fa",
+      "expected_sha256": "9c639e1041ac2252cfa290c5f9b487c507b0d992238ef25e8f2d315f7650d32d",
+      "status": 200,
+      "actual_sha256": "9c639e1041ac2252cfa290c5f9b487c507b0d992238ef25e8f2d315f7650d32d",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/data/variants/toy.fa.fai",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/data/variants/toy.fa.fai",
+      "expected_sha256": "7f18c17c02ed9b87d1cbbbb5aae24b35f1bc0a32c089c96352a72e951f69e91b",
+      "status": 200,
+      "actual_sha256": "7f18c17c02ed9b87d1cbbbb5aae24b35f1bc0a32c089c96352a72e951f69e91b",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/data/variants/toy.sam",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/data/variants/toy.sam",
+      "expected_sha256": "a27703e3c7751dd4f5c98b1c478ec166b0d3d281a928e8dd27418e43fd3d92a5",
+      "status": 200,
+      "actual_sha256": "a27703e3c7751dd4f5c98b1c478ec166b0d3d281a928e8dd27418e43fd3d92a5",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/pav_matrix_demo.py",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/pav_matrix_demo.py",
+      "expected_sha256": "11199db47564fabb9191ddb1aa2280cd7a89ba37812cb25055b5a96c3420c5ec",
+      "status": 200,
+      "actual_sha256": "11199db47564fabb9191ddb1aa2280cd7a89ba37812cb25055b5a96c3420c5ec",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/plot_variant_extraction.py",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/plot_variant_extraction.py",
+      "expected_sha256": "ac651c05271f83c5077db68c2286404838276ccac886da13477a33d2e44f35a4",
+      "status": 200,
+      "actual_sha256": "ac651c05271f83c5077db68c2286404838276ccac886da13477a33d2e44f35a4",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "examples/variant_extraction_demo.py",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/examples/variant_extraction_demo.py",
+      "expected_sha256": "f23fd58140a266736f470c20d6cb61ab02c79a7778601c92ca5f4b9aa0a96ac9",
+      "status": 200,
+      "actual_sha256": "f23fd58140a266736f470c20d6cb61ab02c79a7778601c92ca5f4b9aa0a96ac9",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "maintenance/variants-round1-2026-10-14.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/maintenance/variants-round1-2026-10-14.md",
+      "expected_sha256": "813f0c8847271b86ca4399b22713e706cd4077d2f666a35d22de04766bdd4814",
+      "status": 200,
+      "actual_sha256": "813f0c8847271b86ca4399b22713e706cd4077d2f666a35d22de04766bdd4814",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "scripts/export_wiki.py",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/scripts/export_wiki.py",
+      "expected_sha256": "f8d4245f22ce981e26f75b1d3ababce41b51c75c2a4a4f2d7c550feadc5ea084",
+      "status": 200,
+      "actual_sha256": "f8d4245f22ce981e26f75b1d3ababce41b51c75c2a4a4f2d7c550feadc5ea084",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "tests/test_variant_extraction.py",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/tests/test_variant_extraction.py",
+      "expected_sha256": "776d0d1855552392481108555fa06842946c23cf82554522d29513db5a977658",
+      "status": 200,
+      "actual_sha256": "776d0d1855552392481108555fa06842946c23cf82554522d29513db5a977658",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/.wiki-export.json",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/.wiki-export.json",
+      "expected_sha256": "1d0f5eea4dc7570f90e62b0a9cd7b4fee233fd02923e882f89cda25df7e04cf4",
+      "status": 200,
+      "actual_sha256": "1d0f5eea4dc7570f90e62b0a9cd7b4fee233fd02923e882f89cda25df7e04cf4",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": ".wiki-export.json",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/.wiki-export.json",
+      "expected_sha256": "1d0f5eea4dc7570f90e62b0a9cd7b4fee233fd02923e882f89cda25df7e04cf4",
+      "status": 200,
+      "actual_sha256": "1d0f5eea4dc7570f90e62b0a9cd7b4fee233fd02923e882f89cda25df7e04cf4",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/CNV检测与结果提取.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/CNV%E6%A3%80%E6%B5%8B%E4%B8%8E%E7%BB%93%E6%9E%9C%E6%8F%90%E5%8F%96.md",
+      "expected_sha256": "2886e6404b33c7581582825d1b95e2100ad09a44257acedc1cbee2210e73f1eb",
+      "status": 200,
+      "actual_sha256": "2886e6404b33c7581582825d1b95e2100ad09a44257acedc1cbee2210e73f1eb",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "CNV检测与结果提取.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/CNV%E6%A3%80%E6%B5%8B%E4%B8%8E%E7%BB%93%E6%9E%9C%E6%8F%90%E5%8F%96.md",
+      "expected_sha256": "2886e6404b33c7581582825d1b95e2100ad09a44257acedc1cbee2210e73f1eb",
+      "status": 200,
+      "actual_sha256": "2886e6404b33c7581582825d1b95e2100ad09a44257acedc1cbee2210e73f1eb",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/CNV深度校正分段与拷贝数估计.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/CNV%E6%B7%B1%E5%BA%A6%E6%A0%A1%E6%AD%A3%E5%88%86%E6%AE%B5%E4%B8%8E%E6%8B%B7%E8%B4%9D%E6%95%B0%E4%BC%B0%E8%AE%A1.md",
+      "expected_sha256": "277986f388c9975f9f01e0aaaecd2eeae954658a99c694ea91a6a01e6e11885a",
+      "status": 200,
+      "actual_sha256": "277986f388c9975f9f01e0aaaecd2eeae954658a99c694ea91a6a01e6e11885a",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "CNV深度校正分段与拷贝数估计.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/CNV%E6%B7%B1%E5%BA%A6%E6%A0%A1%E6%AD%A3%E5%88%86%E6%AE%B5%E4%B8%8E%E6%8B%B7%E8%B4%9D%E6%95%B0%E4%BC%B0%E8%AE%A1.md",
+      "expected_sha256": "277986f388c9975f9f01e0aaaecd2eeae954658a99c694ea91a6a01e6e11885a",
+      "status": 200,
+      "actual_sha256": "277986f388c9975f9f01e0aaaecd2eeae954658a99c694ea91a6a01e6e11885a",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/DELLY结构变异与群体分型.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/DELLY%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82%E4%B8%8E%E7%BE%A4%E4%BD%93%E5%88%86%E5%9E%8B.md",
+      "expected_sha256": "ebda2eb559e78f8a24a1f6baa25444e1c3363dc99d7e335fef227202aa6b811c",
+      "status": 200,
+      "actual_sha256": "ebda2eb559e78f8a24a1f6baa25444e1c3363dc99d7e335fef227202aa6b811c",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "DELLY结构变异与群体分型.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/DELLY%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82%E4%B8%8E%E7%BE%A4%E4%BD%93%E5%88%86%E5%9E%8B.md",
+      "expected_sha256": "ebda2eb559e78f8a24a1f6baa25444e1c3363dc99d7e335fef227202aa6b811c",
+      "status": 200,
+      "actual_sha256": "ebda2eb559e78f8a24a1f6baa25444e1c3363dc99d7e335fef227202aa6b811c",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/GATK小变异检测与联合分型.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/GATK%E5%B0%8F%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E4%B8%8E%E8%81%94%E5%90%88%E5%88%86%E5%9E%8B.md",
+      "expected_sha256": "73a5016f82995105e4e4687661b491f2e01de98f063a043c75330e486a67ed5c",
+      "status": 200,
+      "actual_sha256": "73a5016f82995105e4e4687661b491f2e01de98f063a043c75330e486a67ed5c",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "GATK小变异检测与联合分型.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/GATK%E5%B0%8F%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E4%B8%8E%E8%81%94%E5%90%88%E5%88%86%E5%9E%8B.md",
+      "expected_sha256": "73a5016f82995105e4e4687661b491f2e01de98f063a043c75330e486a67ed5c",
+      "status": 200,
+      "actual_sha256": "73a5016f82995105e4e4687661b491f2e01de98f063a043c75330e486a67ed5c",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/GVCF联合分型与参考置信度.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/GVCF%E8%81%94%E5%90%88%E5%88%86%E5%9E%8B%E4%B8%8E%E5%8F%82%E8%80%83%E7%BD%AE%E4%BF%A1%E5%BA%A6.md",
+      "expected_sha256": "b96d6ae913c6240fce2449118010a24303a710e613f5015cddf1c8f1eaf39ebe",
+      "status": 200,
+      "actual_sha256": "b96d6ae913c6240fce2449118010a24303a710e613f5015cddf1c8f1eaf39ebe",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "GVCF联合分型与参考置信度.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/GVCF%E8%81%94%E5%90%88%E5%88%86%E5%9E%8B%E4%B8%8E%E5%8F%82%E8%80%83%E7%BD%AE%E4%BF%A1%E5%BA%A6.md",
+      "expected_sha256": "b96d6ae913c6240fce2449118010a24303a710e613f5015cddf1c8f1eaf39ebe",
+      "status": 200,
+      "actual_sha256": "b96d6ae913c6240fce2449118010a24303a710e613f5015cddf1c8f1eaf39ebe",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/Home.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/Home.md",
+      "expected_sha256": "aaf51d8e9a6218a37bc1726e34088cde21ae5bb5ba4264bf1e3dca7c156ab25b",
+      "status": 200,
+      "actual_sha256": "aaf51d8e9a6218a37bc1726e34088cde21ae5bb5ba4264bf1e3dca7c156ab25b",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "Home.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/Home.md",
+      "expected_sha256": "aaf51d8e9a6218a37bc1726e34088cde21ae5bb5ba4264bf1e3dca7c156ab25b",
+      "status": 200,
+      "actual_sha256": "aaf51d8e9a6218a37bc1726e34088cde21ae5bb5ba4264bf1e3dca7c156ab25b",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/PAV检测与存在缺失矩阵.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/PAV%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AD%98%E5%9C%A8%E7%BC%BA%E5%A4%B1%E7%9F%A9%E9%98%B5.md",
+      "expected_sha256": "b9b9b93fcddbbe35ffda3b4b5eab4ea11353ecbe7ba596ca48c70a35f24eeadd",
+      "status": 200,
+      "actual_sha256": "b9b9b93fcddbbe35ffda3b4b5eab4ea11353ecbe7ba596ca48c70a35f24eeadd",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "PAV检测与存在缺失矩阵.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/PAV%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AD%98%E5%9C%A8%E7%BC%BA%E5%A4%B1%E7%9F%A9%E9%98%B5.md",
+      "expected_sha256": "b9b9b93fcddbbe35ffda3b4b5eab4ea11353ecbe7ba596ca48c70a35f24eeadd",
+      "status": 200,
+      "actual_sha256": "b9b9b93fcddbbe35ffda3b4b5eab4ea11353ecbe7ba596ca48c70a35f24eeadd",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/SNP与基因型是什么.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/SNP%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E6%98%AF%E4%BB%80%E4%B9%88.md",
+      "expected_sha256": "655b0a62c1a108596f80d535b7ce4226d6d9c0d8bd125ded4f6b95ae06a49246",
+      "status": 200,
+      "actual_sha256": "655b0a62c1a108596f80d535b7ce4226d6d9c0d8bd125ded4f6b95ae06a49246",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "SNP与基因型是什么.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/SNP%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E6%98%AF%E4%BB%80%E4%B9%88.md",
+      "expected_sha256": "655b0a62c1a108596f80d535b7ce4226d6d9c0d8bd125ded4f6b95ae06a49246",
+      "status": 200,
+      "actual_sha256": "655b0a62c1a108596f80d535b7ce4226d6d9c0d8bd125ded4f6b95ae06a49246",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/SNVIndelMNV与复杂变异.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/SNVIndelMNV%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%8F%98%E5%BC%82.md",
+      "expected_sha256": "ac79b566160b2860a4dce678d512fb8e897b42c728f3386eb0ff7c63a139fb41",
+      "status": 200,
+      "actual_sha256": "ac79b566160b2860a4dce678d512fb8e897b42c728f3386eb0ff7c63a139fb41",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "SNVIndelMNV与复杂变异.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/SNVIndelMNV%E4%B8%8E%E5%A4%8D%E6%9D%82%E5%8F%98%E5%BC%82.md",
+      "expected_sha256": "ac79b566160b2860a4dce678d512fb8e897b42c728f3386eb0ff7c63a139fb41",
+      "status": 200,
+      "actual_sha256": "ac79b566160b2860a4dce678d512fb8e897b42c728f3386eb0ff7c63a139fb41",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/STR与重复扩增检测及提取.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/STR%E4%B8%8E%E9%87%8D%E5%A4%8D%E6%89%A9%E5%A2%9E%E6%A3%80%E6%B5%8B%E5%8F%8A%E6%8F%90%E5%8F%96.md",
+      "expected_sha256": "21379909de987b771c9e0dbd7e87e9c96895601e917cbea34ed4666208c4e6ad",
+      "status": 200,
+      "actual_sha256": "21379909de987b771c9e0dbd7e87e9c96895601e917cbea34ed4666208c4e6ad",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "STR与重复扩增检测及提取.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/STR%E4%B8%8E%E9%87%8D%E5%A4%8D%E6%89%A9%E5%A2%9E%E6%A3%80%E6%B5%8B%E5%8F%8A%E6%8F%90%E5%8F%96.md",
+      "expected_sha256": "21379909de987b771c9e0dbd7e87e9c96895601e917cbea34ed4666208c4e6ad",
+      "status": 200,
+      "actual_sha256": "21379909de987b771c9e0dbd7e87e9c96895601e917cbea34ed4666208c4e6ad",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/STR重复扩增与移动元件插入.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/STR%E9%87%8D%E5%A4%8D%E6%89%A9%E5%A2%9E%E4%B8%8E%E7%A7%BB%E5%8A%A8%E5%85%83%E4%BB%B6%E6%8F%92%E5%85%A5.md",
+      "expected_sha256": "35850fd9f97548e1795b3af3a2d25f83e8afc2f815cbc2cbbaf676ce0c4f5b40",
+      "status": 200,
+      "actual_sha256": "35850fd9f97548e1795b3af3a2d25f83e8afc2f815cbc2cbbaf676ce0c4f5b40",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "STR重复扩增与移动元件插入.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/STR%E9%87%8D%E5%A4%8D%E6%89%A9%E5%A2%9E%E4%B8%8E%E7%A7%BB%E5%8A%A8%E5%85%83%E4%BB%B6%E6%8F%92%E5%85%A5.md",
+      "expected_sha256": "35850fd9f97548e1795b3af3a2d25f83e8afc2f815cbc2cbbaf676ce0c4f5b40",
+      "status": 200,
+      "actual_sha256": "35850fd9f97548e1795b3af3a2d25f83e8afc2f815cbc2cbbaf676ce0c4f5b40",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/SV合并匹配与群体再分型.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/SV%E5%90%88%E5%B9%B6%E5%8C%B9%E9%85%8D%E4%B8%8E%E7%BE%A4%E4%BD%93%E5%86%8D%E5%88%86%E5%9E%8B.md",
+      "expected_sha256": "82dc4bfee3e434300a3256e37e334be8221502a9a47d6741e498f1d2d5471b96",
+      "status": 200,
+      "actual_sha256": "82dc4bfee3e434300a3256e37e334be8221502a9a47d6741e498f1d2d5471b96",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "SV合并匹配与群体再分型.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/SV%E5%90%88%E5%B9%B6%E5%8C%B9%E9%85%8D%E4%B8%8E%E7%BE%A4%E4%BD%93%E5%86%8D%E5%88%86%E5%9E%8B.md",
+      "expected_sha256": "82dc4bfee3e434300a3256e37e334be8221502a9a47d6741e498f1d2d5471b96",
+      "status": 200,
+      "actual_sha256": "82dc4bfee3e434300a3256e37e334be8221502a9a47d6741e498f1d2d5471b96",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/Sniffles长读长结构变异实践.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/Sniffles%E9%95%BF%E8%AF%BB%E9%95%BF%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82%E5%AE%9E%E8%B7%B5.md",
+      "expected_sha256": "5afb574f5566602b7104cb6032833563a75706801671be617f39344c9ef74090",
+      "status": 200,
+      "actual_sha256": "5afb574f5566602b7104cb6032833563a75706801671be617f39344c9ef74090",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "Sniffles长读长结构变异实践.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/Sniffles%E9%95%BF%E8%AF%BB%E9%95%BF%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82%E5%AE%9E%E8%B7%B5.md",
+      "expected_sha256": "5afb574f5566602b7104cb6032833563a75706801671be617f39344c9ef74090",
+      "status": 200,
+      "actual_sha256": "5afb574f5566602b7104cb6032833563a75706801671be617f39344c9ef74090",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/VCF与基因型编码.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/VCF%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E7%BC%96%E7%A0%81.md",
+      "expected_sha256": "b321287e8b516c9201b4ef60ba680e1c1fdcd92b38a578b813e9c359eefc9258",
+      "status": 200,
+      "actual_sha256": "b321287e8b516c9201b4ef60ba680e1c1fdcd92b38a578b813e9c359eefc9258",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "VCF与基因型编码.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/VCF%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E7%BC%96%E7%A0%81.md",
+      "expected_sha256": "b321287e8b516c9201b4ef60ba680e1c1fdcd92b38a578b813e9c359eefc9258",
+      "status": 200,
+      "actual_sha256": "b321287e8b516c9201b4ef60ba680e1c1fdcd92b38a578b813e9c359eefc9258",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/VCF中的SVTYPEEND与BND.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/VCF%E4%B8%AD%E7%9A%84SVTYPEEND%E4%B8%8EBND.md",
+      "expected_sha256": "c1c604350d760bd5a2c64392667434df01a6957d583e0bffa775a78e8ddcd785",
+      "status": 200,
+      "actual_sha256": "c1c604350d760bd5a2c64392667434df01a6957d583e0bffa775a78e8ddcd785",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "VCF中的SVTYPEEND与BND.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/VCF%E4%B8%AD%E7%9A%84SVTYPEEND%E4%B8%8EBND.md",
+      "expected_sha256": "c1c604350d760bd5a2c64392667434df01a6957d583e0bffa775a78e8ddcd785",
+      "status": 200,
+      "actual_sha256": "c1c604350d760bd5a2c64392667434df01a6957d583e0bffa775a78e8ddcd785",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/VCF标准化多等位拆分与表示.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/VCF%E6%A0%87%E5%87%86%E5%8C%96%E5%A4%9A%E7%AD%89%E4%BD%8D%E6%8B%86%E5%88%86%E4%B8%8E%E8%A1%A8%E7%A4%BA.md",
+      "expected_sha256": "987b12bcf10c6eb40810c2aec27d6cbd40520e9ff0e1105a621019bb713c53ae",
+      "status": 200,
+      "actual_sha256": "987b12bcf10c6eb40810c2aec27d6cbd40520e9ff0e1105a621019bb713c53ae",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "VCF标准化多等位拆分与表示.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/VCF%E6%A0%87%E5%87%86%E5%8C%96%E5%A4%9A%E7%AD%89%E4%BD%8D%E6%8B%86%E5%88%86%E4%B8%8E%E8%A1%A8%E7%A4%BA.md",
+      "expected_sha256": "987b12bcf10c6eb40810c2aec27d6cbd40520e9ff0e1105a621019bb713c53ae",
+      "status": 200,
+      "actual_sha256": "987b12bcf10c6eb40810c2aec27d6cbd40520e9ff0e1105a621019bb713c53ae",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/_Sidebar.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/_Sidebar.md",
+      "expected_sha256": "3d521fc15271dbd4996efc207e78eacc997941997ff007787c51c54412c40ff6",
+      "status": 200,
+      "actual_sha256": "3d521fc15271dbd4996efc207e78eacc997941997ff007787c51c54412c40ff6",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "_Sidebar.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/_Sidebar.md",
+      "expected_sha256": "3d521fc15271dbd4996efc207e78eacc997941997ff007787c51c54412c40ff6",
+      "status": 200,
+      "actual_sha256": "3d521fc15271dbd4996efc207e78eacc997941997ff007787c51c54412c40ff6",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/bcftools变异操作与表达式.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/bcftools%E5%8F%98%E5%BC%82%E6%93%8D%E4%BD%9C%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F.md",
+      "expected_sha256": "3c21cfe82a44fecb23a38fe69e9a09613baa243f34f0db35ca4c72756fef4626",
+      "status": 200,
+      "actual_sha256": "3c21cfe82a44fecb23a38fe69e9a09613baa243f34f0db35ca4c72756fef4626",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "bcftools变异操作与表达式.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/bcftools%E5%8F%98%E5%BC%82%E6%93%8D%E4%BD%9C%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F.md",
+      "expected_sha256": "3c21cfe82a44fecb23a38fe69e9a09613baa243f34f0db35ca4c72756fef4626",
+      "status": 200,
+      "actual_sha256": "3c21cfe82a44fecb23a38fe69e9a09613baa243f34f0db35ca4c72756fef4626",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/中文生信学习地图.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E4%B8%AD%E6%96%87%E7%94%9F%E4%BF%A1%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE.md",
+      "expected_sha256": "f593a41f1ddcbf859e32f7e8d0074a1b4481e304b700ec835908829847180370",
+      "status": 200,
+      "actual_sha256": "f593a41f1ddcbf859e32f7e8d0074a1b4481e304b700ec835908829847180370",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "中文生信学习地图.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E4%B8%AD%E6%96%87%E7%94%9F%E4%BF%A1%E5%AD%A6%E4%B9%A0%E5%9C%B0%E5%9B%BE.md",
+      "expected_sha256": "f593a41f1ddcbf859e32f7e8d0074a1b4481e304b700ec835908829847180370",
+      "status": 200,
+      "actual_sha256": "f593a41f1ddcbf859e32f7e8d0074a1b4481e304b700ec835908829847180370",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/人工VCF贯通变异分类与提取.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E4%BA%BA%E5%B7%A5VCF%E8%B4%AF%E9%80%9A%E5%8F%98%E5%BC%82%E5%88%86%E7%B1%BB%E4%B8%8E%E6%8F%90%E5%8F%96.md",
+      "expected_sha256": "cfe37564f5492d028a364e17daaa48a7913440147fa4225b98e445fb8ad16265",
+      "status": 200,
+      "actual_sha256": "cfe37564f5492d028a364e17daaa48a7913440147fa4225b98e445fb8ad16265",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "人工VCF贯通变异分类与提取.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E4%BA%BA%E5%B7%A5VCF%E8%B4%AF%E9%80%9A%E5%8F%98%E5%BC%82%E5%88%86%E7%B1%BB%E4%B8%8E%E6%8F%90%E5%8F%96.md",
+      "expected_sha256": "cfe37564f5492d028a364e17daaa48a7913440147fa4225b98e445fb8ad16265",
+      "status": 200,
+      "actual_sha256": "cfe37564f5492d028a364e17daaa48a7913440147fa4225b98e445fb8ad16265",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/体细胞与低频变异分析边界.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E4%BD%93%E7%BB%86%E8%83%9E%E4%B8%8E%E4%BD%8E%E9%A2%91%E5%8F%98%E5%BC%82%E5%88%86%E6%9E%90%E8%BE%B9%E7%95%8C.md",
+      "expected_sha256": "a9eaa927188ab080efee9f9e4558fbfc69944fdcdfa91d52f7b4a5427037b55d",
+      "status": 200,
+      "actual_sha256": "a9eaa927188ab080efee9f9e4558fbfc69944fdcdfa91d52f7b4a5427037b55d",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "体细胞与低频变异分析边界.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E4%BD%93%E7%BB%86%E8%83%9E%E4%B8%8E%E4%BD%8E%E9%A2%91%E5%8F%98%E5%BC%82%E5%88%86%E6%9E%90%E8%BE%B9%E7%95%8C.md",
+      "expected_sha256": "a9eaa927188ab080efee9f9e4558fbfc69944fdcdfa91d52f7b4a5427037b55d",
+      "status": 200,
+      "actual_sha256": "a9eaa927188ab080efee9f9e4558fbfc69944fdcdfa91d52f7b4a5427037b55d",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/关键词索引.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%85%B3%E9%94%AE%E8%AF%8D%E7%B4%A2%E5%BC%95.md",
+      "expected_sha256": "2f93a12da18a583ee099a2afd4bc600b96fc198bb54bd0bf5964cf3ae71d57b3",
+      "status": 200,
+      "actual_sha256": "2f93a12da18a583ee099a2afd4bc600b96fc198bb54bd0bf5964cf3ae71d57b3",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "关键词索引.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%85%B3%E9%94%AE%E8%AF%8D%E7%B4%A2%E5%BC%95.md",
+      "expected_sha256": "2f93a12da18a583ee099a2afd4bc600b96fc198bb54bd0bf5964cf3ae71d57b3",
+      "status": 200,
+      "actual_sha256": "2f93a12da18a583ee099a2afd4bc600b96fc198bb54bd0bf5964cf3ae71d57b3",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/变异与群体分析的验证设计.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%8F%98%E5%BC%82%E4%B8%8E%E7%BE%A4%E4%BD%93%E5%88%86%E6%9E%90%E7%9A%84%E9%AA%8C%E8%AF%81%E8%AE%BE%E8%AE%A1.md",
+      "expected_sha256": "79edd817f287e3e1561898fbfde8b775300a7f39af2cdcb5fed28595652ee735",
+      "status": 200,
+      "actual_sha256": "79edd817f287e3e1561898fbfde8b775300a7f39af2cdcb5fed28595652ee735",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "变异与群体分析的验证设计.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%8F%98%E5%BC%82%E4%B8%8E%E7%BE%A4%E4%BD%93%E5%88%86%E6%9E%90%E7%9A%84%E9%AA%8C%E8%AF%81%E8%AE%BE%E8%AE%A1.md",
+      "expected_sha256": "79edd817f287e3e1561898fbfde8b775300a7f39af2cdcb5fed28595652ee735",
+      "status": 200,
+      "actual_sha256": "79edd817f287e3e1561898fbfde8b775300a7f39af2cdcb5fed28595652ee735",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/变异位点过滤与基因型掩蔽.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%8F%98%E5%BC%82%E4%BD%8D%E7%82%B9%E8%BF%87%E6%BB%A4%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E6%8E%A9%E8%94%BD.md",
+      "expected_sha256": "c5088eddef0b129caeca29abfd6a8eb9e1482f88b0724f770cda169ca649fef6",
+      "status": 200,
+      "actual_sha256": "c5088eddef0b129caeca29abfd6a8eb9e1482f88b0724f770cda169ca649fef6",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "变异位点过滤与基因型掩蔽.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%8F%98%E5%BC%82%E4%BD%8D%E7%82%B9%E8%BF%87%E6%BB%A4%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E6%8E%A9%E8%94%BD.md",
+      "expected_sha256": "c5088eddef0b129caeca29abfd6a8eb9e1482f88b0724f770cda169ca649fef6",
+      "status": 200,
+      "actual_sha256": "c5088eddef0b129caeca29abfd6a8eb9e1482f88b0724f770cda169ca649fef6",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/变异检测分型与提取学习路线.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E5%88%86%E5%9E%8B%E4%B8%8E%E6%8F%90%E5%8F%96%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.md",
+      "expected_sha256": "d410d12f905bfa0429eb940d1e374e44135acf5b39ec797725649c2649be1137",
+      "status": 200,
+      "actual_sha256": "d410d12f905bfa0429eb940d1e374e44135acf5b39ec797725649c2649be1137",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "变异检测分型与提取学习路线.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E5%88%86%E5%9E%8B%E4%B8%8E%E6%8F%90%E5%8F%96%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.md",
+      "expected_sha256": "d410d12f905bfa0429eb940d1e374e44135acf5b39ec797725649c2649be1137",
+      "status": 200,
+      "actual_sha256": "d410d12f905bfa0429eb940d1e374e44135acf5b39ec797725649c2649be1137",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/变异检测软件选择与适用场景.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E8%BD%AF%E4%BB%B6%E9%80%89%E6%8B%A9%E4%B8%8E%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF.md",
+      "expected_sha256": "1d322c9cf3e093164c3e3dabdb17d549570dba9ede83783a00d8cb9edf713123",
+      "status": 200,
+      "actual_sha256": "1d322c9cf3e093164c3e3dabdb17d549570dba9ede83783a00d8cb9edf713123",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "变异检测软件选择与适用场景.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E8%BD%AF%E4%BB%B6%E9%80%89%E6%8B%A9%E4%B8%8E%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF.md",
+      "expected_sha256": "1d322c9cf3e093164c3e3dabdb17d549570dba9ede83783a00d8cb9edf713123",
+      "status": 200,
+      "actual_sha256": "1d322c9cf3e093164c3e3dabdb17d549570dba9ede83783a00d8cb9edf713123",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/变异注释与候选证据整理.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%8F%98%E5%BC%82%E6%B3%A8%E9%87%8A%E4%B8%8E%E5%80%99%E9%80%89%E8%AF%81%E6%8D%AE%E6%95%B4%E7%90%86.md",
+      "expected_sha256": "df798dc2a62252876cd9662d6cdb88579db0558ab5f3986a726ac92e51ad8501",
+      "status": 200,
+      "actual_sha256": "df798dc2a62252876cd9662d6cdb88579db0558ab5f3986a726ac92e51ad8501",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "变异注释与候选证据整理.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%8F%98%E5%BC%82%E6%B3%A8%E9%87%8A%E4%B8%8E%E5%80%99%E9%80%89%E8%AF%81%E6%8D%AE%E6%95%B4%E7%90%86.md",
+      "expected_sha256": "df798dc2a62252876cd9662d6cdb88579db0558ab5f3986a726ac92e51ad8501",
+      "status": 200,
+      "actual_sha256": "df798dc2a62252876cd9662d6cdb88579db0558ab5f3986a726ac92e51ad8501",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/变异评估真值集合与可检测区域.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%8F%98%E5%BC%82%E8%AF%84%E4%BC%B0%E7%9C%9F%E5%80%BC%E9%9B%86%E5%90%88%E4%B8%8E%E5%8F%AF%E6%A3%80%E6%B5%8B%E5%8C%BA%E5%9F%9F.md",
+      "expected_sha256": "8b30bdc896c2d8fd3e7c5a0d7a45db1e5494e7469cf4860a402f079b7604b1be",
+      "status": 200,
+      "actual_sha256": "8b30bdc896c2d8fd3e7c5a0d7a45db1e5494e7469cf4860a402f079b7604b1be",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "变异评估真值集合与可检测区域.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%8F%98%E5%BC%82%E8%AF%84%E4%BC%B0%E7%9C%9F%E5%80%BC%E9%9B%86%E5%90%88%E4%B8%8E%E5%8F%AF%E6%A3%80%E6%B5%8B%E5%8C%BA%E5%9F%9F.md",
+      "expected_sha256": "8b30bdc896c2d8fd3e7c5a0d7a45db1e5494e7469cf4860a402f079b7604b1be",
+      "status": 200,
+      "actual_sha256": "8b30bdc896c2d8fd3e7c5a0d7a45db1e5494e7469cf4860a402f079b7604b1be",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/变异质量基因型质量与等位平衡.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%8F%98%E5%BC%82%E8%B4%A8%E9%87%8F%E5%9F%BA%E5%9B%A0%E5%9E%8B%E8%B4%A8%E9%87%8F%E4%B8%8E%E7%AD%89%E4%BD%8D%E5%B9%B3%E8%A1%A1.md",
+      "expected_sha256": "2498cfa2e2717d5b563218c1bd757accb733c5c22cb8d5754272d1f76a23e340",
+      "status": 200,
+      "actual_sha256": "2498cfa2e2717d5b563218c1bd757accb733c5c22cb8d5754272d1f76a23e340",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "变异质量基因型质量与等位平衡.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%8F%98%E5%BC%82%E8%B4%A8%E9%87%8F%E5%9F%BA%E5%9B%A0%E5%9E%8B%E8%B4%A8%E9%87%8F%E4%B8%8E%E7%AD%89%E4%BD%8D%E5%B9%B3%E8%A1%A1.md",
+      "expected_sha256": "2498cfa2e2717d5b563218c1bd757accb733c5c22cb8d5754272d1f76a23e340",
+      "status": 200,
+      "actual_sha256": "2498cfa2e2717d5b563218c1bd757accb733c5c22cb8d5754272d1f76a23e340",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/基因型质控与过滤.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%9F%BA%E5%9B%A0%E5%9E%8B%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%BF%87%E6%BB%A4.md",
+      "expected_sha256": "ef4439ecb8740c2abce25db0bd0e1fb3a57d9d86f1699570e70d159f21f0122c",
+      "status": 200,
+      "actual_sha256": "ef4439ecb8740c2abce25db0bd0e1fb3a57d9d86f1699570e70d159f21f0122c",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "基因型质控与过滤.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%9F%BA%E5%9B%A0%E5%9E%8B%E8%B4%A8%E6%8E%A7%E4%B8%8E%E8%BF%87%E6%BB%A4.md",
+      "expected_sha256": "ef4439ecb8740c2abce25db0bd0e1fb3a57d9d86f1699570e70d159f21f0122c",
+      "status": 200,
+      "actual_sha256": "ef4439ecb8740c2abce25db0bd0e1fb3a57d9d86f1699570e70d159f21f0122c",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/基因组重测序与变异检测.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%87%8D%E6%B5%8B%E5%BA%8F%E4%B8%8E%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B.md",
+      "expected_sha256": "c15a50c09359e8aa93912069a07c62cfafbf30d0c17a045cabbfe84d9272026b",
+      "status": 200,
+      "actual_sha256": "c15a50c09359e8aa93912069a07c62cfafbf30d0c17a045cabbfe84d9272026b",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "基因组重测序与变异检测.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%9F%BA%E5%9B%A0%E7%BB%84%E9%87%8D%E6%B5%8B%E5%BA%8F%E4%B8%8E%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B.md",
+      "expected_sha256": "c15a50c09359e8aa93912069a07c62cfafbf30d0c17a045cabbfe84d9272026b",
+      "status": 200,
+      "actual_sha256": "c15a50c09359e8aa93912069a07c62cfafbf30d0c17a045cabbfe84d9272026b",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/定相与基因型填充.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%AE%9A%E7%9B%B8%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E5%A1%AB%E5%85%85.md",
+      "expected_sha256": "e7da7127e6c192f12c9208d6a026341879589571a064a335ef2162a2de962698",
+      "status": 200,
+      "actual_sha256": "e7da7127e6c192f12c9208d6a026341879589571a064a335ef2162a2de962698",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "定相与基因型填充.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%AE%9A%E7%9B%B8%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E5%A1%AB%E5%85%85.md",
+      "expected_sha256": "e7da7127e6c192f12c9208d6a026341879589571a064a335ef2162a2de962698",
+      "status": 200,
+      "actual_sha256": "e7da7127e6c192f12c9208d6a026341879589571a064a335ef2162a2de962698",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/小变异检测的似然与局部组装.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E5%B0%8F%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E7%9A%84%E4%BC%BC%E7%84%B6%E4%B8%8E%E5%B1%80%E9%83%A8%E7%BB%84%E8%A3%85.md",
+      "expected_sha256": "08ca9666de351825d73cf261f1cdd15380f88ce718360457ad0e9cda999ab247",
+      "status": 200,
+      "actual_sha256": "08ca9666de351825d73cf261f1cdd15380f88ce718360457ad0e9cda999ab247",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "小变异检测的似然与局部组装.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E5%B0%8F%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E7%9A%84%E4%BC%BC%E7%84%B6%E4%B8%8E%E5%B1%80%E9%83%A8%E7%BB%84%E8%A3%85.md",
+      "expected_sha256": "08ca9666de351825d73cf261f1cdd15380f88ce718360457ad0e9cda999ab247",
+      "status": 200,
+      "actual_sha256": "08ca9666de351825d73cf261f1cdd15380f88ce718360457ad0e9cda999ab247",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/按区域样本与基因型提取变异.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E6%8C%89%E5%8C%BA%E5%9F%9F%E6%A0%B7%E6%9C%AC%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E6%8F%90%E5%8F%96%E5%8F%98%E5%BC%82.md",
+      "expected_sha256": "6992c996fb988b054483cb89d86e727a67f2dd2911573ab9390ec5ecd2f4bca7",
+      "status": 200,
+      "actual_sha256": "6992c996fb988b054483cb89d86e727a67f2dd2911573ab9390ec5ecd2f4bca7",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "按区域样本与基因型提取变异.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E6%8C%89%E5%8C%BA%E5%9F%9F%E6%A0%B7%E6%9C%AC%E4%B8%8E%E5%9F%BA%E5%9B%A0%E5%9E%8B%E6%8F%90%E5%8F%96%E5%8F%98%E5%BC%82.md",
+      "expected_sha256": "6992c996fb988b054483cb89d86e727a67f2dd2911573ab9390ec5ecd2f4bca7",
+      "status": 200,
+      "actual_sha256": "6992c996fb988b054483cb89d86e727a67f2dd2911573ab9390ec5ecd2f4bca7",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/按类型提取SNPIndel与结构变异.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E6%8C%89%E7%B1%BB%E5%9E%8B%E6%8F%90%E5%8F%96SNPIndel%E4%B8%8E%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82.md",
+      "expected_sha256": "85ea8cde38c08985794a34479bd28b589197aadf036a17f214a5b88b0ecbaf7e",
+      "status": 200,
+      "actual_sha256": "85ea8cde38c08985794a34479bd28b589197aadf036a17f214a5b88b0ecbaf7e",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "按类型提取SNPIndel与结构变异.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E6%8C%89%E7%B1%BB%E5%9E%8B%E6%8F%90%E5%8F%96SNPIndel%E4%B8%8E%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82.md",
+      "expected_sha256": "85ea8cde38c08985794a34479bd28b589197aadf036a17f214a5b88b0ecbaf7e",
+      "status": 200,
+      "actual_sha256": "85ea8cde38c08985794a34479bd28b589197aadf036a17f214a5b88b0ecbaf7e",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/测序技术与PCR学习路线.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E6%B5%8B%E5%BA%8F%E6%8A%80%E6%9C%AF%E4%B8%8EPCR%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.md",
+      "expected_sha256": "3bf945434788f0e5dfa5cc93766b1bd36ebf39226edd68d23b9e5c85e1424ed6",
+      "status": 200,
+      "actual_sha256": "3bf945434788f0e5dfa5cc93766b1bd36ebf39226edd68d23b9e5c85e1424ed6",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "测序技术与PCR学习路线.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E6%B5%8B%E5%BA%8F%E6%8A%80%E6%9C%AF%E4%B8%8EPCR%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.md",
+      "expected_sha256": "3bf945434788f0e5dfa5cc93766b1bd36ebf39226edd68d23b9e5c85e1424ed6",
+      "status": 200,
+      "actual_sha256": "3bf945434788f0e5dfa5cc93766b1bd36ebf39226edd68d23b9e5c85e1424ed6",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/短读长SNP与Indel检测流程.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E7%9F%AD%E8%AF%BB%E9%95%BFSNP%E4%B8%8EIndel%E6%A3%80%E6%B5%8B%E6%B5%81%E7%A8%8B.md",
+      "expected_sha256": "d480758da3c2f2a0bbcac0498262204f069f6dd03c01d64500fd3c83597a0201",
+      "status": 200,
+      "actual_sha256": "d480758da3c2f2a0bbcac0498262204f069f6dd03c01d64500fd3c83597a0201",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "短读长SNP与Indel检测流程.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E7%9F%AD%E8%AF%BB%E9%95%BFSNP%E4%B8%8EIndel%E6%A3%80%E6%B5%8B%E6%B5%81%E7%A8%8B.md",
+      "expected_sha256": "d480758da3c2f2a0bbcac0498262204f069f6dd03c01d64500fd3c83597a0201",
+      "status": 200,
+      "actual_sha256": "d480758da3c2f2a0bbcac0498262204f069f6dd03c01d64500fd3c83597a0201",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/组学分析总览与选型.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E7%BB%84%E5%AD%A6%E5%88%86%E6%9E%90%E6%80%BB%E8%A7%88%E4%B8%8E%E9%80%89%E5%9E%8B.md",
+      "expected_sha256": "2ebb55226265f0f22527b26cd9f9ee6a286aff7c8c750ba127ab7d91e3b7aa8a",
+      "status": 200,
+      "actual_sha256": "2ebb55226265f0f22527b26cd9f9ee6a286aff7c8c750ba127ab7d91e3b7aa8a",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "组学分析总览与选型.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E7%BB%84%E5%AD%A6%E5%88%86%E6%9E%90%E6%80%BB%E8%A7%88%E4%B8%8E%E9%80%89%E5%9E%8B.md",
+      "expected_sha256": "2ebb55226265f0f22527b26cd9f9ee6a286aff7c8c750ba127ab7d91e3b7aa8a",
+      "status": 200,
+      "actual_sha256": "2ebb55226265f0f22527b26cd9f9ee6a286aff7c8c750ba127ab7d91e3b7aa8a",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/结构变异CNV与PAV.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82CNV%E4%B8%8EPAV.md",
+      "expected_sha256": "4eb697e08d590f941e5609d48100d1cdbe0ec75d0bf7e28ac25b722a96794c82",
+      "status": 200,
+      "actual_sha256": "4eb697e08d590f941e5609d48100d1cdbe0ec75d0bf7e28ac25b722a96794c82",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "结构变异CNV与PAV.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82CNV%E4%B8%8EPAV.md",
+      "expected_sha256": "4eb697e08d590f941e5609d48100d1cdbe0ec75d0bf7e28ac25b722a96794c82",
+      "status": 200,
+      "actual_sha256": "4eb697e08d590f941e5609d48100d1cdbe0ec75d0bf7e28ac25b722a96794c82",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/结构变异检测的读对分裂读段与组装.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E7%9A%84%E8%AF%BB%E5%AF%B9%E5%88%86%E8%A3%82%E8%AF%BB%E6%AE%B5%E4%B8%8E%E7%BB%84%E8%A3%85.md",
+      "expected_sha256": "0c100f4f583496fdec22e39822fd13c3dd56a99c4733542912b8b8f845768c26",
+      "status": 200,
+      "actual_sha256": "0c100f4f583496fdec22e39822fd13c3dd56a99c4733542912b8b8f845768c26",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "结构变异检测的读对分裂读段与组装.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E7%9A%84%E8%AF%BB%E5%AF%B9%E5%88%86%E8%A3%82%E8%AF%BB%E6%AE%B5%E4%B8%8E%E7%BB%84%E8%A3%85.md",
+      "expected_sha256": "0c100f4f583496fdec22e39822fd13c3dd56a99c4733542912b8b8f845768c26",
+      "status": 200,
+      "actual_sha256": "0c100f4f583496fdec22e39822fd13c3dd56a99c4733542912b8b8f845768c26",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/群体分析与GWAS学习路线.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E7%BE%A4%E4%BD%93%E5%88%86%E6%9E%90%E4%B8%8EGWAS%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.md",
+      "expected_sha256": "9867e5cac81f83beb339b5aad6d8543b35c0b6f03b1d51f12e52517cf98023b2",
+      "status": 200,
+      "actual_sha256": "9867e5cac81f83beb339b5aad6d8543b35c0b6f03b1d51f12e52517cf98023b2",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "群体分析与GWAS学习路线.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E7%BE%A4%E4%BD%93%E5%88%86%E6%9E%90%E4%B8%8EGWAS%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.md",
+      "expected_sha256": "9867e5cac81f83beb339b5aad6d8543b35c0b6f03b1d51f12e52517cf98023b2",
+      "status": 200,
+      "actual_sha256": "9867e5cac81f83beb339b5aad6d8543b35c0b6f03b1d51f12e52517cf98023b2",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/群体遗传软件与输入选择.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E7%BE%A4%E4%BD%93%E9%81%97%E4%BC%A0%E8%BD%AF%E4%BB%B6%E4%B8%8E%E8%BE%93%E5%85%A5%E9%80%89%E6%8B%A9.md",
+      "expected_sha256": "c149eb1754369d87789b1c1cdd1eaf89de054bfdeb1aca597585502667c2a0ec",
+      "status": 200,
+      "actual_sha256": "c149eb1754369d87789b1c1cdd1eaf89de054bfdeb1aca597585502667c2a0ec",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "群体遗传软件与输入选择.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E7%BE%A4%E4%BD%93%E9%81%97%E4%BC%A0%E8%BD%AF%E4%BB%B6%E4%B8%8E%E8%BE%93%E5%85%A5%E9%80%89%E6%8B%A9.md",
+      "expected_sha256": "c149eb1754369d87789b1c1cdd1eaf89de054bfdeb1aca597585502667c2a0ec",
+      "status": 200,
+      "actual_sha256": "c149eb1754369d87789b1c1cdd1eaf89de054bfdeb1aca597585502667c2a0ec",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/转座子插入检测与提取.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E8%BD%AC%E5%BA%A7%E5%AD%90%E6%8F%92%E5%85%A5%E6%A3%80%E6%B5%8B%E4%B8%8E%E6%8F%90%E5%8F%96.md",
+      "expected_sha256": "35b088a1eae5893211450b9267f9104f08c9ea2ccf1f302ab7027ad7d893bdbf",
+      "status": 200,
+      "actual_sha256": "35b088a1eae5893211450b9267f9104f08c9ea2ccf1f302ab7027ad7d893bdbf",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "转座子插入检测与提取.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E8%BD%AC%E5%BA%A7%E5%AD%90%E6%8F%92%E5%85%A5%E6%A3%80%E6%B5%8B%E4%B8%8E%E6%8F%90%E5%8F%96.md",
+      "expected_sha256": "35b088a1eae5893211450b9267f9104f08c9ea2ccf1f302ab7027ad7d893bdbf",
+      "status": 200,
+      "actual_sha256": "35b088a1eae5893211450b9267f9104f08c9ea2ccf1f302ab7027ad7d893bdbf",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/重复序列与转座子变异软件.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E9%87%8D%E5%A4%8D%E5%BA%8F%E5%88%97%E4%B8%8E%E8%BD%AC%E5%BA%A7%E5%AD%90%E5%8F%98%E5%BC%82%E8%BD%AF%E4%BB%B6.md",
+      "expected_sha256": "1bfd9f49b54dc560247403e8fede2f55edc2fdc20b79392e10a41dd4f6b8247f",
+      "status": 200,
+      "actual_sha256": "1bfd9f49b54dc560247403e8fede2f55edc2fdc20b79392e10a41dd4f6b8247f",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "重复序列与转座子变异软件.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E9%87%8D%E5%A4%8D%E5%BA%8F%E5%88%97%E4%B8%8E%E8%BD%AC%E5%BA%A7%E5%AD%90%E5%8F%98%E5%BC%82%E8%BD%AF%E4%BB%B6.md",
+      "expected_sha256": "1bfd9f49b54dc560247403e8fede2f55edc2fdc20b79392e10a41dd4f6b8247f",
+      "status": 200,
+      "actual_sha256": "1bfd9f49b54dc560247403e8fede2f55edc2fdc20b79392e10a41dd4f6b8247f",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/长读长小变异检测与模型选择.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E9%95%BF%E8%AF%BB%E9%95%BF%E5%B0%8F%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E4%B8%8E%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9.md",
+      "expected_sha256": "6dea15b5bb7e5a57e0b1cfa4570e3cc2b6a94c950e1ead052afe7ff5d7427fab",
+      "status": 200,
+      "actual_sha256": "6dea15b5bb7e5a57e0b1cfa4570e3cc2b6a94c950e1ead052afe7ff5d7427fab",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "长读长小变异检测与模型选择.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E9%95%BF%E8%AF%BB%E9%95%BF%E5%B0%8F%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E4%B8%8E%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9.md",
+      "expected_sha256": "6dea15b5bb7e5a57e0b1cfa4570e3cc2b6a94c950e1ead052afe7ff5d7427fab",
+      "status": 200,
+      "actual_sha256": "6dea15b5bb7e5a57e0b1cfa4570e3cc2b6a94c950e1ead052afe7ff5d7427fab",
+      "verified": true
+    },
+    {
+      "kind": "main",
+      "name": "wiki/长读长测序分析入门.md",
+      "url": "https://raw.githubusercontent.com/SpiralKernel/bioinfo-wiki/main/wiki/%E9%95%BF%E8%AF%BB%E9%95%BF%E6%B5%8B%E5%BA%8F%E5%88%86%E6%9E%90%E5%85%A5%E9%97%A8.md",
+      "expected_sha256": "9097906e1a936275012ede8c8b25515d11ce09903857c6199783a508d0957c01",
+      "status": 200,
+      "actual_sha256": "9097906e1a936275012ede8c8b25515d11ce09903857c6199783a508d0957c01",
+      "verified": true
+    },
+    {
+      "kind": "wiki",
+      "name": "长读长测序分析入门.md",
+      "url": "https://raw.githubusercontent.com/wiki/SpiralKernel/bioinfo-wiki/%E9%95%BF%E8%AF%BB%E9%95%BF%E6%B5%8B%E5%BA%8F%E5%88%86%E6%9E%90%E5%85%A5%E9%97%A8.md",
+      "expected_sha256": "9097906e1a936275012ede8c8b25515d11ce09903857c6199783a508d0957c01",
+      "status": 200,
+      "actual_sha256": "9097906e1a936275012ede8c8b25515d11ce09903857c6199783a508d0957c01",
+      "verified": true
+    },
+    {
+      "kind": "html",
+      "name": "Home",
+      "url": "https://github.com/SpiralKernel/bioinfo-wiki/wiki/Home",
+      "status": 200,
+      "actual_sha256": "af72b33ca77173d0d4d41c7cf079c3a3190dcf3d4129a5dfac6dc89269281359",
+      "verified": true
+    },
+    {
+      "kind": "html",
+      "name": "变异检测分型与提取学习路线",
+      "url": "https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%8F%98%E5%BC%82%E6%A3%80%E6%B5%8B%E5%88%86%E5%9E%8B%E4%B8%8E%E6%8F%90%E5%8F%96%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF",
+      "status": 200,
+      "actual_sha256": "345aace811f697b3a9bdbd0f2bf218a82d1ac3e74c5e408724d5965475f41974",
+      "verified": true
+    },
+    {
+      "kind": "html",
+      "name": "人工VCF贯通变异分类与提取",
+      "url": "https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%BA%BA%E5%B7%A5VCF%E8%B4%AF%E9%80%9A%E5%8F%98%E5%BC%82%E5%88%86%E7%B1%BB%E4%B8%8E%E6%8F%90%E5%8F%96",
+      "status": 200,
+      "actual_sha256": "db548e06916b778a676f27db462bdd99652ff28b44495c08f91c3a5b00f32b34",
+      "verified": true
+    },
+    {
+      "kind": "html",
+      "name": "PAV检测与存在缺失矩阵",
+      "url": "https://github.com/SpiralKernel/bioinfo-wiki/wiki/PAV%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AD%98%E5%9C%A8%E7%BC%BA%E5%A4%B1%E7%9F%A9%E9%98%B5",
+      "status": 200,
+      "actual_sha256": "55bfbd574aa208ee6913576e20ca564a3dd9529c937b3da908ae5c5766f4f911",
+      "verified": true
+    }
+  ]
+}
