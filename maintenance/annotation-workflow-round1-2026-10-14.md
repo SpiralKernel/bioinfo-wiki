@@ -65,3 +65,7 @@ Linux，本地单核/短序列；Python3.14.8、SnpEff5.4c（构建2026-02-23）
 VEP、CrossMap、IGV桌面、SKAT/专业罕见变异检验、OrthoFinder、BWA、多倍体/细胞器/泛基因组专业流程未执行；对应页是有来源的选型或操作指南。人工模型仅标准密码、phase0、完整CDS，非复杂物种注释基准。
 
 真实物种数据库、原生R/Bioconductor真实RNA-seq、专业SV/CNV/STR/TE调用、组装、系统发育、QTL精细定位及原始蛋白/代谢处理等，见[维护优先级](../wiki/生信缺口清单与维护优先级.md)。新手可以先完成已运行的小闭环，再进入这些任务。
+
+## 发布核验
+
+内容提交`bd4420c`与Wiki提交`15d10a9`已推送。随后只读检查122项全部通过：主仓库变更文件75项、Wiki原文43项、重点HTML页面4项；文件核对SHA256，HTML核对Wiki正文标记和标题。核验针对当时的内容提交；本段及核验JSON随后另存为维护提交。详见[公开核验记录](annotation-workflow-publication-2026-10-14.json)。
