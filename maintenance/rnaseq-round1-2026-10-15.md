@@ -53,3 +53,7 @@ VST用于PCA/距离，计数模型输入仍是原始计数。MA图边界三角�
 未运行真实FASTQ、STAR、featureCounts、Salmon/tximport、nf-core/rnaseq、rlog、edgeR/voom、交互/LRT、富集、qPCR或功能实验。对应页是明确标注的指南；没有把本例4030个基因当成原论文结论的完全复现。
 
 维护优先级已把“原生R真实计数DESeq2”标为本轮完成，留下真实FASTQ与多方法比较。下一批仍可按优先级进入专业SV/CNV/STR/TE、实际物种注释数据库、组装/系统发育和QTL精细定位；见[缺口清单](../wiki/生信缺口清单与维护优先级.md)。
+
+## 发布核验
+
+内容提交`e15c32f`与Wiki提交`7b09130`已推送。对该内容提交检查99项全部通过：主仓库变更文件59项、Wiki原文36项、重点HTML页面4项；文件核对SHA256，HTML核对Wiki正文和标题。核验针对当时的内容提交，本段和JSON随后另存为维护提交。[公开核验记录](rnaseq-publication-2026-10-15.json)。
