@@ -1,0 +1,44 @@
+{
+  "commit": "b21c6217eeaef9a080205932fe29f730dc00e31f",
+  "files": [
+    {
+      "name": "reference.fasta",
+      "url": "https://raw.githubusercontent.com/PacificBiosciences/trgt/b21c6217eeaef9a080205932fe29f730dc00e31f/example/reference.fasta",
+      "bytes": 11252,
+      "sha256": "c34cd2f0836586b767f9720c1959a12bc1d34aca57d17059092fcf10724f62af"
+    },
+    {
+      "name": "reference.fasta.fai",
+      "url": "https://raw.githubusercontent.com/PacificBiosciences/trgt/b21c6217eeaef9a080205932fe29f730dc00e31f/example/reference.fasta.fai",
+      "bytes": 19,
+      "sha256": "20bce001e4a7d2c4b00dd6064cb96297a1835d59b377b9206c4f543060edf4b1"
+    },
+    {
+      "name": "sample.bam",
+      "url": "https://raw.githubusercontent.com/PacificBiosciences/trgt/b21c6217eeaef9a080205932fe29f730dc00e31f/example/sample.bam",
+      "bytes": 331422,
+      "sha256": "b2774a6614316c8e38bda3fa2b59211f1c73e08efc83efadd787e38032b293d8"
+    },
+    {
+      "name": "sample.bam.bai",
+      "url": "https://raw.githubusercontent.com/PacificBiosciences/trgt/b21c6217eeaef9a080205932fe29f730dc00e31f/example/sample.bam.bai",
+      "bytes": 96,
+      "sha256": "1a2fca82cfa8bbed101a5f5ba1596ac6c8124ec81ff3bd2b68d5c50f00e1eae0"
+    },
+    {
+      "name": "repeat.bed",
+      "url": "https://raw.githubusercontent.com/PacificBiosciences/trgt/b21c6217eeaef9a080205932fe29f730dc00e31f/example/repeat.bed",
+      "bytes": 46,
+      "sha256": "eb7d35d9196bb3cf14d43b35209d9d8278e74c7ea834c4a0f76754bd20e8e7cc"
+    }
+  ],
+  "release": "v5.1.0",
+  "assets": [
+    {
+      "name": "trgt-v5.1.0-x86_64-unknown-linux-gnu.tar.gz",
+      "url": "https://github.com/PacificBiosciences/trgt/releases/download/v5.1.0/trgt-v5.1.0-x86_64-unknown-linux-gnu.tar.gz",
+      "bytes": 8352335,
+      "sha256": "2ab9ddb0f52516ea92de66c336c151dc3bd5bb22494e2b9dcb8bffa9eb710f63"
+    }
+  ]
+}

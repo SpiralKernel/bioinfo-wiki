@@ -1,6 +1,6 @@
 # STR与重复扩增检测及提取
 
-> 更新：2026-10-14；状态：可用；验证范围：人工VCF重复字段提取已执行；ExpansionHunter与TRGT未执行。
+> 更新：2026-10-15；状态：可用；验证范围：人工VCF重复字段提取已执行；ExpansionHunter与TRGT未执行。
 
 把重复目录、等位长度或次数、支持与区间一起保存，不能只导出GT就完成重复分析。
 
@@ -37,3 +37,7 @@ bcftools query -f '%CHROM\t%POS\t%INFO/TRID[\t%SAMPLE\t%GT\t%AL\t%ALLR\t%MC]\n' 
 人工VCF给自定义REPCN而非上述软件原生字段，案例query输出CAG、S01=10/12、S02=10/10、S03=未知。它验证字段导出，未从reads估计重复次数。真实解释还应检查长度区间、motif中断、单倍型、支持及目录缺失。
 
 依据：[EH使用](https://github.com/Illumina/ExpansionHunter/blob/master/docs/03_Usage.md)、[EH输出](https://github.com/Illumina/ExpansionHunter/blob/master/docs/06_OutputVcfFiles.md)、[TRGT教程](https://github.com/PacificBiosciences/trgt/blob/main/docs/tutorial.md)、[TRGT字段说明](https://github.com/PacificBiosciences/trgt/blob/main/docs/vcf_files.md)。
+
+## 本轮整理入口
+
+catalog是目标位点定义文件，格式示例见[TRGT重复分型与目录字段](https://github.com/SpiralKernel/bioinfo-wiki/wiki/TRGT%E9%87%8D%E5%A4%8D%E5%88%86%E5%9E%8B%E4%B8%8E%E7%9B%AE%E5%BD%95%E5%AD%97%E6%AE%B5)和[ExpansionHunter位点定义与重复估计](https://github.com/SpiralKernel/bioinfo-wiki/wiki/ExpansionHunter%E4%BD%8D%E7%82%B9%E5%AE%9A%E4%B9%89%E4%B8%8E%E9%87%8D%E5%A4%8D%E4%BC%B0%E8%AE%A1)；前者已有[官方TRGT小数据贯通重复分型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%AE%98%E6%96%B9TRGT%E5%B0%8F%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9A%E9%87%8D%E5%A4%8D%E5%88%86%E5%9E%8B)实测。[串联重复STRVNTR与中断](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E4%B8%B2%E8%81%94%E9%87%8D%E5%A4%8DSTRVNTR%E4%B8%8E%E4%B8%AD%E6%96%AD)区分长度、次数与复杂组成。

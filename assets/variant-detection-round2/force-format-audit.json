@@ -1,0 +1,40 @@
+{
+  "scope": "Only known Sniffles2.8.1 force FORMAT/PS and inherited sample-header compatibility; raw values preserved",
+  "changed_records": 2,
+  "operation": "Sniffles2.8.1 only: append PS for known 4-key/5-value trailing-dot fixture; correct inherited sample header after BAM RG check; raw retained",
+  "raw_sha256": "b7c5dfdb73c298493a353322f91b3ada2b01594e09bd086113ad9fde760297fe",
+  "derived_sha256": "89a61441cf28310cf455d96cfdad64836263bad3d7af90ea5fe568ff18a2dc09",
+  "original_sample_header": "V01",
+  "actual_input_sample": "R01",
+  "evidence_note": "Use current sample FORMAT DR/DV; INFO SUPPORT/VAF/COVERAGE can be inherited from candidate VCF",
+  "raw": {
+    "sample_header": "V01",
+    "records": [
+      {
+        "id": "Sniffles2.DEL.1S0",
+        "format": "GT:GQ:DR:DV",
+        "sample": "0/0:0:31:0:."
+      },
+      {
+        "id": "Sniffles2.INS.0S0",
+        "format": "GT:GQ:DR:DV",
+        "sample": "0/0:0:27:0:."
+      }
+    ]
+  },
+  "derived": {
+    "sample_header": "R01",
+    "records": [
+      {
+        "id": "Sniffles2.DEL.1S0",
+        "format": "GT:GQ:DR:DV:PS",
+        "sample": "0/0:0:31:0:."
+      },
+      {
+        "id": "Sniffles2.INS.0S0",
+        "format": "GT:GQ:DR:DV:PS",
+        "sample": "0/0:0:27:0:."
+      }
+    ]
+  }
+}

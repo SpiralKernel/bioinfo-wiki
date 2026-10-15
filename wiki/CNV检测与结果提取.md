@@ -1,6 +1,6 @@
 # CNV检测与结果提取
 
-> 更新：2026-10-14；状态：可用；验证范围：人工VCF的CN字段提取已执行；CNVkit及真实深度CNV检测未执行。
+> 更新：2026-10-15；状态：可用；验证范围：人工VCF的CN字段提取已执行；CNVkit及真实深度CNV检测未执行。
 
 从可比深度生成分段与CN，再按字段含义导出，保留剂量和未知而非只留下事件标签。
 
@@ -35,3 +35,7 @@ bcftools query -i 'INFO/SVTYPE="CNV"' \
 ## 交付检查
 
 真实工具可能使用CN、RDCN等不同字段；先读头部再改query模板。保存bin/分段信号、CN/质量、基线与样本对应；多个样本边界不同，要定义统一区域再比较，不能按结果第几行拼接。缺失CN保留未知，CN=1与CN=0不合并成同一“缺失基因”。
+
+## 本轮整理入口
+
+[CNVkit深度分段与拷贝数解释](https://github.com/SpiralKernel/bioinfo-wiki/wiki/CNVkit%E6%B7%B1%E5%BA%A6%E5%88%86%E6%AE%B5%E4%B8%8E%E6%8B%B7%E8%B4%9D%E6%95%B0%E8%A7%A3%E9%87%8A)细分输入/输出；[拷贝数基线非整倍体与LOH](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%8B%B7%E8%B4%9D%E6%95%B0%E5%9F%BA%E7%BA%BF%E9%9D%9E%E6%95%B4%E5%80%8D%E4%BD%93%E4%B8%8ELOH)与[CNV与PAV交叉验证及群体矩阵](https://github.com/SpiralKernel/bioinfo-wiki/wiki/CNV%E4%B8%8EPAV%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E5%8F%8A%E7%BE%A4%E4%BD%93%E7%9F%A9%E9%98%B5)说明剂量、基线及unknown。真实CNV调用仍未实测。

@@ -1,6 +1,6 @@
 # PAV检测与存在缺失矩阵
 
-> 更新：2026-10-14；状态：可用；验证范围：人工已判定PAV证据的矩阵整理已运行；组装比较、同源推断和真实PAV检测未运行。
+> 更新：2026-10-15；状态：可用；验证范围：人工已判定PAV证据的矩阵整理已运行；组装比较、同源推断和真实PAV检测未运行。
 
 先获得目标特征的存在、缺失或未知证据，再构建矩阵，不能把没注释或没覆盖直接记为0。
 
@@ -38,3 +38,7 @@ python3 examples/pav_matrix_demo.py
 1表示本例已判定存在，0表示已判定缺失，NA表示未知。3×3共5个1、2个0、2个NA；缺少一个证据组合时也保留NA。重复运行覆盖输出同名文件。
 
 脚本只实测矩阵整理，不发现PAV、不做正交同源推断。原始证据来源与可检测状态应一直保留；不能用RNA不表达证明DNA不存在。概念见[结构变异CNV与PAV](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82CNV%E4%B8%8EPAV)，源码：[PAV矩阵示例](https://github.com/SpiralKernel/bioinfo-wiki/blob/main/examples/pav_matrix_demo.py)。
+
+## 本轮整理入口
+
+[CNV与PAV交叉验证及群体矩阵](https://github.com/SpiralKernel/bioinfo-wiki/wiki/CNV%E4%B8%8EPAV%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E5%8F%8A%E7%BE%A4%E4%BD%93%E7%9F%A9%E9%98%B5)保留剂量与unknown，[组装比较检测SNPIndel与结构变异](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E8%A3%85%E6%AF%94%E8%BE%83%E6%A3%80%E6%B5%8BSNPIndel%E4%B8%8E%E7%BB%93%E6%9E%84%E5%8F%98%E5%BC%82)提供独立组装入口；现有状态矩阵脚本不发现PAV。

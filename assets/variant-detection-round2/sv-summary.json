@@ -1,0 +1,239 @@
+{
+  "scope": "Fully artificial reference and perfect DNA reads; actual mapping, Sniffles discovery/SNF/force and Truvari matching; not a real-data accuracy estimate",
+  "inputs": {
+    "seed": 20261015,
+    "reference_length": 100000,
+    "read_length": 16000,
+    "reads_per_sample": 160,
+    "expected_events": [
+      {
+        "type": "DEL",
+        "anchor": 30000,
+        "length": 500
+      },
+      {
+        "type": "INS",
+        "anchor": 70000,
+        "length": 300
+      }
+    ],
+    "truth_sha256": "3620623a8ba9f64c16d13df10bc547f98f82d55b3d7dcf185107ffa048a7ccac",
+    "input_sha256": {
+      "reference.fa": "88d7bac8e1c047d55276e335697a4426b6f48986493980217101bbe8691074a6",
+      "V01.fastq": "ae74886948922148deef53d6e2c467d464bc7f8be79c2331d49b45512108344d",
+      "R01.fastq": "37f9e21ac0873801e35f20b0c29463dcf5f16a5139e449c8b76e0221653c1177",
+      "truth.vcf": "3620623a8ba9f64c16d13df10bc547f98f82d55b3d7dcf185107ffa048a7ccac",
+      "callable.bed": "a0b8b47c2ca325067f9ceda15b0965b150e78d6f62fdc9b4a8ee4306de1ffaa1"
+    }
+  },
+  "versions": {
+    "sniffles": "Sniffles2, Version 2.8.1",
+    "truvari": "Truvari v5.5.0",
+    "minimap2": "2.30-r1287",
+    "samtools": "samtools 1.22.1"
+  },
+  "variants": [
+    {
+      "chrom": "chrToySV",
+      "pos": 30000,
+      "id": "Sniffles2.DEL.1S0",
+      "ref": "CCAGCGAGCACCAAATAACGTCACCGGACCTCGGCTACCCTCCGTGCTCGGCTGGTAGGGGATACGGAGGGAAATGGAGTTGTAGATGACCGGGCAAGAGCGACAATATCCGACCGACGTTGTACATCACTCCGCGACTTCGTGATTGGCACCATAAAGTCTGTTTCAGGGACAGCACGGTTGCAATTTAACCTTTACTGTGTTATAGTAGACGGTTAGTGGAAGGGGGCTCTAGCCGGGTTCCTAGCTCGGCACGCATTTTCTAGGGAACAAGCACGTCGAACGTACTTGAGCTCGACCTGCCGGGGCGTGTTACTTAATTTCGGTTTATGGTTTCTTCAAAGGGTTTCTAGCCCCTATAGGTTTAGAGTCGCAGCCCGCACGGCCGTGAATGGATCGTTCGGTGTCACCGGATCTGTCGATACCGCCCATGTATGTGCGGCTGGTTTCTGACCCTTCATTGGCACAAAGGGCCACGCAGATTACGGTTCTTGAGGACAG",
+      "alt": [
+        "C"
+      ],
+      "svtype": "DEL",
+      "stop": 30500,
+      "filters": [
+        "PASS"
+      ],
+      "samples": {
+        "V01": {
+          "gt": [
+            0,
+            1
+          ],
+          "support": 16,
+          "reference_support": 14,
+          "gq": 60
+        }
+      }
+    },
+    {
+      "chrom": "chrToySV",
+      "pos": 70000,
+      "id": "Sniffles2.INS.0S0",
+      "ref": "G",
+      "alt": [
+        "GTGGGCTACTCGTTCTTCATGACGCTGTTATTGATGGCTCGGCAGGTTTCCATTTACGAGTCAACGTTACCTTATGGTCTGTATACTCTCTCAGTGAAACTTCCAGCCAGTAAGTGCCTTACAAATTTGATTTTAACTCATCCCACGGTCATTCGCCTTAAATGCTAGCAAACTCTGGCCCTACTGGCTTTAATCATATGTAGCTCATTCCGCGATTAACCATAAATGCCGCTGACGGTCTATTCGGTTGTTGCACGTCCTTATGCAGGTAGAAGGACGGATGTGTGCGGTACACGAGGTT"
+      ],
+      "svtype": "INS",
+      "stop": 70000,
+      "filters": [
+        "PASS"
+      ],
+      "samples": {
+        "V01": {
+          "gt": [
+            0,
+            1
+          ],
+          "support": 22,
+          "reference_support": 15,
+          "gq": 60
+        }
+      }
+    }
+  ],
+  "reference_control_calls": 0,
+  "forced_reference": [
+    {
+      "chrom": "chrToySV",
+      "pos": 30000,
+      "id": "Sniffles2.DEL.1S0",
+      "ref": "CCAGCGAGCACCAAATAACGTCACCGGACCTCGGCTACCCTCCGTGCTCGGCTGGTAGGGGATACGGAGGGAAATGGAGTTGTAGATGACCGGGCAAGAGCGACAATATCCGACCGACGTTGTACATCACTCCGCGACTTCGTGATTGGCACCATAAAGTCTGTTTCAGGGACAGCACGGTTGCAATTTAACCTTTACTGTGTTATAGTAGACGGTTAGTGGAAGGGGGCTCTAGCCGGGTTCCTAGCTCGGCACGCATTTTCTAGGGAACAAGCACGTCGAACGTACTTGAGCTCGACCTGCCGGGGCGTGTTACTTAATTTCGGTTTATGGTTTCTTCAAAGGGTTTCTAGCCCCTATAGGTTTAGAGTCGCAGCCCGCACGGCCGTGAATGGATCGTTCGGTGTCACCGGATCTGTCGATACCGCCCATGTATGTGCGGCTGGTTTCTGACCCTTCATTGGCACAAAGGGCCACGCAGATTACGGTTCTTGAGGACAG",
+      "alt": [
+        "C"
+      ],
+      "svtype": "DEL",
+      "stop": 30500,
+      "filters": [
+        "PASS"
+      ],
+      "samples": {
+        "R01": {
+          "gt": [
+            0,
+            0
+          ],
+          "support": 0,
+          "reference_support": 31,
+          "gq": 0
+        }
+      }
+    },
+    {
+      "chrom": "chrToySV",
+      "pos": 70000,
+      "id": "Sniffles2.INS.0S0",
+      "ref": "G",
+      "alt": [
+        "GTGGGCTACTCGTTCTTCATGACGCTGTTATTGATGGCTCGGCAGGTTTCCATTTACGAGTCAACGTTACCTTATGGTCTGTATACTCTCTCAGTGAAACTTCCAGCCAGTAAGTGCCTTACAAATTTGATTTTAACTCATCCCACGGTCATTCGCCTTAAATGCTAGCAAACTCTGGCCCTACTGGCTTTAATCATATGTAGCTCATTCCGCGATTAACCATAAATGCCGCTGACGGTCTATTCGGTTGTTGCACGTCCTTATGCAGGTAGAAGGACGGATGTGTGCGGTACACGAGGTT"
+      ],
+      "svtype": "INS",
+      "stop": 70000,
+      "filters": [
+        "PASS"
+      ],
+      "samples": {
+        "R01": {
+          "gt": [
+            0,
+            0
+          ],
+          "support": 0,
+          "reference_support": 27,
+          "gq": 0
+        }
+      }
+    }
+  ],
+  "force_format_compatibility": {
+    "changed_records": 2,
+    "operation": "Sniffles2.8.1 only: append PS for known 4-key/5-value trailing-dot fixture; correct inherited sample header after BAM RG check; raw retained",
+    "raw_sha256": "b7c5dfdb73c298493a353322f91b3ada2b01594e09bd086113ad9fde760297fe",
+    "derived_sha256": "89a61441cf28310cf455d96cfdad64836263bad3d7af90ea5fe568ff18a2dc09",
+    "original_sample_header": "V01",
+    "actual_input_sample": "R01",
+    "evidence_note": "Use current sample FORMAT DR/DV; INFO SUPPORT/VAF/COVERAGE can be inherited from candidate VCF"
+  },
+  "cohort": [
+    {
+      "chrom": "chrToySV",
+      "pos": 30000,
+      "id": "Sniffles2.DEL.1M0",
+      "ref": "CCAGCGAGCACCAAATAACGTCACCGGACCTCGGCTACCCTCCGTGCTCGGCTGGTAGGGGATACGGAGGGAAATGGAGTTGTAGATGACCGGGCAAGAGCGACAATATCCGACCGACGTTGTACATCACTCCGCGACTTCGTGATTGGCACCATAAAGTCTGTTTCAGGGACAGCACGGTTGCAATTTAACCTTTACTGTGTTATAGTAGACGGTTAGTGGAAGGGGGCTCTAGCCGGGTTCCTAGCTCGGCACGCATTTTCTAGGGAACAAGCACGTCGAACGTACTTGAGCTCGACCTGCCGGGGCGTGTTACTTAATTTCGGTTTATGGTTTCTTCAAAGGGTTTCTAGCCCCTATAGGTTTAGAGTCGCAGCCCGCACGGCCGTGAATGGATCGTTCGGTGTCACCGGATCTGTCGATACCGCCCATGTATGTGCGGCTGGTTTCTGACCCTTCATTGGCACAAAGGGCCACGCAGATTACGGTTCTTGAGGACAG",
+      "alt": [
+        "C"
+      ],
+      "svtype": "DEL",
+      "stop": 30500,
+      "filters": [
+        "PASS"
+      ],
+      "samples": {
+        "V01": {
+          "gt": [
+            0,
+            1
+          ],
+          "support": 16,
+          "reference_support": 14,
+          "gq": 60
+        },
+        "R01": {
+          "gt": [
+            null,
+            null
+          ],
+          "support": 0,
+          "reference_support": 0,
+          "gq": 0
+        }
+      }
+    },
+    {
+      "chrom": "chrToySV",
+      "pos": 70000,
+      "id": "Sniffles2.INS.0M0",
+      "ref": "G",
+      "alt": [
+        "GTGGGCTACTCGTTCTTCATGACGCTGTTATTGATGGCTCGGCAGGTTTCCATTTACGAGTCAACGTTACCTTATGGTCTGTATACTCTCTCAGTGAAACTTCCAGCCAGTAAGTGCCTTACAAATTTGATTTTAACTCATCCCACGGTCATTCGCCTTAAATGCTAGCAAACTCTGGCCCTACTGGCTTTAATCATATGTAGCTCATTCCGCGATTAACCATAAATGCCGCTGACGGTCTATTCGGTTGTTGCACGTCCTTATGCAGGTAGAAGGACGGATGTGTGCGGTACACGAGGTT"
+      ],
+      "svtype": "INS",
+      "stop": 70000,
+      "filters": [
+        "PASS"
+      ],
+      "samples": {
+        "V01": {
+          "gt": [
+            0,
+            1
+          ],
+          "support": 22,
+          "reference_support": 15,
+          "gq": 60
+        },
+        "R01": {
+          "gt": [
+            null,
+            null
+          ],
+          "support": 0,
+          "reference_support": 0,
+          "gq": 0
+        }
+      }
+    }
+  ],
+  "benchmark": {
+    "TP-base": 2,
+    "TP-comp": 2,
+    "FP": 0,
+    "FN": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "gt_concordance": 1.0,
+    "TP-comp_TP-gt": 2,
+    "TP-comp_FP-gt": 0
+  },
+  "evaluation": {
+    "region": "chrToySV:10000-90000 BED",
+    "refdist": 100,
+    "pctseq": 0.7,
+    "pctsize": 0.7,
+    "pick": "single",
+    "passonly": true
+  }
+}

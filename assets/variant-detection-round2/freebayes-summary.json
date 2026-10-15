@@ -1,0 +1,33 @@
+{
+  "scope": "Artificial 40 short reads; actual FreeBayes diploid call; no polyploid accuracy benchmark",
+  "freebayes_version": "version:  v1.3.10",
+  "variants": [
+    {
+      "chrom": "chrToy",
+      "pos": 105,
+      "id": null,
+      "ref": "C",
+      "alt": [
+        "T"
+      ],
+      "svtype": null,
+      "stop": 105,
+      "filters": [],
+      "samples": {
+        "toySample": {
+          "gt": [
+            0,
+            1
+          ],
+          "support": null,
+          "reference_support": null,
+          "gq": null
+        }
+      }
+    }
+  ],
+  "input_sha256": {
+    "genome.fa": "bbdb4397c75c6549ce4e3f613483940deee7dec3daf37ab5187e444066f9dbdd",
+    "reads.fastq": "641d21892124aa2b586e2c385bcd895b332dd48a2b268491d31b5134c0e366e5"
+  }
+}

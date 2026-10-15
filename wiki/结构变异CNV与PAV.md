@@ -1,6 +1,6 @@
 # 结构变异CNV与PAV
 
-> 更新：2026-10-14；状态：可用；验证范围：官方文档与原始研究核对；专业检测命令为模板，未执行完整真实数据流程。
+> 更新：2026-10-15；状态：可用；验证范围：官方文档与原始研究核对；专业检测命令为模板，未执行完整真实数据流程。
 
 SV描述结构改变，CNV关注拷贝数，PAV关注规定单位中的存在或缺失；三者可以交叉。
 
@@ -19,3 +19,7 @@ SV包含缺失、插入、重复、倒位、易位及复杂重排。CNV关注某
 ## 继续操作
 
 [CNV检测与结果提取](https://github.com/SpiralKernel/bioinfo-wiki/wiki/CNV%E6%A3%80%E6%B5%8B%E4%B8%8E%E7%BB%93%E6%9E%9C%E6%8F%90%E5%8F%96)保留连续信号及CN；[PAV检测与存在缺失矩阵](https://github.com/SpiralKernel/bioinfo-wiki/wiki/PAV%E6%A3%80%E6%B5%8B%E4%B8%8E%E5%AD%98%E5%9C%A8%E7%BC%BA%E5%A4%B1%E7%9F%A9%E9%98%B5)说明1/0/NA矩阵。结构比较可参考[SyRI原始论文](https://doi.org/10.1186/s13059-019-1911-0)，CN解释见[CNVkit拷贝数说明](https://cnvkit.readthedocs.io/en/stable/calling.html)。
+
+## 本轮整理入口
+
+[拷贝数基线非整倍体与LOH](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E6%8B%B7%E8%B4%9D%E6%95%B0%E5%9F%BA%E7%BA%BF%E9%9D%9E%E6%95%B4%E5%80%8D%E4%BD%93%E4%B8%8ELOH)与[CNV与PAV交叉验证及群体矩阵](https://github.com/SpiralKernel/bioinfo-wiki/wiki/CNV%E4%B8%8EPAV%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E5%8F%8A%E7%BE%A4%E4%BD%93%E7%9F%A9%E9%98%B5)进一步解释相对深度、剂量和存在状态。

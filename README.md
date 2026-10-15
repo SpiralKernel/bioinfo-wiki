@@ -8,6 +8,9 @@
 
 - [变异注释与功能解释学习路线](wiki/变异注释与功能解释学习路线.md)：基因模型、转录本、后果提取和候选证据。
 - [生信缺口清单与维护优先级](wiki/生信缺口清单与维护优先级.md)：尚需补齐的真实数据和专业软件任务。
+- [全类型变异检测总览与证据地图](wiki/全类型变异检测总览与证据地图.md)：小变异、SV、CNV/PAV、STR/VNTR、TE和组装分支。
+- [人工长读长贯通SV调用与评估](wiki/人工长读长贯通SV调用与评估.md)：真实执行minimap2、Sniffles/SNF/force、Truvari两事件核对。
+- [官方TRGT小数据贯通重复分型](wiki/官方TRGT小数据贯通重复分型.md)：固定PacBio提供例，实际重复分型。
 - [变异检测分型与提取学习路线](wiki/变异检测分型与提取学习路线.md)：SNV/Indel、SV、CNV/PAV、STR、TE及生殖系/体细胞场景。
 - [人工VCF贯通变异分类与提取](wiki/人工VCF贯通变异分类与提取.md)：16条人工记录、真实bcftools操作与可核对输出。
 
@@ -88,6 +91,20 @@ conda run -n wiki-rnaseq Rscript examples/rnaseq_airway_demo.R
 本机Linux原生R4.4.3、DESeq2 1.46.0、airway1.26.0与apeglm1.28.0实际安装运行。8个样本配对设计，保留22,369个基因；普通Wald FDR<0.05为4,030个，绝对log2FC超过1的专门检验为243个。完整结果在examples/output/rnaseq-airway，非空输出目录会拒绝运行；传新的目录可另作练习。重画已有结果用`conda run -n wiki-rnaseq Rscript examples/plot_rnaseq_airway.R`，只更新图。
 
 输入来自已有公开计数，未重跑FASTQ、STAR、featureCounts、Salmon/tximport或富集。基础R输入检查无需第三方包；完整检查用RSCRIPT_BIN指定原生Rscript。环境、输出和边界见[本轮记录](maintenance/rnaseq-round1-2026-10-15.md)。
+
+本轮专业调用微型案例在Linux x86_64隔离环境实际执行，在项目根目录运行：
+
+```bash
+conda env create -f examples/environments/variant-calling.yml
+conda run -n wiki-variant-calling python examples/variant_calling_demo.py
+conda run -n wiki-variant-calling python examples/variant_calling_demo.py --case small
+# TRGT先按对应工具页取得官方二进制，并设置TRGT_BIN为绝对路径：
+conda run -n wiki-variant-calling python examples/trgt_official_demo.py
+```
+
+SV/FreeBayes输入完全人工，TRGT输入为固定官方fixture并核对SHA。输出分别为examples/output/calling-sv、calling-small、trgt-official；非空目录拒绝覆盖，重复练习用--output换新目录。Sniffles2.8.1、Truvari5.5.0、FreeBayes1.3.10、TRGT5.1.0均已执行；Sniffles force格式/继承样本表头的问题保留raw与受限.compat副本，GQ=0和群体缺失如实报告，不外推真实检测性能。
+
+图另需Matplotlib，可在环境内安装后执行`conda run -n wiki-variant-calling python examples/plot_variant_calling.py`。完整回归还需requirements-teaching.txt中的科学计算包，以及各集成测试对应工具；没有时明确跳过。范围、两位子代理问题及修订见[本轮记录](maintenance/variant-detection-round2-2026-10-15.md)。
 
 Python 3.9+ 可运行序列比对教学例子；它不依赖第三方包，不是完整BLAST实现：
 
