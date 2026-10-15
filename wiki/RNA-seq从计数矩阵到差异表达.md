@@ -1,6 +1,6 @@
 # RNA-seq从计数矩阵到差异表达
 
-> 更新：2026-10-14；状态：可用；验证范围：文档核对；完整流程未在本机运行。
+> 更新：2026-10-15；状态：可用；验证范围：公开airway计数流程已在原生R4.4.3/DESeq2 1.46.0执行；FASTQ上游未测。
 
 从基因计数和实验设计出发，估计表达差异，并区分统计证据、效应大小与功能解释。
 
@@ -10,7 +10,7 @@
 
 ## 可复现的官方数据练习
 
-需要原生R及Bioconductor的airway与DESeq2。先按[R包Python包与可复现环境](https://github.com/SpiralKernel/bioinfo-wiki/wiki/R%E5%8C%85Python%E5%8C%85%E4%B8%8E%E5%8F%AF%E5%A4%8D%E7%8E%B0%E7%8E%AF%E5%A2%83)在R控制台安装这两个包，再执行下面代码；安装与载入不同。该专业流程已核对文档，尚未执行。新基础表格脚本虽通过WebR运行，不代表DESeq2已安装或运行。
+需要原生R及Bioconductor的airway与DESeq2。先按[R包Python包与可复现环境](https://github.com/SpiralKernel/bioinfo-wiki/wiki/R%E5%8C%85Python%E5%8C%85%E4%B8%8E%E5%8F%AF%E5%A4%8D%E7%8E%B0%E7%8E%AF%E5%A2%83)在R控制台安装这两个包，再执行下面代码；安装与载入不同。2026-10-15已在原生R实际运行airway计数模型；完整环境、命令、输出和诊断见[公开airway数据贯通DESeq2](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%AC%E5%BC%80airway%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9ADESeq2)。下方片段是模型核心，完整脚本还核对样本、对比、收缩及NA。
 
 ```r
 library(airway)
@@ -48,3 +48,7 @@ sessionInfo()
 ## 对应方法与深入
 
 [RNA计数模型差异表达与效应收缩](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E8%AE%A1%E6%95%B0%E6%A8%A1%E5%9E%8B%E5%B7%AE%E5%BC%82%E8%A1%A8%E8%BE%BE%E4%B8%8E%E6%95%88%E5%BA%94%E6%94%B6%E7%BC%A9)、[组学批次校正与信号保留](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E6%89%B9%E6%AC%A1%E6%A0%A1%E6%AD%A3%E4%B8%8E%E4%BF%A1%E5%8F%B7%E4%BF%9D%E7%95%99)解释输入条件和适用边界；软件运行步骤与方法假设一起核对。
+
+## 拆分阅读入口
+
+[bulkRNA-seq分析与实践路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/bulkRNA-seq%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%9E%E8%B7%B5%E8%B7%AF%E7%BA%BF)给出顺序。输入先看[RNA计数矩阵与样本表核对](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E8%AE%A1%E6%95%B0%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%A0%B7%E6%9C%AC%E8%A1%A8%E6%A0%B8%E5%AF%B9)，模型先看[RNA设计矩阵配对与对比方向](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E8%AE%BE%E8%AE%A1%E7%9F%A9%E9%98%B5%E9%85%8D%E5%AF%B9%E4%B8%8E%E5%AF%B9%E6%AF%94%E6%96%B9%E5%90%91)；结果NA、VST和收缩分别见[独立过滤低计数与结果NA](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%8B%AC%E7%AB%8B%E8%BF%87%E6%BB%A4%E4%BD%8E%E8%AE%A1%E6%95%B0%E4%B8%8E%E7%BB%93%E6%9E%9CNA)、[VSTrlog与样本距离](https://github.com/SpiralKernel/bioinfo-wiki/wiki/VSTrlog%E4%B8%8E%E6%A0%B7%E6%9C%AC%E8%B7%9D%E7%A6%BB)、[RNA效应收缩与阈值检验](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E6%95%88%E5%BA%94%E6%94%B6%E7%BC%A9%E4%B8%8E%E9%98%88%E5%80%BC%E6%A3%80%E9%AA%8C)。真实FASTQ到计数目前仍为[RNA-seq从FASTQ到基因计数](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA-seq%E4%BB%8EFASTQ%E5%88%B0%E5%9F%BA%E5%9B%A0%E8%AE%A1%E6%95%B0)指南。

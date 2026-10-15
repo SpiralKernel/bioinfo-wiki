@@ -1,0 +1,11 @@
+name: wiki-rnaseq
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - r-base=4.4.3
+  - bioconductor-deseq2=1.46.0
+  - bioconductor-airway=1.26.0
+  - bioconductor-apeglm=1.28.0
+  - r-jsonlite=2.0.0

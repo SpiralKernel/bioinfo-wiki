@@ -14,6 +14,7 @@
     "CNV深度校正分段与拷贝数估计.md",
     "ChIP-seq入门与实践.md",
     "DELLY结构变异与群体分型.md",
+    "DESeq2安装对象与结果提取.md",
     "DNA与RNA样本质量及建库偏差.md",
     "DNA甲基化分析入门.md",
     "DNBSEQ测序与滚环扩增.md",
@@ -66,9 +67,16 @@
     "Python读取清理与合并样本表.md",
     "P值效应量与多重检验.md",
     "REGENIE两步关联分析.md",
+    "RNA-seq从FASTQ到基因计数.md",
     "RNA-seq从计数矩阵到差异表达.md",
+    "RNA交互作用与LRT比较.md",
+    "RNA差异结果报告与富集背景.md",
+    "RNA效应收缩与阈值检验.md",
+    "RNA文库大小因子与组成偏差.md",
     "RNA测序建库选择与偏倚.md",
     "RNA计数模型差异表达与效应收缩.md",
+    "RNA计数矩阵与样本表核对.md",
+    "RNA设计矩阵配对与对比方向.md",
     "RT-PCR实时PCR与数字PCR的区别.md",
     "R与Python安装环境与编辑器.md",
     "R与Python报错调试与求助.md",
@@ -83,9 +91,11 @@
     "SNP与基因型是什么.md",
     "SNVIndelMNV与复杂变异.md",
     "SRA与ENA读段检索.md",
+    "STAR剪接比对与RNA比对指标.md",
     "STR与重复扩增检测及提取.md",
     "STR重复扩增与移动元件插入.md",
     "SV合并匹配与群体再分型.md",
+    "Salmon定量与tximport基因汇总.md",
     "Sanger测序原理与峰图判读.md",
     "Smith-Waterman局部比对.md",
     "Snakemake规则配置与断点续跑.md",
@@ -98,11 +108,14 @@
     "VCF中的SVTYPEEND与BND.md",
     "VCF标准化多等位拆分与表示.md",
     "VEP缓存离线注释与CSQ.md",
+    "VSTrlog与样本距离.md",
     "Wald似然比与得分检验.md",
     "_Sidebar.md",
     "bcftools变异操作与表达式.md",
     "bedtools区间操作与坐标验证.md",
+    "bulkRNA-seq分析与实践路线.md",
     "fastGWA与fastGWA-GLMM.md",
+    "featureCounts基因计数与链方向.md",
     "minimap2BWA与比对器选择.md",
     "qPCR与数字PCR结果判读.md",
     "rMVP关联分析实践.md",
@@ -129,6 +142,7 @@
     "体细胞与低频变异分析边界.md",
     "假设检验与双侧单侧选择.md",
     "公共数据库与数据获取.md",
+    "公开airway数据贯通DESeq2.md",
     "公开小鼠数据贯通多软件GWAS.md",
     "关联模型中的协变量与残差.md",
     "关键词索引.md",
@@ -217,6 +231,7 @@
     "测序错误重复偏差与嵌合体.md",
     "混合测序组装与结果评估.md",
     "点估计偏差方差与一致性.md",
+    "独立过滤低计数与结果NA.md",
     "生信基础算法学习路线.md",
     "生信缺口清单与维护优先级.md",
     "生物学重复与技术重复.md",
@@ -262,6 +277,7 @@
     "表观组峰与调控证据验证.md",
     "计数丰度与标准化.md",
     "贝叶斯回归与核方法用于GS.md",
+    "负二项离散度与均值方差.md",
     "距离标准化与相似性.md",
     "转座子插入检测与提取.md",
     "转录本选择与代表注释.md",
@@ -513,6 +529,18 @@
       "sha256": "b9b9b93fcddbbe35ffda3b4b5eab4ea11353ecbe7ba596ca48c70a35f24eeadd"
     },
     {
+      "title": "RNA-seq从FASTQ到基因计数",
+      "source": "分析工作流/RNA-seq从FASTQ到基因计数.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [],
+      "summary": "根据建库、reads布局和参考资源选择比对或定量路径，为差异分析提供来源明确的计数。",
+      "validation": "官方资料与方法核对；本页上游或扩展软件流程未执行",
+      "updated": "2026-10-15",
+      "sha256": "b6f3c87f0dbdf386061698a30e4c91404f9bb7cc7a237b1b79475bb01cecb808"
+    },
+    {
       "title": "RNA-seq从计数矩阵到差异表达",
       "source": "分析工作流/RNA-seq从计数矩阵到差异表达.md",
       "folder": "分析工作流",
@@ -524,9 +552,21 @@
         "差异表达"
       ],
       "summary": "从基因计数和实验设计出发，估计表达差异，并区分统计证据、效应大小与功能解释。",
-      "validation": "文档核对；完整流程未在本机运行",
-      "updated": "2026-10-14",
-      "sha256": "381307f8c2c7f838d5ca52c5f88a6ef785ce86007ae12135ab6c14d99a215e77"
+      "validation": "公开airway计数流程已在原生R4.4.3/DESeq2 1.46.0执行；FASTQ上游未测",
+      "updated": "2026-10-15",
+      "sha256": "1e492be37177345cbdbff320fb487b36834d90e449990923240a34fdaaf09283"
+    },
+    {
+      "title": "RNA差异结果报告与富集背景",
+      "source": "分析工作流/RNA差异结果报告与富集背景.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [],
+      "summary": "报告设计、效应、检验和筛选集合，使结果能够回到原始计数和研究问题。",
+      "validation": "官方资料与方法核对；本页上游或扩展软件流程未执行",
+      "updated": "2026-10-15",
+      "sha256": "73d46420afb6f4c1fe780d2f8924c0193565104a07157d95a8c2eccb8c87c066"
     },
     {
       "title": "RNA测序建库选择与偏倚",
@@ -545,6 +585,18 @@
       "validation": "官方平台资料与原始研究核对；原理及判读，未执行湿实验或平台测序",
       "updated": "2026-10-13",
       "sha256": "c54128edfba956702816aaf2964b4c7ed423b7db61f34a861005004d62b08e8e"
+    },
+    {
+      "title": "RNA计数矩阵与样本表核对",
+      "source": "分析工作流/RNA计数矩阵与样本表核对.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [],
+      "summary": "先用样本ID建立明确对应，再检查计数合法性和设计；文件列顺序不能代替身份。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "f359d062788401846d8de3ce711cab9631a1cba38f167b4a4f361b96c7f84534"
     },
     {
       "title": "STR与重复扩增检测及提取",
@@ -726,6 +778,18 @@
       "sha256": "a9eaa927188ab080efee9f9e4558fbfc69944fdcdfa91d52f7b4a5427037b55d"
     },
     {
+      "title": "公开airway数据贯通DESeq2",
+      "source": "分析工作流/公开airway数据贯通DESeq2.md",
+      "folder": "分析工作流",
+      "kind": "工作流",
+      "status": "可用",
+      "aliases": [],
+      "summary": "用公开真实计数在原生R完成配对模型、效应收缩、阈值检验和诊断，并核对关键结果性质。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "f5742c13cd439e5c8b831ae71c4b75e086134dd734ca103180babd86859e347a"
+    },
+    {
       "title": "公开小鼠数据贯通多软件GWAS",
       "source": "分析工作流/公开小鼠数据贯通多软件GWAS.md",
       "folder": "分析工作流",
@@ -880,9 +944,9 @@
         "programming basics demo"
       ],
       "summary": "用两张故意顺序不同的小表练习按ID合并，保留缺失并核对两种语言的描述结果。",
-      "validation": "Python实际运行；base R完整脚本经WebR R4.6.0执行，输出语义交叉核验；原生Rscript与第三方R包未安装",
-      "updated": "2026-10-14",
-      "sha256": "ca8737748294684a351cbda86547c513977260f4331fbba09ecb364c8f613c80"
+      "validation": "Python实际运行；base R完整脚本经WebR R4.6.0执行，输出语义交叉核验；本轮原生R4.4.3复跑基础案例；第三方R包仅验证另页DESeq2案例",
+      "updated": "2026-10-15",
+      "sha256": "53b7509dae13497d29ca6cc097fc20ae093db25e681cfce58cbb9ad20c8b969f"
     },
     {
       "title": "基因型质控与过滤",
@@ -1305,8 +1369,8 @@
       ],
       "summary": "分别验证差异表达统计、表达测量与生物学重复，避免把qPCR当作自动证明功能。",
       "validation": "原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证",
-      "updated": "2026-10-13",
-      "sha256": "acf136004ee60f8cde18fdaefa006ea1bc0fafa21992ba2e2dfd19fdd525b58b"
+      "updated": "2026-10-15",
+      "sha256": "f35952f13cfc83215d7a7a0ff9b1aa17f5747f40d74a190fb8ac83cf41453c89"
     },
     {
       "title": "长读长小变异检测与模型选择",
@@ -1386,8 +1450,22 @@
       ],
       "summary": "先用同一份小表学会运行、索引、清理、合并和绘图，再进入具体生信包。",
       "validation": "官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明",
-      "updated": "2026-10-14",
-      "sha256": "c23cbb4f5d7fc1b07a0cddd4a26a0617af2057134d7581d69d7acaeefb20b111"
+      "updated": "2026-10-15",
+      "sha256": "a33618dcd0288d3be9abd86f8ea798b2e6674991ec64d2ad8c41c248574c4c48"
+    },
+    {
+      "title": "bulkRNA-seq分析与实践路线",
+      "source": "学习路线/bulkRNA-seq分析与实践路线.md",
+      "folder": "学习路线",
+      "kind": "学习路线",
+      "status": "可用",
+      "aliases": [
+        "bulk RNA-seq学习路线"
+      ],
+      "summary": "从样本设计和计数来源出发，完成基因层面差异分析，再进入解释与验证。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "52aa98acf7085ee14dbc040127f08e218f68c195c4ff77faadb5d8b6c75afd54"
     },
     {
       "title": "中文生信学习地图",
@@ -1398,8 +1476,8 @@
       "aliases": [],
       "summary": "从问题、数据和检查点进入生信，按需要跳转到概念、算法、组学流程及实践。",
       "validation": "文档核对；操作需按所用环境验证",
-      "updated": "2026-10-14",
-      "sha256": "27685115db6e9c200667535df1a0e5a4d3d3431192260b546ff71bd251c825c1"
+      "updated": "2026-10-15",
+      "sha256": "3acb586883433e79f37cfc2c5f12d817fe9e8456385a799d648bfeca95abc1be"
     },
     {
       "title": "变异检测分型与提取学习路线",
@@ -1475,8 +1553,8 @@
       ],
       "summary": "用研究任务和可核验产物安排补写顺序，避免目录完整却缺少实际操作。",
       "validation": "官方文档与方法来源核对；本页专业软件模板未单独执行",
-      "updated": "2026-10-14",
-      "sha256": "f573a7e2c43dbba4161dd24abac95b7fc99ce175789326c26db2bee87fe4f25e"
+      "updated": "2026-10-15",
+      "sha256": "f184f7c703e136c07b97700161fa119c3ef7f07bcb26f82eb5c45f50c2dc22c3"
     },
     {
       "title": "组学分析总览与选型",
@@ -1487,8 +1565,8 @@
       "aliases": [],
       "summary": "先明确测量对象和研究问题，再选择输入、模型及可以支持的结论。",
       "validation": "文档核对；完整流程未在本机运行",
-      "updated": "2026-10-14",
-      "sha256": "a503c6afd94f71f782c1db83f52aec1a51559eb5e85d9c2ca3193499cb4a1b50"
+      "updated": "2026-10-15",
+      "sha256": "735ebb24c1debf23ba9a9691197dad00fc2af5db275bb8d1e77dd23c86baf73e"
     },
     {
       "title": "组学分析方法学习路线",
@@ -1502,8 +1580,8 @@
       ],
       "summary": "按测量层、估计目标、统计模型和证据组织组学方法，而不是按软件列表学习。",
       "validation": "原始研究和官方资料核对；方法说明，未运行完整专业分析流程",
-      "updated": "2026-10-14",
-      "sha256": "851f271f87ca1067fd7aa66edef09a57e9455bf20a01d5ca073a0c2ac43a91be"
+      "updated": "2026-10-15",
+      "sha256": "23e6236fb6663c7ef759aedb9766773f28c0f87dbd731d298f6cb5023ccffd3f"
     },
     {
       "title": "统计学与组学验证学习路线",
@@ -1646,6 +1724,20 @@
       "validation": "官方文档与原始研究核对；专业检测命令为模板，未执行完整真实数据流程",
       "updated": "2026-10-14",
       "sha256": "ebda2eb559e78f8a24a1f6baa25444e1c3363dc99d7e335fef227202aa6b811c"
+    },
+    {
+      "title": "DESeq2安装对象与结果提取",
+      "source": "工具/DESeq2安装对象与结果提取.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "DESeq2"
+      ],
+      "summary": "在匹配的R与Bioconductor环境中安装DESeq2，区分数据对象、模型拟合、对比和导出。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "95e9c675e32e6644d09e289b16cf6f889e559011fe999180e126d1a2a67ad661"
     },
     {
       "title": "EMMAX关联分析与旧流程兼容",
@@ -1918,8 +2010,8 @@
       ],
       "summary": "先画独立观测和缺失，再计算明确目标；图形、模型和生物学结论需要分别检查。",
       "validation": "官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明",
-      "updated": "2026-10-14",
-      "sha256": "478247974077d7ffeb288b0bd9b64609cc7b8e535a6bd5436a3c29cd8b08ea45"
+      "updated": "2026-10-15",
+      "sha256": "97c0734b7bee165724b724e7a384a17793a28548d01169c3ff0364fc7a886d1a"
     },
     {
       "title": "R与Python路径文件与项目组织",
@@ -1952,9 +2044,9 @@
         "renv"
       ],
       "summary": "包安装到环境而非抽象的语言名称，先确认解释器、库位置和版本来源。",
-      "validation": "官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明",
-      "updated": "2026-10-14",
-      "sha256": "073fc2e801733fb3d196db38a0d3ef181b116052e70934a5d67c59285709db6a"
+      "validation": "官方语言文档核对；基础样本表经WebR及原生R验证；airway/DESeq2/apeglm已在隔离Conda环境运行；安装与第三方包按页说明",
+      "updated": "2026-10-15",
+      "sha256": "3a1919e1d952303bef5a5ade078bc6067ab2199fd0ee8036bdfe91a74811f924"
     },
     {
       "title": "R向量数据框索引与函数",
@@ -1986,8 +2078,8 @@
       ],
       "summary": "base R即可完成小表读取与匹配，关键是类型、NA、重复键和输出行顺序。",
       "validation": "官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明",
-      "updated": "2026-10-14",
-      "sha256": "8a57700881e8afd2461b6b3e460b25cd7373d0e2a8e06037909a97251ea8ba69"
+      "updated": "2026-10-15",
+      "sha256": "9de36e8f96d646f7fd0b0985209723cafe9627a24e429b45817160b65cf609ff"
     },
     {
       "title": "SAIGE单变异关联分析",
@@ -2004,6 +2096,37 @@
       "validation": "官方文档与原始研究核对；本页命令模板未在本机运行",
       "updated": "2026-10-13",
       "sha256": "b651bf7421f81aa75656b1b1b16d147f72028ae6cd93a20b95fc647614ba1292"
+    },
+    {
+      "title": "STAR剪接比对与RNA比对指标",
+      "source": "工具/STAR剪接比对与RNA比对指标.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "STAR",
+        "剪接比对"
+      ],
+      "summary": "RNA跨外显子连接的reads需要剪接感知比对；参考、注释、链和比对统计一起核对。",
+      "validation": "官方资料与方法核对；本页上游或扩展软件流程未执行",
+      "updated": "2026-10-15",
+      "sha256": "91dcba722671d9713e148ed568c86c07b4f69791fd4ffee1665ba39a91334230"
+    },
+    {
+      "title": "Salmon定量与tximport基因汇总",
+      "source": "工具/Salmon定量与tximport基因汇总.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "Salmon",
+        "tximport",
+        "tx2gene"
+      ],
+      "summary": "转录本定量、基因汇总及长度校正相互衔接，必须使用同版本转录本到基因映射。",
+      "validation": "官方资料与方法核对；本页上游或扩展软件流程未执行",
+      "updated": "2026-10-15",
+      "sha256": "668be37698572c0b37014efdec5702d48c8bf8bcc0432f066c3c6456de01f9c4"
     },
     {
       "title": "Snakemake规则配置与断点续跑",
@@ -2128,6 +2251,20 @@
       "validation": "GCTA v1.94.1稀疏GRM及fastGWA数量性状实测；fastGWA-GLMM二分类未执行",
       "updated": "2026-10-13",
       "sha256": "65e7405be4b3b0e26d673d220df8759ccafb497cab5e2a73a5eb4dcdde0de61e"
+    },
+    {
+      "title": "featureCounts基因计数与链方向",
+      "source": "工具/featureCounts基因计数与链方向.md",
+      "folder": "工具",
+      "kind": "工具",
+      "status": "可用",
+      "aliases": [
+        "featureCounts"
+      ],
+      "summary": "featureCounts按注释和分配规则把比对记录汇总为特征计数；计数单位和歧义处理必须记录。",
+      "validation": "官方资料与方法核对；本页上游或扩展软件流程未执行",
+      "updated": "2026-10-15",
+      "sha256": "256f4dcd605d9ba1ba3f26592a8afd7fba8c163277944c06a86190bca5b894fa"
     },
     {
       "title": "minimap2BWA与比对器选择",
@@ -2770,6 +2907,21 @@
       "sha256": "6fe2a78b2cdab95f525c5bf1db7900a2cf13a699ec98a81c4e39c3d8efbeb30d"
     },
     {
+      "title": "RNA交互作用与LRT比较",
+      "source": "方法与算法/RNA交互作用与LRT比较.md",
+      "folder": "方法与算法",
+      "kind": "方法",
+      "status": "可用",
+      "aliases": [
+        "RNA交互",
+        "RNA似然比检验"
+      ],
+      "summary": "复杂设计需要明确主效应、交互和整体模型比较各自检验的问题。",
+      "validation": "官方资料与方法核对；本页上游或扩展软件流程未执行",
+      "updated": "2026-10-15",
+      "sha256": "7e73a3ab759c5036b951f574bcfbed684c34dd3cf252723f6f36a92fcabf02d6"
+    },
+    {
       "title": "RNA计数模型差异表达与效应收缩",
       "source": "方法与算法/RNA计数模型差异表达与效应收缩.md",
       "folder": "方法与算法",
@@ -2782,9 +2934,9 @@
         "LFC shrinkage"
       ],
       "summary": "差异表达同时依赖计数生成、归一化、离散度和设计，效应收缩与显著性检验是不同环节。",
-      "validation": "原始研究和官方资料核对；方法说明，未运行完整专业分析流程",
-      "updated": "2026-10-14",
-      "sha256": "5fd7588ea7c0928236442835e7b27c1823c9e9daca9aee83afd57ca508188d9d"
+      "validation": "DESeq2/apeglm公开计数案例已在原生R执行；edgeR与voom未测",
+      "updated": "2026-10-15",
+      "sha256": "56e3c4a7b033ec783ecdb405a1ee0275e48faa787042d172e33bc72f6fcbf25a"
     },
     {
       "title": "SV合并匹配与群体再分型",
@@ -3106,8 +3258,8 @@
       ],
       "summary": "功能富集把特征列表或排序与知识集合连接，结论取决于背景、映射、排序和多重检验。",
       "validation": "文档核对；完整流程未在本机运行",
-      "updated": "2026-10-14",
-      "sha256": "f87631538181dee04f6ab214397287338b9853b277080026ed5dbe961f949534"
+      "updated": "2026-10-15",
+      "sha256": "a432aa1545e4eaa477537abda8b3f2338217d7137be8280719bdcf3ed7e9a025"
     },
     {
       "title": "小变异检测的似然与局部组装",
@@ -3803,6 +3955,53 @@
       "sha256": "681738ee76f0217d6b2423a9455e161bf87040c41afa101093da198d1416c741"
     },
     {
+      "title": "RNA效应收缩与阈值检验",
+      "source": "术语与概念/RNA效应收缩与阈值检验.md",
+      "folder": "术语与概念",
+      "kind": "概念",
+      "status": "可用",
+      "aliases": [
+        "apeglm",
+        "LFC shrinkage",
+        "lfcThreshold"
+      ],
+      "summary": "稳定效应估计、检验零效应和检验超过预定阈值，是三个需要分别报告的任务。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "f191c7c109ed69ca0c6e39594379308c13c7aab4a7d2712fcee0861ee9126f17"
+    },
+    {
+      "title": "RNA文库大小因子与组成偏差",
+      "source": "术语与概念/RNA文库大小因子与组成偏差.md",
+      "folder": "术语与概念",
+      "kind": "概念",
+      "status": "可用",
+      "aliases": [
+        "size factor",
+        "median of ratios"
+      ],
+      "summary": "归一化需要处理文库尺度与组成差异，但不能从相对计数自动恢复绝对RNA总量。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "39aea267835d65323d5377df3ba6dc19ca0479949cceefb9371dc4c6cbedf48a"
+    },
+    {
+      "title": "RNA设计矩阵配对与对比方向",
+      "source": "术语与概念/RNA设计矩阵配对与对比方向.md",
+      "folder": "术语与概念",
+      "kind": "概念",
+      "status": "可用",
+      "aliases": [
+        "RNA配对设计",
+        "contrast",
+        "设计矩阵"
+      ],
+      "summary": "设计矩阵把样本信息变成模型列，对比定义了究竟要比较哪两个状态。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "5b1a5f7f5aeb2e3d39f800fee981fcba6634afe14f151e633ef81d608bf0cff6"
+    },
+    {
       "title": "RT-PCR实时PCR与数字PCR的区别",
       "source": "术语与概念/RT-PCR实时PCR与数字PCR的区别.md",
       "folder": "术语与概念",
@@ -3945,6 +4144,22 @@
       "validation": "官方文档与原始研究核对；专业检测命令为模板，未执行完整真实数据流程",
       "updated": "2026-10-14",
       "sha256": "c1c604350d760bd5a2c64392667434df01a6957d583e0bffa775a78e8ddcd785"
+    },
+    {
+      "title": "VSTrlog与样本距离",
+      "source": "术语与概念/VSTrlog与样本距离.md",
+      "folder": "术语与概念",
+      "kind": "概念",
+      "status": "可用",
+      "aliases": [
+        "VST",
+        "rlog",
+        "样本距离"
+      ],
+      "summary": "方差稳定变换用于观察样本结构，计数模型的检验输入仍应保持原来的计数语义。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "52cf563be8c8b17d18bfc69c1ef1363cbad8964812e69e9ebc563685f5430829"
     },
     {
       "title": "Wald似然比与得分检验",
@@ -4317,8 +4532,8 @@
       ],
       "summary": "批次效应来自技术过程；当批次与研究分组重合时，数据可能无法区分两者的影响。",
       "validation": "文档核对；操作需按所用环境验证",
-      "updated": "2026-10-14",
-      "sha256": "a69f33d2700fe471fe3760e651bcb4c491298053b1a6863d65d6b6a730ca1d6e"
+      "updated": "2026-10-15",
+      "sha256": "0f0926bfa1489a3777686771b222811763b616142c53aad810953d8b0f1c0254"
     },
     {
       "title": "抽样分布中心极限定理与标准误",
@@ -4549,6 +4764,22 @@
       "sha256": "ed84a18c230d9e5b566e35963aa258b2ba53b024974262c1be5c5b129c17d7a4"
     },
     {
+      "title": "独立过滤低计数与结果NA",
+      "source": "术语与概念/独立过滤低计数与结果NA.md",
+      "folder": "术语与概念",
+      "kind": "概念",
+      "status": "可用",
+      "aliases": [
+        "independent filtering",
+        "Cook距离",
+        "RNA结果NA"
+      ],
+      "summary": "预过滤、独立过滤和异常计数处理发生在不同环节，结果中的NA必须按原因解释。",
+      "validation": "原生R与公开airway计数案例已执行；范围和结果见正文",
+      "updated": "2026-10-15",
+      "sha256": "0d0ba56e575380ddff0d7d6c40a71a63709e0d5f37491effa9fe80c7e5df1fe0"
+    },
+    {
       "title": "生物学重复与技术重复",
       "source": "术语与概念/生物学重复与技术重复.md",
       "folder": "术语与概念",
@@ -4561,8 +4792,8 @@
       ],
       "summary": "生物学重复体现独立生物单位的变化，技术重复衡量同一材料的测量变化。",
       "validation": "文档核对；操作需按所用环境验证",
-      "updated": "2026-10-13",
-      "sha256": "5f2d9f3b3f72fba698cbd83a07a392fcc7a4cd45483d2a3db43be2957b7bb138"
+      "updated": "2026-10-15",
+      "sha256": "b643b4cd42f5ffd791c2e42aa78f66d12965c7e9117e71fe833a67e4f8bd9d08"
     },
     {
       "title": "碱基识别质量值与一致性序列",
@@ -4717,8 +4948,24 @@
       ],
       "summary": "原始计数、相对丰度和变换后的数值对应不同问题，模型输入必须与其假设一致。",
       "validation": "文档核对；操作需按所用环境验证",
-      "updated": "2026-10-14",
-      "sha256": "ad880aadcb619379e437b9a88f5ecc76180437841caac6d455e1330e72925b6d"
+      "updated": "2026-10-15",
+      "sha256": "d1a3735fd00d08b3f4efaa37dfdc39cb373000f6d66f8c11db57f37add091037"
+    },
+    {
+      "title": "负二项离散度与均值方差",
+      "source": "术语与概念/负二项离散度与均值方差.md",
+      "folder": "术语与概念",
+      "kind": "概念",
+      "status": "可用",
+      "aliases": [
+        "RNA离散度",
+        "negative binomial",
+        "负二项分布"
+      ],
+      "summary": "负二项模型允许计数的方差超过均值，用离散度描述重复之间的额外变异。",
+      "validation": "官方资料与方法核对；本页上游或扩展软件流程未执行",
+      "updated": "2026-10-15",
+      "sha256": "a1acea6ecf1361457aca77358f80e4a671c289127736398ce26b565a9e5dbac3"
     },
     {
       "title": "转录本选择与代表注释",
@@ -4858,8 +5105,11 @@
     "GWAS软件结果比较与一致性检查.md": "2e8618d2d0c5029634a59bcdf7939da25398e3362db030b98fee20fd475d2927",
     "GWAS软件输入转换与样本对齐.md": "0c053bf027f6f6de99c291515849d6160526a1ac5d410ae3877037a9c021c9f8",
     "PAV检测与存在缺失矩阵.md": "b9b9b93fcddbbe35ffda3b4b5eab4ea11353ecbe7ba596ca48c70a35f24eeadd",
-    "RNA-seq从计数矩阵到差异表达.md": "381307f8c2c7f838d5ca52c5f88a6ef785ce86007ae12135ab6c14d99a215e77",
+    "RNA-seq从FASTQ到基因计数.md": "b6f3c87f0dbdf386061698a30e4c91404f9bb7cc7a237b1b79475bb01cecb808",
+    "RNA-seq从计数矩阵到差异表达.md": "1e492be37177345cbdbff320fb487b36834d90e449990923240a34fdaaf09283",
+    "RNA差异结果报告与富集背景.md": "73d46420afb6f4c1fe780d2f8924c0193565104a07157d95a8c2eccb8c87c066",
     "RNA测序建库选择与偏倚.md": "c54128edfba956702816aaf2964b4c7ed423b7db61f34a861005004d62b08e8e",
+    "RNA计数矩阵与样本表核对.md": "f359d062788401846d8de3ce711cab9631a1cba38f167b4a4f361b96c7f84534",
     "STR与重复扩增检测及提取.md": "21379909de987b771c9e0dbd7e87e9c96895601e917cbea34ed4666208c4e6ad",
     "VCF标准化多等位拆分与表示.md": "987b12bcf10c6eb40810c2aec27d6cbd40520e9ff0e1105a621019bb713c53ae",
     "qPCR与数字PCR结果判读.md": "51adc56078e76725e6fcf88d511f19758cc0a36c32d6d6fc2402324a7497e3af",
@@ -4872,6 +5122,7 @@
     "代谢组入门与实践.md": "2d0fef19575027b56998cfc7e304e3bf59f4bff1397cecfcbcfb14777e79db96",
     "低深度多倍体与特殊基因组分流.md": "7effebe073bbf27d3bda135e6456173ea3ece93b41bf06c52bc78ed2aaceb9f4",
     "体细胞与低频变异分析边界.md": "a9eaa927188ab080efee9f9e4558fbfc69944fdcdfa91d52f7b4a5427037b55d",
+    "公开airway数据贯通DESeq2.md": "f5742c13cd439e5c8b831ae71c4b75e086134dd734ca103180babd86859e347a",
     "公开小鼠数据贯通多软件GWAS.md": "34995f6ed682a95bef05884897e066961a5261b188bc025b1eb069e14cf2c074",
     "单细胞与空间组学验证设计.md": "c74c5f73829c2fdfe085584d51e97b20a1eda5babd86d8de52dbd2de7f82d50f",
     "单细胞转录组入门与实践.md": "48f755668bfe4a1deb95d689a05b98316ddc3af11d23fe782d329263885101b7",
@@ -4881,7 +5132,7 @@
     "变异注释与候选证据整理.md": "006ebe2847372a0cd04920bb2babbe364762316f6639e6536e67dc9c49a1ad69",
     "合成家系数据贯通GS.md": "280c9f3e03ee8c24bd60ada3ba7109c84b9d1f411d2b4c5ee21f39885f3e4a82",
     "合成数据贯通统计推断.md": "965e2395c2c8a91dcd1ac9a7aa5253eab3f717b2c659bd8465ce9c3de12e4e85",
-    "同一份样本表贯通R与Python.md": "ca8737748294684a351cbda86547c513977260f4331fbba09ecb364c8f613c80",
+    "同一份样本表贯通R与Python.md": "53b7509dae13497d29ca6cc097fc20ae093db25e681cfce58cbb9ad20c8b969f",
     "基因型质控与过滤.md": "ef4439ecb8740c2abce25db0bd0e1fb3a57d9d86f1699570e70d159f21f0122c",
     "基因组浏览器检查与候选证据.md": "1f8ca1d5e291e9569eec76ca486b71cd2052ab7726bae0654155e3c6a935bcf2",
     "基因组重测序与变异检测.md": "06d27cfc9e1193c9f62e7e1c100cbe3fef58d40c82ec869ef36760d83b81a34a",
@@ -4908,20 +5159,21 @@
     "蛋白质组入门与实践.md": "ddb633c018cfd76bccecd98607413df0ee6af4da607394bccb0344e43df51204",
     "表观组峰与调控证据验证.md": "8cbccd3a9333c6a53b121b53dfb8048c964d0b61a2d0b9845a6210f36bfd6910",
     "转座子插入检测与提取.md": "35b088a1eae5893211450b9267f9104f08c9ea2ccf1f302ab7027ad7d893bdbf",
-    "转录组差异与qPCR验证设计.md": "acf136004ee60f8cde18fdaefa006ea1bc0fafa21992ba2e2dfd19fdd525b58b",
+    "转录组差异与qPCR验证设计.md": "f35952f13cfc83215d7a7a0ff9b1aa17f5747f40d74a190fb8ac83cf41453c89",
     "长读长小变异检测与模型选择.md": "6dea15b5bb7e5a57e0b1cfa4570e3cc2b6a94c950e1ead052afe7ff5d7427fab",
     "长读长测序分析入门.md": "9097906e1a936275012ede8c8b25515d11ce09903857c6199783a508d0957c01",
     "GS算法软件与实践路线.md": "88da1122f4a6c07f20f69866bb9125a462fd99709af50c57d3881de6ce6f258c",
     "GWAS软件选择与比较.md": "bc6eb6d05459586b45ea44976171088fc3cc8208deb48daf962aafcd30e78ccf",
-    "R与Python生信编程入门路线.md": "c23cbb4f5d7fc1b07a0cddd4a26a0617af2057134d7581d69d7acaeefb20b111",
-    "中文生信学习地图.md": "27685115db6e9c200667535df1a0e5a4d3d3431192260b546ff71bd251c825c1",
+    "R与Python生信编程入门路线.md": "a33618dcd0288d3be9abd86f8ea798b2e6674991ec64d2ad8c41c248574c4c48",
+    "bulkRNA-seq分析与实践路线.md": "52aa98acf7085ee14dbc040127f08e218f68c195c4ff77faadb5d8b6c75afd54",
+    "中文生信学习地图.md": "3acb586883433e79f37cfc2c5f12d817fe9e8456385a799d648bfeca95abc1be",
     "变异检测分型与提取学习路线.md": "0e922ce3f209fb53fc4e5ceb97ed3d99bda1e8f63bf30757a94fab261fb00a80",
     "变异注释与功能解释学习路线.md": "ade33b3a65105d8df36231ede4e3d022c1c554bdc9a421c94c1702f331c722d5",
     "测序技术与PCR学习路线.md": "3bf945434788f0e5dfa5cc93766b1bd36ebf39226edd68d23b9e5c85e1424ed6",
     "生信基础算法学习路线.md": "282620f0384a78223cfac26e63227af5f88753c96b7564ff8e16d73fe703cabe",
-    "生信缺口清单与维护优先级.md": "f573a7e2c43dbba4161dd24abac95b7fc99ce175789326c26db2bee87fe4f25e",
-    "组学分析总览与选型.md": "a503c6afd94f71f782c1db83f52aec1a51559eb5e85d9c2ca3193499cb4a1b50",
-    "组学分析方法学习路线.md": "851f271f87ca1067fd7aa66edef09a57e9455bf20a01d5ca073a0c2ac43a91be",
+    "生信缺口清单与维护优先级.md": "f184f7c703e136c07b97700161fa119c3ef7f07bcb26f82eb5c45f50c2dc22c3",
+    "组学分析总览与选型.md": "735ebb24c1debf23ba9a9691197dad00fc2af5db275bb8d1e77dd23c86baf73e",
+    "组学分析方法学习路线.md": "23e6236fb6663c7ef759aedb9766773f28c0f87dbd731d298f6cb5023ccffd3f",
     "统计学与组学验证学习路线.md": "baa2930234e10e515d207b7e58241d6a15f7cc0b364a7bb99af99e648722bfb4",
     "群体分析与GWAS学习路线.md": "9867e5cac81f83beb339b5aad6d8543b35c0b6f03b1d51f12e52517cf98023b2",
     "群体遗传学分析学习路线.md": "985ed91483ba05626a9a66de695ded85781276c9b29d2ddde28140f4e6f39b0e",
@@ -4931,6 +5183,7 @@
     "BLUPF90单步遗传评估流程.md": "fbac391dfd42064fdfd5227168ccbd19f0f1a8ad5b0180a4797e6751d4ec7ddd",
     "BOLT-LMM关联分析.md": "2c7c7add7fe4fa5b2c8318d143792d1074994e64488d470495442a577adb92b1",
     "DELLY结构变异与群体分型.md": "ebda2eb559e78f8a24a1f6baa25444e1c3363dc99d7e335fef227202aa6b811c",
+    "DESeq2安装对象与结果提取.md": "95e9c675e32e6644d09e289b16cf6f889e559011fe999180e126d1a2a67ad661",
     "EMMAX关联分析与旧流程兼容.md": "394bab168dc4b650521eb2a8ba881a9ca0f096d7878e17e3fbf5f514af570de6",
     "GAPIT多模型GWAS实践.md": "29081e5b781248476997262db4ae8582a3cf5ec8038ac27c2ce9f9fdd02edfd3",
     "GATK小变异检测与联合分型.md": "73a5016f82995105e4e4687661b491f2e01de98f063a043c75330e486a67ed5c",
@@ -4947,12 +5200,14 @@
     "REGENIE两步关联分析.md": "5bc8b0ad6a004f09fc943748eaf04702981ec82ea48cbef08535adc0b60b915b",
     "R与Python安装环境与编辑器.md": "872652ef36e6f7753c4f50e509cb17005fd6bad85536bcfcbdd728f795034d66",
     "R与Python报错调试与求助.md": "5e181ff8732687b5a18bec2a47c42dd451ff5a8eff59bcd0fcd7fb141544f0c5",
-    "R与Python绘图和统计入门.md": "478247974077d7ffeb288b0bd9b64609cc7b8e535a6bd5436a3c29cd8b08ea45",
+    "R与Python绘图和统计入门.md": "97c0734b7bee165724b724e7a384a17793a28548d01169c3ff0364fc7a886d1a",
     "R与Python路径文件与项目组织.md": "11c795ea68ca1327fc51844b0342358e802b2dad419573cb5bc372b94d00f649",
-    "R包Python包与可复现环境.md": "073fc2e801733fb3d196db38a0d3ef181b116052e70934a5d67c59285709db6a",
+    "R包Python包与可复现环境.md": "3a1919e1d952303bef5a5ade078bc6067ab2199fd0ee8036bdfe91a74811f924",
     "R向量数据框索引与函数.md": "89e46f05a192afa5ecb8a77988dbc7dd766742769677abc71349066f04c50611",
-    "R读取清理与合并样本表.md": "8a57700881e8afd2461b6b3e460b25cd7373d0e2a8e06037909a97251ea8ba69",
+    "R读取清理与合并样本表.md": "9de36e8f96d646f7fd0b0985209723cafe9627a24e429b45817160b65cf609ff",
     "SAIGE单变异关联分析.md": "b651bf7421f81aa75656b1b1b16d147f72028ae6cd93a20b95fc647614ba1292",
+    "STAR剪接比对与RNA比对指标.md": "91dcba722671d9713e148ed568c86c07b4f69791fd4ffee1665ba39a91334230",
+    "Salmon定量与tximport基因汇总.md": "668be37698572c0b37014efdec5702d48c8bf8bcc0432f066c3c6456de01f9c4",
     "Snakemake规则配置与断点续跑.md": "03c5de5d4abacf767748807d2ec66ac33c6f9b35e6a27c86b8d29dcfead8adb5",
     "Sniffles长读长结构变异实践.md": "5afb574f5566602b7104cb6032833563a75706801671be617f39344c9ef74090",
     "SnpEff自建数据库与后果解析.md": "07a16559c06b82e0fb8995de449f1d3f0df5723b837f835a0eb196ce80608c39",
@@ -4961,6 +5216,7 @@
     "bcftools变异操作与表达式.md": "3c21cfe82a44fecb23a38fe69e9a09613baa243f34f0db35ca4c72756fef4626",
     "bedtools区间操作与坐标验证.md": "75ec63a3494bd542bbfcc788dfac94e786e79f7dd93c973e266e241d2c93f5a0",
     "fastGWA与fastGWA-GLMM.md": "65e7405be4b3b0e26d673d220df8759ccafb497cab5e2a73a5eb4dcdde0de61e",
+    "featureCounts基因计数与链方向.md": "256f4dcd605d9ba1ba3f26592a8afd7fba8c163277944c06a86190bca5b894fa",
     "minimap2BWA与比对器选择.md": "ea415b5065d4eb1e08334c4d9f8659a683eabd89ae313bbce275cee6dd0eb579",
     "rMVP关联分析实践.md": "d96f4d6415cede87bc779e675fa7d7d5ee6c112a9a67e108c96ef682299cbb99",
     "rrBLUP预测实践.md": "ba9c72da54e8389957c3ad81ca4d499d76f7dfca13d2b3d79327576de8e04949",
@@ -4998,7 +5254,8 @@
     "PCA原理与实现.md": "cdb8b15b10102bf98149fb0f19ad26ec5b1cd919f30e76ea5a485fec4cbf26d8",
     "PCR与扩增基础.md": "28e709783e793404a827944f6ada69b7f1709e5792f87647efcd446b9b37c243",
     "PacBioSMRT与HiFi测序.md": "6fe2a78b2cdab95f525c5bf1db7900a2cf13a699ec98a81c4e39c3d8efbeb30d",
-    "RNA计数模型差异表达与效应收缩.md": "5fd7588ea7c0928236442835e7b27c1823c9e9daca9aee83afd57ca508188d9d",
+    "RNA交互作用与LRT比较.md": "7e73a3ab759c5036b951f574bcfbed684c34dd3cf252723f6f36a92fcabf02d6",
+    "RNA计数模型差异表达与效应收缩.md": "56e3c4a7b033ec783ecdb405a1ee0275e48faa787042d172e33bc72f6fcbf25a",
     "SV合并匹配与群体再分型.md": "82dc4bfee3e434300a3256e37e334be8221502a9a47d6741e498f1d2d5471b96",
     "Sanger测序原理与峰图判读.md": "ce554c2dfa60ca24486fb99a262e8dcfc3909ebdaf1b42c6274b078d97a52bf6",
     "Smith-Waterman局部比对.md": "05709db34215b2faf027b8ff232cb24e99d20bfa554068bd25eebefa09b49f1e",
@@ -5017,7 +5274,7 @@
     "变异评估真值集合与可检测区域.md": "8b30bdc896c2d8fd3e7c5a0d7a45db1e5494e7469cf4860a402f079b7604b1be",
     "图与最短路径的生信入门.md": "a728a2eaa09e612bff37bb188ad848936a7390801d6323b83712c94a21046e42",
     "多组学整合与潜变量模型.md": "db4417c24338e0fbef77c4766a40a7be613c8e6e5b69e615c3dd6714cc8e05a4",
-    "富集分析与GSEA.md": "f87631538181dee04f6ab214397287338b9853b277080026ed5dbe961f949534",
+    "富集分析与GSEA.md": "a432aa1545e4eaa477537abda8b3f2338217d7137be8280719bdcf3ed7e9a025",
     "小变异检测的似然与局部组装.md": "08ca9666de351825d73cf261f1cdd15380f88ce718360457ad0e9cda999ab247",
     "差异峰与差异甲基化方法.md": "dab4049917650979337682545bd0dcc3ab8cf0cc84372b3839efccd6f0ae1f46",
     "广义线性模型与逻辑回归.md": "8aa72a5760b32bea15d9f22ab5fec1b0fe46581df91eadafec7819d0696f8539",
@@ -5058,6 +5315,9 @@
     "MAF与MAC及稀有变异.md": "80957e7a4b23b0ad9df04cde87b9effcd3d18ef719304c738fe4a0372793079a",
     "N50组装连续性与完整性.md": "61bf4ed2cd2280f123a588125a203b42048246c0dd2a511f4a62f94d95213e1d",
     "P值效应量与多重检验.md": "681738ee76f0217d6b2423a9455e161bf87040c41afa101093da198d1416c741",
+    "RNA效应收缩与阈值检验.md": "f191c7c109ed69ca0c6e39594379308c13c7aab4a7d2712fcee0861ee9126f17",
+    "RNA文库大小因子与组成偏差.md": "39aea267835d65323d5377df3ba6dc19ca0479949cceefb9371dc4c6cbedf48a",
+    "RNA设计矩阵配对与对比方向.md": "5b1a5f7f5aeb2e3d39f800fee981fcba6634afe14f151e633ef81d608bf0cff6",
     "RT-PCR实时PCR与数字PCR的区别.md": "c84456b0f67a4bcd60b6ccd821837476d64936fd1277f61a6b55827fc4abd921",
     "SAM与BAM及CRAM.md": "f0c73c8f506a452436b4329a2524ef03abd60f3513e0446254c8ceec61969c22",
     "SNP与基因型是什么.md": "655b0a62c1a108596f80d535b7ce4226d6d9c0d8bd125ded4f6b95ae06a49246",
@@ -5066,6 +5326,7 @@
     "UMI与细胞条形码.md": "cefef8e57e17d9790866364a9b54b6eddf24964928cfaaceecd5ddd952551849",
     "VCF与基因型编码.md": "b321287e8b516c9201b4ef60ba680e1c1fdcd92b38a578b813e9c359eefc9258",
     "VCF中的SVTYPEEND与BND.md": "c1c604350d760bd5a2c64392667434df01a6957d583e0bffa775a78e8ddcd785",
+    "VSTrlog与样本距离.md": "52cf563be8c8b17d18bfc69c1ef1363cbad8964812e69e9ebc563685f5430829",
     "Wald似然比与得分检验.md": "1913a866571880c3a05f700f67c9984b6b277460d715613438b69889ffe47425",
     "二分类性状OR与病例对照不平衡.md": "dab97c2dd81d778a48661c9bf4908c182fd131029557492b282211da69a54a25",
     "亲缘关系与遗传关系矩阵.md": "61366b9837e8589a6de897931a073139d3f9916e7b23f4108c95dc2baef0b097",
@@ -5086,7 +5347,7 @@
     "峰与FRiP及TSS富集.md": "26cf77a067de3568a3287a2e552ccd49724cedeb84f3d17247bc96a6f7f6d1b0",
     "常见概率分布与生信场景.md": "0790f1880d88b7d0a300356002d8d297df113a97915d78b00bf41cd59aa525b2",
     "引物扩增子与特异性.md": "9588d0020b3d7b97342c87d05d4cebad3ab1c5eab0e3ae061dfe02ebff17e1d9",
-    "批次效应与混杂.md": "a69f33d2700fe471fe3760e651bcb4c491298053b1a6863d65d6b6a730ca1d6e",
+    "批次效应与混杂.md": "0f0926bfa1489a3777686771b222811763b616142c53aad810953d8b0f1c0254",
     "抽样分布中心极限定理与标准误.md": "371590c8b7e7d552a1ba347dc111b1f4ddcfe49df4552375619086f3c4397ebd",
     "描述统计与分布图.md": "08068b2fac4a8ac706d21b477d055d89e092eba0f46f584b983ca23534b6ee1c",
     "数据类型总体样本与抽样.md": "a7fd7e71f9739e15be2ada2a584ef4066110f23ebdc5060f902ab2d4164e4570",
@@ -5100,7 +5361,8 @@
     "测序深度覆盖度与质量分数.md": "b8fae94290861faf424855f9858caa2dddcf20d4a4ae6b6d5dce9e452fe80b82",
     "测序错误重复偏差与嵌合体.md": "ac060e74d6a0dbcdd3924d323a72991f47ea64c9b7d39ecf309fe9c7cb151b03",
     "点估计偏差方差与一致性.md": "ed84a18c230d9e5b566e35963aa258b2ba53b024974262c1be5c5b129c17d7a4",
-    "生物学重复与技术重复.md": "5f2d9f3b3f72fba698cbd83a07a392fcc7a4cd45483d2a3db43be2957b7bb138",
+    "独立过滤低计数与结果NA.md": "0d0ba56e575380ddff0d7d6c40a71a63709e0d5f37491effa9fe80c7e5df1fe0",
+    "生物学重复与技术重复.md": "b643b4cd42f5ffd791c2e42aa78f66d12965c7e9117e71fe833a67e4f8bd9d08",
     "碱基识别质量值与一致性序列.md": "8795e0d1a62ccda4580fbf97e6c10e2124e3f894003f7e080e5d3a3a0859bc6e",
     "等位基因频率杂合度与核苷酸多样性.md": "f3d0190582df43760519f34a090ca8483df91f07a4f7f21f88de00a025c994a6",
     "线粒体叶绿体与异质性.md": "c17bb8e576cb7b077ad385fc5b1c6d28621ec962378333a0766a0c4945d20982",
@@ -5109,7 +5371,8 @@
     "置信区间与重采样.md": "0ae377ac2eb1076b25af4a9a05e8c7ef5b6b7d5af9c54d216996f349b108bb94",
     "群体结构是什么.md": "6efc1fe0f7d18698c320f079038c32cac56e65134ee49f62e9eac08fb7d3b3ff",
     "育种值GEBV准确度与可靠度.md": "4d8942d188fe45927a72856207a6e8401133404647e4c763032a971a7386a644",
-    "计数丰度与标准化.md": "ad880aadcb619379e437b9a88f5ecc76180437841caac6d455e1330e72925b6d",
+    "计数丰度与标准化.md": "d1a3735fd00d08b3f4efaa37dfdc39cb373000f6d66f8c11db57f37add091037",
+    "负二项离散度与均值方差.md": "a1acea6ecf1361457aca77358f80e4a671c289127736398ce26b565a9e5dbac3",
     "转录本选择与代表注释.md": "73ab5b8781774b23048fdaa2fba0c655e3d08f53c798b26998317e723af6b865",
     "连锁不平衡与LD剪枝.md": "2bf4357b4d49d6ec335e657b7b92dd81305423965255e1a8ef193b587f61fac7",
     "选择中性模型与群体历史.md": "18e8a129526380aae884d3eb7e8269ee40a29a00a376119f53306468a5572fef",
@@ -5117,8 +5380,8 @@
     "随机变量期望方差与协方差.md": "21e80d476359e6d54bb6b679d1d278afcc22471f73bc4e7d6080f5ea9911a0d5",
     "零模型与方差组分.md": "75e8e4c3a3477a2efa2e58397ec2a3a91bac742db41981a629edd0ebef4cf7af",
     "频率学派与贝叶斯推断.md": "e7466dac0f854cd249d2df08d49e2a998631c741cca07838fec970833e1c04f7",
-    "关键词索引.md": "a2562340f520ee06a8747165fee576a4c8f71da1bf05f7e505fbc559ea8bf9b5",
-    "Home.md": "83bbab60116c374332faf5f4f67f4e0d1ce0007ec80d669e6ec943b903e0dbf4",
-    "_Sidebar.md": "e44ebe3b6c8dc8b02deff0c82434d446920e075c1baf3e1d064446202f7c6de3"
+    "关键词索引.md": "2e60a3bd811f4c98cf71683dfab9a0fe8ff2a3fd680320edef88946071f10a98",
+    "Home.md": "b816932ee28ded1772933d48cfa6d5c969d1e8dcc25d2efacc140f3518c796f6",
+    "_Sidebar.md": "5894891f27fed529c612251aca99e433f4174ffe7190f14f72e563a6abad97d4"
   }
 }

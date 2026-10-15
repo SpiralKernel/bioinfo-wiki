@@ -1,6 +1,6 @@
 # R与Python生信编程入门路线
 
-> 更新：2026-10-14；状态：可用；验证范围：官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明。
+> 更新：2026-10-15；状态：可用；验证范围：官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明。
 
 先用同一份小表学会运行、索引、清理、合并和绘图，再进入具体生信包。
 
@@ -24,6 +24,6 @@ R和Python都可以做表格、统计与图；项目可优先学习一种，再�
 
 能解释变量、缺失与样本ID；按ID而非行号合并；知道Python从0、R从1索引；能找到输出、读报错、保存环境信息并从干净会话重跑。
 
-本机Python案例已运行。基础R脚本通过WebR的R 4.6.0 WebAssembly运行时验证，本机没有原生Rscript，也未验证所有CRAN/Bioconductor包或IDE安装。代码使用普通base R，学生在原生R中运行方式仍按教程。
+本机Python案例已运行。基础R脚本通过WebR的R 4.6.0 WebAssembly运行时验证，本轮另用原生R4.4.3复跑基础样本表并执行DESeq2/apeglm；其他CRAN/Bioconductor包和IDE安装并未全部验证。代码使用普通base R，学生在原生R中运行方式仍按教程。
 
 后续进入[组学分析方法学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%84%E5%AD%A6%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)或[群体遗传学分析学习路线](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BE%A4%E4%BD%93%E9%81%97%E4%BC%A0%E5%AD%A6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF)。语言来源：[Python官方教程](https://docs.python.org/3/tutorial/)、[An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)。

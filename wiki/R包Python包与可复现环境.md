@@ -1,6 +1,6 @@
 # R包Python包与可复现环境
 
-> 更新：2026-10-14；状态：可用；验证范围：官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明。
+> 更新：2026-10-15；状态：可用；验证范围：官方语言文档核对；基础样本表经WebR及原生R验证；airway/DESeq2/apeglm已在隔离Conda环境运行；安装与第三方包按页说明。
 
 包安装到环境，先确认解释器、库位置和版本来源。
 
@@ -41,6 +41,6 @@ sessionInfo()
 
 安装通常对同一环境做一次，每次新会话仍需`library(airway)`和`library(DESeq2)`载入。不要随意指定另一个发布系列覆盖现有环境；根据官方提示处理R/包版本不匹配。报错时保存完整错误、`sessionInfo()`及`.libPaths()`，见[R与Python报错调试与求助](https://github.com/SpiralKernel/bioinfo-wiki/wiki/R%E4%B8%8EPython%E6%8A%A5%E9%94%99%E8%B0%83%E8%AF%95%E4%B8%8E%E6%B1%82%E5%8A%A9)。
 
-renv可管理项目依赖，不能代替系统库或外部软件。R安装片段按[Bioconductor官方说明](https://www.bioconductor.org/install/)整理，本机未安装这些包。基础R脚本经WebR验证，不代表第三方包或本机原生R安装也已验证。
+renv可管理项目依赖，不能代替系统库或外部软件。R安装片段按[Bioconductor官方说明](https://www.bioconductor.org/install/)整理，本轮另在隔离Conda环境安装原生R4.4.3、airway、DESeq2、apeglm和jsonlite，见[DESeq2安装对象与结果提取](https://github.com/SpiralKernel/bioinfo-wiki/wiki/DESeq2%E5%AE%89%E8%A3%85%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%93%E6%9E%9C%E6%8F%90%E5%8F%96)；上方BiocManager安装路径未单独执行。基础R脚本已用原生R复跑。
 
 来源：[Python venv](https://docs.python.org/3/library/venv.html)、[pip指南](https://pip.pypa.io/en/stable/user_guide/)、[renv](https://rstudio.github.io/renv/)。

@@ -12,6 +12,8 @@
 - [人工VCF贯通变异分类与提取](wiki/人工VCF贯通变异分类与提取.md)：16条人工记录、真实bcftools操作与可核对输出。
 
 - [R与Python生信编程入门路线](wiki/R与Python生信编程入门路线.md)：下载项目、运行脚本、语法、表格、绘图、环境与排错。
+- [bulkRNA-seq分析与实践路线](wiki/bulkRNA-seq分析与实践路线.md)：原始计数、配对设计、DESeq2与诊断。
+- [公开airway数据贯通DESeq2](wiki/公开airway数据贯通DESeq2.md)：8个真实公开计数样本、原生R实际运行。
 - [组学分析方法学习路线](wiki/组学分析方法学习路线.md)：RNA、单细胞、表观组、蛋白、代谢、微生物与多组学方法。
 - [群体遗传学分析学习路线](wiki/群体遗传学分析学习路线.md)：多样性、FST、祖源、近交、LD、选择和历史。
 
@@ -49,7 +51,7 @@ python3 -m venv .venv
 .venv/bin/python examples/population_genetics_demo.py
 ```
 
-群体案例内置8条完整单倍型×12位置，输出到`examples/output/population-genetics/`；导出的TSV为输出副本。教学指标不是专业WC/Hudson、ROH或历史推断实现。Python与群体案例已运行，base R完整表格/模型/绘图脚本通过WebR R4.6.0执行；本机没有原生Rscript，也未执行DESeq2等第三方R包。结果、两位审阅者的反馈与修改见[本轮维护记录](maintenance/omics-population-programming-2026-10-14.md)。
+群体案例内置8条完整单倍型×12位置，输出到`examples/output/population-genetics/`；导出的TSV为输出副本。教学指标不是专业WC/Hudson、ROH或历史推断实现。Python与群体案例已运行，base R完整表格/模型/绘图脚本通过WebR R4.6.0执行；2026-10-15又在原生R4.4.3复跑基础R脚本，并实际执行airway/DESeq2/apeglm案例；其他专业包仍按各页验证范围。结果、两位审阅者的反馈与修改见[本轮维护记录](maintenance/omics-population-programming-2026-10-14.md)。
 
 本轮变异案例需要bcftools1.22与+fill-tags插件，基础Python代码只用标准库。先按[bcftools环境页](wiki/bcftools变异操作与表达式.md)建立环境；以下从项目根目录运行：
 
@@ -74,6 +76,18 @@ python3 examples/genome_alignment_demo.py
 输出分别在examples/output/annotation、alignment-chain、annotation-plots，重复执行覆盖同名文件。固定输入是1600bp人工参考、三条转录本、12条VCF及40条人工FASTQ；注释VCF与reads调用结果是两个不同任务。实际验证3条CDS/蛋白零错误、负链与多ALT关联，以及预设杂合SNV。Snakemake9.27.0的安装、首次运行与缺失表恢复见[工作流案例](wiki/最小注释工作流与Snakemake恢复.md)，验证器仅使用新的独立目录。
 
 本轮VEP、版本转换、多倍体/细胞器专业分析未执行。结果、工具归档SHA和范围见[注释与工作流记录](maintenance/annotation-workflow-round1-2026-10-14.md)。
+
+真实RNA计数案例使用固定airway包，已有Conda时在项目根目录运行：
+
+```bash
+conda env create -f examples/environments/rnaseq.yml
+conda run -n wiki-rnaseq Rscript examples/test_rnaseq_inputs.R
+conda run -n wiki-rnaseq Rscript examples/rnaseq_airway_demo.R
+```
+
+本机Linux原生R4.4.3、DESeq2 1.46.0、airway1.26.0与apeglm1.28.0实际安装运行。8个样本配对设计，保留22,369个基因；普通Wald FDR<0.05为4,030个，绝对log2FC超过1的专门检验为243个。完整结果在examples/output/rnaseq-airway，非空输出目录会拒绝运行；传新的目录可另作练习。重画已有结果用`conda run -n wiki-rnaseq Rscript examples/plot_rnaseq_airway.R`，只更新图。
+
+输入来自已有公开计数，未重跑FASTQ、STAR、featureCounts、Salmon/tximport或富集。基础R输入检查无需第三方包；完整检查用RSCRIPT_BIN指定原生Rscript。环境、输出和边界见[本轮记录](maintenance/rnaseq-round1-2026-10-15.md)。
 
 Python 3.9+ 可运行序列比对教学例子；它不依赖第三方包，不是完整BLAST实现：
 

@@ -1,6 +1,6 @@
 # R读取清理与合并样本表
 
-> 更新：2026-10-14；状态：可用；验证范围：官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明。
+> 更新：2026-10-15；状态：可用；验证范围：官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明。
 
 base R即可完成小表读取与匹配，关键是类型、NA、重复键和输出行顺序。
 
@@ -31,4 +31,4 @@ summary(joined$value)
 
 `write.csv(..., row.names=FALSE, na="NA")`明确行号和缺失输出。dplyr/tidyr可简化更复杂操作，但不是第一张表的必需依赖，本轮未执行它们。
 
-完整案例经WebR验证；原生Rscript和第三方包环境未在本机安装。来源：[R数据导入/导出手册](https://cran.r-project.org/doc/manuals/r-release/R-data.html)。
+完整基础案例此前经WebR验证，本轮又在原生R4.4.3运行；第三方包仅验证新增airway/DESeq2案例所用范围。来源：[R数据导入/导出手册](https://cran.r-project.org/doc/manuals/r-release/R-data.html)。

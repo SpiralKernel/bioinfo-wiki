@@ -1,0 +1,11 @@
+Failed to connect to system scope bus via local transport: Operation not permitted (consider using --machine=<user>@.host --user to connect to bus of other user)
+Warning message:
+In system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+null device
+          1
+  condition n mean
+A         A 3  2.0
+B         B 4  5.5
+(Intercept)  conditionB
+        2.0         3.5

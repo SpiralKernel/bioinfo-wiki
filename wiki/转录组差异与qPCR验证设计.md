@@ -1,6 +1,6 @@
 # 转录组差异与qPCR验证设计
 
-> 更新：2026-10-13；状态：可用；验证范围：原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证。
+> 更新：2026-10-15；状态：可用；验证范围：原始研究与官方规范核对；实验设计说明，未执行湿实验或真实组学验证。
 
 分别验证差异表达统计、表达测量与生物学重复，避免把qPCR当作自动证明功能。
 
@@ -32,3 +32,7 @@
 ## 测序技术与上游输入
 
 名称区别见[RT-PCR实时PCR与数字PCR的区别](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RT-PCR%E5%AE%9E%E6%97%B6PCR%E4%B8%8E%E6%95%B0%E5%AD%97PCR%E7%9A%84%E5%8C%BA%E5%88%AB)；曲线、分区和质量判读见[qPCR与数字PCR结果判读](https://github.com/SpiralKernel/bioinfo-wiki/wiki/qPCR%E4%B8%8E%E6%95%B0%E5%AD%97PCR%E7%BB%93%E6%9E%9C%E5%88%A4%E8%AF%BB)；引物和检测对象见[引物扩增子与特异性](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%BC%95%E7%89%A9%E6%89%A9%E5%A2%9E%E5%AD%90%E4%B8%8E%E7%89%B9%E5%BC%82%E6%80%A7)。
+
+## 与实际RNA统计结果衔接
+
+[公开airway数据贯通DESeq2](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%AC%E5%BC%80airway%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9ADESeq2)已完成真实计数统计分析，但没有执行qPCR或功能实验。候选选择需区分原始效应、[RNA效应收缩与阈值检验](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E6%95%88%E5%BA%94%E6%94%B6%E7%BC%A9%E4%B8%8E%E9%98%88%E5%80%BC%E6%A3%80%E9%AA%8C)和独立验证；报告背景见[RNA差异结果报告与富集背景](https://github.com/SpiralKernel/bioinfo-wiki/wiki/RNA%E5%B7%AE%E5%BC%82%E7%BB%93%E6%9E%9C%E6%8A%A5%E5%91%8A%E4%B8%8E%E5%AF%8C%E9%9B%86%E8%83%8C%E6%99%AF)。

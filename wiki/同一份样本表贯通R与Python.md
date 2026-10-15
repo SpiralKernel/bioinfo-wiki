@@ -1,6 +1,6 @@
 # 同一份样本表贯通R与Python
 
-> 更新：2026-10-14；状态：可用；验证范围：Python实际运行；base R完整脚本经WebR R4.6.0执行，输出语义交叉核验；原生Rscript与第三方R包未安装。
+> 更新：2026-10-15；状态：可用；验证范围：Python实际运行；base R完整脚本经WebR R4.6.0执行，输出语义交叉核验；本轮原生R4.4.3复跑基础案例；第三方R包仅验证另页DESeq2案例。
 
 用两张故意顺序不同的小表练习按ID合并，保留缺失并核对两种语言的描述结果。
 
@@ -28,7 +28,7 @@ Python基本表格脚本只需标准库；可选`--plot`需Matplotlib。R脚本�
 
 ## 已运行与边界
 
-Python 3.14.8已实际运行。R脚本在WebR的R 4.6.0 WebAssembly运行时执行，包含CSV读取、merge、缺失检查、均值、lm和base R PDF图；本机未安装原生Rscript，未验证各操作系统安装或第三方R包。
+Python 3.14.8已实际运行。R脚本在WebR的R 4.6.0 WebAssembly运行时执行，包含CSV读取、merge、缺失检查、均值、lm和base R PDF图；本轮另在原生R4.4.3执行该完整脚本，仍得到8行、1缺失、A均值2/B均值5.5和条件系数3.5。DESeq2/apeglm验证另见[公开airway数据贯通DESeq2](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E5%85%AC%E5%BC%80airway%E6%95%B0%E6%8D%AE%E8%B4%AF%E9%80%9ADESeq2)，不代表全部R包或各操作系统已测。
 
 两种语言均得到8行、1个缺失，A组有效n=3、均值2，B组有效n=4、均值5.5。R参考A的模型截距2、B系数3.5；只是人工算术，不提供因果或组学统计结论。
 

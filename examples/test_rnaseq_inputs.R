@@ -1,0 +1,18 @@
+#!/usr/bin/env Rscript
+args <- grep('^--file=',commandArgs(),value=TRUE)
+project <- dirname(dirname(normalizePath(sub('^--file=','',args[[1]]))))
+source(file.path(project,'examples/rnaseq_input_checks.R'))
+x <- matrix(c(1,2,3,4,2,3,4,5),nrow=2,dimnames=list(c('g1','g2'),c('s01','s02','s03','s04')))
+m <- data.frame(sample_id=c('s03','s01','s04','s02'),pair=c('B','A','B','A'),condition=c('c','c','t','t'))
+expect_error <- function(expr,pattern) { e <- tryCatch({force(expr);NULL},error=identity);stopifnot(inherits(e,'error'),grepl(pattern,conditionMessage(e)));invisible(TRUE) }
+a <- align_rnaseq_inputs(x,m);stopifnot(identical(a$samples$sample_id,colnames(x)))
+bad <- m;bad$sample_id[1] <- bad$sample_id[2];expect_error(align_rnaseq_inputs(x,bad),'duplicate')
+bad <- m;bad$sample_id[1] <- 'missing';expect_error(align_rnaseq_inputs(x,bad),'sets differ')
+bad <- x;bad[1,1] <- .5;expect_error(align_rnaseq_inputs(bad,m),'integers')
+bad <- x;bad[1,1] <- -1;expect_error(align_rnaseq_inputs(bad,m),'nonnegative')
+bad <- x;bad[1,1] <- NA_real_;expect_error(align_rnaseq_inputs(bad,m),'finite')
+bad <- x;bad[,1] <- 0;expect_error(align_rnaseq_inputs(bad,m),'empty')
+stopifnot(ncol(check_rnaseq_design(a$samples,~pair+condition))==3L)
+bad <- a$samples;bad$batch <- bad$condition;expect_error(check_rnaseq_design(bad,~batch+condition),'not full rank')
+bad <- a$samples;bad$individual <- factor(seq_len(nrow(bad)));expect_error(check_rnaseq_design(bad,~individual),'residual')
+cat('PASS: 10 input/design assertions (ID alignment, duplicates, mismatch, fractional/negative/NA counts, empty library, rank and residual degrees)\n')

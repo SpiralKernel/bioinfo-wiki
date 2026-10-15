@@ -1,0 +1,50 @@
+{
+  "scope": "Real public airway processed gene counts; no FASTQ mapping, original-paper replication or functional validation",
+  "data": {
+    "package": "airway",
+    "geo": "GSE52778",
+    "input_genes": 63677,
+    "samples": 8,
+    "paired_cell_lines": 4,
+    "upstream_reference": "GRCh37 / Ensembl release 75 as described in airway vignette",
+    "prefilter": "rowSums(raw_counts) >= 10",
+    "retained_genes": 22369
+  },
+  "model": {
+    "design": "~ cell + dex",
+    "contrast": "trt versus untrt",
+    "alpha": 0.05,
+    "design_rank": 5,
+    "residual_df": 3,
+    "shrinkage": "apeglm; original Wald P and padj retained; posterior SD is not original Wald SE",
+    "threshold_test": "H0: abs(log2FC) <= 1, greaterAbs"
+  },
+  "results": {
+    "significant": 4030,
+    "up": 2208,
+    "down": 1822,
+    "status_counts": {
+      "tested": 17165,
+      "independent_filter": 5204,
+      "pvalue_NA_review_Cooks_or_other": 0
+    },
+    "no_independent_filter_significant": 3820,
+    "threshold1_significant": 243,
+    "independent_filter_baseMean_threshold": 6.1363644452,
+    "pca_percent_variance": [0.47842864474, 0.23383404452]
+  },
+  "checks": {
+    "shuffled_metadata_aligned_by_ID": true,
+    "paired_design_full_rank": true,
+    "reverse_contrast_negates_LFC_preserves_P": true,
+    "unfiltered_padj_matches_BH": true,
+    "shrinkage_preserves_Wald_P_and_padj": true
+  },
+  "versions": {
+    "R": "4.4.3",
+    "airway": "1.26.0",
+    "DESeq2": "1.46.0",
+    "apeglm": "1.28.0",
+    "jsonlite": "2.0.0"
+  }
+}

@@ -1,6 +1,6 @@
 # R与Python绘图和统计入门
 
-> 更新：2026-10-14；状态：可用；验证范围：官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明。
+> 更新：2026-10-15；状态：可用；验证范围：官方语言文档核对；基础样本表案例已运行，R通过WebR验证；安装与第三方包按页说明。
 
 先画独立观测和缺失，再计算明确目标；图形、模型和生物学结论分别检查。
 
@@ -38,4 +38,4 @@ Python生成散点图PNG，R生成箱线图加观测点PDF。两种样式不同�
 
 模型输入、缺失规则与独立单位先明确。散点相关、组均值和P值回答不同问题；真实推断读[统计方法选择与分析计划](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95%E9%80%89%E6%8B%A9%E4%B8%8E%E5%88%86%E6%9E%90%E8%AE%A1%E5%88%92)、[线性模型与混合模型](https://github.com/SpiralKernel/bioinfo-wiki/wiki/%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B)。轴注明单位，误差线注明SD/SE/CI，保留观测点。
 
-Python图已运行，R脚本及PDF经WebR执行；预览PNG由PDF渲染。本机没有原生Rscript，也未实测各系统安装。依据：[Matplotlib教程](https://matplotlib.org/stable/tutorials/pyplot.html)、[R绘图入门](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphical-procedures)。
+Python图已运行，R脚本及PDF经WebR执行；预览PNG由PDF渲染。本轮另在原生R4.4.3运行相同基础R脚本及PDF输出；各系统安装未逐一实测。依据：[Matplotlib教程](https://matplotlib.org/stable/tutorials/pyplot.html)、[R绘图入门](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Graphical-procedures)。

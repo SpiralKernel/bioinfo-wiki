@@ -1,0 +1,25 @@
+{
+  "dataset": "airway object (not gse object), airway1.26.0",
+  "geo": "GSE52778",
+  "source_vignette": "https://bioconductor.org/packages/release/data/experiment/vignettes/airway/inst/doc/airway.html",
+  "scope": "Public processed counts; full counts and model RDS not redistributed in this repository",
+  "input_sha256": {
+    "airway/data/airway.RData": "98d05e82867ae4bed92295eb8863ab6c1aa694876f2b29b455c30a559f801cd0",
+    "exported-counts.csv": "a8ef529a7a035a07db0b2a30385325b6ab1443b474fe97545af145dfc9da4546",
+    "exported-samples.csv": "7ccc082733e5a53a4c77118f6e270a74071bbb0cce6be7f8db4e3f1312d09b90"
+  },
+  "result_sha256": {
+    "differential-expression.csv": "33248719769e565b09ecad25b6b84657617d41e956e1d5108836e05388edbd9b",
+    "normalized-counts.csv": "c319e7875706bd3945aab1b83b67fc4e466ed16605d15b07c757de16a12ef0dd",
+    "result-status.csv": "57a96f2d314ad5c7fb520f1f6abe80780c73fcca1e48965fe1587cece9dc1d92"
+  },
+  "scripts_sha256": {
+    "examples/rnaseq_airway_demo.R": "8094988d0cb2f05730f32e14067a7980716cf186742bbbc4d077081e44212f3f",
+    "examples/rnaseq_input_checks.R": "b48d3b68999235c6f4072711bf09d35d6634355c2e5eb85b02fa797dc0a4dfc7",
+    "examples/plot_rnaseq_airway.R": "9974f6f18b3522bd664be469eb7dc96255d963b958d977e883bfeedd7ed1e900"
+  },
+  "checks": {
+    "fresh_verified_run_matches_first_summary": true,
+    "base_R_programming_case_native_pass": true
+  }
+}
